@@ -1,0 +1,26 @@
+subject,startDate,startTime,endDate,endTime,allday,everyone,private,location,notes
+Meet with Client Agawam,t>>,3p,s,3:30p,no,no,yes,City Hall,Find out about the Agawam project
+Meet with Client Rockport,t>>>,11a,s,1p,no,no,yes,City Hall,Find out about the Rockport project
+Anniversary Dinner,t>,6p,s,7p,no,no,no,Living Room,American Chop Suey
+Bacon Dinner,t>,6:30p,s,7:45p,no,no,no,Living Room,Bacon Surprise and Apple Wine
+Practice hammering,t>>>,1p,s,2p,no,no,yes,Behind the job site,Try to get better about nailing stuff together
+Vacation,t>>>>>>,5p,s>>,1p,no,no,yes,Hotel,Hide out for a while
+Dance lessons,t>>>>,6p,s,8p,no,no,yes,Twinkle Toes Dance Hall,Foxtrot tonight! Yes!!
+Waxing,t>>>>,8p,s,9p,no,no,no,Saul's Smooth Skin,Weekly treatment; find out about that weird rash.
+TV Time,t>>,8p,s,10p,no,no,no,Parlor,Catch up on soap operas with wife
+Bath,t>,7p,s,7:10p,no,no,no,Tub,Weekly Bath
+Pedicure,t>,8p,s,10p,no,no,yes,Nail Palace,Make my nails look pretty; ask about a fungus scrape
+Visit,t>>,12p,t>>>>>,12p,no,no,yes,Phone,In-Laws are Visiting
+Ballgame,t>>>,8p,s,11p,no,no,no,Bar,Watch the game with my dog; remember to bring home some bones
+Knight Rider meetup,t>>>,8p,s,10p,no,no,no,Holiday Inn,Meet some of the old cast to get autographs
+Poker Night,t>>,9:30p,s,11:45p,no,no,no,Joe's Bar,Meet up with the guys for cards. Wear my lucky socks.
+Celebrate with crew,t>>>>>>,no,s,no,yes,yes,no,BBQ Joint,End of project celebration
+Breakfast at Mel's,t>,8a,s,9a,no,yes,no,Mel's Diner,Breakfast with the team
+Breakfast at Flo's,t>>,7a,s,8:30a,no,yes,no,Flo's Diner,Breakfast with the team
+Breakfast at Alice's,t>>>,7:30a,s,8:45a,no,yes,no,Alice's Diner,Breakfast with the team
+Lunch at Cabo's,t>,12p,s,1p,no,yes,no,Cabo's,Queso lunch with the team
+Lunch at Nick's,t>>,11:30a,s,12:30p,no,yes,no,Nick's Roast Beef,Lunch with the team
+Lunch at Destino's,t>>>,12p,s,1p,no,yes,no,Destino's Subs,Late lunch with the team
+Lunch at food truck,t>>>>,11a,s,12p,no,yes,no,Food Truck,Early lunch with the team; stay away from the tuna salad
+Pot luck lunch,t>>>>>,11:45a,s,12:45p,no,yes,no,Work van,Tom will bring sammiches. Everyone else bring a side.
+Snack,t>,10a,s,10:15a,no,yes,yes,Roof,Pretzels and Beer

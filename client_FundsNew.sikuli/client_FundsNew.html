@@ -1,0 +1,249 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>client_FundsNew.sikuli\client_FundsNew.sikuli</h2> <a href="client_FundsNew.sikuli\client_FundsNew.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt"># sets up a new bank account
+</span><span class="cmt"># sets up new funds accounts for Hadley and Halifax
+</span><span class="cmt"># these accounts will be used with bank deposit slips
+</span>
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fFundsAccount_Create(pFundsClient,pFundsCount):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'- FundsAccount_Create: '</span> + pFundsClient)
+
+    <span class="cmt"># open client
+</span>    <span class="skw">type</span>(pFundsClient)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">wait</span>(<img src="default_to_noCharge_2015.png" />,FOREVER)
+    <span class="kw">else</span>:
+        <span class="skw">wait</span>(<img src="default_to_noCharge_2014.png" />,FOREVER)
+
+    <span class="cmt"># move to funds page / move to funds list
+</span>    myTools.pressSHIFTF6(<span class="dig">3</span>)
+    myTools.pressTAB(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># new funds account
+</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL + KeyModifier.SHIFT)
+
+    <span class="cmt"># funds details
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># name
+</span>    fundsName = pFundsClient + <span class="str">"-"</span> + str(pFundsCount)
+    <span class="skw">type</span>(fundsName)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># bank account
+</span>    <span class="skw">type</span>(Key.END)
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        myTools.pressTAB(<span class="dig">1</span>)
+    <span class="kw">else</span>:
+        myTools.pressTAB(<span class="dig">2</span>)
+
+    <span class="cmt"># applies to
+</span>    <span class="skw">type</span>(Key.END)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># current balance
+</span>    fundsBalance = pFundsCount * <span class="dig">10</span> + pFundsCount/float(<span class="dig">100</span>)
+    <span class="skw">type</span>(str(fundsBalance))
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># falls below
+</span>    fallsBelow = pFundsCount * <span class="dig">10</span> - <span class="dig">1</span>
+    <span class="skw">type</span>(str(fallsBelow))
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># replenish to
+</span>    replenish = pFundsCount * <span class="dig">10</span>
+    <span class="skw">type</span>(str(replenish))
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># style on bill
+</span>    myTools.pressTAB(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># auto pay
+</span>    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># OK
+</span>    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># save
+</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># close
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fBankAccount_Create():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'- BankAccount_Create'</span>)
+
+    <span class="cmt"># bank accounts
+</span>    <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"b"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># new
+</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># name 
+</span>    <span class="skw">type</span>(<span class="str">"New Bank"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># applies: costs only
+</span>    <span class="skw">type</span>(<span class="str">"c"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># type
+</span>    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># description
+</span>    <span class="skw">type</span>(<span class="str">"new bank account"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># pfa
+</span>    <span class="skw">type</span>(<span class="str">"pfa - new bank"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># pta
+</span>    <span class="skw">type</span>(<span class="str">"pta - new bank"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># dep
+</span>    <span class="skw">type</span>(<span class="str">"dep - new bank"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># wit
+</span>    <span class="skw">type</span>(<span class="str">"wit - new bank"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># bal
+</span>    <span class="skw">type</span>(<span class="str">"bal - new bank"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># number
+</span>    <span class="skw">type</span>(<span class="str">"9000"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># OK
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="cmt"># Done
+</span>    myTools.pressTAB(<span class="dig">5</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fFundsAccouts_Setup():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"funds account"</span>)
+    logging.debug(<span class="str">'FundsAccount_Setup'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    fBankAccount_Create()
+
+    <span class="cmt"># open client list
+</span>    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    clientList = [<span class="str">"Hadley"</span>,<span class="str">"Halifax"</span>]
+    count = <span class="dig">0</span>
+
+    <span class="kw">for</span> oneCli <span class="kw">in</span> clientList:
+        count += <span class="dig">1</span>
+        fFundsAccount_Create(oneCli,count)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

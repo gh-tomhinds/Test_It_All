@@ -1,0 +1,1531 @@
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+							Selection Criteria
+
+No filters applied
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+177		1/28/2013  Abington											     101.01
+			   12345									   CJM		      97.12
+
+178		1/28/2013  Acton											     102.01
+			   12346									   JR		      98.09
+
+179		1/28/2013  Acushnet											     103.01
+			   12347									   SS		      99.05
+
+180		1/28/2013  Adams											     104.01
+			   12348									   SR		     100.01
+
+181		1/28/2013  Agawam											     105.01
+			   12349									   TH		     100.97
+
+182		1/28/2013  Andover											     109.01
+			   12353									   SR		     104.82
+
+183		1/28/2013  Ashfield											     114.01
+			   12358									   SR		     109.62
+
+184		1/28/2013  Avon 											     119.01
+			   12363									   SR		     114.43
+
+185		1/28/2013  Bedford											     124.01
+			   12368									   SR		     119.24
+
+186		1/28/2013  Berlin											     129.01
+			   12372									   SR		     124.05
+
+187		1/28/2013  Blandford											     134.01
+			   12377									   SR		       7.37
+			   12588									   TH		      68.77
+
+188		1/28/2013  Boxford											     139.01
+			   12593									   TH		     133.66
+
+189		1/28/2013  Brimfield											     144.01
+			   12387									   SR		     138.47
+
+190		1/28/2013  Burlington											     149.01
+			   12392									   SR		     143.28
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+191		1/28/2013  Charlemont											     154.01
+			   12608									   TH		     148.09
+
+192		1/28/2013  Cheshire											     159.01
+			   12401									   SR		     152.89
+
+193		1/28/2013  Clarksburg											     164.01
+			   12406									   SR		     157.70
+
+194		1/28/2013  Conway											     169.01
+			   12411									   SR		     162.51
+
+195		1/28/2013  Dedham											     174.01
+			   12416									   SR		     167.32
+
+199		1/28/2013  Easton											     189.01
+			   12430									   SR		     181.74
+
+200		1/28/2013  Everett											     194.01
+			   12648									   TH		     186.55
+
+201		1/28/2013  Florida											     199.01
+			   12440									   SR		     191.36
+
+203		1/28/2013  Gosnold											     209.01
+			   12663									   TH		     200.97
+
+204		1/28/2013  Greenfield											     214.01
+			   12454									   SR		     205.78
+
+205		1/28/2013  Hamilton											     219.01
+			   12459									   SR		     210.59
+
+206		1/28/2013  Hardwick											     224.01
+			   12464									   SR		     215.39
+
+207		1/28/2013  Hawley											     229.01
+			   12976									   TH		     118.11
+
+208		1/28/2013  Holden											     234.01
+			   12473									   SR		     225.01
+
+209		1/28/2013  Hopkinton											     239.01
+			   12478									   SR		     229.82
+
+210		1/28/2013  Ipswich											     244.01
+			   12483									   SR		     234.62
+
+212		1/28/2013  Leverett											     254.01
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   12492									   SR		     244.24
+
+213		1/28/2013  Longmeadow											     259.01
+			   12497									   SR		     198.20
+			   13005									   TH		      50.85
+
+214		1/28/2013  Lynnfield											     264.01
+			   13010									   TH		     253.85
+
+215		1/28/2013  Marion											     269.01
+			   12507									   SR		     258.66
+
+216		1/28/2013  Maynard											     274.01
+			   12512									   SR		     263.47
+
+217		1/28/2013  Mendon											     279.01
+			   12516									   SR		     268.28
+
+218		1/28/2013  Middleton											     284.01
+			   12521									   SR		     273.09
+
+219		1/28/2013  Milton											     289.01
+			   12526									   SR		     229.00
+			   13035									   TH		      48.90
+
+220		1/28/2013  Montgomery											     294.01
+			   12531									   SR		     282.70
+
+221		1/28/2013  Needham											     299.01
+			   12536									   SR		     125.03
+
+222		1/28/2013  New Salem											     304.01
+			   13049									   TH		     292.32
+
+224		1/28/2013  North.Andover										     310.01
+			   12546									   TH		     238.92
+
+225		1/28/2013  Northampton											     314.01
+			   12550									   SR		     113.99
+			   13059									   TH		     168.27
+
+226		1/28/2013  Norwell											     319.01
+			   13064									   TH		     306.74
+
+227		1/28/2013  Orleans											     324.01
+			   12751									   SR		     311.55
+
+228		1/28/2013  Peabody											     329.01
+			   12553									   CJM		     296.85
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   12755									   JR		       4.07
+			   12755									   SR		      15.44
+
+229		1/28/2013  Petersham											     334.01
+			   12760									   SR		     321.17
+
+230		1/28/2013  Plymouth											     339.01
+			   12765									   SR		     325.97
+
+231		1/28/2013  Randolph											     344.01
+			   12770									   SR		     228.89
+
+232		1/28/2013  Richmond											     349.01
+			   12775									   SR		     335.59
+
+233		1/28/2013  Rowley											     354.01
+			   12779									   SR		     124.97
+			   13097									   TH		     215.42
+
+234		1/28/2013  Salisbury											     359.01
+			   13102									   TH		     345.20
+
+235		1/28/2013  Scituate											     364.01
+			   12789									   SR		     350.01
+
+236		1/28/2013  Sherborn											     369.01
+			   12794									   SR		     354.82
+
+238		1/28/2013  Southwick											     379.01
+			   12803									   SR		     218.18
+
+239		1/28/2013  Stoneham											     384.01
+			   12808									   SR		     369.24
+
+240		1/28/2013  Sunderland											     389.01
+			   12813									   SR		     329.89
+			   13131									   TH		      44.15
+
+241		1/28/2013  Templeton											     394.01
+			   12818									   SR		     378.86
+
+242		1/28/2013  Townsend											     399.01
+			   12823									   SR		     224.82
+
+243		1/28/2013  Uxbridge											     404.01
+			   12827									   SR		     388.47
+
+244		1/28/2013  Ware 											     409.01
+			   12832									   SR		     124.91
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   13149									   TH		     268.36
+
+245		1/28/2013  Watertown											     414.01
+			   13154									   TH		      95.21
+
+246		1/28/2013  Wendell											     419.01
+			   12842									   SR		     402.89
+
+247		1/28/2013  West.Boylston										     421.01
+			   12844									   CJM		     347.62
+			   13161									   JR		      32.17
+
+249		1/28/2013  West.Newbury 										     424.01
+			   12847									   SR		     407.70
+
+250		1/28/2013  Westfield											     429.01
+			   13168									   TH		     359.63
+
+251		1/28/2013  Westport											     434.01
+			   12856									   SR		     417.32
+
+252		1/28/2013  Wilbraham											     439.01
+			   12861									   SR		     397.35
+			   13507									   TH		      24.78
+
+253		1/28/2013  Winchester											     444.01
+			   12866									   SR		     329.73
+			   13512									   TH		      97.20
+
+254		1/28/2013  Worthington											     449.01
+			   12871									   SR		     431.74
+
+256		1/28/2013  East.Brookfield										      11.01
+			   12639									   CJM		       5.99
+
+260		1/28/2013  West.Bridgewater										      13.01
+			   12845									   JR		      12.51
+
+309		1/28/2013  Hadley											      31.01
+			   12457									   JR		      29.82
+
+310		1/28/2013  Halifax											      32.01
+			   12458									   SS		      30.78
+
+312		2/27/2013  Agawam											      25.01
+			   12559									   CJM		      16.92
+
+326		2/27/2013  East.Longmeadow										     120.47
+			   12640									   JR		     115.29
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+
+345		2/27/2013  Palmer											      25.01
+			   12753									   JR		      24.05
+
+353		2/27/2013  Warren											      25.01
+			   12834									   CJM		      24.05
+
+358		2/27/2013  West.Brookfield										      25.01
+			   12846									   SS		      24.05
+
+362		2/27/2013  West.Tisbury 										     422.01
+			   12849									   JR		     405.78
+
+368		2/27/2013  Adams											      25.01
+			   12558									   TH		      16.94
+
+370		2/27/2013  Becket											      25.01
+			   12577									   SR		      23.79
+
+373		2/27/2013  Cheshire											      25.01
+			   12613									   TH		      21.90
+
+375		2/27/2013  Dalton											      25.01
+			   12625									   JR		      22.23
+
+377		2/27/2013  Great Barrington										      25.01
+			   12667									   SR		      22.64
+
+381		2/27/2013  Peru 											      25.01
+			   12759									   SS		      24.05
+
+403		2/27/2013  Williamstown 										      25.01
+			   12863									   CJM		      24.05
+
+453		2/27/2013  Clinton											      25.01
+			   12619									   CJM		      24.05
+
+464		2/27/2013  Rutland											      25.01
+			   12782									   JR		      24.05
+
+470		2/27/2013  Sturbridge											      25.01
+			   12811									   JR		      24.05
+
+480		2/27/2013  Framingham											      25.01
+			   12655									   JR		      23.10
+
+483		2/27/2013  Acton											      25.01
+			   12556									   SS		      20.62
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+487		2/27/2013  Bolton											      25.01
+			   12589									   CJM		      22.47
+
+501		2/27/2013  Sherborn											      25.01
+			   12794									   SR		      24.05
+
+521		2/27/2013  Wakefield											      25.01
+			   12828									   TH		      24.05
+
+534		2/27/2013  Gloucester											      25.01
+			   12661									   SS		      20.29
+
+563		2/27/2013  Westwood											      25.01
+			   12857									   TH		      24.05
+
+575		2/27/2013  Braintree											      25.01
+			   12595									   JR		      20.29
+
+580		2/27/2013  Carver											      25.01
+			   12607									   SR		      19.80
+
+582		2/27/2013  Duxbury											      25.01
+			   12637									   SR		      24.05
+
+584		2/27/2013  Easton											      25.01
+			   12643									   TH		      23.39
+
+591		2/27/2013  Abington											      25.01
+			   12555									   JR		      22.03
+
+594		2/27/2013  Plymouth											      25.01
+			   12765									   SR		      24.05
+
+599		2/27/2013  Rockland											      25.01
+			   12776									   CJM		      24.05
+
+604		2/27/2013  Brookline											      25.01
+			   12601									   SS		      22.64
+
+612		2/27/2013  Wellesley											      25.01
+			   12840									   JR		      24.05
+
+620		2/27/2013  Oak Bluffs											      25.01
+			   12748									   CJM		      24.05
+
+634		2/27/2013  Attleboro											      25.01
+			   12571									   SS		      24.05
+
+648		2/27/2013  Acushnet											      25.01
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   12557									   SR		      19.24
+
+652		2/27/2013  Raynham											      25.01
+			   12771									   TH		      24.05
+
+657		2/27/2013  Taunton											      25.01
+			   12817									   SS		      24.05
+
+664		2/28/2013  Abington											     101.02
+			   12345									   CJM		      24.32
+			   12555									   JR		      72.82
+
+665		2/28/2013  Acton											     102.02
+			   12346									   JR		      98.10
+
+666		2/28/2013  Acushnet											     103.02
+			   12347									   SS		      99.06
+
+667		2/28/2013  Adams											     104.02
+			   12348									   SR		     100.02
+
+668		2/28/2013  Agawam											     105.02
+			   12349									   TH		     100.98
+
+669		2/28/2013  Amherst											     108.02
+			   12352									   SS		     103.86
+
+670		2/28/2013  Ashby											     113.02
+			   12357									   SS		     108.67
+
+671		2/28/2013  Auburn											     118.02
+			   12362									   SS		     113.48
+
+672		2/28/2013  Becket											     123.02
+			   12367									   SS		      60.04
+			   12577									   SR		      58.25
+
+673		2/28/2013  Berkley											     128.02
+			   12582									   SR		     123.10
+
+674		2/28/2013  Blackstone											     133.02
+			   12376									   SS		     127.90
+
+675		2/28/2013  Boxborough											     138.02
+			   12381									   SS		     132.71
+
+676		2/28/2013  Bridgewater											     143.02
+			   12597									   SR		     137.52
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+677		2/28/2013  Buckland											     148.02
+			   12391									   SS		     142.33
+
+678		2/28/2013  Carver											     153.02
+			   12395									   SS		     147.13
+
+679		2/28/2013  Chelsea											     158.02
+			   12400									   SS		     151.94
+
+680		2/28/2013  Chilmark											     163.02
+			   12405									   SS		     156.75
+
+681		2/28/2013  Concord											     168.02
+			   12410									   SS		     161.56
+
+682		2/28/2013  Dartmouth											     173.02
+			   12415									   SS		     166.37
+
+684		2/28/2013  Duxbury											     183.02
+			   12637									   SR		     175.98
+
+687		2/28/2013  Easthampton											     188.02
+			   12429									   SS		     135.30
+
+688		2/28/2013  Essex											     193.02
+			   12434									   SS		     185.60
+
+689		2/28/2013  Fitchburg											     198.02
+			   12652									   SR		     190.40
+
+691		2/28/2013  Goshen											     208.02
+			   12448									   SS		     200.02
+
+692		2/28/2013  Great Barrington										     213.02
+			   12453									   SS		     204.83
+
+693		2/28/2013  Halifax											     218.02
+			   12458									   SS		     209.64
+
+694		2/28/2013  Hanson											     223.02
+			   12463									   SS		     214.44
+
+696		2/28/2013  Holbrook											     233.02
+			   12472									   SS		     123.76
+			   12980									   SR		      99.77
+
+697		2/28/2013  Hopedale											     238.02
+			   12985									   SR		      95.22
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+698		2/28/2013  Huntington											     243.02
+			   12482									   SS		     233.67
+
+699		2/28/2013  Lanesborough 										     248.02
+			   12487									   SS		     238.48
+
+700		2/28/2013  Leominster											     253.02
+			   12999									   SR		     243.29
+
+701		2/28/2013  Littleton											     258.02
+			   12496									   SS		     248.10
+
+702		2/28/2013  Lynn 											     263.02
+			   12501									   SS		     252.90
+
+703		2/28/2013  Marblehead											     268.02
+			   12506									   SS		     257.71
+
+704		2/28/2013  Mattapoisett 										     273.02
+			   12511									   SS		     262.52
+
+705		2/28/2013  Melrose											     278.02
+			   12515									   SS		     224.80
+			   13024									   SR		      41.58
+
+706		2/28/2013  Middlefield											     283.02
+			   12520									   SS		     272.14
+
+707		2/28/2013  Millville											     288.02
+			   12525									   SS		     122.73
+			   13034									   SR		     153.69
+
+708		2/28/2013  Monterey											     293.02
+			   13039									   SR		     281.75
+
+709		2/28/2013  Natick											     298.02
+			   12535									   SS		     286.56
+
+710		2/28/2013  New Marlborough										     303.02
+			   12539									   SS		     268.93
+			   13048									   SR		      22.43
+
+711		2/28/2013  Norfolk											     308.02
+			   13053									   SR		     296.17
+
+713		2/28/2013  North.Andover										     310.02
+			   13055									   CJM		     298.10
+
+714		2/28/2013  North.Reading										     313.02
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   12549									   SS		     300.98
+
+715		2/28/2013  Norton											     318.02
+			   12745									   SS		     305.79
+
+716		2/28/2013  Orange											     323.02
+			   12750									   SS		     282.57
+			   13068									   SR		      28.03
+
+717		2/28/2013  Paxton											     328.02
+			   12754									   SS		     315.40
+
+718		2/28/2013  Peru 											     333.02
+			   12759									   SS		     199.67
+			   13077									   SR		     120.54
+
+719		2/28/2013  Plainville											     338.02
+			   12764									   SS		     325.02
+
+720		2/28/2013  Quincy											     343.02
+			   12769									   SS		     123.64
+			   13087									   SR		     206.18
+
+721		2/28/2013  Revere											     348.02
+			   13092									   SR		     334.63
+
+722		2/28/2013  Rowe 											     353.02
+			   12778									   SS		     339.44
+
+723		2/28/2013  Salem											     358.02
+			   12783									   SS		     344.25
+
+724		2/28/2013  Savoy											     363.02
+			   13106									   SR		     349.06
+
+725		2/28/2013  Shelburne											     368.02
+			   12793									   SS		     353.87
+
+726		2/28/2013  Somerset											     373.02
+			   12798									   SS		     358.67
+
+727		2/28/2013  Southbridge											     378.02
+			   12802									   SS		     363.48
+
+728		2/28/2013  Stockbridge											     383.02
+			   12807									   SS		     368.29
+
+729		2/28/2013  Sudbury											     388.02
+			   12812									   SS		     224.58
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   13130									   SR		     121.30
+
+730		2/28/2013  Taunton											     393.02
+			   12817									   SS		     377.91
+
+731		2/28/2013  Topsfield											     398.02
+			   12822									   SS		     121.42
+			   13140									   SR		     261.29
+
+732		2/28/2013  Upton											     403.02
+			   13144									   SR		     387.52
+
+733		2/28/2013  Waltham											     408.02
+			   12831									   SS		     392.33
+
+734		2/28/2013  Washington											     413.02
+			   12836									   SS		     397.13
+
+735		2/28/2013  Wellfleet											     418.02
+			   13158									   SR		     401.94
+
+736		2/28/2013  West.Boylston										     421.02
+			   13161									   JR		     157.44
+
+738		2/28/2013  West.Brookfield										     423.02
+			   12846									   SS		     406.75
+
+739		2/28/2013  Westborough											     428.02
+			   12850									   SS		     411.56
+
+740		2/28/2013  Weston											     433.02
+			   12855									   SS		     416.36
+
+741		2/28/2013  Whitman											     438.02
+			   12860									   SS		     421.17
+
+742		2/28/2013  Winchendon											     443.02
+			   12865									   SS		     224.47
+			   13511									   SR		     121.24
+
+743		2/28/2013  Worcester											     448.02
+			   12870									   SS		     430.79
+
+747		2/28/2013  North.Andover										      12.02
+			   13055									   CJM		      11.56
+
+749		2/28/2013  West.Bridgewater										      13.02
+			   13162									   SS		      12.52
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+798		2/28/2013  Hadley											      31.02
+			   12457									   JR		      29.83
+
+799		2/28/2013  Halifax											      32.02
+			   12458									   SS		      30.79
+
+826		3/27/2013  Holyoke											      23.06
+			   12984									   SS		      20.48
+
+834		3/27/2013  Monson											      22.21
+			   13037									   JR		      18.92
+
+839		3/27/2013  Russell											      25.02
+			   13099									   JR		      24.06
+
+852		3/27/2013  West.Bridgewater										      25.02
+			   13162									   SS		      24.06
+
+854		3/27/2013  West.Tisbury 										     422.02
+			   13166									   SS		     405.79
+
+856		3/27/2013  Springfield											      25.01
+			   13123									   JR		      24.05
+
+869		3/27/2013  Lanesborough 										      25.02
+			   12995									   SR		      24.02
+
+874		3/27/2013  New Marlborough										      23.82
+			   13048									   SR		      22.90
+
+880		3/27/2013  North.Reading										      68.01
+			   13058									   SR		      65.39
+
+887		3/27/2013  Savoy											      25.01
+			   13106									   SR		      24.05
+
+906		3/27/2013  Heath											      25.02
+			   12977									   CJM		      20.49
+
+908		3/27/2013  Monroe											      25.02
+			   13036									   CJM		      22.82
+
+918		3/27/2013  Shelburne											      25.02
+			   13111									   SR		      24.06
+
+928		3/27/2013  Harvard											      25.01
+			   12972									   CJM		      24.05
+
+934		3/27/2013  Pepperell											      25.02
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   13076									   SS		      24.06
+
+954		3/27/2013  New Braintree										      25.02
+			   13047									   SS		      24.06
+
+956		3/27/2013  Northborough 										      25.01
+			   13060									   CJM		      24.05
+
+959		3/27/2013  Oxford											      25.02
+			   13070									   JR		      24.06
+
+964		3/27/2013  Spencer											      25.02
+			   13122									   CJM		      24.06
+
+968		3/27/2013  Webster											      25.02
+			   13156									   JR		      24.06
+
+971		3/27/2013  Westborough											      25.02
+			   13167									   SR		      24.06
+
+986		3/27/2013  Holliston											      25.02
+			   12983									   JR		      21.62
+
+993		3/27/2013  Mendon											      24.74
+			   13025									   TH		      23.56
+
+995		3/27/2013  Milford											      20.90
+			   13031									   CJM		      16.53
+
+1011		3/27/2013  Lowell											      25.02
+			   13006									   CJM		      24.06
+
+1019		3/27/2013  Saugus											      25.02
+			   13105									   SS		      24.06
+
+1022		3/27/2013  Nahant											      25.02
+			   13042									   JR		      24.06
+
+1027		3/27/2013  Hamilton											      21.50
+			   12966									   TH		      17.62
+
+1031		3/27/2013  Manchester-by-the-Sea									      25.02
+			   13012									   JR		      23.60
+
+1034		3/27/2013  Middleton											      25.02
+			   13030									   TH		      21.84
+
+1043		3/27/2013  Topsfield											      25.02
+			   13140									   SR		      24.06
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+
+1052		3/27/2013  Hingham											      25.01
+			   12978									   JR		      24.05
+
+1054		3/27/2013  Hull 											      25.02
+			   12989									   SS		      24.06
+
+1056		3/27/2013  Mansfield											      24.02
+			   13013									   SS		      22.23
+
+1062		3/27/2013  Norfolk											      25.02
+			   13053									   SR		      24.06
+
+1075		3/27/2013  Melrose											      25.02
+			   13024									   SR		      24.06
+
+1085		3/27/2013  Halifax											      25.02
+			   12965									   SR		      21.69
+
+1097		3/27/2013  Randolph											      25.02
+			   13088									   TH		      24.06
+
+1100		3/27/2013  Lexington											      23.44
+			   13001									   CJM		      21.17
+
+1114		3/27/2013  Nantucket											      25.01
+			   13043									   SS		      24.05
+
+1119		3/27/2013  Wareham											      25.02
+			   13150									   CJM		      24.06
+
+1137		3/27/2013  Mattapoisett 										      21.09
+			   13019									   SR		       0.00
+
+1145		3/27/2013  Rochester											      25.02
+			   13093									   CJM		      24.06
+
+1148		3/27/2013  Swansea											      25.02
+			   13134									   SS		      24.06
+
+1150		3/27/2013  Westport											      25.02
+			   13173									   TH		      24.06
+
+1156		3/28/2013  Abington											     101.03
+			   12555									   JR		      97.14
+
+1157		3/28/2013  Acton											     102.03
+			   12346									   JR		      33.88
+			   12556									   SS		      64.22
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+
+1158		3/28/2013  Acushnet											     103.03
+			   12347									   SS		      99.07
+
+1159		3/28/2013  Adams											     104.03
+			   12348									   SR		     100.03
+
+1160		3/28/2013  Agawam											     105.03
+			   12349									   TH		     100.99
+
+1161		3/28/2013  Amesbury											     107.03
+			   12351									   JR		     102.91
+
+1162		3/28/2013  Ashburnham											     112.03
+			   12356									   JR		     107.72
+
+1163		3/28/2013  Attleboro											     117.03
+			   12571									   SS		     112.53
+
+1164		3/28/2013  Barre											     122.03
+			   12366									   JR		      45.02
+
+1165		3/28/2013  Belmont											     127.03
+			   12370									   JR		     122.14
+
+1166		3/28/2013  Billerica											     132.03
+			   12586									   SS		     126.95
+
+1167		3/28/2013  Bourne											     137.03
+			   12380									   JR		     131.76
+
+1168		3/28/2013  Brewster											     142.03
+			   12385									   JR		     136.57
+
+1169		3/28/2013  Brookline											     147.03
+			   12390									   JR		     141.38
+
+1170		3/28/2013  Carlisle											     152.03
+			   12394									   JR		     146.18
+
+1171		3/28/2013  Chelmsford											     157.03
+			   12399									   JR		     150.99
+
+1172		3/28/2013  Chicopee											     162.03
+			   12404									   JR		     155.80
+
+1173		3/28/2013  Colrain											     167.03
+			   12409									   JR		     126.08
+			   12621									   SS		      33.99
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+
+1174		3/28/2013  Danvers											     172.03
+			   12626									   SS		     165.41
+
+1176		3/28/2013  Dunstable											     182.03
+			   12423									   JR		     175.03
+
+1179		3/28/2013  Eastham											     187.03
+			   12641									   SS		     179.84
+
+1180		3/28/2013  Erving											     192.03
+			   12433									   JR		     184.65
+
+1181		3/28/2013  Falmouth											     197.03
+			   12438									   JR		     189.45
+
+1183		3/28/2013  Gloucester											     207.03
+			   12447									   JR		     199.07
+
+1184		3/28/2013  Granville											     212.03
+			   12452									   JR		     203.87
+
+1185		3/28/2013  Hadley											     217.03
+			   12457									   JR		     208.68
+
+1186		3/28/2013  Hanover											     222.03
+			   12462									   JR		     126.02
+			   12969									   SS		      86.45
+
+1188		3/28/2013  Hinsdale											     232.03
+			   12471									   JR		     223.11
+
+1189		3/28/2013  Holyoke											     237.03
+			   12476									   JR		     227.91
+
+1190		3/28/2013  Hull 											     242.03
+			   12989									   SS		     232.72
+
+1191		3/28/2013  Lancaster											     247.03
+			   12486									   JR		     237.53
+
+1192		3/28/2013  Lenox											     252.03
+			   12490									   JR		     242.34
+
+1193		3/28/2013  Lincoln											     257.03
+			   12495									   JR		     247.14
+
+1194		3/28/2013  Lunenburg											     262.03
+			   12500									   JR		     251.95
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+
+1195		3/28/2013  Mansfield											     267.03
+			   12505									   JR		     224.55
+			   13013									   SS		      32.21
+
+1196		3/28/2013  Mashpee											     272.03
+			   12510									   JR		     261.57
+
+1197		3/28/2013  Medway											     277.03
+			   12514									   JR		     121.40
+			   13023									   SS		     143.99
+
+1198		3/28/2013  Middleborough										     282.03
+			   13028									   SS		     271.18
+
+1199		3/28/2013  Millis											     287.03
+			   12524									   JR		     275.99
+
+1200		3/28/2013  Montague											     292.03
+			   12529									   JR		     280.80
+
+1201		3/28/2013  Nantucket											     297.03
+			   13043									   SS		     285.60
+
+1202		3/28/2013  New Braintree										     302.03
+			   13047									   SS		     290.41
+
+1203		3/28/2013  Newton											     307.03
+			   13052									   SS		     295.22
+
+1206		3/28/2013  North.Brookfield										     312.03
+			   13057									   SS		     300.03
+
+1207		3/28/2013  Northfield											     317.03
+			   13062									   SS		     304.84
+
+1208		3/28/2013  Oakham											     322.03
+			   12749									   JR		     224.44
+			   13067									   SS		      74.08
+
+1209		3/28/2013  Palmer											     327.03
+			   12753									   JR		     314.45
+
+1210		3/28/2013  Pepperell											     332.03
+			   13076									   SS		     319.26
+
+1211		3/28/2013  Plainfield											     337.03
+			   13081									   SS		     324.07
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+1212		3/28/2013  Provincetown 										     342.03
+			   12768									   JR		     328.87
+
+1213		3/28/2013  Rehoboth											     347.03
+			   13091									   SS		     333.68
+
+1214		3/28/2013  Rockport											     352.03
+			   13095									   SS		     338.49
+
+1215		3/28/2013  Rutland											     357.03
+			   12782									   JR		      13.15
+			   13100									   SS		     330.14
+
+1216		3/28/2013  Saugus											     362.03
+			   13105									   SS		     348.11
+
+1217		3/28/2013  Sheffield											     367.03
+			   12792									   JR		     192.17
+			   13110									   SS		     160.75
+
+1218		3/28/2013  Shutesbury											     372.03
+			   12797									   JR		     126.46
+			   13115									   SS		     231.26
+
+1219		3/28/2013  Southborough 										     377.03
+			   12801									   JR		     143.93
+			   13119									   SS		     218.60
+
+1220		3/28/2013  Sterling											     382.03
+			   12806									   JR		     367.34
+
+1221		3/28/2013  Sturbridge											     387.03
+			   13129									   SS		     372.14
+
+1222		3/28/2013  Swansea											     392.03
+			   13134									   SS		     376.95
+
+1223		3/28/2013  Tolland											     397.03
+			   12821									   JR		     381.76
+
+1224		3/28/2013  Tyringham											     402.03
+			   13143									   SS		     386.57
+
+1225		3/28/2013  Walpole											     407.03
+			   13825									   SS		       0.00
+
+1226		3/28/2013  Warwick											     412.03
+			   12835									   JR		      66.20
+			   13152									   SS		     329.98
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+
+1227		3/28/2013  Wellesley											     417.03
+			   13157									   SS		     400.99
+
+1230		3/28/2013  West.Tisbury 										     427.03
+			   13166									   SS		     410.61
+
+1231		3/28/2013  Westminster											     432.03
+			   12854									   JR		     247.89
+			   13171									   SS		     135.74
+
+1232		3/28/2013  Whately											     437.03
+			   12859									   JR		     303.62
+
+1233		3/28/2013  Wilmington											     442.03
+			   12864									   JR		     121.22
+			   13510									   SS		     303.81
+
+1234		3/28/2013  Woburn											     447.03
+			   13515									   SS		     429.84
+
+1289		3/28/2013  Hadley											      31.03
+			   12457									   JR		      29.84
+
+1290		3/28/2013  Halifax											      32.03
+			   12458									   SS		      30.80
+
+1356		4/27/2013  Wilbraham											      25.03
+			   13507									   TH		      24.07
+
+1358		4/27/2013  Williamsburg 										      25.02
+			   13508									   CJM		      24.06
+
+1409		4/27/2013  Windsor											      25.03
+			   13513									   CJM		      24.07
+
+1533		4/27/2013  Woburn											      25.01
+			   13515									   SS		       7.25
+
+1536		4/27/2013  Andover											      25.03
+			   13186									   SR		       0.00
+
+1625		4/27/2013  Winthrop											      25.02
+			   13514									   JR		      24.06
+
+1700		4/27/2013  Yarmouth											      25.03
+			   13519									   JR		      24.07
+
+1737		4/28/2013  Abington											     101.04
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   12555									   JR		      97.15
+
+1738		4/28/2013  Acton											     102.04
+			   12556									   SS		      33.93
+
+1739		4/28/2013  Acushnet											     103.04
+			   12347									   SS		      31.56
+			   12557									   SR		      67.52
+
+1740		4/28/2013  Adams											     104.04
+			   12348									   SR		     100.04
+
+1741		4/28/2013  Agawam											     105.04
+			   12349									   TH		     101.00
+
+1742		4/28/2013  Alford											     106.04
+			   12560									   JR		     101.96
+
+1743		4/28/2013  Arlington											     111.04
+			   12355									   CJM		     106.77
+
+1744		4/28/2013  Athol											     116.04
+			   12360									   CJM		     111.58
+
+1745		4/28/2013  Barnstable											     121.04
+			   12575									   JR		     116.38
+
+1746		4/28/2013  Bellingham											     126.04
+			   12369									   CJM		     121.19
+
+1747		4/28/2013  Beverly											     131.04
+			   12374									   CJM		     126.00
+
+1748		4/28/2013  Boston											     136.04
+			   12379									   CJM		     130.81
+
+1749		4/28/2013  Braintree											     141.04
+			   12384									   CJM		     135.61
+
+1750		4/28/2013  Brookfield											     146.04
+			   12389									   CJM		     140.42
+
+1751		4/28/2013  Canton											     151.04
+			   12393									   CJM		     145.23
+
+1752		4/28/2013  Chatham											     156.04
+			   12398									   CJM		     121.39
+			   12610									   JR		      28.12
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+1753		4/28/2013  Chesterfield 										     161.04
+			   12615									   JR		     154.85
+
+1754		4/28/2013  Cohasset											     166.04
+			   12408									   CJM		     159.65
+
+1755		4/28/2013  Dalton											     171.04
+			   12413									   CJM		     164.46
+
+1757		4/28/2013  Dudley											     181.04
+			   12422									   CJM		     174.08
+
+1760		4/28/2013  East.Longmeadow										     186.04
+			   12427									   CJM		     129.35
+
+1761		4/28/2013  Egremont											     191.04
+			   12432									   CJM		     183.70
+
+1762		4/28/2013  Fall River											     196.04
+			   12437									   CJM		     188.50
+
+1764		4/28/2013  Gill 											     206.04
+			   12446									   CJM		     198.12
+
+1765		4/28/2013  Granby											     211.04
+			   12451									   CJM		     121.33
+			   12665									   JR		      81.08
+
+1766		4/28/2013  Groveland											     216.04
+			   12963									   JR		     207.73
+
+1767		4/28/2013  Hancock											     221.04
+			   12461									   CJM		     212.54
+
+1769		4/28/2013  Hingham											     231.04
+			   12978									   JR		     222.15
+
+1770		4/28/2013  Holliston											     236.04
+			   12475									   CJM		     226.96
+
+1771		4/28/2013  Hudson											     241.04
+			   12480									   CJM		     231.77
+
+1772		4/28/2013  Lakeville											     246.04
+			   12485									   CJM		     236.58
+
+1773		4/28/2013  Leicester											     251.04
+			   12489									   CJM		     241.38
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+1774		4/28/2013  Leyden											     256.04
+			   12494									   CJM		     189.55
+			   13002									   JR		      55.10
+
+1775		4/28/2013  Ludlow											     261.04
+			   12499									   CJM		     251.00
+
+1776		4/28/2013  Manchester-by-the-Sea									     266.04
+			   12504									   CJM		     121.27
+			   13012									   JR		     134.02
+
+1777		4/28/2013  Marshfield											     271.04
+			   13017									   JR		     260.62
+
+1778		4/28/2013  Medford											     276.04
+			   12513									   CJM		     265.42
+
+1779		4/28/2013  Methuen											     281.04
+			   12518									   CJM		     270.23
+
+1780		4/28/2013  Millbury											     286.04
+			   13032									   JR		     275.04
+
+1781		4/28/2013  Monson											     291.04
+			   12528									   CJM		     279.85
+
+1783		4/28/2013  New Bedford											     301.04
+			   13046									   JR		      75.52
+
+1784		4/28/2013  Newburyport											     306.04
+			   13051									   JR		     294.27
+
+1792		4/28/2013  Pittsfield											     336.04
+			   13080									   JR		     323.11
+
+1793		4/28/2013  Princeton											     341.04
+			   13085									   JR		     327.92
+
+1794		4/28/2013  Reading											     346.04
+			   13090									   JR		     332.73
+
+1795		4/28/2013  Rockland											     351.04
+			   13094									   JR		     337.54
+
+1796		4/28/2013  Russell											     356.04
+			   12781									   CJM		     135.06
+			   13099									   JR		     207.29
+
+1797		4/28/2013  Sandwich											     361.04
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   13104									   JR		     347.15
+
+1798		4/28/2013  Sharon											     366.04
+			   12791									   CJM		      47.10
+			   13109									   JR		     304.87
+
+1799		4/28/2013  Shrewsbury											     371.04
+			   12796									   CJM		     356.77
+
+1800		4/28/2013  Southampton											     376.04
+			   13118									   JR		     361.57
+
+1801		4/28/2013  Springfield											     381.04
+			   13123									   JR		     366.39
+
+1802		4/28/2013  Stow 											     386.04
+			   12810									   CJM		     371.19
+
+1803		4/28/2013  Swampscott											     391.04
+			   13133									   JR		     376.00
+
+1804		4/28/2013  Tisbury											     396.04
+			   13138									   JR		     380.81
+
+1805		4/28/2013  Tyngsborough 										     401.04
+			   12824									   CJM		      49.59
+			   13142									   JR		     336.03
+
+1806		4/28/2013  Wales											     406.04
+			   13147									   JR		     390.42
+
+1807		4/28/2013  Warren											     411.04
+			   12834									   CJM		     163.99
+			   13151									   JR		     231.24
+
+1808		4/28/2013  Webster											     416.04
+			   13156									   JR		     400.04
+
+1811		4/28/2013  West.Stockbridge										     426.04
+			   12848									   CJM		     409.65
+
+1812		4/28/2013  Westhampton											     431.04
+			   12853									   CJM		      13.79
+			   13170									   JR		     146.83
+
+1813		4/28/2013  Weymouth											     436.04
+			   13175									   JR		     419.27
+
+1814		4/28/2013  Williamstown 										     441.04
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   12863									   CJM		     424.08
+
+1815		4/28/2013  Winthrop											     446.04
+			   13514									   JR		     428.89
+
+1816		4/28/2013  Yarmouth											     451.04
+			   13519									   JR		     433.69
+
+1870		4/28/2013  Hadley											      31.04
+			   12457									   JR		      29.85
+
+1871		4/28/2013  Halifax											      32.04
+			   12458									   SS		      30.81
+
+1878		5/27/2013  Amherst											      25.04
+			   13527									   SS		       0.00
+
+2325		5/28/2013  Abington											     101.05
+			   12555									   JR		      97.16
+
+2327		5/28/2013  Acushnet											     103.05
+			   12557									   SR		      99.09
+
+2328		5/28/2013  Adams											     104.05
+			   12348									   SR		     100.05
+
+2329		5/28/2013  Agawam											     105.05
+			   12349									   TH		      19.50
+			   12559									   CJM		      81.51
+
+2330		5/28/2013  Aquinnah											     110.05
+			   12564									   CJM		     105.82
+
+2331		5/28/2013  Ashland											     115.05
+			   12359									   TH		     110.62
+
+2332		5/28/2013  Ayer 											     120.05
+			   12364									   TH		     115.43
+
+2333		5/28/2013  Belchertown											     125.05
+			   12579									   CJM		       9.17
+
+2334		5/28/2013  Bernardston											     130.05
+			   12373									   TH		     125.05
+
+2335		5/28/2013  Bolton											     135.05
+			   12378									   TH		     129.85
+
+2336		5/28/2013  Boylston											     140.05
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   12383									   TH		     134.66
+
+2337		5/28/2013  Brockton											     145.05
+			   12388									   TH		     121.26
+			   12599									   CJM		      17.69
+
+2338		5/28/2013  Cambridge											     150.05
+			   12604									   CJM		     144.28
+
+2339		5/28/2013  Charlton											     155.05
+			   12397									   TH		     149.09
+
+2340		5/28/2013  Chester											     160.05
+			   12402									   TH		     153.89
+
+2341		5/28/2013  Clinton											     165.05
+			   12619									   CJM		     158.70
+
+2342		5/28/2013  Cummington											     170.05
+			   12412									   TH		     163.51
+
+2343		5/28/2013  Deerfield											     175.05
+			   12629									   CJM		     168.32
+
+2344		5/28/2013  Dracut											     180.05
+			   12421									   TH		     173.13
+
+2347		5/28/2013  Edgartown											     190.05
+			   12431									   TH		     182.74
+
+2348		5/28/2013  Fairhaven											     195.05
+			   12436									   TH		     187.55
+
+2349		5/28/2013  Foxborough											     200.05
+			   12654									   CJM		     192.36
+
+2350		5/28/2013  Georgetown											     205.05
+			   12659									   CJM		     197.16
+
+2351		5/28/2013  Grafton											     210.05
+			   12450									   TH		     201.97
+
+2352		5/28/2013  Groton											     215.05
+			   12455									   TH		     206.78
+
+2353		5/28/2013  Hampden											     220.05
+			   12967									   CJM		     211.59
+
+2355		5/28/2013  Heath											     230.05
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+			   12469									   TH		     221.20
+
+2356		5/28/2013  Holland											     235.05
+			   12474									   TH		     226.01
+
+2357		5/28/2013  Hubbardston											     240.05
+			   12479									   TH		     230.82
+
+2358		5/28/2013  Kingston											     245.05
+			   12484									   TH		     235.63
+
+2360		5/28/2013  Lexington											     255.05
+			   12493									   TH		     245.24
+
+2361		5/28/2013  Lowell											     260.05
+			   13006									   CJM		     250.05
+
+2362		5/28/2013  Malden											     265.05
+			   12503									   TH		     254.86
+
+2363		5/28/2013  Marlborough											     270.05
+			   12508									   TH		     259.66
+
+2364		5/28/2013  Medfield											     275.05
+			   13021									   CJM		     264.47
+
+2365		5/28/2013  Merrimac											     280.05
+			   12517									   TH		     269.28
+
+2366		5/28/2013  Milford											     285.05
+			   12522									   TH		     274.09
+
+2367		5/28/2013  Monroe											     290.05
+			   12527									   TH		     278.89
+
+2368		5/28/2013  Mount Washington										     295.05
+			   12532									   TH		     283.70
+
+2375		5/28/2013  Otis 											     325.05
+			   13069									   CJM		     312.55
+
+2379		5/28/2013  Raynham											     345.05
+			   13089									   CJM		      93.77
+
+2380		5/28/2013  Rochester											     350.05
+			   13093									   CJM		     336.59
+
+2386		5/28/2013  Spencer											     380.05
+			   13122									   CJM		     365.43
+
+
+
+						       TS Handyman Services
+						      Timekeeper Collections					      Page
+
+ID	 Date		   Invoice #									   Atty 	    Payment
+
+2390		5/28/2013  Truro											     400.05
+			   13141									   CJM		     146.66
+
+2391		5/28/2013  Wakefield											     405.05
+			   13146									   CJM		     389.47
+
+2399		5/28/2013  Westwood											     435.05
+			   13174									   CJM		     418.32
+
+2456		5/28/2013  Hadley											      31.05
+			   12457									   JR		      29.86
+
+2457		5/28/2013  Halifax											      32.05
+			   12458									   SS		      30.82
+
+Grand Total
+													   CJM		   12334.55
+													   JR		   18449.00
+													   SR		   17595.79
+													   SS		   23384.17
+													   TH		    9293.89
+													   Total	   81057.40

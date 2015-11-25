@@ -1,0 +1,186 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>timekeeper_Edit.sikuli\timekeeper_Edit.sikuli</h2> <a href="timekeeper_Edit.sikuli\timekeeper_Edit.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fEdit_TkGenInfo():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- open timekeeper list'</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    logging.debug(<span class="str">'- edit default timekeeper'</span>)
+    logging.debug(<span class="str">'  - names'</span>)
+
+<span class="cmt"># select timekeeper
+</span>    <span class="skw">type</span>(<span class="str">"x"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+<span class="cmt"># edit stuff
+</span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(<span class="str">"TomH"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"HindsT"</span>)
+
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"Tom Hinds"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"TH"</span>)
+    myTools.pressTAB(<span class="dig">2</span>)
+
+    logging.debug(<span class="str">'  - email'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"th@example.com"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"th2@example.com"</span>)
+
+    logging.debug(<span class="str">'  - rates'</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># filling rates with 101.01 thru 101.20
+</span>    <span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">10101</span>,<span class="dig">10121</span>):
+        rate = str(float(i)/<span class="dig">100</span>)
+        <span class="skw">type</span>(rate)
+        <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'  - min hours and overhead'</span>)
+    <span class="skw">type</span>(<span class="str">"8"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"50.01"</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fEdit_TkCustom():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'  - custom fields'</span>)
+
+<span class="cmt"># switch to custom fields
+</span>    <span class="skw">type</span>(Key.F6)
+    <span class="skw">type</span>(Key.TAB)
+
+<span class="cmt"># Date
+</span>    <span class="skw">type</span>(<span class="str">"1/1/14"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Hours
+</span>    <span class="skw">type</span>(<span class="str">"111.11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># List
+</span>    <span class="skw">type</span>(<span class="str">"Ribs"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Money
+</span>    <span class="skw">type</span>(<span class="str">"111.11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+ <span class="cmt"># Number
+</span>    <span class="skw">type</span>(<span class="str">"111.11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Percent
+</span>    <span class="skw">type</span>(<span class="str">"111.11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Text
+</span>    <span class="skw">type</span>(<span class="str">"Tom Hinds"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fEdit_Timekeeper():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"edit timekeeper"</span>)
+
+    logging.debug(<span class="str">'Edit_Timekeeper'</span>)
+
+<span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    fEdit_TkGenInfo()
+    fEdit_TkCustom()
+
+    logging.debug(<span class="str">'- save and close'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

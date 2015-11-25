@@ -1,0 +1,151 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>names_Create.sikuli\names_Create.sikuli</h2> <a href="names_Create.sikuli\names_Create.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+
+<span class="kw">import</span> client_Create
+<span class="kw">import</span> task_Create
+<span class="kw">import</span> expense_Create
+
+<span class="kw">import</span> timekeeper_Import
+<span class="kw">import</span> timekeeper_Edit
+
+<span class="kw">import</span> client_Import
+<span class="kw">import</span> client_Edit
+<span class="kw">import</span> client_FundsEdit
+
+<span class="kw">import</span> task_Import
+<span class="kw">import</span> task_Edit
+<span class="kw">import</span> expense_Import
+<span class="kw">import</span> expense_Edit
+
+<span class="kw">import</span> ref_Create
+<span class="kw">import</span> ref_Import
+
+<span class="kw">import</span> client_FeeAlloc
+<span class="kw">import</span> expense_Markup
+<span class="kw">import</span> taxes_Setup
+<span class="kw">import</span> client_Hold
+<span class="kw">import</span> client_PayDistrib
+<span class="kw">import</span> client_FundsNew
+<span class="kw">import</span> budget_Setup
+
+<span class="kw">import</span> backup_Data
+
+<span class="kw">import</span> report_FundsAccountList
+<span class="kw">import</span> report_TimekeeperInfo
+<span class="kw">import</span> report_ClientInfo
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fCreateImportEdit_Names():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+<span class="cmt">#    editDefaultClient.Edit_DefaultClient()
+</span>
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    client_Create.fCreate_Client(<span class="str">"ZZZlient"</span>,<span class="str">"Client001"</span>,<span class="str">"9999 - First Client"</span>,<span class="str">"In Ref to"</span>,<span class="str">"Client Notes"</span>)
+    task_Create.fCreate_Task()
+    expense_Create.fCreate_Expense()
+
+    timekeeper_Import.fImport_Timekeepers()
+    timekeeper_Edit.fEdit_Timekeeper()
+
+    client_Import.fImport_Clients()
+    client_Edit.fEdit_Client()
+    client_FundsEdit.fEdit_ClientFunds()
+    report_FundsAccountList.fPrint_Funds(<span class="str">"FundsSettings-01.csv"</span>)
+    client_Hold.fSetup_ClientHold()
+    client_FeeAlloc.fSetup_FeeAlloc()
+
+    task_Import.fImport_Tasks()
+    task_Edit.fEdit_Task()
+    expense_Import.fImport_Expenses()
+    expense_Edit.fEdit_Expense()
+
+    expense_Markup.fSetup_ExpMarkups()
+    taxes_Setup.fSetup_Taxes()
+    client_PayDistrib.fSetup_PayDist()
+    client_FundsNew.fFundsAccouts_Setup()
+
+    ref_Create.fCreate_Refs()
+    ref_Import.fImport_Refs()
+
+    budget_Setup.fBudget_Setup()
+
+    report_TimekeeperInfo.fPrint_TimekeeperInfo(<span class="str">"Timekeepers-01.csv"</span>)
+    report_ClientInfo.fPrint_ClientInfo(<span class="str">"Clients-01.csv"</span>)
+
+    backup_Data.fBackup_Checkpoint(<span class="str">"names"</span>)
+</pre>
+</body>
+</html>

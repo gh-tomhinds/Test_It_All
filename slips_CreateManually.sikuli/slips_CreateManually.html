@@ -1,0 +1,235 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>slips_CreateManually.sikuli\slips_CreateManually.sikuli</h2> <a href="slips_CreateManually.sikuli\slips_CreateManually.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+<span class="kw">import</span> names_Init
+<span class="kw">import</span> backup_Data
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> Open_SlipList():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># open slip list and verify it's open</span>
+    myTools.getFocus()
+    <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">click</span>(<img src="number_of_slips.png" />)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> Open_LastSlip():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># go to the end of the list and open the slip so we can copy dates.</span>
+    <span class="skw">type</span>(Key.END)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> Close_SlipUI():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- close slip entry; close slip list'</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> Create_OneSlip(slipType,tk,act,cli,slipnum):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- Create_OneSlip: '</span> + str(slipnum))
+
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># slip type</span>
+    <span class="skw">type</span>(slipType)
+
+    <span class="cmt"># timekeeper</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(tk)
+
+    <span class="cmt"># activity</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"2"</span>,KeyModifier.CTRL + KeyModifier.SHIFT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(act)
+
+    <span class="cmt"># client</span>
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(cli)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># reference</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># use down arrow for ref; skip every 8th one</span>
+    <span class="skw">type</span>(Key.HOME)
+    <span class="kw">for</span> ref <span class="kw">in</span> range(slipnum % <span class="dig">8</span>):
+        <span class="skw">type</span>(Key.DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># extra</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"Slip: "</span>)
+    <span class="skw">type</span>(slipType)
+    <span class="skw">type</span>(str(slipnum))
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># description</span>
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># start date for the first slip is 1/1/2013</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="kw">if</span> slipnum == <span class="dig">1</span>:
+        slipDate = <span class="str">"1/1/"</span> + Settings.dataYear
+        <span class="skw">type</span>(slipDate)
+
+    <span class="cmt"># increment the date every 8th slip.</span>
+    <span class="kw">elif</span> (slipnum - <span class="dig">1</span>) % <span class="dig">8</span> == <span class="dig">0</span>:
+        <span class="skw">type</span>(<span class="str">"+"</span>)
+
+    <span class="cmt"># every 25th slip, tab to Hold and mark it</span>
+    <span class="cmt"># note: no slip with Hold will also be recurring (see next if)</span>
+    <span class="kw">if</span> slipnum % <span class="dig">25</span> == <span class="dig">0</span>:
+        myTools.pressTAB(<span class="dig">6</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.SPACE)
+
+    <span class="cmt"># recur the slips 6 ,7, 9, 10; one slip of each bill status type</span>
+    <span class="cmt"># also add one hour DoNotBill time</span>
+    <span class="cmt"># note: no slip with Recur will also be on Hold (see previous if)</span>
+    <span class="cmt"># the slipType check below is so bill arrangement scripts don't run this part</span>
+    <span class="kw">if</span> slipType == <span class="str">"t"</span> <span class="kw">and</span> slipnum <span class="kw">in</span> (<span class="dig">6</span>, <span class="dig">7</span>, <span class="dig">9</span>, <span class="dig">10</span>):
+        myTools.pressTAB(<span class="dig">7</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.SPACE)
+
+        <span class="skw">click</span>(<img src="donotbill_open_button.png" />)
+        myTools.pressTAB(<span class="dig">7</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(<span class="str">"1"</span>)
+        <span class="skw">click</span>(<img src="donotbill_close_button.png" />)
+
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> Create_Slips(tmslips,exslips):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    clients = names_Init.fInit_Clients()
+    timekeepers = names_Init.fInit_Timekeepers()
+    tasks = names_Init.fInit_Tasks()
+    expenses = names_Init.fInit_Expensess()
+    count = <span class="dig">0</span>
+
+    Open_SlipList()
+
+    <span class="kw">for</span> slip <span class="kw">in</span> range(tmslips):
+        Create_OneSlip(<span class="str">"t"</span>,timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+<span class="dig">1</span>)
+        count += <span class="dig">1</span>
+    Close_SlipUI()
+
+    Open_SlipList()
+    Open_LastSlip()
+
+    <span class="kw">for</span> slip <span class="kw">in</span> range(exslips):
+        Create_OneSlip(<span class="str">"e"</span>,timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+<span class="dig">1</span>)
+        count += <span class="dig">1</span>
+    Close_SlipUI()
+
+    Open_SlipList()
+    Open_LastSlip()
+
+    <span class="kw">for</span> slip <span class="kw">in</span> range(tmslips):
+        Create_OneSlip(<span class="str">"t"</span>,timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+<span class="dig">1</span>)
+        count += <span class="dig">1</span>
+    Close_SlipUI()
+
+    Open_SlipList()
+    Open_LastSlip()
+
+    <span class="kw">for</span> slip <span class="kw">in</span> range(exslips):
+        Create_OneSlip(<span class="str">"e"</span>,timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+<span class="dig">1</span>)
+        count += <span class="dig">1</span>
+    Close_SlipUI()
+
+<span class="cmt">#---------------------------------------------------#</span>
+
+    backup_Data.Backup_Checkpoint(<span class="str">"slips"</span>)
+</pre>
+</body>
+</html>

@@ -1,0 +1,506 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>taxes_Setup.sikuli\taxes_Setup.sikuli</h2> <a href="taxes_Setup.sikuli\taxes_Setup.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_Jurisdictions():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- Create_Jurisdiction'</span>)
+
+    <span class="cmt"># move to jurisdictions</span>
+    myTools.pressF6(<span class="dig">2</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># new jurisdication for Zone 1</span>
+    logging.debug(<span class="str">'-- new jurisdictions'</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"o"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"Zone1"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"One"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># OK</span>
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_RateRules():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- Create_RateRules'</span>)
+
+    <span class="cmt"># switch to rate rules page</span>
+    myTools.pressSHIFTF6(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    fCreate_TimeOnly_RateRule()
+    fCreate_ExpenseOnly_RateRule()
+<span class="cmt">#    fCreate_Compound_RateRules()</span>
+<span class="cmt">#    fCreate_Minimum_RateRule()</span>
+<span class="cmt">#    fCreate_Maximum_RateRule()</span>
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_TimeOnly_RateRule():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- Create_TimeOnly_RateRule'</span>)
+
+    <span class="cmt"># new rule</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"Time Only"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"z"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># rate</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"4"</span>)
+    <span class="cmt"># options   </span>
+    myTools.pressTAB(<span class="dig">5</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    <span class="cmt"># save</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># export to all</span>
+    <span class="skw">type</span>(Key.INSERT)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_ExpenseOnly_RateRule():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- Create_ExpenseOnly_RateRule'</span>)
+
+    <span class="cmt"># new rule</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"Expense Only"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"z"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># rate</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"4.25"</span>)
+    <span class="cmt"># type</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"e"</span>)
+    <span class="cmt"># options   </span>
+    myTools.pressTAB(<span class="dig">5</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="cmt"># save</span>
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># export to all</span>
+    <span class="skw">type</span>(Key.INSERT)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_Compound_RateRules():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- Create_Compound_RateRule'</span>)
+
+    <span class="cmt"># new rule</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"Compound2"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"z"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># rate</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"3"</span>)
+    myTools.pressTAB(<span class="dig">5</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    <span class="cmt"># save</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># export to all</span>
+    <span class="skw">type</span>(Key.INSERT)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># new rule</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"Compound1"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"z"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># rate</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"3.5"</span>)
+    <span class="cmt"># Type</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="cmt"># compound</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"com"</span>)
+    <span class="cmt"># options</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    <span class="cmt"># save</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># export to all</span>
+    <span class="skw">type</span>(Key.INSERT)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_Minimum_RateRule():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- Create_Minimum_RateRule'</span>)
+
+    <span class="cmt"># new rule</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"Minimum"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"z"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># rate</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"4.5"</span>)
+    <span class="cmt"># minimum</span>
+    myTools.pressTAB(<span class="dig">4</span>)
+    myTools.pressDOWN(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># threshold</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"1000"</span>)
+    <span class="cmt"># options</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    <span class="cmt"># save</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># export to all</span>
+    <span class="skw">type</span>(Key.INSERT)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_Maximum_RateRule():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- Create_Maximum_RateRule'</span>)
+
+    <span class="cmt"># new rule</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"Maximum"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"z"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># rate</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"4.5"</span>)
+    <span class="cmt"># maximum</span>
+    myTools.pressTAB(<span class="dig">4</span>)
+    myTools.pressDOWN(<span class="dig">2</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># threshold</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"1000"</span>)
+    <span class="cmt"># options</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    <span class="cmt"># save</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># export to all</span>
+    <span class="skw">type</span>(Key.INSERT)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_TaxProfile():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- Create_TaxProfile'</span>)
+
+    <span class="skw">type</span>(<span class="str">"1"</span>,KeyModifier.CTRL)
+
+    <span class="cmt"># new profile    </span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(<span class="str">"MyTaxes"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Time rule    </span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+
+    <span class="cmt"># Expense rule</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"e"</span>)
+
+<span class="cmt">#    # Compound rule</span>
+<span class="cmt">#    myTools.pressTAB(1)</span>
+<span class="cmt">#    type("com")</span>
+
+<span class="cmt">#    # Minimum rule    </span>
+<span class="cmt">#    myTools.pressTAB(1)</span>
+<span class="cmt">#    type("min")</span>
+
+<span class="cmt">#    # Maximum rule</span>
+<span class="cmt">#    myTools.pressTAB(1)</span>
+<span class="cmt">#    type("max")</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># OK</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="cmt"># DONE</span>
+    myTools.pressSHIFTTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fChange_TaxRule():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- Change_TaxRule'</span>)
+
+    logging.debug(<span class="str">'-- open Taxes'</span>)
+    <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    logging.debug(<span class="str">'-- open GA tax rule'</span>)
+    <span class="skw">type</span>(Key.F6)
+    <span class="skw">type</span>(<span class="str">"g"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'-- change rate'</span>)
+    myTools.pressTAB(<span class="dig">3</span>)
+    <span class="skw">type</span>(<span class="str">"7.25"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.END)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'-- change settings'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">click</span>(<img src="done_btn.png" />)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fExport_ClientSettings():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'-- export client settings'</span>)
+    <span class="skw">click</span>(<img src="export_btn.png" />)
+
+    <span class="cmt"># clear all and highlight tax profile</span>
+    <span class="skw">type</span>(Key.DELETE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.DOWN)
+
+    <span class="cmt"># mark tax profile</span>
+    <span class="skw">type</span>(Key.F4)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># mark all clients</span>
+    <span class="skw">type</span>(Key.INSERT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># click export</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    myTools.waitForExportSuccess()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fExport_TemplateSettings():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'-- export template settings'</span>)
+    <span class="skw">click</span>(<img src="export_btn.png" />)
+
+    <span class="cmt"># clear all and highlight tax profile</span>
+    <span class="skw">type</span>(Key.DELETE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.DOWN)
+
+    <span class="cmt"># mark tax profile</span>
+    <span class="skw">type</span>(Key.F4)
+
+    <span class="cmt"># switch to Templates</span>
+
+    <span class="kw">if</span> Settings.tsVersion &gt; <span class="str">"2014"</span>:
+        myTools.pressSHIFTTAB(<span class="dig">1</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(<span class="str">"t"</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        myTools.pressTAB(<span class="dig">1</span>)
+    <span class="kw">else</span>:
+        <span class="skw">click</span>(<img src="templates.png" />)
+
+    <span class="cmt"># mark Default</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.F4)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># click export</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    myTools.waitForExportSuccess()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fChange_ClientSettings():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- Change_ClientSettings'</span>)
+
+    logging.debug(<span class="str">'-- change a client'</span>)
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.pressF6(<span class="dig">4</span>)
+    <span class="kw">if</span> Settings.tsVersion &gt; <span class="str">"2014"</span>:
+        myTools.pressF6(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.pressTAB(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"my"</span>)
+
+    logging.debug(<span class="str">'-- save client'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
+    fExport_ClientSettings()
+    fExport_TemplateSettings()
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_Taxes():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"setup taxes"</span>)
+
+    logging.debug(<span class="str">'Setup_Taxes'</span>)
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># open taxes UI</span>
+    logging.debug(<span class="str">'-- open Taxes'</span>)
+    <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    fCreate_Jurisdictions()
+    fCreate_RateRules()
+    fCreate_TaxProfile()
+    fChange_ClientSettings()
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

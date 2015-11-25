@@ -1,0 +1,177 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>trans_ReversePay.sikuli</h2> <a href="trans_ReversePay.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_OneRevPay(pClient,pCliNum,pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- Create_OneRevPay: '</span> + str(pMonth) + <span class="str">"-"</span> + pClient + <span class="str">" - "</span> + str(pCliNum))
+
+    <span class="cmt"># new transaction</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+    myTools.waitForTransEntry()
+
+    <span class="cmt"># switch to Transfer</span>
+
+    <span class="skw">type</span>(Key.UP)    <span class="cmt"># this is to get by a UI defect</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(<span class="str">"rev"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># client</span>
+    myTools.enterClient(pClient)
+
+    <span class="cmt"># date</span>
+    tranDate = str(pMonth) + <span class="str">"/28/"</span> + Settings.dataYear
+    <span class="skw">type</span>(tranDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Description</span>
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    revDescription = <span class="str">"Reverse Pay: "</span> + pClient + <span class="str">" - "</span> + tranDate + <span class="str">" - "</span> + str(pCliNum)
+    <span class="skw">type</span>(revDescription)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># payment list</span>
+    <span class="skw">type</span>(Key.END)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
+    <span class="cmt"># payment fee</span>
+    <span class="skw">wait</span>(<img src="should_there_be_fee.png" />,FOREVER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.DOWN)
+    myTools.pressTAB(<span class="dig">1</span>)
+    revFee = <span class="str">"19.99"</span>
+    <span class="skw">type</span>(revFee)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># fee description</span>
+    revFeeDescription = <span class="str">"Note: "</span> + pClient + <span class="str">" - "</span> + revFee
+    <span class="skw">type</span>(revFeeDescription)
+
+    <span class="cmt"># close</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_RevPays(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"revpays"</span> + str(pMonth))
+    logging.debug(<span class="str">'fCreate_RevPays: '</span> + str(pMonth))
+
+    <span class="kw">if</span> (pMonth == <span class="dig">1</span>):
+        logging.debug(<span class="str">'- SKIP MONTH'</span>)
+        myTools.sectionEndTimeStamp()
+        <span class="kw">return</span>
+
+    <span class="cmt"># list the client that will get a refund each month</span>
+    refundClientsA = [<span class="str">"Gardner"</span>,<span class="str">"Freetown"</span>,<span class="str">"Franklin"</span>,<span class="str">"Framingham"</span>,<span class="str">"Foxborough"</span>,<span class="str">"Florida"</span>,<span class="str">"Fitchburg"</span>,<span class="str">"Falmouth"</span>,<span class="str">"Fall River"</span>,<span class="str">"Fairhaven"</span>,<span class="str">"Everett"</span>]
+    oneClientA = refundClientsA[(pMonth - <span class="dig">2</span>)]
+
+    refundClientsB = [<span class="str">"Dover"</span>,<span class="str">"Douglas"</span>,<span class="str">"Dighton"</span>,<span class="str">"Dennis"</span>,<span class="str">"Deerfield"</span>,<span class="str">"Dedham"</span>,<span class="str">"Dartmouth"</span>,<span class="str">"Danvers"</span>,<span class="str">"Dalton"</span>,<span class="str">"Cummington"</span>,<span class="str">"Conway"</span>]
+    oneClientB = refundClientsB[(pMonth - <span class="dig">2</span>)]
+
+    <span class="cmt"># create a list of clients for current month</span>
+    allClients = []
+    allClients.append(oneClientA)
+    allClients.append(oneClientB)
+    count = <span class="dig">0</span>
+
+    myTools.getFocus()
+
+    <span class="cmt"># open a/r tran list</span>
+    <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.CTRL)
+    myTools.waitForTransList()
+
+    <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
+        count += <span class="dig">1</span>
+        fCreate_OneRevPay(oneClient,count,pMonth)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

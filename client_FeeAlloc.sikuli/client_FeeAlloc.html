@@ -1,0 +1,186 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>client_FeeAlloc.sikuli\client_FeeAlloc.sikuli</h2> <a href="client_FeeAlloc.sikuli\client_FeeAlloc.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_CustomFields():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- Set Up Custom Fields'</span>)
+    <span class="skw">type</span>(<span class="str">"p"</span>, KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"c"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="kw">for</span> customName <span class="kw">in</span> [<span class="str">"Originating"</span>,<span class="str">"Responsible"</span>,<span class="str">"Other"</span>]:
+
+        <span class="skw">type</span>(<span class="str">"n"</span>, KeyModifier.ALT)
+        <span class="skw">type</span>(Key.UP)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+        <span class="skw">type</span>(customName)
+        myTools.pressTAB(<span class="dig">2</span>)
+        <span class="skw">type</span>(Key.DOWN)
+        <span class="skw">type</span>(Key.ENTER)
+
+    myTools.pressTAB(<span class="dig">7</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>) <span class="cmt"># extra time to restructure table</span>
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fExport_Timekeepers():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- Export Timekeepers'</span>)
+
+    <span class="cmt"># open client info
+</span>    <span class="skw">type</span>(<span class="str">"i"</span>, KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        myTools.pressF6(<span class="dig">4</span>)
+        myTools.pressTAB(<span class="dig">2</span>)
+    <span class="kw">else</span>:
+        <span class="skw">type</span>(Key.F6)
+        myTools.pressTAB(<span class="dig">3</span>)
+        <span class="skw">type</span>(Key.RIGHT)
+
+    <span class="cmt"># enter custom field values
+</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"20"</span>)
+
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"c"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"10"</span>)
+
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"j"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"5"</span>)
+
+    <span class="skw">type</span>(<span class="str">"s"</span>, KeyModifier.CTRL)
+
+    <span class="skw">click</span>(<img src="export_btn.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">type</span>(Key.DOWN)
+        <span class="cmt"># sometimes a keypress is needed to make INS work
+</span>    <span class="kw">else</span>:
+        <span class="skw">type</span>(Key.DELETE)
+        myTools.pressDOWN(<span class="dig">8</span>)
+        <span class="skw">type</span>(Key.DOWN, KeyModifier.SHIFT)
+        <span class="skw">type</span>(Key.DOWN, KeyModifier.SHIFT)
+        <span class="skw">type</span>(Key.F4)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.INSERT)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    myTools.waitForExportSuccess()
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_FeeAlloc():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"setup fee alloc"</span>)
+    logging.debug(<span class="str">'Set Up Fee Allocation'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    fSetup_CustomFields()
+    fExport_Timekeepers()
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

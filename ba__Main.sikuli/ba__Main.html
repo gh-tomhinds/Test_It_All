@@ -1,0 +1,221 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>ba__Main.sikuli\ba__Main.sikuli</h2> <a href="ba__Main.sikuli\ba__Main.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> os
+<span class="kw">import</span> logging
+<span class="kw">import</span> datetime
+
+<span class="kw">import</span> myTools
+<span class="kw">import</span> backup_Data
+
+<span class="kw">import</span> ba__Common
+<span class="kw">from</span> bill_Print <span class="kw">import</span> fSet_BillDate
+
+<span class="kw">import</span> ba_AdjustTotal_Time
+<span class="kw">import</span> ba_AdjustTotal_Exp
+<span class="kw">import</span> ba_AdjustTotal_Both
+
+<span class="kw">import</span> ba_AdjustTimekeeper_Time
+<span class="kw">import</span> ba_AdjustTimekeeper_Exp
+<span class="kw">import</span> ba_AdjustTimekeeper_Both
+
+<span class="kw">import</span> ba_AdjustTask
+<span class="kw">import</span> ba_AdjustExpense
+
+<span class="kw">import</span> ba_Absolute_Time
+<span class="kw">import</span> ba_Absolute_Exp
+<span class="kw">import</span> ba_Absolute_Both
+
+<span class="kw">import</span> ba_Minimum_Time
+<span class="kw">import</span> ba_Minimum_Exp
+<span class="kw">import</span> ba_Minimum_Both
+
+<span class="kw">import</span> ba_Maximum_Time
+<span class="kw">import</span> ba_Maximum_Exp
+<span class="kw">import</span> ba_Maximum_Both
+
+<span class="kw">import</span> ba_FlatFeePlus_Time
+<span class="kw">import</span> ba_FlatFeePlus_Exp
+<span class="kw">import</span> ba_FlatFeePlus_Both
+
+<span class="kw">import</span> ba_Contingency_Time
+<span class="kw">import</span> ba_Contingency_Exp
+<span class="kw">import</span> ba_Contingency_Both
+
+<span class="kw">import</span> ba_MinimumHours
+<span class="kw">import</span> ba_Percent
+
+<span class="kw">import</span> ba_ProgressTotal
+<span class="kw">import</span> ba_ProgressActivity
+<span class="kw">import</span> ba_InterimTotal
+<span class="kw">import</span> ba_InterimActivity
+
+<span class="kw">import</span> ba_SlipsRoundMin
+<span class="kw">import</span> ba_SlipsRoundDol
+<span class="kw">import</span> ba_Precision
+
+<span class="kw">import</span> ba_Replacement_Time
+
+<span class="kw">import</span> reports_PostBill
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fLogHeader():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
+    logging.debug(<span class="str">"ba log file header: "</span> + Settings.BALogFile)
+
+    outFile = Settings.BALogFile
+    billLog = open(outFile, <span class="str">"a"</span>)
+
+    billLog.write(<span class="str">"\n"</span>)
+    billLog.write(<span class="str">"==================================================\n"</span>)
+    baTime = datetime.datetime.now()
+    billLog.write(baTime.strftime(<span class="str">"Started: %Y-%m-%d %H:%M:%S\n"</span>))
+    billLog.write(<span class="str">"==================================================\n"</span>)
+
+    billLog.close()
+
+<span class="cmt">#===================================================#</span>
+<span class="kw">def</span> fReview_Arrangements():
+<span class="cmt">#===================================================#</span>
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Review_Arrangements'</span>)
+
+    fLogHeader()
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
+
+    <span class="cmt"># set billing data to 12/27 for ba bills</span>
+    fSet_BillDate(<span class="dig">12</span>)
+
+    ba_Replacement_Time.fReplaceTimeA()
+    ba_Replacement_Time.fReplaceTimeB()
+    ba_Replacement_Time.fReplaceTimeC()
+    ba_Replacement_Expense.fReplaceExpenseA()
+
+<span class="cmt">#===================================================#</span>
+<span class="kw">def</span> fxxx():
+<span class="cmt">#===================================================#</span>
+
+    ba_AdjustTotal_Time.fAdjustTotal_Time()
+    ba_AdjustTotal_Exp.fAdjustTotal_Exp()
+    ba_AdjustTotal_Both.fAdjustTotal_Both()
+
+    ba_AdjustTimekeeper_Time.fAdjustTimekeeper_Time()
+    ba_AdjustTimekeeper_Exp.fAdjustTimekeeper_Exp()
+    ba_AdjustTimekeeper_Both.fAdjustTimekeeper_Both()
+
+    ba_AdjustTask.fAdjustTask()
+    ba_AdjustExpense.fAdjustExpense()
+
+    ba_Absolute_Time.fAbsolute_Time()
+    ba_Absolute_Exp.fAbsolute_Exp()
+    ba_Absolute_Both.fAbsolute_Both()
+
+    ba_Minimum_Time.fMinimum_Time()
+    ba_Minimum_Exp.fMinimum_Exp()
+    ba_Minimum_Both.fMinimum_Both()
+
+    ba_Maximum_Time.fMaximum_Time()
+    ba_Maximum_Exp.fMaximum_Exp()
+    ba_Maximum_Both.fMaximum_Both()
+
+    ba_FlatFeePlus_Time.fFlatFeePlus_Time()
+    ba_FlatFeePlus_Exp.fFlatFeePlus_Exp()
+    ba_FlatFeePlus_Both.fFlatFeePlus_Both()
+
+    ba_Contingency_Time.fContingency_Time()
+    ba_Contingency_Exp.fContingency_Exp()
+    ba_Contingency_Both.fContingency_Both()
+
+    ba_MinimumHours.fMinimumHours()
+
+    ba_Percent.fPercent()
+
+    ba_ProgressTotal.fProgressTotal()
+    ba_ProgressActivity.fProgressActivity()
+    ba_InterimTotal.fInterimTotal()
+    ba_InterimActivity.fInterimActivity()
+
+    ba_SlipsRoundMin.fSlipsRoundMin()
+    ba_SlipsRoundDol.fSlipsRoundDol()
+    ba_Precision.fPrecision()
+
+    backup_Data.fBackup_Checkpoint(<span class="str">"ba"</span>)
+
+    reports_PostBill.fPrint_PostbillReports(<span class="dig">13</span>,<span class="str">"a"</span>)
+</pre>
+</body>
+</html>

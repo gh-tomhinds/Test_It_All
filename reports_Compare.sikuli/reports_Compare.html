@@ -1,0 +1,149 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>reports_Compare.sikuli\reports_Compare.sikuli</h2> <a href="reports_Compare.sikuli\reports_Compare.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> os
+<span class="kw">import</span> logging
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> Compare_OneReport(pReportName):
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'Compare_OneReport: '</span> + pReportName)
+
+<span class="cmt"># point to old report, new report, and output file</span>
+    logging.debug(<span class="str">'- set file names'</span>)
+    baseFile = Settings.baseRepFolder + <span class="str">"\\"</span> + pReportName[<span class="dig">5</span>:] <span class="cmt">#trim version from name</span>
+    newFile = Settings.repFolder + <span class="str">"\\"</span> + pReportName
+
+    <span class="kw">global</span> newRepLine
+
+<span class="cmt"># don't compare if old report doesn't exist</span>
+    logging.debug(<span class="str">'- check for base file'</span>)
+    <span class="kw">if</span> <span class="kw">not</span> os.path.exists(baseFile):
+        logging.debug(<span class="str">"--&gt; "</span> + pReportName[<span class="dig">5</span>:] + <span class="str">" MISSING"</span>)
+        <span class="kw">return</span>
+
+<span class="cmt"># don't compare if new report doesn't exist</span>
+    logging.debug(<span class="str">'- check for printed file'</span>)
+    <span class="kw">if</span> <span class="kw">not</span> os.path.exists(baseFile):
+        logging.debug(<span class="str">"--&gt; "</span> + pReportName + <span class="str">" MISSING"</span>)
+        <span class="kw">return</span>
+
+<span class="cmt"># open report files</span>
+    logging.debug(<span class="str">'- read report files'</span>)
+
+    baseRep = open(baseFile)
+    newRep = open(newFile)
+
+<span class="cmt"># read lines of the report files</span>
+    baseRepLines = baseRep.read().splitlines()
+    newRepLines = newRep.read().splitlines()
+
+<span class="cmt"># close report files</span>
+    baseRep.close()
+    newRep.close()
+
+<span class="cmt"># open reset line counter and error flag</span>
+    newRepLine = <span class="dig">0</span>
+    errorFound = False
+
+<span class="cmt"># compare lengths of files</span>
+    logging.debug(<span class="str">'- compare lengths'</span>)
+
+    <span class="kw">if</span> len(baseRepLines) &lt; len(newRepLines):
+        errorFound = True
+        logging.debug(<span class="str">"--&gt; FAILED: "</span> + pReportName)
+        logging.debug(<span class="str">"--&gt; new report has more lines"</span>)
+    <span class="kw">elif</span> len(baseRepLines) &gt; len(newRepLines):
+        errorFound = True
+        logging.debug(<span class="str">"--&gt; FAILED: "</span> + pReportName)
+        logging.debug(<span class="str">"--&gt; base report has more lines"</span>)
+
+    <span class="cmt"># compare each line in base report to new report; jump out on first mismatch</span>
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">"-- same length"</span>)
+        logging.debug(<span class="str">'- compare files'</span>)
+        <span class="kw">for</span> baseRepLine <span class="kw">in</span> baseRepLines:
+            <span class="kw">if</span> baseRepLine != newRepLines[newRepLine]:
+                errorFound = True
+                logging.debug(<span class="str">"--&gt; FAILED: "</span> + pReportName)
+                logging.debug(<span class="str">"--&gt; Line: %d \n"</span> % (newRepLine+<span class="dig">1</span>))
+                logging.debug(<span class="str">"--&gt; Base: "</span> + baseRepLine)
+                logging.debug(<span class="str">"--&gt; New:  "</span> + newRepLines[newRepLine])
+                <span class="kw">break</span>
+            newRepLine += <span class="dig">1</span>
+
+    <span class="kw">if</span> errorFound != True:
+        logging.debug(<span class="str">"-- reports match: "</span> + pReportName)
+</pre>
+</body>
+</html>

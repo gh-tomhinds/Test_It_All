@@ -1,0 +1,212 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>trans_SpecCredits.sikuli\trans_SpecCredits.sikuli</h2> <a href="trans_SpecCredits.sikuli\trans_SpecCredits.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fFilter_Invoices():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># selection</span>
+    <span class="skw">click</span>(<img src="selection_button.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># clear any existing filters</span>
+    <span class="kw">if</span> exists(<img src="remove_all.png" />):
+        <span class="skw">click</span>(<img src="remove_all.png" />)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># add tran type filter</span>
+    <span class="skw">doubleClick</span>(<img src="trans_type.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># unselect all</span>
+    <span class="skw">type</span>(Key.DELETE)
+
+    <span class="cmt"># select invoice</span>
+    myTools.pressDOWN(<span class="dig">5</span>)
+    <span class="skw">type</span>(Key.F4)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># OK</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># OK    </span>
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Update</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    myTools.waitForTransList()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fClear_Filter():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># selection</span>
+    <span class="skw">click</span>(<img src="selection_button.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># clear</span>
+    <span class="skw">click</span>(<img src="remove_all.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># OK    </span>
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># Update</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    myTools.waitForTransList()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_SpecCredits(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"specialCredits"</span> + str(pMonth))
+    logging.debug(<span class="str">'Create_SpecCredits: '</span> + str(pMonth))
+
+    myTools.getFocus()
+
+    <span class="cmt"># open a/r tran list</span>
+    <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.CTRL)
+    myTools.waitForTransList()
+
+    fFilter_Invoices()
+
+    <span class="cmt"># move to last transaction (which should be an invoice)</span>
+    <span class="skw">type</span>(Key.END)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># open it</span>
+    <span class="skw">type</span>(Key.ENTER)
+    myTools.waitForTransEntry()
+
+    <span class="cmt"># apply a new special credit</span>
+    <span class="skw">click</span>(<img src="apply_new.png" />)
+    myTools.pressDOWN(<span class="dig">5</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># type</span>
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># client</span>
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># date</span>
+    tranDate = str(pMonth) + <span class="str">"/28/"</span> + Settings.dataYear
+    <span class="skw">type</span>(tranDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Description</span>
+    <span class="skw">type</span>(Key.END)
+    <span class="skw">type</span>(<span class="str">" - "</span> + tranDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.pressTAB(<span class="dig">2</span>)
+
+    <span class="cmt"># Fees</span>
+    feeAmount = <span class="dig">5</span> + pMonth/float(<span class="dig">100</span>)
+    <span class="skw">type</span>(str(feeAmount))
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Costs</span>
+    costAmount = <span class="dig">4</span> + pMonth/float(<span class="dig">100</span>)
+    <span class="skw">type</span>(str(costAmount))
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Interest</span>
+    interestAmount = <span class="dig">3</span> + pMonth/float(<span class="dig">100</span>)
+    <span class="skw">type</span>(str(interestAmount))
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt">#save</span>
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    myTools.checkForUnappliedAmount()
+
+    <span class="cmt"># close</span>
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    fClear_Filter()
+
+    <span class="cmt"># close   </span>
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

@@ -1,0 +1,246 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>ba_InterimActivity.sikuli\ba_InterimActivity.sikuli</h2> <a href="ba_InterimActivity.sikuli\ba_InterimActivity.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+<span class="kw">import</span> client_Create
+<span class="kw">import</span> ba__Common
+<span class="kw">import</span> ba__ReviewBills
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fInterimActivity_Setup1():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"ba InterimAct1"</span>)
+    logging.debug(<span class="str">"ba InterimAct1"</span>)
+
+<span class="cmt"># open client    
+</span>    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"BA-InterimAct"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># get to arrangement field for time
+</span>    ba__Common.fMoveto_BAPage()
+    myTools.pressTAB(<span class="dig">4</span>)
+
+<span class="cmt"># switch to Interim
+</span>    <span class="skw">type</span>(Key.END)
+
+<span class="cmt"># enter details    
+</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"o"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"500"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+<span class="cmt"># save and close    
+</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fInterimActivity_Setup2():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"ba InterimAct2"</span>)
+    logging.debug(<span class="str">"ba InterimAct2"</span>)
+
+<span class="cmt"># open client    
+</span>    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"BA-InterimAct"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># get to arrangement field for time
+</span>    ba__Common.fMoveto_BAPage()
+    myTools.pressTAB(<span class="dig">5</span>)
+
+<span class="cmt"># enter details    
+</span>    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"o"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"600"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># save and close    
+</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="kw">if</span> exists(<img src="are_you_sure.png" />):
+            <span class="skw">type</span>(<span class="str">"y"</span>,KeyModifier.ALT)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fInterimActivity_Setup3():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"ba InterimAct3"</span>)
+    logging.debug(<span class="str">"ba InterimAct3"</span>)
+
+<span class="cmt"># open client    
+</span>    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"BA-InterimAct"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># get to arrangement field for time
+</span>    ba__Common.fMoveto_BAPage()
+    myTools.pressTAB(<span class="dig">5</span>)
+
+<span class="cmt"># enter details    
+</span>    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"o"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"700"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"u"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># save and close    
+</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="kw">if</span> exists(<img src="are_you_sure.png" />):
+            <span class="skw">type</span>(<span class="str">"y"</span>,KeyModifier.ALT)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fInterimActivity():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># create a new client    
+</span>    client_Create.fCreate_Client(<span class="str">"BA-InterimAct"</span>,<span class="str">"BA-InterimAct"</span>,<span class="str">"Interim Activity FF"</span>,<span class="str">"Interim Activity FF"</span>,<span class="str">"Interim Activity FF"</span>)
+    <span class="cmt"># create some slips
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-InterimAct"</span>)
+    <span class="cmt"># set up billing arrangement
+</span>    fInterimActivity_Setup1()
+    <span class="cmt"># print a bill to text
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-InterimAct"</span>,<span class="dig">1</span>)
+    <span class="cmt"># compare at bill values
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-InterimAct1"</span>)
+
+    <span class="cmt"># create some slips
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-InterimAct"</span>)
+    <span class="cmt"># set up billing arrangement
+</span>    fInterimActivity_Setup2()
+    <span class="cmt"># print a bill to text
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-InterimAct"</span>,<span class="dig">2</span>)
+    <span class="cmt"># compare at bill values
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-InterimAct2"</span>)
+
+    <span class="cmt"># create some slips
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-InterimAct"</span>)
+    <span class="cmt"># set up billing arrangement
+</span>    fInterimActivity_Setup3()
+    <span class="cmt"># print a bill to text
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-InterimAct"</span>,<span class="dig">3</span>)
+    <span class="cmt"># compare at bill values
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-InterimAct3"</span>)
+</pre>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>bill_MonthlyCycle.sikuli</h2> <a href="bill_MonthlyCycle.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+
+<span class="kw">import</span> backup_Data
+<span class="kw">import</span> email_Send
+<span class="kw">import</span> bill_Print
+
+<span class="kw">import</span> trans_PostBill
+<span class="kw">import</span> reports_CreateReports
+<span class="kw">import</span> reports_PostBill
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fRun_BillCycle(startMonth,endMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'start bill cycle'</span>)
+
+    <span class="kw">for</span> thisMonth <span class="kw">in</span> range(startMonth,endMonth):
+        logging.debug(<span class="str">'- month: '</span> + str(thisMonth))
+
+<span class="cmt">#        bill_Print.fPrint_Bills(thisMonth)        </span>
+<span class="cmt">#        backup_Data.fBackup_BillData(thisMonth,"a")       </span>
+<span class="cmt">#        reports_PostBill.fPrint_PostbillReports(thisMonth,"a")      # compare some values before trans</span>
+
+        trans_PostBill.fEnter_Transactions(thisMonth)               <span class="cmt"># enter all transactions</span>
+        backup_Data.fBackup_BillData(thisMonth,<span class="str">"b"</span>)
+        reports_PostBill.fPrint_PostbillReports(thisMonth,<span class="str">"b"</span>)      <span class="cmt"># compare some values after trans</span>
+</pre>
+</body>
+</html>

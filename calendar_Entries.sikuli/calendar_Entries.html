@@ -1,0 +1,194 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>calendar_Entries.sikuli\calendar_Entries.sikuli</h2> <a href="calendar_Entries.sikuli\calendar_Entries.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> csv
+<span class="kw">import</span> backup_Data
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_CalEntry(pOneEvent,pEventCount):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">' - create: '</span> + pOneEvent[<span class="str">"subject"</span>])
+
+    <span class="skw">type</span>(<span class="str">"l"</span>, KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># subject</span>
+    <span class="skw">type</span>(pOneEvent[<span class="str">"subject"</span>])
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># categories</span>
+    myTools.pressDOWN((pEventCount%<span class="dig">10</span>)-<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># start date</span>
+    <span class="skw">type</span>(pOneEvent[<span class="str">"startDate"</span>])
+    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># TS2013 requires extra TAB</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
+        <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># start time</span>
+    <span class="kw">if</span> pOneEvent[<span class="str">"startTime"</span>] != <span class="str">"no"</span>:
+        <span class="skw">type</span>(pOneEvent[<span class="str">"startTime"</span>])
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># end date</span>
+    <span class="skw">type</span>(pOneEvent[<span class="str">"endDate"</span>])
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># TS2013 requires extra TAB</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
+        <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># end time</span>
+    <span class="kw">if</span> pOneEvent[<span class="str">"endTime"</span>] != <span class="str">"no"</span>:
+        <span class="skw">type</span>(pOneEvent[<span class="str">"endTime"</span>])
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># all day</span>
+    <span class="kw">if</span> pOneEvent[<span class="str">"allday"</span>] == <span class="str">"yes"</span>:
+        <span class="skw">type</span>(Key.SPACE)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># private</span>
+    <span class="kw">if</span> pOneEvent[<span class="str">"private"</span>] == <span class="str">"yes"</span>:
+        <span class="skw">type</span>(Key.SPACE)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># location</span>
+    <span class="skw">type</span>(pOneEvent[<span class="str">"location"</span>])
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># mark for slip creation</span>
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># tabs</span>
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># create meeting for</span>
+    <span class="kw">if</span> pOneEvent[<span class="str">"everyone"</span>] == <span class="str">"no"</span>:
+        <span class="skw">type</span>(Key.HOME)
+        myTools.pressDOWN(pEventCount%<span class="dig">5</span>)
+
+    <span class="cmt"># schedule</span>
+    <span class="kw">if</span> pOneEvent[<span class="str">"everyone"</span>] == <span class="str">"yes"</span>:
+        <span class="skw">click</span>(<img src="schedule_attendees.png" />)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.INSERT)
+        <span class="skw">type</span>(Key.ENTER)
+
+    <span class="cmt"># switch to Notes tab</span>
+    <span class="skw">type</span>(Key.F6)
+
+    <span class="cmt"># notes field</span>
+    <span class="skw">type</span>(pOneEvent[<span class="str">"notes"</span>])
+    <span class="skw">type</span>(<span class="str">" - Event: "</span> + str(pEventCount))
+    <span class="skw">click</span>(<img src="save_and_close.png" />)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fProcess_CalEntries():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- create calendar entries'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    eventCount = <span class="dig">0</span>
+
+    eventDataFile = Settings.calFile
+    allEvents = csv.DictReader(open(eventDataFile))
+
+    <span class="kw">for</span> calEvent <span class="kw">in</span> allEvents:
+
+        eventCount += <span class="dig">1</span>
+        fCreate_CalEntry(calEvent,eventCount)
+
+    <span class="skw">type</span>(Key.F4, KeyModifier.CTRL)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fCalendar_Entries():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Calendar_Stuff'</span>)
+
+    <span class="skw">type</span>(<span class="str">"l"</span>, KeyModifier.ALT)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    fProcess_CalEntries()
+    backup_Data.fBackup_Checkpoint(<span class="str">"cal"</span>)
+</pre>
+</body>
+</html>

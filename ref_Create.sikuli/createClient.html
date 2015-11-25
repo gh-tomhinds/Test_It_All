@@ -1,0 +1,140 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>ref_Create.sikuli\createClient.sikuli</h2> <a href="ref_Create.sikuli\createClient.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fCreate_Client():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'fCreate_Client'</span>)
+
+    logging.debug(<span class="str">'- open client list'</span>)
+    <span class="skw">click</span>(<img src="Names-2.png" />)
+    <span class="skw">type</span>(<span class="str">"i"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- create new client'</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>,KEY_CTRL)
+
+    logging.debug(<span class="str">'- nicknames'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"ZZZerry"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"ZhanaZZ"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- name and address'</span>)
+    <span class="skw">type</span>(<span class="str">"9999 - Zhana Z. Zerry"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"9999 Spring Haven Trail"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"Zutley"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"ZZ"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"99999-1"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"ZZZ"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- other info'</span>)
+<span class="cmt"># phone
+</span>    <span class="skw">type</span>(<span class="str">"999-999-9999"</span>)
+<span class="cmt"># in ref to    
+</span>    <span class="skw">type</span>(<img src="Inreferencet-1.png" />, <span class="str">"1-SST"</span>)
+<span class="cmt"># notes
+</span>    <span class="skw">click</span>(<img src="Notes.png" />)
+    <span class="skw">type</span>(<span class="str">"Shana S. Terry"</span>)
+    logging.debug(<span class="str">'- save'</span>)
+    <span class="skw">click</span>(<img src="1352170237846-2.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="kw">if</span> exists(<img src="ConflictChec.png" />):
+        logging.debug(<span class="str">'- conflict check'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        <span class="skw">type</span>(Key.F4,KEY_CTRL)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KEY_CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KEY_CTRL)
+</pre>
+</body>
+</html>

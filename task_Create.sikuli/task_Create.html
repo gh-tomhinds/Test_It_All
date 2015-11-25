@@ -1,0 +1,177 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>task_Create.sikuli\task_Create.sikuli</h2> <a href="task_Create.sikuli\task_Create.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_Task():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"create task"</span>)
+
+    logging.debug(<span class="str">'Create_Task: Skipping'</span>)
+
+    logging.debug(<span class="str">'- open task list'</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"f"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- create new task'</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+
+    logging.debug(<span class="str">'  - names'</span>)
+    <span class="cmt"># NN1</span>
+    <span class="skw">type</span>(<span class="str">"Skipping"</span>)
+    <span class="cmt"># NN2</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"1234"</span>)
+    <span class="cmt"># Full name</span>
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">"Skipping Around in Circles"</span>)
+    <span class="cmt"># category</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"o"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'  - rates'</span>)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"1"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"2"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"3"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"4"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"5"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"6"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"7"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"8"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"9"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"10"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"12"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"13"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"14"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"15"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"16"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"17"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"18"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"19"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"20"</span>)
+
+    logging.debug(<span class="str">'  - defaults'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="cmt"># time spent</span>
+    <span class="skw">type</span>(<span class="str">"11.2"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># time est</span>
+    <span class="skw">type</span>(<span class="str">"11.1"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># bill status</span>
+    <span class="skw">type</span>(<span class="str">"b"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># hold</span>
+    <span class="skw">type</span>(<span class="str">"o"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># description</span>
+    <span class="skw">type</span>(<span class="str">"Frolicking and Playing"</span>)
+
+    logging.debug(<span class="str">'- save and close task list'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

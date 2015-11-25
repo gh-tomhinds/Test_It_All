@@ -1,0 +1,169 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>ref_Create.sikuli\createClient.sikuli</h2> <a href="ref_Create.sikuli\createClient.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> csv
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_TemplateRefs():
+<span class="cmt">#---------------------------------------------------#
+</span>
+<span class="cmt"># switch to template clients
+</span>    <span class="skw">rightClick</span>(<img src="02351_nn2.png" />)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    refDataFile = Settings.dataFolder + <span class="str">"\\templateRefs.csv"</span>
+    allTemplateRefs = csv.DictReader(open(refDataFile))
+
+    <span class="kw">for</span> tempRef <span class="kw">in</span> allTemplateRefs:
+
+        logging.debug(<span class="str">'- create reference: '</span> + tempRef[<span class="str">"nn1"</span>])
+        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+
+        <span class="skw">type</span>(tempRef[<span class="str">"nn1"</span>])
+        <span class="skw">type</span>(Key.TAB)
+
+        <span class="skw">type</span>(tempRef[<span class="str">"nn2"</span>])
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fExport_TemplateSetting():
+<span class="cmt">#---------------------------------------------------#
+</span>
+<span class="cmt"># Also use Default template
+</span>    logging.debug(<span class="str">'- open Client Reference Setup'</span>)
+    <span class="skw">type</span>(Key.HOME)
+    <span class="skw">click</span>(Pattern(<img src="reference_setup.png" />).targetOffset(<span class="dig">6</span>,<span class="dig">10</span>))
+
+<span class="cmt"># Also use template
+</span>    <span class="skw">type</span>(<span class="str">"t"</span>, KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"d"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># Export
+</span>    <span class="skw">type</span>(<span class="str">"e"</span>, KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># choose all clients
+</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        myTools.pressTAB(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.INSERT)
+    <span class="kw">else</span>:
+        <span class="skw">click</span>(Pattern(<img src="acton_client.png" />).targetOffset(-<span class="dig">7</span>,-<span class="dig">6</span>))
+        <span class="skw">type</span>(Key.END, KeyModifier.SHIFT)
+        <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># click Export
+</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.SPACE)
+
+<span class="cmt"># click YES
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># click OK
+</span>    <span class="skw">wait</span>(<img src="export_successful.png" />, FOREVER)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># click OK
+</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fCreate_Refs():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"create refs"</span>)
+    logging.debug(<span class="str">'Create_Refs'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    logging.debug(<span class="str">'- open reference list'</span>)
+    <span class="skw">type</span>(<span class="str">"r"</span>, KeyModifier.CTRL + KeyModifier.SHIFT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    fExport_TemplateSetting()
+    fSetup_TemplateRefs()
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

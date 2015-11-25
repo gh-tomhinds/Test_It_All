@@ -1,0 +1,732 @@
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+							Selection Criteria
+
+Slip.Transaction Date	     1/1/2013 - 12/31/2013
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-Absolute-Both | BA-Absolute-Bot
+Full Name	    Absolute FF - Both
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    Absolute FF - Both
+Full Bill Arrg.     1000.00 on next bill.
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												  $1,000.00
+
+														
+Total of billable expense slips 											      $0.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Full Bill Arrangement: Flat Fee
+Absolute flat fee: 1000.00 on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message    Absolute FF - Both
+Realized Fees											       $1,000.00
+Realized Costs												   $0.00
+Total of Fees and Costs 												  $1,000.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Time Only					  Fees			  $1,000.00			  $40.00
+Total tax on fees													     $40.00
+
+Total new charges													  $1,040.00
+
+Previous Balance
+Current 											       $2,637.84
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-Absolute-Both:Absolute FF - Both (continued)
+
+													  Amount	      Total
+
+Total Previous Balance													  $2,637.84
+
+New Balance
+Current 											       $3,677.84
+
+Total New Balance													  $3,677.84
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-Absolute-Exp | BA-Absolute-Exp
+Full Name	    Absolute FF - Expense
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    Absolute FF - Expense
+Fees Arrg.	    By billing value on each slip
+Expense Arrg.	    1000.00 on next bill.
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												      $0.00
+
+														
+Total of billable expense slips 											  $1,000.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Total of Fees (Time Charges)												      $0.00
+
+Costs Bill Arrangement: Absolute flat fee
+Absolute flat fee: 1000.00 on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message        Absolute FF - Expense
+
+Total flat fee											       $1,000.00
+Total of Costs (Expense Charges)											  $1,000.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Expense Only					 Costs			  $1,000.00			  $42.50
+Total tax on costs													     $42.50
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-Absolute-Exp:Absolute FF - Expense (continued)
+
+													  Amount	      Total
+
+Total new charges													  $1,042.50
+
+Previous Balance
+Current 											       $2,764.21
+Total Previous Balance													  $2,764.21
+
+New Balance
+Current 											       $3,806.71
+
+Total New Balance													  $3,806.71
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-Absolute-Time | BA-Absolute-Tim
+Full Name	    Absolute FF - Time
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    Absolute FF - Time
+Fees Arrg.	    1000.00 on next bill.
+Expense Arrg.	    By billing value on each slip
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												  $1,000.00
+
+														
+Total of billable expense slips 											      $0.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Fees Bill Arrangement: Absolute flat fee
+Absolute flat fee: 1000.00 on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message        Absolute FF - Time
+
+Total flat fee											       $1,000.00
+Total of Fees (Time Charges)												  $1,000.00
+
+Total of Costs (Expense Charges)											      $0.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Time Only					  Fees			  $1,000.00			  $40.00
+Total tax on fees													     $40.00
+
+Total new charges													  $1,040.00
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-Absolute-Time:Absolute FF - Time (continued)
+
+													  Amount	      Total
+
+Previous Balance
+Current 											       $3,556.80
+Total Previous Balance													  $3,556.80
+
+New Balance
+Current 											       $4,596.80
+
+Total New Balance													  $4,596.80
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-FFPlus-Both | BA-FFPlus-Both
+Full Name	    FF Plus - Both
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    FF Plus - Both
+Full Bill Arrg.     500.00 plus charges on next bill.
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												    $500.00
+
+														
+Total of billable expense slips 											      $0.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Full Bill Arrangement: Flat Fee
+Flat fee plus charges: 500.00 plus charges on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message    FF Plus - Both
+Realized Fees												 $500.00
+Realized Costs												   $0.00
+Total of Fees and Costs 												    $500.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Time Only					  Fees			    $500.00			  $20.00
+Total tax on fees													     $20.00
+
+Total new charges													    $520.00
+
+Previous Balance
+Current 											       $3,163.96
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-FFPlus-Both:FF Plus - Both (continued)
+
+													  Amount	      Total
+
+Total Previous Balance													  $3,163.96
+
+New Balance
+Current 											       $3,683.96
+
+Total New Balance													  $3,683.96
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-FFPlus-Exp | BA-FFPlus-Exp
+Full Name	    FF Plus - Exp
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    FF Plus - Exp
+Fees Arrg.	    By billing value on each slip
+Expense Arrg.	    500.00 plus charges on next bill.
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												      $0.00
+
+														
+Total of billable expense slips 											    $500.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Total of Fees (Time Charges)												      $0.00
+
+Costs Bill Arrangement: Flat fee plus charges
+Flat fee plus charges: 500.00 plus charges on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message        FF Plus - Expense
+
+Total flat fee												 $500.00
+Total of Costs (Expense Charges)											    $500.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Expense Only					 Costs			    $500.00			  $21.25
+Total tax on costs													     $21.25
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-FFPlus-Exp:FF Plus - Exp (continued)
+
+													  Amount	      Total
+
+Total new charges													    $521.25
+
+Previous Balance
+Current 											       $3,164.11
+Total Previous Balance													  $3,164.11
+
+New Balance
+Current 											       $3,685.36
+
+Total New Balance													  $3,685.36
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-FFPlus-Time | BA-FFPlus-Time
+Full Name	    FF Plus - Time
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    FF Plus - Time
+Fees Arrg.	    500.00 plus charges on next bill.
+Expense Arrg.	    By billing value on each slip
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												    $500.00
+
+														
+Total of billable expense slips 											      $0.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Fees Bill Arrangement: Flat fee plus charges
+Flat fee plus charges: 500.00 plus charges on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message        FF Plus - Time
+
+Total flat fee												 $500.00
+Total of Fees (Time Charges)												    $500.00
+
+Total of Costs (Expense Charges)											      $0.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Time Only					  Fees			    $500.00			  $20.00
+Total tax on fees													     $20.00
+
+Total new charges													    $520.00
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-FFPlus-Time:FF Plus - Time (continued)
+
+													  Amount	      Total
+
+Previous Balance
+Current 											       $3,162.86
+Total Previous Balance													  $3,162.86
+
+New Balance
+Current 											       $3,682.86
+
+Total New Balance													  $3,682.86
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-Minimum-Both | BA-Minimum-Both
+Full Name	    Minimum FF - Both
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    Minimum FF - Both
+Full Bill Arrg.     5000.00 minimum on next bill.
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												  $5,000.00
+
+														
+Total of billable expense slips 											      $0.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Full Bill Arrangement: Flat Fee
+Minimum flat fee: 5000.00 minimum on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message    Minimum FF - Both
+Realized Fees											       $5,000.00
+Realized Costs												   $0.00
+Total of Fees and Costs 												  $5,000.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Time Only					  Fees			  $5,000.00			 $200.00
+Total tax on fees													    $200.00
+
+Total new charges													  $5,200.00
+
+Previous Balance
+Current 											       $6,806.63
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-Minimum-Both:Minimum FF - Both (continued)
+
+													  Amount	      Total
+
+Total Previous Balance													  $6,806.63
+
+New Balance
+Current 											      $12,006.63
+
+Total New Balance													 $12,006.63
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-Minimum-Exp | BA-Minimum-Exp
+Full Name	    Minimum FF - Exp
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    Minimum FF - Exp
+Fees Arrg.	    By billing value on each slip
+Expense Arrg.	    5000.00 minimum on next bill.
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												      $0.00
+
+														
+Total of billable expense slips 											  $5,000.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Total of Fees (Time Charges)												      $0.00
+
+Costs Bill Arrangement: Minimum flat fee
+Minimum flat fee: 5000.00 minimum on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message        Minimum FF - Expense
+
+Total flat fee											       $5,000.00
+Total of Costs (Expense Charges)											  $5,000.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Expense Only					 Costs			  $5,000.00			 $212.50
+Total tax on costs													    $212.50
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-Minimum-Exp:Minimum FF - Exp (continued)
+
+													  Amount	      Total
+
+Total new charges													  $5,212.50
+
+Previous Balance
+Current 											       $6,934.21
+Total Previous Balance													  $6,934.21
+
+New Balance
+Current 											      $12,146.71
+
+Total New Balance													 $12,146.71
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-Minimum-Time | BA-Minimum-Time
+Full Name	    Minimum FF - Time
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    Minimum FF - Time
+Fees Arrg.	    5000.00 minimum on next bill.
+Expense Arrg.	    By billing value on each slip
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												  $5,000.00
+
+														
+Total of billable expense slips 											      $0.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Fees Bill Arrangement: Minimum flat fee
+Minimum flat fee: 5000.00 minimum on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message        Minimum FF - Time
+
+Total flat fee											       $5,000.00
+Total of Fees (Time Charges)												  $5,000.00
+
+Total of Costs (Expense Charges)											      $0.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Time Only					  Fees			  $5,000.00			 $200.00
+Total tax on fees													    $200.00
+
+Total new charges													  $5,200.00
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-Minimum-Time:Minimum FF - Time (continued)
+
+													  Amount	      Total
+
+Previous Balance
+Current 											       $7,716.80
+Total Previous Balance													  $7,716.80
+
+New Balance
+Current 											      $12,916.80
+
+Total New Balance													 $12,916.80
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+Nickname	    BA-MinimumHours | BA-MinimumHours
+Full Name	    Minimum Hours FF
+Address 	    Address 1a
+		    Address 1b
+		    Address 1c
+		    City1, ST1 ZipCode1
+		    Country1
+Phone		    Phone1			Fax	
+Home						Other	
+In Ref To	    Minimum Hours FF
+Fees Arrg.	    1000.00 for the first 1.00 hours then 500.00 per hour on next bill.
+Expense Arrg.	    By billing value on each slip
+Tax Profile	    MyTaxes
+Last bill	    12/27/2013
+Last charge	
+Last payment					Amount	      $0.00
+
+													  Amount	      Total
+
+Total of billable time slips												  $1,000.00
+
+														
+Total of billable expense slips 											      $0.00
+
+														
+
+						   Calculation of Fees and Costs
+
+
+													  Amount	      Total
+
+Fees Bill Arrangement: Minimum hours flat fee
+Minimum hours flat fee: 1000.00 for the first 1.00 hours then 500.00 per hour on next bill.
+WARNING: There are no billable slips associated with this bill arrangement. Many reports require slips
+to give correct analysis of billings. To avoid problems, create at least one billable slip of at least 0.01 for
+each timekeeper who worked on this bill.
+Message        Minimum Hours FF
+
+Total flat fee											       $1,000.00
+Total of Fees (Time Charges)												  $1,000.00
+
+Total of Costs (Expense Charges)											      $0.00
+
+Taxes
+Tax Rate Rule					  Type			    Taxable			  Charge
+Time Only					  Fees			  $1,000.00			  $40.00
+Total tax on fees													     $40.00
+
+Total new charges													  $1,040.00
+
+
+
+						       TS Handyman Services
+							Pre-bill Worksheet					      Page
+
+BA-MinimumHours:Minimum Hours FF (continued)
+
+													  Amount	      Total
+
+Previous Balance
+Current 											       $3,660.80
+Total Previous Balance													  $3,660.80
+
+New Balance
+Current 											       $4,700.80
+
+Total New Balance													  $4,700.80

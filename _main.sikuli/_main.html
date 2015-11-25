@@ -1,0 +1,161 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>_main.sikuli</h2> <a href="_main.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt">#######################################################</span>
+<span class="cmt"># _main</span>
+<span class="cmt">#######################################################</span>
+<span class="cmt">#</span>
+<span class="cmt"># These scripts rely on the following:                </span>
+<span class="cmt">#</span>
+<span class="cmt"># 1) Windows Explorer windows opens in primary monitor </span>
+<span class="cmt"># 2) Timeslips is installed below C:\Program Files (x86)  </span>
+<span class="cmt"># 3) Timeslips install folder is in format: Timeslips 2014</span>
+<span class="cmt">#</span>
+<span class="cmt">#######################################################</span>
+
+<span class="cmt"># import my sikuli scripts</span>
+<span class="kw">import</span> myTools
+
+<span class="kw">import</span> _global_Settings
+<span class="kw">import</span> db_New
+<span class="kw">import</span> settings_Prefs
+
+<span class="kw">import</span> names_Create
+
+<span class="kw">import</span> settings_Categories
+<span class="kw">import</span> settings_CustomFields
+<span class="kw">import</span> settings_TAL
+
+<span class="kw">import</span> slips_Create
+<span class="kw">import</span> slips_CreateManually
+
+<span class="kw">import</span> bill_Split
+<span class="kw">import</span> bill_MonthlyCycle
+
+<span class="kw">import</span> ba__Main
+<span class="kw">import</span> ba__Common
+
+<span class="kw">import</span> bill_BillFields
+
+<span class="kw">import</span> backup_Data
+<span class="kw">import</span> calendar_Terms
+<span class="kw">import</span> calendar_Entries
+
+<span class="kw">import</span> email_Send
+<span class="kw">import</span> reports_PostBill
+<span class="kw">import</span> reports_CreateReports
+
+<span class="cmt">##############################################################</span>
+
+myTools.setupLog()
+myTools.startTimeStamp()
+_global_Settings.fSetup_Envirnoment()
+
+<span class="cmt">##############################################################</span>
+
+<span class="cmt">#from bill_Print import fSet_BillDate</span>
+<span class="cmt">#fSet_BillDate(1)</span>
+reports_PostBill.fPrint_PostbillReports(<span class="dig">1</span>,<span class="str">"b"</span>) <span class="cmt"># use for quick test of reports</span>
+<span class="cmt">#type("f",KeyModifier.ALT)</span>
+<span class="cmt">#type("x")</span>
+
+<span class="cmt">#db_New.fStartTS_CreateNewDB()</span>
+<span class="cmt">#settings_Prefs.fTweak_Prefs()</span>
+
+<span class="cmt">#settings_Categories.fCreate_Categories()</span>
+<span class="cmt">#settings_CustomFields.fCreate_CustomFields()</span>
+
+<span class="cmt">#names_Create.fCreateImportEdit_Names()</span>
+
+<span class="cmt">#slips_Create.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
+<span class="cmt">##slips_CreateManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
+
+<span class="cmt">#settings_TAL.fSetup_TAL()</span>
+<span class="cmt">#bill_Split.fSetup_SplitBills()</span>
+<span class="cmt">#reports_CreateReports.create_Layouts()</span>
+
+<span class="cmt">#bill_MonthlyCycle.fRun_BillCycle(5,6) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
+
+<span class="cmt">#ba__Common.fSetup_BADefaultLayout()</span>
+<span class="cmt">#ba__Main.fReview_Arrangements()</span>
+
+<span class="cmt">#bill_BillFields.fBill_BillFields()</span>
+
+<span class="cmt">#calendar_Terms.fSetup_CalTerms()</span>
+<span class="cmt">#calendar_Entries.fCalendar_Entries()</span>
+
+myTools.endTimeStamp()
+
+exit()
+</pre>
+</body>
+</html>

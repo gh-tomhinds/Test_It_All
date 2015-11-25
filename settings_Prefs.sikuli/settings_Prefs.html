@@ -1,0 +1,153 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>settings_Prefs.sikuli\settings_Prefs.sikuli</h2> <a href="settings_Prefs.sikuli\settings_Prefs.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fTweak_Prefs():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"preferences"</span>)
+
+    logging.debug(<span class="str">'fTweak_Prefs'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    logging.debug(<span class="str">'- open preferences'</span>)
+    <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"p"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># click Default button
+</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># Interface: Startup
+</span>    <span class="cmt"># unmark date check
+</span>    <span class="skw">type</span>(Key.SPACE)
+
+<span class="cmt"># Interface: Appearance
+</span>    myTools.pressF6(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- clear window settings'</span>)
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># Interface: Nav Rules
+</span>    myTools.pressSHIFTF6(<span class="dig">2</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Update Rates
+</span>    <span class="skw">type</span>(<span class="str">"u"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Slips: New Slip Rules
+</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
+        myTools.pressF6(<span class="dig">6</span>)
+    <span class="kw">else</span>:
+        myTools.pressF6(<span class="dig">8</span>)
+    <span class="skw">click</span>(Pattern(<img src="dates_extra_chk.png" />).targetOffset(-<span class="dig">118</span>,-<span class="dig">1</span>))
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># spelling
+</span>    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
+        myTools.pressF6(<span class="dig">6</span>)
+    <span class="kw">else</span>:
+        myTools.pressF6(<span class="dig">5</span>)
+
+    <span class="skw">type</span>(<span class="str">"m"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"m"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># save
+</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.ALT)
+    prefsFile = Settings.tsFolder + <span class="str">"\\"</span> + Settings.tsVersion + <span class="str">".prf"</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(prefsFile)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="cmt"># close  
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

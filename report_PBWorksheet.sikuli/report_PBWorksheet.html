@@ -1,0 +1,158 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>report_PBWorksheet.sikuli</h2> <a href="report_PBWorksheet.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+<span class="kw">import</span> reports_Compare
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_PreBill():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- set up prebill'</span>)
+
+    myTools.getFocus()
+    logging.debug(<span class="str">'- open worksheet'</span>)
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"p"</span>)
+
+    myTools.removeDateAndTime()
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"y"</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fPrint_PreBill(pReportMonth,pRepExt):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"print worksheet"</span>)
+
+    <span class="cmt"># name report file: ex: PreBill-03</span>
+    reportName = myTools.monthToName(pReportMonth,<span class="str">"-PreBill-"</span>,pRepExt)
+    logging.debug(<span class="str">'Print_PreBill: '</span> + reportName)
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
+
+    logging.debug(<span class="str">'- open worksheet'</span>)
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"p"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- set up worksheet'</span>)
+    <span class="cmt"># Options</span>
+    myTools.pressSHIFTTAB(<span class="dig">4</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Default</span>
+    myTools.pressSHIFTTAB(<span class="dig">4</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># OK</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># choose text</span>
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.enterSlipFilter(pReportMonth,<span class="str">"n"</span>)
+
+    <span class="cmt"># print the report</span>
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># fill in path and name; press ENTER</span>
+    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="cmt"># wait for report to complete</span>
+    myTools.waitForReport()
+
+    <span class="cmt"># compare the report with baseline</span>
+    reports_Compare.Compare_OneReport(reportName)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

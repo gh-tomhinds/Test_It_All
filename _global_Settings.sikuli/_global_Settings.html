@@ -1,0 +1,189 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>_global_Settings.sikuli\_global_Settings.sikuli</h2> <a href="_global_Settings.sikuli\_global_Settings.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> os
+<span class="kw">import</span> datetime
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_Time():
+<span class="cmt">#---------------------------------------------------#</span>
+
+<span class="cmt"># get current month and year (forget where this is used)</span>
+    rightNow = datetime.datetime.now()
+    Settings.thisMonth = rightNow.month
+    Settings.thisYear = rightNow.year
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_Folders():
+<span class="cmt">#---------------------------------------------------#</span>
+
+<span class="cmt"># point to Sikuli folder on desktop</span>
+    Settings.sikFolder = os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\\desktop\\Sikuli'</span>
+    logging.debug(<span class="str">"- Sikuli folder:    %s"</span> %Settings.sikFolder)
+
+<span class="cmt"># point to scripts folder on desktop</span>
+    Settings.scriptFolder = Settings.sikFolder + <span class="str">'\\ConfirmDataEntry'</span>
+    logging.debug(<span class="str">"- Script folder:    %s"</span> %Settings.scriptFolder)
+
+<span class="cmt"># point to source data folder on desktop and data files</span>
+    Settings.dataFolder = Settings.scriptFolder + <span class="str">'\\!data'</span>
+    logging.debug(<span class="str">"- Data folder:      %s"</span> %Settings.dataFolder)
+
+    Settings.imgFolder = Settings.dataFolder + <span class="str">'\\images'</span>
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_DataFiles():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    Settings.cliFile = Settings.dataFolder + <span class="str">'\\towns.csv'</span>
+    Settings.tkFile = Settings.dataFolder + <span class="str">'\\timekeepers.csv'</span>
+    Settings.taskFile = Settings.dataFolder + <span class="str">'\\tasks.csv'</span>
+    Settings.expFile = Settings.dataFolder + <span class="str">'\\expenses.csv'</span>
+    Settings.refFile = Settings.dataFolder + <span class="str">'\\refs.csv'</span>
+    Settings.tSlipsFile = Settings.dataFolder + <span class="str">'\\slips1.csv'</span>
+    Settings.eSlipsFile = Settings.dataFolder + <span class="str">'\\slips2.csv'</span>
+    Settings.calFile = Settings.dataFolder + <span class="str">'\\calData.csv'</span>
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_AppFolders():
+<span class="cmt">#---------------------------------------------------#</span>
+
+<span class="cmt"># point to report paths</span>
+    Settings.rootRepFolder = Settings.scriptFolder + <span class="str">"\\!reports"</span>
+    logging.debug(<span class="str">"- Rep root folder:  %s"</span> %Settings.rootRepFolder)
+
+    Settings.baseRepFolder = Settings.rootRepFolder + <span class="str">"\\Baseline"</span>
+    logging.debug(<span class="str">"- Base Rep folder:  %s"</span> %Settings.baseRepFolder)
+
+    Settings.repFolder = Settings.rootRepFolder + <span class="str">"\\"</span> + Settings.tsVersion
+    logging.debug(<span class="str">"- Report folder:    %s"</span> %Settings.repFolder)
+
+<span class="cmt"># point to TS paths</span>
+    Settings.tsFolder = <span class="str">"C:\\Program Files (x86)\\Timeslips "</span> + Settings.tsVersion
+    logging.debug(<span class="str">"- Timeslips folder: %s"</span> %Settings.tsFolder)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2015</span>:
+        Settings.dbFolder = <span class="str">"C:\\Sikuli"</span>
+    <span class="kw">else</span>:
+        Settings.dbFolder = Settings.tsFolder + <span class="str">"\\Sikuli"</span>
+    logging.debug(<span class="str">"- DB folder:        %s"</span> %Settings.dbFolder)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_AppFiles():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    Settings.tsEXE = Settings.tsFolder + <span class="str">"\\timeslip.exe"</span>
+    logging.debug(<span class="str">"- Timeslips EXE:    %s"</span> %Settings.tsEXE)
+
+    Settings.tsimpEXE = Settings.tsFolder + <span class="str">"\\tsimport.exe"</span>
+    logging.debug(<span class="str">"- TSImport EXE:     %s"</span> %Settings.tsimpEXE)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_LogFiles():
+<span class="cmt">#---------------------------------------------------#</span>
+
+<span class="cmt"># point to Billing Arrangement log file</span>
+    Settings.BALogFile = Settings.repFolder + <span class="str">"\\!BA-Log.txt"</span>
+
+    <span class="cmt"># set up duration log and add version to it</span>
+    Settings.durationFile = Settings.sikFolder + <span class="str">"\\Durations-"</span> + Settings.tsVersion + <span class="str">".csv"</span>
+    durationLog = open(Settings.durationFile, <span class="str">"a"</span>)
+    durationLog.write(<span class="str">" ,"</span> + str(Settings.tsVersion) + <span class="str">"\n"</span>)
+    durationLog.close()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_Envirnoment():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'Setup_Stuff'</span>)
+
+    fSetup_Time()
+
+    <span class="cmt"># get TS version</span>
+    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"TIMESLIPS:"</span>, <span class="str">"2015"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># get data version</span>
+    Settings.dataYear = <span class="skw">input</span>(<span class="str">"DATA:"</span>, <span class="str">"2013"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    fSetup_Folders()
+    fSetup_DataFiles()
+
+    fSetup_AppFolders()
+    fSetup_AppFiles()
+    fSetup_LogFiles()
+</pre>
+</body>
+</html>

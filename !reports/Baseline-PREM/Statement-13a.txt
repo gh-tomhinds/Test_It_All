@@ -1,0 +1,948 @@
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Absolute FF - Both
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Absolute FF - Both
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12355										      2,637.84		2,637.84
+
+	      Ending Balance													2,637.84
+
+	      Amount Due													2,637.84
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,637.84	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Absolute FF - Expense
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Absolute FF - Expense
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12354										      2,764.21		2,764.21
+
+	      Ending Balance													2,764.21
+
+	      Amount Due													2,764.21
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,764.21	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Absolute FF - Time
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Absolute FF - Time
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12353										      3,556.80		3,556.80
+
+	      Ending Balance													3,556.80
+
+	      Amount Due													3,556.80
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					3,556.80	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Adjust Expense
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Adjust Expense
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12352										      2,873.15		2,873.15
+
+	      Ending Balance													2,873.15
+
+	      Amount Due													2,873.15
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,873.15	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Adjust Task
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Adjust Task
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12351										      2,674.37		2,674.37
+
+	      Ending Balance													2,674.37
+
+	      Amount Due													2,674.37
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,674.37	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Adjust Timekeeper - Both
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Adjust Timekeeper - Both
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12350										      2,674.37		2,674.37
+
+	      Ending Balance													2,674.37
+
+	      Amount Due													2,674.37
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,674.37	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Adjust Timekeeper - Expense
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Adjust Timekeeper - Expense
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12349										      2,873.15		2,873.15
+
+	      Ending Balance													2,873.15
+
+	      Amount Due													2,873.15
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,873.15	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Adjust Timekeeper - Time
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Adjust Timekeeper - Time
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12348										      2,674.37		2,674.37
+
+	      Ending Balance													2,674.37
+
+	      Amount Due													2,674.37
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,674.37	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Adjust Total - Both
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Adjust Total - Both
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12347										      2,904.66		2,904.66
+
+	      Ending Balance													2,904.66
+
+	      Amount Due													2,904.66
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,904.66	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Adjust Total - Expense
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Adjust Total - Expense
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12346										      2,873.15		2,873.15
+
+	      Ending Balance													2,873.15
+
+	      Amount Due													2,873.15
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,873.15	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Adjust Total - Time
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Adjust Total - Time
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12345										      2,674.37		2,674.37
+
+	      Ending Balance													2,674.37
+
+	      Amount Due													2,674.37
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,674.37	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Contingency - Both
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Contingency - Both
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12369										      1,595.65		1,595.65
+  12/27/2013  Invoice #12370										      2,116.74		3,712.39
+
+	      Ending Balance													3,712.39
+
+	      Amount Due													3,712.39
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					3,712.39	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Contingency - Exp
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Contingency - Exp
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12367										      1,721.71		1,721.71
+  12/27/2013  Invoice #12368										      2,242.96		3,964.67
+
+	      Ending Balance													3,964.67
+
+	      Amount Due													3,964.67
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					3,964.67	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Contingency - Time
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Contingency - Time
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12365										      2,516.80		2,516.80
+  12/27/2013  Invoice #12366										      3,556.80		6,073.60
+
+	      Ending Balance													6,073.60
+
+	      Amount Due													6,073.60
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					6,073.60	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+FF Plus - Both
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     FF Plus - Both
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12364										      3,163.96		3,163.96
+
+	      Ending Balance													3,163.96
+
+	      Amount Due													3,163.96
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					3,163.96	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+FF Plus - Exp
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     FF Plus - Exp
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12363										      3,164.11		3,164.11
+
+	      Ending Balance													3,164.11
+
+	      Amount Due													3,164.11
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					3,164.11	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+FF Plus - Time
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     FF Plus - Time
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12362										      3,162.86		3,162.86
+
+	      Ending Balance													3,162.86
+
+	      Amount Due													3,162.86
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					3,162.86	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Interim Activity FF
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Interim Activity FF
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12384										      3,036.80		3,036.80
+  12/27/2013  Invoice #12385										      3,140.80		6,177.60
+  12/27/2013  Invoice #12386										      3,244.80		9,422.40
+
+	      Ending Balance													9,422.40
+
+	      Amount Due													9,422.40
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					9,422.40	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Interim Total FF
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Interim Total FF
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12381										      3,036.80		3,036.80
+  12/27/2013  Invoice #12382										      3,140.80		6,177.60
+  12/27/2013  Invoice #12383										      3,244.80		9,422.40
+
+	      Ending Balance													9,422.40
+
+	      Amount Due													9,422.40
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					9,422.40	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Maximum FF - Both
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Maximum FF - Both
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12361										      2,116.74		2,116.74
+
+	      Ending Balance													2,116.74
+
+	      Amount Due													2,116.74
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,116.74	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Maximum FF - Exp
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Maximum FF - Exp
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12360										      2,242.96		2,242.96
+
+	      Ending Balance													2,242.96
+
+	      Amount Due													2,242.96
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,242.96	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Maximum FF - Time
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Maximum FF - Time
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12359										      2,642.86		2,642.86
+
+	      Ending Balance													2,642.86
+
+	      Amount Due													2,642.86
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,642.86	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Minimum FF - Both
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Minimum FF - Both
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12358										      6,806.63		6,806.63
+
+	      Ending Balance													6,806.63
+
+	      Amount Due													6,806.63
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					6,806.63	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Minimum FF - Exp
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Minimum FF - Exp
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12357										      6,934.21		6,934.21
+
+	      Ending Balance													6,934.21
+
+	      Amount Due													6,934.21
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					6,934.21	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Minimum FF - Time
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Minimum FF - Time
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12356										      7,716.80		7,716.80
+
+	      Ending Balance													7,716.80
+
+	      Amount Due													7,716.80
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					7,716.80	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Minimum Hours FF
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Minimum Hours FF
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12371										      3,660.80		3,660.80
+
+	      Ending Balance													3,660.80
+
+	      Amount Due													3,660.80
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					3,660.80	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Percent Comp
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Percent Comp
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12372										      2,776.80		2,776.80
+  12/27/2013  Invoice #12373										      3,088.80		5,865.60
+  12/27/2013  Invoice #12374										      2,724.80		8,590.40
+
+	      Ending Balance													8,590.40
+
+	      Amount Due													8,590.40
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					8,590.40	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Precision Settings
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Precision Settings
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12389										      2,642.86		2,642.86
+
+	      Ending Balance													2,642.86
+
+	      Amount Due													2,642.86
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,642.86	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Progress Activity FF
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Progress Activity FF
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12378										      3,036.80		3,036.80
+  12/27/2013  Invoice #12379										      3,140.80		6,177.60
+  12/27/2013  Invoice #12380										      3,244.80		9,422.40
+
+	      Ending Balance													9,422.40
+
+	      Amount Due													9,422.40
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					9,422.40	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Progress Total FF
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Progress Total FF
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12375										      3,036.80		3,036.80
+  12/27/2013  Invoice #12376										      3,140.80		6,177.60
+  12/27/2013  Invoice #12377										      3,244.80		9,422.40
+
+	      Ending Balance													9,422.40
+
+	      Amount Due													9,422.40
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					9,422.40	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Replace Exp A
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Replace Exp A
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12393										      9,129.45		9,129.45
+
+	      Ending Balance													9,129.45
+
+	      Amount Due													9,129.45
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					9,129.45	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Replace Time A
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Replace Time A
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12390										      9,129.45		9,129.45
+
+	      Ending Balance													9,129.45
+
+	      Amount Due													9,129.45
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					9,129.45	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Replace Time B
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Replace Time B
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12391										      9,129.45		9,129.45
+
+	      Ending Balance													9,129.45
+
+	      Amount Due													9,129.45
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					9,129.45	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Replace Time C
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Replace Time C
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12392										      9,129.45		9,129.45
+
+	      Ending Balance													9,129.45
+
+	      Amount Due													9,129.45
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					9,129.45	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Rounding Dollars
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Rounding Dollars
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12388										      2,648.42		2,648.42
+
+	      Ending Balance													2,648.42
+
+	      Amount Due													2,648.42
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,648.42	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
+Rounding Minutes
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Rounding Minutes
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12387										      2,653.41		2,653.41
+
+	      Ending Balance													2,653.41
+
+	      Amount Due													2,653.41
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					2,653.41	 0.00	      0.00	   0.00 	0.00

@@ -1,0 +1,30 @@
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+							Selection Criteria
+
+Clie.Classification	     Open
+Fnds.Transaction Dat	     1/1/2013 - 1/27/2013
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Hadley / Hadley-1
+Beginning Balance													       0.00
+		     1/27/2013	DEP    bal - new bank							     10.01	      10.01
+
+Ending Balance														      10.01
+
+
+Halifax / Halifax-2
+Beginning Balance													       0.00
+		     1/27/2013	DEP    bal - new bank							     20.02	      20.02
+
+Ending Balance														      20.02
+
+
+Grand Total														       0.00
+   Total Added														      30.03
+   Total Removed													       0.00
+   Ending Balance Total 												      30.03

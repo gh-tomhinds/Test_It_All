@@ -1,0 +1,140 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>bill_ImportLayout.sikuli</h2> <a href="bill_ImportLayout.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fImport_Layout(pThisLayout):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- open layout list'</span>)
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+    <span class="skw">wait</span>(<img src="adjustment_note.png" />,FOREVER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    logging.debug(<span class="str">'- import layout'</span>)
+    <span class="skw">click</span>(Pattern(<img src="import_button.png" />).targetOffset(<span class="dig">3</span>,-<span class="dig">9</span>))
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+
+    layoutFilePath = Settings.dataFolder + <span class="str">"\\"</span> + pThisLayout + <span class="str">".tsl"</span>
+    <span class="skw">type</span>(layoutFilePath)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+    <span class="skw">type</span>(pThisLayout)
+
+    logging.debug(<span class="str">'- save layout'</span>)
+    <span class="skw">type</span>(<span class="str">"l"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"s"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fAssign_Layout():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- assign layout'</span>)
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
+    <span class="skw">wait</span>(Pattern(<img src="selected_layout.png" />).similar(<span class="dig">0.60</span>))
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.INSERT)
+    <span class="skw">wait</span>(<img src="check_boxes.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="skw">wait</span>(<img src="assigned_message.png" />,FOREVER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fImport_BillLayout(pLayoutName):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"import layout"</span>)
+    logging.debug(<span class="str">'Import_BillLayout'</span>)
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
+
+    fImport_Layout(pLayoutName)
+    fAssign_Layout()
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

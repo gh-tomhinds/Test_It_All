@@ -1,0 +1,194 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>expense_Edit.sikuli\expense_Edit.sikuli</h2> <a href="expense_Edit.sikuli\expense_Edit.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fEdit_ExpenseGenInfo():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- open expense list'</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"o"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- edit lipstick'</span>)
+    logging.debug(<span class="str">'  - names'</span>)
+    <span class="skw">type</span>(<span class="str">"lip"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(<span class="str">"Hand Tools"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"E001"</span>)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"Manual tools"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"h"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'  - prices'</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"201.001"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2012</span>:
+
+        <span class="cmt"># filling prices with 201.002 thru 201.020
+</span>        <span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">201002</span>,<span class="dig">201021</span>):
+            price = str(float(i)/<span class="dig">1000</span>)
+            <span class="skw">type</span>(price)
+            <span class="skw">type</span>(Key.TAB)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># price level to 20
+</span>        logging.debug(<span class="str">'  - defaults'</span>)
+        <span class="skw">type</span>(<span class="str">"1"</span>)
+        <span class="skw">type</span>(Key.TAB)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># Quantity
+</span>    <span class="skw">type</span>(<span class="str">"1.125"</span>)
+    myTools.pressTAB(<span class="dig">3</span>)
+
+<span class="cmt"># Description
+</span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(<span class="str">"Hammers, saws, etc."</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fEdit_ExpenseCustom():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'  - custom fields'</span>)
+
+    <span class="cmt"># switch to custom fields
+</span>    myTools.pressF6(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Date
+</span>    <span class="skw">type</span>(<span class="str">"12/1/16"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Hours
+</span>    <span class="skw">type</span>(<span class="str">"301.01"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># List
+</span>    <span class="skw">type</span>(<span class="str">"Materials"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Money
+</span>    <span class="skw">type</span>(<span class="str">"301.01"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Number
+</span>    <span class="skw">type</span>(<span class="str">"301.01"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Percent
+</span>    <span class="skw">type</span>(<span class="str">"301.01"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Text
+</span>    <span class="skw">type</span>(<span class="str">"Hand Tools"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fEdit_Expense():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"edit expense"</span>)
+
+    logging.debug(<span class="str">'Edit_Expense'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    fEdit_ExpenseGenInfo()
+    fEdit_ExpenseCustom()
+
+    logging.debug(<span class="str">'- save and close expense list'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

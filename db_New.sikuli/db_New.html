@@ -1,0 +1,306 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>db_New.sikuli</h2> <a href="db_New.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> shutil
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+<span class="kw">import</span> backup_Data
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fDelete_DataFolder():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- fDeleteDataFolder'</span>)
+
+    <span class="kw">if</span> os.path.exists(Settings.dbFolder):
+        logging.debug(<span class="str">"-- Delete folder:     %s"</span> % Settings.dbFolder)
+        shutil.rmtree(Settings.dbFolder)
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">"-- Missing:           %s"</span> % Settings.dbFolder)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fStart_TS():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- fStartTS'</span>)
+
+    <span class="cmt"># show desktop</span>
+    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.KEY_WIN)
+
+    <span class="cmt"># start timeslips</span>
+    App.open(Settings.tsEXE)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+
+    logging.debug(<span class="str">'-- wait until TS is open'</span>)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2016</span>:
+        <span class="skw">wait</span>(<img src="sage_timeslips.png" />,<span class="dig">60</span>)
+
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCheckFor_Sample():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- checkFor_Sample'</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="kw">if</span> exists(<img src="demo_database_msg.png" />):
+        logging.debug(<span class="str">'-- Sample message exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCheckFor_PEP():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- checkFor_PEP'</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="kw">if</span> exists(<img src="pep.png" />):
+        logging.debug(<span class="str">'-- PEP message exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCheckFor_SPS():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- checkFor_SPS'</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="kw">if</span> exists(<img src="sps.png" />):
+        logging.debug(<span class="str">'-- SPS message exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCheckFor_BillingDate():
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- checkFor_BillingDate'</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="kw">if</span> exists(<img src="bill_date.png" />):
+        logging.debug(<span class="str">'-- billing date message exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fStartTS_CreateNewDB():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"new db"</span>)
+
+    logging.debug(<span class="str">'StartTS_CreateNewDB'</span>)
+
+    <span class="skw">popup</span>(<span class="str">"make sure Timeslips is closed"</span>)
+
+    fDelete_DataFolder()
+    fStart_TS()
+    fCheckFor_PEP()
+
+<span class="cmt"># start the new db process</span>
+    logging.debug(<span class="str">'- Check for database'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+
+    <span class="kw">if</span> exists(<img src="database_not_found.png" />):
+        logging.debug(<span class="str">'-- TS2014 db not found'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+    <span class="kw">elif</span> exists(<img src="cannot_find_file.png" />):
+        logging.debug(<span class="str">'-- TS2016 db not found'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">'-- db found'</span>)
+        <span class="kw">if</span> exists(<img src="supervisor.png" />):
+            <span class="skw">type</span>(Key.ENTER)
+            time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        fCheckFor_Sample()
+        fCheckFor_PEP()
+        fCheckFor_BillingDate()
+        fCheckFor_SPS()
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+        <span class="cmt"># File &gt; New &gt; Database</span>
+        logging.debug(<span class="str">'- create new database'</span>)
+        <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+        <span class="skw">type</span>(<span class="str">"d"</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># Empty database, press Next</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+
+<span class="cmt"># For TS2016, choose Local, press Next</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2015</span>:
+        myTools.pressDOWN(<span class="dig">1</span>)
+        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+
+<span class="cmt"># new db path and settings</span>
+    logging.debug(<span class="str">'- enter path'</span>)
+    <span class="skw">type</span>(Settings.dbFolder)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># Firm name</span>
+    <span class="skw">type</span>(<span class="str">"TS Handyman Services"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    logging.debug(<span class="str">'- db settings'</span>)
+
+<span class="cmt"># Decimals</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># set Fiscal month to July</span>
+    myTools.pressDOWN(<span class="dig">6</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># starting invoice number    </span>
+    <span class="skw">type</span>(<span class="str">"12345"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># bill with firm heading    </span>
+    myTools.pressDOWN(<span class="dig">2</span>)
+<span class="cmt"># mark cover page</span>
+    <span class="skw">type</span>(Key.TAB,KeyModifier.SHIFT)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#    click("do_not_use_tal.png")    </span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># unmark outlook</span>
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># Ready to Create Your Database</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># Wait for db to be created    </span>
+    <span class="skw">wait</span>(<img src="finish.png" />,FOREVER)
+
+<span class="cmt"># press Finish    </span>
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># wait for address info</span>
+    <span class="skw">wait</span>(<img src="address_info.png" />,<span class="dig">60</span>)
+
+<span class="cmt"># Firm name/address</span>
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"239 Western Avenue"</span>)
+    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"Essex"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"MA"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"01929"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"USA"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"508-768-6100"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># project separator</span>
+    myTools.pressF6(<span class="dig">6</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"."</span>)
+
+<span class="cmt"># close General settings</span>
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># getting started</span>
+    logging.debug(<span class="str">'- getting started wiz'</span>)
+    <span class="skw">wait</span>(<img src="enter_your_name.png" />,FOREVER)
+    <span class="skw">type</span>(<span class="str">"Xander Yakuza Zork"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">"XanderZ"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"XZork"</span>)
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+
+<span class="cmt"># backup</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="kw">if</span> exists(<img src="backup_database.png" />):
+        <span class="skw">click</span>(<img src="no_btn.png" />)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+
+    fCheckFor_BillingDate()
+    fCheckFor_SPS()
+    fCheckFor_PEP()
+
+    myTools.sectionEndTimeStamp()
+    backup_Data.fBackup_Checkpoint(<span class="str">"new"</span>)
+</pre>
+</body>
+</html>

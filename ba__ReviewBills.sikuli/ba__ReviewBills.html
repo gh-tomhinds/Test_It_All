@@ -1,0 +1,191 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>ba__ReviewBills.sikuli\ba__ReviewBills.sikuli</h2> <a href="ba__ReviewBills.sikuli\ba__ReviewBills.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> os
+<span class="kw">import</span> logging
+<span class="kw">import</span> csv
+<span class="kw">import</span> myTools
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fGet_BillValues(pBillType,pFullBill,pPhrase):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
+    <span class="cmt"># searches the bill text file for a phrase and returns the value associated with it</span>
+
+    logging.debug(<span class="str">'- Get_BillValues: '</span> + pBillType)
+
+    <span class="kw">for</span> billLine <span class="kw">in</span> pFullBill:
+        <span class="kw">if</span> billLine.<span class="skw">find</span>(pPhrase) != -<span class="dig">1</span>:
+            <span class="cmt"># after finding the line, remove the phrase, $, commas, and trailing spaces</span>
+            billLine = billLine.replace(pPhrase,<span class="str">""</span>)
+            billLine = billLine.replace(<span class="str">"$"</span>,<span class="str">""</span>)
+            billLine = billLine.replace(<span class="str">","</span>,<span class="str">""</span>)
+            billLine = billLine.strip()
+            <span class="kw">return</span>(billLine)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fCompare_Results(pBillName,pValueType,pSavedValue,pBillValue):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
+    logging.debug(<span class="str">"- Compare_Results: "</span> + pBillName + <span class="str">": "</span> + pValueType)
+
+    outFile = Settings.BALogFile
+    billLog = open(outFile, <span class="str">"a"</span>)
+
+    <span class="kw">print</span>(pSavedValue)
+    <span class="kw">print</span>(pBillValue)
+
+    <span class="kw">if</span> float(pSavedValue) == float(pBillValue):
+        billLog.write(<span class="str">" "</span> + pValueType + <span class="str">" matches.\n"</span>)
+    <span class="kw">else</span>:
+        billLog.write(<span class="str">" !!!"</span> + pValueType + <span class="str">" does not match."</span>)
+        billLog.write(<span class="str">" Expected: "</span> + pSavedValue + <span class="str">", "</span>)
+        billLog.write(<span class="str">" Actual: "</span> + pBillValue + <span class="str">"\n"</span>)
+
+    billLog.close()
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fReview_BABill(pBillName):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"ba review bill"</span>)
+    logging.debug(<span class="str">'Review_Bill: '</span> + pBillName)
+
+    <span class="cmt"># open the file that contain bill data</span>
+    baDataFile = Settings.dataFolder + <span class="str">"\\baData.csv"</span>
+    allBills = csv.DictReader(open(baDataFile))
+
+    <span class="cmt"># pull the values from the csv to compare to the values in the txt</span>
+
+    stopLooking = False
+
+    <span class="kw">for</span> oneBill <span class="kw">in</span> allBills:
+        <span class="kw">if</span> stopLooking == False:
+            <span class="kw">if</span> oneBill[<span class="str">"name"</span>] == pBillName:
+                savedFeesValue = oneBill[<span class="str">"fees"</span>]
+                savedCostsValue = oneBill[<span class="str">"costs"</span>]
+                savedTotalValue = oneBill[<span class="str">"total"</span>]
+                stopLooking = True
+
+    billPath = Settings.repFolder + <span class="str">"\\"</span> + pBillName + <span class="str">".txt"</span>
+
+    <span class="kw">if</span> os.path.exists(billPath):
+
+        <span class="cmt"># set up default strings used to identify specific lines on the bill</span>
+        <span class="kw">if</span> <span class="str">"Progress"</span> <span class="kw">in</span> pBillName <span class="kw">and</span> <span class="str">"3"</span> <span class="kw">in</span> pBillName:
+            timeText = <span class="str">"Net Time Charges"</span>
+        <span class="kw">elif</span> <span class="str">"Progress"</span> <span class="kw">in</span> pBillName:
+            timeText = <span class="str">"Progress billing amount"</span>
+        <span class="kw">else</span>:
+            timeText = <span class="str">"For professional services rendered"</span>
+
+        <span class="kw">print</span>(timeText)
+
+        expText = <span class="str">"Total additional charges"</span>
+        totalText = <span class="str">"Balance due"</span>
+
+        <span class="cmt"># open txt file of printed bill</span>
+        billFile = open(billPath)
+        <span class="cmt"># read in file and break it up into lines</span>
+        billLines = billFile.read().splitlines()
+        billFile.close()
+
+        <span class="cmt"># read values from printed bill</span>
+        billFeesValue = fGet_BillValues(<span class="str">"Fees"</span>,billLines,timeText)
+        <span class="kw">print</span>(<span class="str">"* * *"</span>)
+        <span class="kw">print</span>(billFeesValue)
+        billCostsValue = fGet_BillValues(<span class="str">"Costs"</span>,billLines,expText)
+        billTotalValue = fGet_BillValues(<span class="str">"Total"</span>,billLines,totalText)
+
+        <span class="cmt"># open log file</span>
+        outFile = Settings.BALogFile
+        billLog = open(outFile, <span class="str">"a"</span>)
+
+        <span class="cmt"># print results      </span>
+        billLog.write(<span class="str">"\nBill: "</span> +  pBillName)
+        <span class="kw">for</span> dashes <span class="kw">in</span> range(<span class="dig">50</span>-len(pBillName)):
+            billLog.write(<span class="str">"-"</span>)
+        billLog.write(<span class="str">"\n"</span>)
+        billLog.close()
+
+        fCompare_Results(pBillName,<span class="str">"Fees"</span>,savedFeesValue,billFeesValue)
+        fCompare_Results(pBillName,<span class="str">"Costs"</span>,savedCostsValue,billCostsValue)
+        fCompare_Results(pBillName,<span class="str">"Total"</span>,savedTotalValue,billTotalValue)
+
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">" - MISSING: "</span> + pBillName)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

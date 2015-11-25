@@ -1,0 +1,657 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>myTools.sikuli</h2> <a href="myTools.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> datetime
+<span class="kw">import</span> logging
+<span class="kw">import</span> shutil
+<span class="kw">import</span> reports_Compare
+
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> setupLog():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    Settings.myLogFile = os.environ[<span class="str">'USERPROFILE'</span>] + <span class="str">'\desktop\Sikuli\Sikuli.log'</span>
+    logging.basicConfig(filename=Settings.myLogFile, level=logging.DEBUG, format=<span class="str">'%(message)s'</span>, filemode=<span class="str">'w'</span>)
+    <span class="cmt"># Level = DEBUG, INFO, WARNING, ERROR, CRITICAL</span>
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pressTAB(number):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> number != <span class="dig">0</span>:
+        <span class="kw">for</span> i <span class="kw">in</span> range(number):
+            <span class="skw">type</span>(Key.TAB)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pressSHIFTTAB(number):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> number != <span class="dig">0</span>:
+        <span class="kw">for</span> i <span class="kw">in</span> range(number):
+            <span class="skw">type</span>(Key.TAB,KeyModifier.SHIFT)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pressF6(number):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> number != <span class="dig">0</span>:
+        <span class="kw">for</span> i <span class="kw">in</span> range(number):
+            <span class="skw">type</span>(Key.F6)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pressSHIFTF6(number):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> number != <span class="dig">0</span>:
+        <span class="kw">for</span> i <span class="kw">in</span> range(number):
+            <span class="skw">type</span>(Key.F6,KeyModifier.SHIFT)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pressDOWN(number):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> number != <span class="dig">0</span>:
+        <span class="kw">for</span> i <span class="kw">in</span> range(number):
+            <span class="skw">type</span>(Key.DOWN)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pressUP(number):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> number != <span class="dig">0</span>:
+        <span class="kw">for</span> i <span class="kw">in</span> range(number):
+            <span class="skw">type</span>(Key.UP)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pressLEFT(number):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> number != <span class="dig">0</span>:
+        <span class="kw">for</span> i <span class="kw">in</span> range(number):
+            <span class="skw">type</span>(Key.LEFT)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pressRIGHT(number):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> number != <span class="dig">0</span>:
+        <span class="kw">for</span> i <span class="kw">in</span> range(number):
+            <span class="skw">type</span>(Key.RIGHT)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> getFocus():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
+        logging.debug(<span class="str">'--- getFocus'</span>)
+
+        <span class="kw">while</span> <span class="kw">not</span> exists(<img src="billing_date_statusbar.png" />):
+            logging.debug(<span class="str">'-- wait for bill date'</span>)
+            time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+        <span class="skw">click</span>(<img src="billing_date_statusbar.png" />)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForExportSuccess():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">wait</span>(<img src="export_successful_small.png" />, FOREVER)
+    <span class="kw">else</span>:
+        <span class="skw">wait</span>(<img src="export_successful_wide.png" />, FOREVER)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> openClient(pClient):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- open client: '</span> +  pClient)
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(pClient)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> enterSlipFilter(pMonth,pExtraTab):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- enterSlipFilter: '</span> + str(pMonth) + <span class="str">' '</span> + pExtraTab)
+
+    <span class="skw">wait</span>(<img src="slip_trans_date.png" />,<span class="dig">60</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">click</span>(<img src="slip_trans_date.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">click</span>(<img src="add_filter.png" />)
+    <span class="skw">wait</span>(<img src="apply_this_rule.png" />,<span class="dig">60</span>)
+
+    <span class="cmt"># choose TODAY to get to manual date entry</span>
+    logging.debug(<span class="str">'-- choose TODAY'</span>)
+
+    <span class="skw">type</span>(Key.DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># type in dates</span>
+    logging.debug(<span class="str">'-- enter date range'</span>)
+
+    <span class="kw">if</span> pExtraTab == <span class="str">"yy"</span>:
+        pressTAB(<span class="dig">8</span>)
+    <span class="kw">elif</span> pExtraTab == <span class="str">"y"</span>:
+        pressTAB(<span class="dig">7</span>)
+    <span class="kw">else</span>:
+        pressTAB(<span class="dig">6</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    startDate = <span class="str">"1/1/"</span> + Settings.dataYear
+    <span class="skw">type</span>(startDate)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
+        endDate = <span class="str">"12/31/"</span> + Settings.dataYear
+    <span class="kw">else</span>:
+        endDate = str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear
+
+    <span class="skw">type</span>(endDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> enterCurrentMonthOnList(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># start from Print To field</span>
+
+    pressSHIFTTAB(<span class="dig">3</span>)
+
+    <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
+        startDate = <span class="str">"12/1/"</span> + Settings.dataYear
+    <span class="kw">else</span>:
+        startDate = str(pMonth) + <span class="str">"/1/"</span> + Settings.dataYear
+
+    <span class="skw">type</span>(startDate)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
+        endDate = <span class="str">"12/31/"</span> + Settings.dataYear
+    <span class="kw">else</span>:
+        endDate = str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear
+
+    <span class="skw">type</span>(endDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># get around defect where date doesn't expand</span>
+    pressSHIFTTAB(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> enterYearToDateOnList(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># start from Print To field</span>
+
+    pressSHIFTTAB(<span class="dig">3</span>)
+
+    startDate = <span class="str">"1/1/"</span> + Settings.dataYear
+    <span class="skw">type</span>(startDate)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
+        endDate = <span class="str">"12/31/"</span> + Settings.dataYear
+    <span class="kw">else</span>:
+        endDate = str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear
+
+    <span class="skw">type</span>(endDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># get around defect where date doesn't expand</span>
+    pressSHIFTTAB(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForStatement():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">if</span> exists(<span class="str">'replace_it.png'</span>):
+        logging.debug(<span class="str">'-- replace msg exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">wait</span>(<img src="finalize_msg.png" />,FOREVER)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ESC)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForReport():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- wait for report'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="replace_it.png" />):
+        logging.debug(<span class="str">'-- replace msg exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="recalc_msg.png" />):
+        logging.debug(<span class="str">'-- budget msg exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+    <span class="cmt">#wait for "calculating" box to disappear</span>
+    <span class="kw">while</span> exists(Pattern(<img src="completed.png" />).similar(<span class="dig">0.90</span>)):
+        logging.debug(<span class="str">'-- completed msg exists'</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="cmt">#wait for "calculating" box to disappear</span>
+    <span class="kw">while</span> exists(Pattern(<img src="calculating_msg.png" />).similar(<span class="dig">0.90</span>)):
+        logging.debug(<span class="str">'-- calculating msg exists'</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="mark_exported.png" />):
+        logging.debug(<span class="str">'-- exported msg exists'</span>)
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    getFocus()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForWorksheet():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- wait for worksheets'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="replace_it.png" />):
+        logging.debug(<span class="str">'-- replace msg exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="recalc_msg.png" />):
+        logging.debug(<span class="str">'-- budget msg exists'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+    <span class="cmt">#wait for "printing" box to disappear</span>
+    <span class="kw">while</span> exists(<img src="clients_processed.png" />):
+        logging.debug(<span class="str">'-- printing msg exists'</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> finishReport(pReportName):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># fill in path and name; press ENTER</span>
+    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + pReportName)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="cmt"># wait for report to complete</span>
+    waitForReport()
+
+    <span class="cmt"># compare the report with baseline</span>
+    reports_Compare.Compare_OneReport(pReportName)
+
+    <span class="cmt"># close the report</span>
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)                       <span class="cmt"># do not save report</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="view_full_example.png" />):
+        <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    sectionEndTimeStamp()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForTransList():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="kw">while</span> <span class="kw">not</span> exists(<img src="inv_num_column.png" />):
+        logging.debug(<span class="str">'-- waiting for trans list'</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForTransEntry():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="kw">while</span> <span class="kw">not</span> exists(<img src="ar_balance.png" />):
+        logging.debug(<span class="str">'-- waiting for trans entry'</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForFundsList():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="kw">while</span> <span class="kw">not</span> exists(<img src="funds_account.png" />):
+        logging.debug(<span class="str">'-- waiting for funds list'</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> enterClient(pClientName):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(pClientName)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> checkForUnappliedAmount():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">4</span>)
+    <span class="kw">if</span> exists(<img src="go_back_edit_transaction.png" />):
+        logging.debug(<span class="str">"==&gt; UNAPPLIED AMOUNT"</span>)
+        <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForTransSave():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">while</span> exists(Pattern(<img src="dash_in_title.png" />).similar(<span class="dig">0.90</span>)):
+        logging.debug(<span class="str">'-- saving'</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> startTSImport():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- start TSImport'</span>)
+    <span class="skw">type</span>(<span class="str">"r"</span>,KeyModifier.KEY_WIN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Settings.tsimpEXE)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="skw">wait</span>(<img src="tsimport_menubar.png" />,FOREVER)
+    time.<span class="skw">sleep</span>(<span class="dig">4</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> doNotSaveReport():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="kw">if</span> exists(<img src="save_msg.png" />):
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> padZero(pNumber):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    padNumber = str(pNumber)
+
+    <span class="kw">if</span> pNumber &lt; <span class="dig">10</span>:
+        padNumber = <span class="str">"0"</span> + padNumber
+
+    <span class="kw">return</span>(padNumber)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> bkuName(aMonth,aName,anExt):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    fileName = padZero(aMonth)
+
+    <span class="cmt"># prefix the version</span>
+    fileName = Settings.tsVersion + aName + fileName + anExt
+
+    <span class="kw">return</span>(fileName)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> buildRepName(aName,anExt):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    fileName = aName + <span class="str">"-"</span> + Settings.PartOfRepName + anExt
+
+    <span class="kw">return</span>(fileName)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> removeDateAndTime():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'-- remove date and time'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">click</span>(<img src="design_tool.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="skw">click</span>(Pattern(<img src="1-27-2013-white.png" />).similar(<span class="dig">0.50</span>))
+    <span class="skw">type</span>(Key.DELETE)  <span class="cmt"># delete date</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.DELETE)  <span class="cmt"># delete time</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">click</span>(Pattern(<img src="1-27-2013-yellow.png" />).similar(<span class="dig">0.50</span>))       <span class="cmt"># delete date</span>
+    <span class="skw">type</span>(Key.DELETE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.DELETE)  <span class="cmt"># delete time</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">click</span>(Pattern(<img src="white_page.png" />).similar(<span class="dig">0.55</span>).targetOffset(<span class="dig">20</span>,<span class="dig">0</span>))
+    <span class="skw">type</span>(Key.DELETE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">click</span>(Pattern(<img src="yellow_page.png" />).similar(<span class="dig">0.55</span>).targetOffset(<span class="dig">20</span>,<span class="dig">0</span>))
+    <span class="skw">type</span>(Key.DELETE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> startTimeStamp():
+<span class="cmt">#---------------------------------------------------#</span>
+    Settings.startTime = datetime.datetime.now()
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
+    logging.debug(Settings.startTime.strftime(<span class="str">"Started at: %Y-%m-%d %H:%M:%S"</span>))
+    logging.debug(<span class="str">'---------------------------------------'</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> endTimeStamp():
+<span class="cmt">#---------------------------------------------------#</span>
+    Settings.endTime = datetime.datetime.now()
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
+    logging.debug(Settings.endTime.strftime(<span class="str">"Stopped at: %Y-%m-%d %H:%M:%S"</span>))
+    logging.debug(<span class="str">'---------------------------------------'</span>)
+
+    elapsedTime = Settings.endTime - Settings.startTime
+    logging.debug(<span class="str">"Elapsed:    %s"</span> %elapsedTime)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> sectionStartTimeStamp(aSectionName):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    Settings.sectionName = aSectionName
+    Settings.sectionStartTime = datetime.datetime.now()
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'======================================='</span>)
+    logging.debug(Settings.sectionStartTime.strftime(<span class="str">"Started at: %Y-%m-%d %H:%M:%S"</span>))
+    logging.debug(<span class="str">'======================================='</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> sectionEndTimeStamp():
+<span class="cmt">#---------------------------------------------------#</span>
+    Settings.sectionEndTime = datetime.datetime.now()
+    logging.debug(<span class="str">'---------------------------------------'</span>)
+    logging.debug(Settings.sectionEndTime.strftime(<span class="str">"Stopped at: %Y-%m-%d %H:%M:%S"</span>))
+    logging.debug(<span class="str">'---------------------------------------'</span>)
+
+    sectionElapsedTime = Settings.sectionEndTime - Settings.sectionStartTime
+
+    totalMinutes = sectionElapsedTime.seconds / float(<span class="dig">60</span>)
+    totalMinutes = int(totalMinutes * <span class="dig">100</span>) / <span class="dig">100.0</span>
+
+    logging.debug(<span class="str">"Elapsed:    %s"</span> %totalMinutes)
+
+    durationLog = open(Settings.durationFile, <span class="str">"a"</span>)
+
+    durationLog.write(Settings.sectionName + <span class="str">","</span> + str(totalMinutes) + <span class="str">"\n"</span>)
+    durationLog.close()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> pushReportLog(pReportName,pReportStatus):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    reportTime = datetime.datetime.now()
+    reportTime = reportTime.strftime(<span class="str">"%Y-%m-%d %H:%M:%S"</span>)
+    reportLogLine = reportTime + <span class="str">"  "</span> + pReportStatus + <span class="str">": "</span> + pReportName + <span class="str">"\n"</span>
+
+    reportLog = open(Settings.reportLogFile, <span class="str">"a"</span>)
+    reportLog.write(reportLogLine)
+    reportLog.close()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> getScreenshot():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Get screenshot'</span>)
+
+    wholeScreen = getBounds()
+    ssIn = <span class="skw">capture</span>(wholeScreen)
+    logging.debug(<span class="str">'- old path: '</span> + ssIn)
+
+    ssTime = datetime.datetime.now()
+    <span class="cmt"># add date to screenshot name</span>
+    ssOut = padZero(ssTime.year) + <span class="str">"-"</span> + padZero(ssTime.month) + <span class="str">"-"</span> + padZero(ssTime.day)
+    <span class="cmt"># add time to screenshot name</span>
+    ssOut = ssOut + <span class="str">"-"</span> + padZero(ssTime.hour) + padZero(ssTime.minute) + padZero(ssTime.second)
+    <span class="cmt"># add extension to screenshot name</span>
+    ssOut = ssOut + <img src=".png" />
+    <span class="cmt"># add path</span>
+    ssOut = Settings.sikFolder + <span class="str">"\\"</span> + ssOut
+    logging.debug(<span class="str">'- new path: '</span> + ssOut)
+
+    <span class="kw">print</span>(ssOut)
+
+    shutil.move(ssIn,ssOut)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> testRestore():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># using this to test AVs when i try to restore</span>
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'test restore'</span>)
+
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"r"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+    <span class="skw">type</span>(Key.ESC)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> checkProcesses():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+    cmd = <span class="str">"wmic path Win32_PerfFormattedData_PerfProc_Process get Name,PrivateBytes"</span>
+    cmdOut = run(cmd)
+    processList = cmdOut.splitlines()
+
+    totalFbProcs = <span class="dig">0</span>
+    <span class="kw">for</span> oneProcess <span class="kw">in</span> processList:
+        oneProcess = oneProcess.strip()
+<span class="cmt">#        print(oneProcess)</span>
+
+        <span class="kw">if</span> oneProcess[:<span class="dig">7</span>] == <span class="str">"fb_inet"</span>:
+            totalFbProcs += <span class="dig">1</span>
+        <span class="kw">elif</span> oneProcess[:<span class="dig">8</span>] == <span class="str">"Timeslip"</span>:
+            procName, procSize = oneProcess.split()
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'&gt;&gt;&gt; FB Procs: '</span> + str(totalFbProcs))
+    logging.debug(<span class="str">'&gt;&gt;&gt; TS Size : '</span> + str(procSize))
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+</pre>
+</body>
+</html>

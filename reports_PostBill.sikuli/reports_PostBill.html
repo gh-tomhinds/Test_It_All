@@ -1,0 +1,166 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>reports_PostBill.sikuli</h2> <a href="reports_PostBill.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> email_Send
+
+<span class="kw">import</span> report_AgedARBal
+<span class="kw">import</span> report_Budgets
+<span class="kw">import</span> report_DaysToPay
+<span class="kw">import</span> report_FeeAlloc
+<span class="kw">import</span> report_FundsBal
+<span class="kw">import</span> report_Hold
+<span class="kw">import</span> report_PayDistr
+<span class="kw">import</span> report_PBWorksheet
+<span class="kw">import</span> report_ProdPeriod
+<span class="kw">import</span> report_ProfPeriod
+<span class="kw">import</span> report_Markup
+<span class="kw">import</span> report_SlipSummary
+<span class="kw">import</span> report_Statement
+<span class="kw">import</span> report_Taxes
+<span class="kw">import</span> report_TkCC
+<span class="kw">import</span> report_TkCollections
+<span class="kw">import</span> report_TkContribution
+<span class="kw">import</span> report_TkHistory
+<span class="kw">import</span> report_TOWorksheet
+<span class="kw">import</span> report_UDSlip
+<span class="kw">import</span> report_UDClient
+<span class="kw">import</span> report_UDFunds
+<span class="kw">import</span> report_UDInvoice
+<span class="kw">import</span> report_GLXfer
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fPrint_PostbillReports(pMonth,pAorB):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># print various reports to check db values and calculations</span>
+
+    csvExt = pAorB + <span class="str">".csv"</span>
+    txtExt = pAorB + <span class="str">".txt"</span>
+
+    <span class="str">"""
+    report_AgedARBal.Print_ARAgedBal(pMonth,csvExt)
+    report_UDSlip.fPrint_SlipListDetailed(pMonth,csvExt)
+    report_UDSlip.fPrint_SlipFields(pMonth,csvExt)
+    report_UDSlip.fPrint_SlipListCalc(pMonth,csvExt)    
+    report_UDClient.fPrint_ClientListHistory(pMonth,csvExt)
+    report_TkHistory.Print_TkHistory(pMonth,csvExt)
+    report_TkContribution.Print_TkContribution(pMonth,csvExt)  
+    report_TkCC.Print_TkCC(pMonth,csvExt)
+    report_FundsBal.fPrint_FundsBal(pMonth,csvExt)
+    report_Taxes.Print_Taxes(pMonth,csvExt)
+    
+    report_TOWorksheet.Print_Worksheet(pMonth,csvExt)
+    report_PBWorksheet.fPrint_PreBill(pMonth,txtExt)
+    report_ProdPeriod.print_ProdPeriod(pMonth,csvExt)
+    report_ProfPeriod.print_ProfPeriod(pMonth,csvExt)
+    report_Markup.print_Markup(pMonth,csvExt)
+    report_SlipSummary.print_SlipSummary(pMonth,csvExt)
+    report_Statement.fPrint_Statement(pMonth,txtExt)
+    """</span>
+
+    report_UDInvoice.fPrint_InvoiceListFields(pMonth,csvExt)
+    report_Budgets.printCliBudget(pMonth,csvExt)
+    report_Budgets.printTkBudget(pMonth,csvExt)
+    report_Budgets.printFirmBudget(pMonth,csvExt)
+    report_GLXfer.Print_GLXfer(pMonth,csvExt)
+    report_DaysToPay.print_DaysToPay(pMonth,csvExt)
+
+    <span class="str">"""
+    if (pMonth == 13): # skip some reports for ba clients
+        logging.debug('')
+        logging.debug('!!! SKIP UD FUNDS REPORT')
+        logging.debug('!!! SKIP HOLD REPORT')
+    else:
+        report_UDFunds.fPrint_FundsListFields(pMonth,csvExt)   
+        report_Hold.Print_Hold(pMonth,csvExt)
+
+    if (pMonth == 13) or ((pMonth == 1) and (pAorB == "a")):
+        # fee allocation cannot be run without some payments entered
+        logging.debug('')
+        logging.debug('!!! SKIP COLLECTIONS REPORT')
+        logging.debug('!!! SKIP FEE ALLOCATION REPORT')
+        logging.debug('!!! SKIP PAYMENT DISTR REPORT')        
+    else:
+        report_TkCollections.Print_TkCollections(pMonth,txtExt)        
+        report_FeeAlloc.Print_FeeAlloc(pMonth,csvExt)
+        report_PayDistr.Print_PayDistr(pMonth,csvExt)
+    """</span>
+
+    report_UDClient.fPrint_ClientListValues(pMonth,csvExt)
+
+<span class="cmt">#    email_Send.fSend_Email("rep " + str(pMonth) + pAorB)</span>
+    email_Send.fSend_Text(<span class="str">"rep "</span> + str(pMonth) + pAorB)
+</pre>
+</body>
+</html>

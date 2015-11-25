@@ -1,0 +1,148 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>trans_Transfers.sikuli</h2> <a href="trans_Transfers.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_OneTransfer(pClient,pCliNum,pMonth,pAmount):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- Create_OneTransfer: '</span> + str(pMonth) + <span class="str">"-"</span> + pClient + <span class="str">" = "</span> + str(pAmount))
+
+    <span class="cmt"># new transaction</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+    myTools.waitForTransEntry()
+
+    <span class="cmt"># switch to Transfer</span>
+
+    <span class="skw">type</span>(Key.UP)    <span class="cmt"># this is to get by a UI defect</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># client</span>
+    myTools.enterClient(pClient)
+
+    <span class="cmt"># date</span>
+    tranDate = str(pMonth) + <span class="str">"/28/"</span> + Settings.dataYear
+    <span class="skw">type</span>(tranDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Amount</span>
+    <span class="skw">type</span>(str(pAmount))
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Description</span>
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(pClient + <span class="str">" - "</span> + str(pCliNum) + <span class="str">" - "</span> + tranDate)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># payment list</span>
+    <span class="skw">type</span>(Key.DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_Transfers(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"transfers"</span> + str(pMonth))
+    logging.debug(<span class="str">'Create_Transfers: '</span> + str(pMonth))
+
+    allClients = [<span class="str">"East.Bridgewater"</span>,<span class="str">"North.Adams"</span>,<span class="str">"West.Boylston"</span>]
+    count = <span class="dig">0</span>
+
+    myTools.getFocus()
+
+    <span class="cmt"># open a/r tran list</span>
+    <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.CTRL)
+    myTools.waitForTransList()
+
+    <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
+        count += <span class="dig">1</span>
+        transferAmount = <span class="dig">10</span> + int(count) + pMonth/float(<span class="dig">100</span>)
+        fCreate_OneTransfer(oneClient,count,pMonth,transferAmount)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

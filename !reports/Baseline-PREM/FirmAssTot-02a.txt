@@ -1,0 +1,91 @@
+
+
+						       TS Handyman Services
+						   Firm Assistant Totals Listing				      Page
+
+							Selection Criteria
+
+Slip.Transaction Date	     1/1/2013 - 2/27/2013
+
+
+Fees
+       Billable 													  $2,002.23
+       Do Not Bill													    $998.55
+       No Charge													  $1,559.56
+       Override 													  $2,051.25
+       Adjustments													    ($49.02)
+
+Costs
+       Billable 													      $0.00
+       Do Not Bill													      $0.00
+       No Charge													      $0.00
+       Override 													      $0.00
+       Adjustments													      $0.00
+
+Total Fees & Costs
+       Billable 													  $2,002.23
+       Do Not Bill													    $998.55
+       No Charge													  $1,559.56
+       Override 													  $2,051.25
+       Adjustments													    ($49.02)
+
+Taxes
+       Taxable Fees													  $2,002.23
+       Tax on Fees													     $80.10
+       Taxable Costs													      $0.00
+       Tax on Costs													      $0.00
+       Total Tax													     $80.10
+
+Miscellaneous
+       Interest 													      $0.00
+       Finance Charges													      $0.00
+       Discounts													      $0.00
+
+Accounts Receivable
+       Payments 													      $0.00
+       Credits														      $0.00
+       Write Offs													      $0.00
+       Refunds														      $0.00
+       Invoices 													  $2,082.33
+       Transfers													      $0.00
+       Increase Invoice Details 											      $0.00
+       Decrease Invoice Details 											      $0.00
+       Total														      $0.00
+
+
+
+						       TS Handyman Services
+						   Firm Assistant Totals Listing				      Page
+
+Funds Accounts
+       Previous Balance 												    $842.70
+       Payment From Account												      $0.00
+       Payment To Account												      $0.00
+       Withdrawals													      $0.00
+       Deposits 													      $0.00
+       Auto Payments													      $0.00
+       Total Amount Removed												      $0.00
+       Total Amount Added												      $0.00
+       Total (Included) 												      $0.00
+       New Balance													    $842.70
+
+Previous Balance
+       120 Days 													      $0.00
+       90 Days														      $0.00
+       60 Days														      $0.00
+       30 Days														$117,527.42
+       Current														$156,660.65
+       Unapplied													 ($4,165.88)
+       Total														$270,022.19
+
+New Balance
+       120 Days 													      $0.00
+       90 Days														      $0.00
+       60 Days														      $0.00
+       30 Days														$117,527.42
+       Current														$158,742.98
+       Unapplied													 ($4,165.88)
+
+       Balance Due													$272,104.52
+
+       Balance Due with Funds												$280,203.55

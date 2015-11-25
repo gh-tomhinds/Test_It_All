@@ -1,0 +1,154 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>email_Send.sikuli</h2> <a href="email_Send.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+
+<span class="kw">import</span> smtplib
+<span class="kw">from</span> email.MIMEMultipart <span class="kw">import</span> MIMEMultipart
+<span class="kw">from</span> email.MIMEText <span class="kw">import</span> MIMEText
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSend_Text(mailSubject):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    fromEmail = <span class="str">'tom.sikuli@gmail.com'</span>
+    fromPW = <span class="str">'!tomsikuli!'</span>
+    toEmail = <span class="str">'9788843701@messaging.sprintpcs.com'</span>
+    mailserver = smtplib.SMTP(<span class="str">'smtp.gmail.com'</span>,<span class="dig">587</span>)
+
+    msg = MIMEMultipart()
+    msg[<span class="str">'From'</span>] = fromEmail
+    msg[<span class="str">'To'</span>] = toEmail
+    msg[<span class="str">'Subject'</span>] = mailSubject
+    message = mailSubject
+
+    msg.attach(MIMEText(message))
+
+    <span class="cmt"># identify ourselves to smtp gmail client</span>
+    mailserver.ehlo()
+
+    <span class="cmt"># secure our email with tls encryption</span>
+    mailserver.starttls()
+
+    <span class="cmt"># re-identify ourselves as an encrypted connection</span>
+    mailserver.ehlo()
+    mailserver.login(fromEmail, fromPW)
+
+    mailserver.sendmail(fromEmail,toEmail,msg.as_string())
+
+    mailserver.quit()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSend_Email(mailSubject):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    fromEmail = <span class="str">'tom.sikuli@gmail.com'</span>
+    fromPW = <span class="str">'!tomsikuli!'</span>
+    toEmail = <span class="str">'thinds66@gmail.com'</span>
+    mailserver = smtplib.SMTP(<span class="str">'smtp.gmail.com'</span>,<span class="dig">587</span>)
+
+    file1 = Settings.myLogFile
+    file2 = Settings.reportLogFile
+
+    msg = MIMEMultipart()
+    msg[<span class="str">'From'</span>] = fromEmail
+    msg[<span class="str">'To'</span>] = toEmail
+    msg[<span class="str">'Subject'</span>] = mailSubject
+    message = <span class="str">'here is the email'</span>
+
+    msg.attach(MIMEText(message))
+
+    attachFile = MIMEText(file(file1).read())
+    attachFile.add_header(<span class="str">'Content-Disposition'</span>, <span class="str">'attachment'</span>, filename=<span class="str">'main.log'</span>)
+    msg.attach(attachFile)
+
+    attachFile = MIMEText(file(file2).read())
+    attachFile.add_header(<span class="str">'Content-Disposition'</span>, <span class="str">'attachment'</span>, filename=<span class="str">'report.log'</span>)
+    msg.attach(attachFile)
+
+    <span class="cmt"># identify ourselves to smtp gmail client</span>
+    mailserver.ehlo()
+
+    <span class="cmt"># secure our email with tls encryption</span>
+    mailserver.starttls()
+
+    <span class="cmt"># re-identify ourselves as an encrypted connection</span>
+    mailserver.ehlo()
+    mailserver.login(fromEmail, fromPW)
+
+    mailserver.sendmail(fromEmail,toEmail,msg.as_string())
+
+    mailserver.quit()
+</pre>
+</body>
+</html>

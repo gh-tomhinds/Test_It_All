@@ -1,0 +1,685 @@
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+							Selection Criteria
+
+Clie.Classification	     Open
+Fnds.Transaction Dat	     9/1/2013 - 9/27/2013
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Abington / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Acton / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Acushnet / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Adams / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Agawam / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Aquinnah / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Arlington / Default
+Beginning Balance													       0.38
+		     9/27/2013	PAYF   Payment from account						     (0.38)	       0.00
+
+Ending Balance														       0.00
+
+
+Athol / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Barre / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Berkley / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Blandford / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (18.67)	       6.41
+
+Ending Balance														       6.41
+
+
+Boylston / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Brookfield / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+Carlisle / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Chelsea / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (17.58)	       7.50
+
+Ending Balance														       7.50
+
+Cheshire / Default
+Beginning Balance													      13.52
+		     9/27/2013	PAYF   Payment from account						    (11.55)	       1.97
+
+Ending Balance														       1.97
+
+Clarksburg / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (18.56)	       6.52
+
+Ending Balance														       6.52
+
+Cummington / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (11.75)	      13.33
+
+Ending Balance														      13.33
+
+Dennis / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (21.16)	       3.92
+
+Ending Balance														       3.92
+
+
+Dunstable / Default
+Beginning Balance													      25.08
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     9/27/2013	PAYF   Payment from account						    (19.99)	       5.09
+
+Ending Balance														       5.09
+
+East.Longmeadow / Default
+Beginning Balance													     763.74
+		     9/27/2013	PAYF   Payment from account						     (5.54)	     758.20
+
+Ending Balance														     758.20
+
+Easthampton / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (16.24)	       8.84
+
+Ending Balance														       8.84
+
+Everett / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (11.14)	      13.94
+
+Ending Balance														      13.94
+
+Fairhaven / Default
+Beginning Balance													       1.53
+		     9/27/2013	PAYF   Payment from account						     (1.53)	       0.00
+
+Ending Balance														       0.00
+
+
+Foxborough / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Gill / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (13.88)	      11.20
+
+Ending Balance														      11.20
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Granville / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Halifax / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (13.04)	      12.04
+
+Ending Balance														      12.04
+
+Hardwick / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (15.76)	       9.32
+
+Ending Balance														       9.32
+
+
+Harvard / Default
+Beginning Balance													      16.03
+		     9/27/2013	PAYF   Payment from account						     (9.04)	       6.99
+
+Ending Balance														       6.99
+
+Heath / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (18.56)	       6.52
+
+Ending Balance														       6.52
+
+
+Holliston / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (11.94)	      13.14
+
+Ending Balance														      13.14
+
+Hull / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Huntington / Default
+Beginning Balance													       8.50
+		     9/27/2013	PAYF   Payment from account						     (8.50)	       0.00
+
+Ending Balance														       0.00
+
+
+Lanesborough / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						     (5.76)	      19.32
+
+Ending Balance														      19.32
+
+Leverett / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (16.60)	       8.48
+
+Ending Balance														       8.48
+
+
+Lowell / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Ludlow / Default
+Beginning Balance													      12.49
+		     9/27/2013	PAYF   Payment from account						    (12.49)	       0.00
+
+Ending Balance														       0.00
+
+
+Manchester-by-the-Sea / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Mashpee / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+Mattapoisett / Default
+Beginning Balance													      11.51
+		     9/27/2013	PAYF   Payment from account						    (11.51)	       0.00
+
+Ending Balance														       0.00
+
+Melrose / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Mendon / Default
+Beginning Balance													      13.06
+		     9/27/2013	PAYF   Payment from account						    (13.06)	       0.00
+
+Ending Balance														       0.00
+
+Middleton / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Milford / Default
+Beginning Balance													       9.58
+		     9/27/2013	PAYF   Payment from account						     (9.58)	       0.00
+
+Ending Balance														       0.00
+
+Monroe / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Monson / Default
+Beginning Balance													      14.01
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     9/27/2013	PAYF   Payment from account						    (11.06)	       2.95
+
+Ending Balance														       2.95
+
+Nahant / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Nantucket / Default
+Beginning Balance													      14.25
+		     9/27/2013	PAYF   Payment from account						    (14.25)	       0.00
+
+Ending Balance														       0.00
+
+New Braintree / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Norfolk / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+North.Reading / Default
+Beginning Balance													     606.91
+		     9/27/2013	PAYF   Payment from account						    (13.24)	     593.67
+
+Ending Balance														     593.67
+
+Northampton / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Northborough / Default
+Beginning Balance													      18.51
+		     9/27/2013	PAYF   Payment from account						    (18.51)	       0.00
+
+Ending Balance														       0.00
+
+
+Norwood / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Oak Bluffs / Default
+Beginning Balance													       1.75
+		     9/27/2013	PAYF   Payment from account						     (1.75)	       0.00
+
+Ending Balance														       0.00
+
+
+Oxford / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Palmer / Default
+Beginning Balance													      12.82
+		     9/27/2013	PAYF   Payment from account						    (12.82)	       0.00
+
+Ending Balance														       0.00
+
+
+Pepperell / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Peru / Default
+Beginning Balance													       1.07
+		     9/27/2013	PAYF   Payment from account						     (1.07)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Petersham / Default
+Beginning Balance													       2.24
+		     9/27/2013	PAYF   Payment from account						     (2.24)	       0.00
+
+Ending Balance														       0.00
+
+
+Plainville / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Plymouth / Default
+Beginning Balance													      11.82
+		     9/27/2013	PAYF   Payment from account						    (11.82)	       0.00
+
+Ending Balance														       0.00
+
+
+Randolph / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Raynham / Default
+Beginning Balance													      12.20
+		     9/27/2013	PAYF   Payment from account						    (12.20)	       0.00
+
+Ending Balance														       0.00
+
+
+Reading / Default
+Beginning Balance													      13.47
+		     9/27/2013	PAYF   Payment from account						     (5.89)	       7.58
+
+Ending Balance														       7.58
+
+Rochester / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+Rockland / Default
+Beginning Balance													       9.80
+		     9/27/2013	PAYF   Payment from account						     (9.80)	       0.00
+
+Ending Balance														       0.00
+
+Russell / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Rutland / Default
+Beginning Balance													      14.19
+		     9/27/2013	PAYF   Payment from account						     (9.36)	       4.83
+
+Ending Balance														       4.83
+
+Saugus / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Savoy / Default
+Beginning Balance													      10.54
+		     9/27/2013	PAYF   Payment from account						    (10.54)	       0.00
+
+Ending Balance														       0.00
+
+Shelburne / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						     (9.36)	      15.72
+
+Ending Balance														      15.72
+
+
+Somerville / Default
+Beginning Balance													      25.08
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Spencer / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Stow / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (24.15)	       0.93
+
+Ending Balance														       0.93
+
+Swansea / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Topsfield / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Truro / Default
+Beginning Balance													       2.94
+		     9/27/2013	PAYF   Payment from account						     (2.94)	       0.00
+
+Ending Balance														       0.00
+
+Uxbridge / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Wareham / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Warren / Default
+Beginning Balance													      11.10
+		     9/27/2013	PAYF   Payment from account						    (11.10)	       0.00
+
+Ending Balance														       0.00
+
+Webster / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+West.Bridgewater / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+West.Tisbury / Default
+Beginning Balance													       6.26
+		     9/27/2013	PAYF   Payment from account						     (6.26)	       0.00
+
+Ending Balance														       0.00
+
+
+Westborough / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Westfield / Default
+Beginning Balance													      12.45
+		     9/27/2013	PAYF   Payment from account						    (12.45)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Westport / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Williamsburg / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+Winthrop / Default
+Beginning Balance													      25.08
+		     9/27/2013	PAYF   Payment from account						    (25.08)	       0.00
+
+Ending Balance														       0.00
+
+
+Grand Total														    3181.63
+   Total Added														       0.00
+   Total Removed													   (1643.22)
+   Ending Balance Total 												    1538.41

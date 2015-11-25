@@ -1,0 +1,2726 @@
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+							Selection Criteria
+
+Clie.Classification	     Open
+A/R.Transaction Date	     7/1/2013 - 7/27/2013
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Abington
+Beginning Balance													    5927.82
+       7/27/2013 INV	 Invoice No. 14221								   26.35	    5954.17
+       7/27/2013 PAY	 Payment from account								  (25.06)	    5929.11
+
+Ending Balance														    5929.11
+
+
+Acton
+Beginning Balance													    5529.43
+       7/27/2013 INV	 Invoice No. 14222								   25.71	    5555.14
+       7/27/2013 PAY	 Payment from account								  (25.06)	    5530.08
+
+Ending Balance														    5530.08
+
+Acushnet
+Beginning Balance													    2679.33
+       7/27/2013 INV	 Invoice No. 14223								   15.00	    2694.33
+       7/27/2013 PAY	 Payment from account								  (15.00)	    2679.33
+
+Ending Balance														    2679.33
+
+Adams
+Beginning Balance													    2237.36
+       7/27/2013 INV	 Invoice No. 14224								  185.12	    2422.48
+       7/27/2013 PAY	 Payment from account								  (25.06)	    2397.42
+
+Ending Balance														    2397.42
+
+
+Agawam
+Beginning Balance													     967.25
+       7/27/2013 INV	 Invoice No. 14225								    9.97	     977.22
+       7/27/2013 PAY	 Payment from account								   (9.97)	     967.25
+
+Ending Balance														     967.25
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Alford
+Beginning Balance													    1748.49
+       7/27/2013 INV	 Invoice No. 14226								  392.50	    2140.99
+       7/27/2013 PAY	 Payment from account								  (25.06)	    2115.93
+
+Ending Balance														    2115.93
+
+
+Amesbury
+Beginning Balance													    8095.73
+       7/27/2013 INV	 Invoice No. 14227								 2042.57	   10138.30
+
+Ending Balance														   10138.30
+
+Amherst
+Beginning Balance													    4587.83
+       7/27/2013 INV	 Invoice No. 14228								  365.08	    4952.91
+
+Ending Balance														    4952.91
+
+
+Andover
+Beginning Balance													   11419.22
+       7/27/2013 INV	 Invoice No. 14229								 1483.62	   12902.84
+
+Ending Balance														   12902.84
+
+Aquinnah
+Beginning Balance													    4344.12
+       7/27/2013 INV	 Invoice No. 14230								   17.85	    4361.97
+
+Ending Balance														    4361.97
+
+
+Arlington
+Beginning Balance													    5797.05
+       7/27/2013 INV	 Invoice No. 14231								   23.82	    5820.87
+
+Ending Balance														    5820.87
+
+Ashburnham
+Beginning Balance													    6549.88
+       7/27/2013 INV	 Invoice No. 14232								   26.92	    6576.80
+       7/27/2013 PAY	 Payment from account								  (25.06)	    6551.74
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    6551.74
+
+Ashby
+Beginning Balance													    6162.47
+       7/27/2013 INV	 Invoice No. 14233								   25.33	    6187.80
+
+Ending Balance														    6187.80
+
+Ashfield
+Beginning Balance													    3159.53
+       7/27/2013 INV	 Invoice No. 14234								   12.98	    3172.51
+
+Ending Balance														    3172.51
+
+Ashland
+Beginning Balance													    2803.08
+       7/27/2013 INV	 Invoice No. 14235								   11.52	    2814.60
+
+Ending Balance														    2814.60
+
+Athol
+Beginning Balance													    1598.68
+       7/27/2013 INV	 Invoice No. 14236								    6.57	    1605.25
+
+Ending Balance														    1605.25
+
+Attleboro
+Beginning Balance													    1475.25
+       7/27/2013 INV	 Invoice No. 14237								    6.06	    1481.31
+
+Ending Balance														    1481.31
+
+Auburn
+Beginning Balance													    3103.56
+       7/27/2013 INV	 Invoice No. 14238								   12.75	    3116.31
+       7/27/2013 PAY	 Payment from account								  (12.75)	    3103.56
+
+Ending Balance														    3103.56
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Avon
+Beginning Balance													    3232.01
+       7/27/2013 INV	 Invoice No. 14239								   13.28	    3245.29
+
+Ending Balance														    3245.29
+
+
+Ayer
+Beginning Balance													    3811.93
+       7/27/2013 INV	 Invoice No. 14240								   15.67	    3827.60
+
+Ending Balance														    3827.60
+
+Barnstable
+Beginning Balance													    6416.74
+       7/27/2013 INV	 Invoice No. 14241								   26.37	    6443.11
+
+Ending Balance														    6443.11
+
+
+Barre
+Beginning Balance													    1999.40
+       7/27/2013 INV	 Invoice No. 14242								   38.32	    2037.72
+
+Ending Balance														    2037.72
+
+Becket
+Beginning Balance													    2598.12
+       7/27/2013 INV	 Invoice No. 14243								  437.34	    3035.46
+
+Ending Balance														    3035.46
+
+
+Bedford
+Beginning Balance													    5067.39
+       7/27/2013 INV	 Invoice No. 14244								 1628.63	    6696.02
+       7/27/2013 PAY	 Payment from account								  (25.06)	    6670.96
+
+Ending Balance														    6670.96
+
+Belchertown
+Beginning Balance													    2702.79
+       7/27/2013 INV	 Invoice No. 14245								   11.11	    2713.90
+       7/27/2013 PAY	 Payment from account								  (11.11)	    2702.79
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    2702.79
+
+Bellingham
+Beginning Balance													    2921.56
+       7/27/2013 INV	 Invoice No. 14246								 2761.63	    5683.19
+
+Ending Balance														    5683.19
+
+Belmont
+Beginning Balance													    3644.88
+       7/27/2013 INV	 Invoice No. 14247								  391.96	    4036.84
+
+Ending Balance														    4036.84
+
+Berkley
+Beginning Balance													    2323.49
+       7/27/2013 INV	 Invoice No. 14248								  808.25	    3131.74
+
+Ending Balance														    3131.74
+
+Berlin
+Beginning Balance													    2762.59
+       7/27/2013 INV	 Invoice No. 14249								  460.97	    3223.56
+
+Ending Balance														    3223.56
+
+Bernardston
+Beginning Balance													    2437.90
+       7/27/2013 INV	 Invoice No. 14250								  558.74	    2996.64
+       7/27/2013 PAY	 Payment from account								  (25.06)	    2971.58
+
+Ending Balance														    2971.58
+
+Beverly
+Beginning Balance													    3353.91
+       7/27/2013 INV	 Invoice No. 14251								  624.53	    3978.44
+       7/27/2013 PAY	 Payment from account								  (10.81)	    3967.63
+
+Ending Balance														    3967.63
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Billerica
+Beginning Balance													    5205.54
+       7/27/2013 INV	 Invoice No. 14252								   21.39	    5226.93
+
+Ending Balance														    5226.93
+
+
+Blackstone
+Beginning Balance													    5333.25
+       7/27/2013 INV	 Invoice No. 14253								  973.87	    6307.12
+
+Ending Balance														    6307.12
+
+Blandford
+Beginning Balance													    4262.26
+       7/27/2013 INV	 Invoice No. 14254								   69.88	    4332.14
+
+Ending Balance														    4332.14
+
+
+Bolton
+Beginning Balance													    5376.20
+       7/27/2013 INV	 Invoice No. 14255								 1640.52	    7016.72
+
+Ending Balance														    7016.72
+
+Boston
+Beginning Balance													    4176.20
+       7/27/2013 INV	 Invoice No. 14256								   17.16	    4193.36
+       7/27/2013 PAY	 Payment from account								  (17.16)	    4176.20
+
+Ending Balance														    4176.20
+
+
+Bourne
+Beginning Balance													    3619.37
+       7/27/2013 INV	 Invoice No. 14257								 3581.13	    7200.50
+       7/27/2013 PAY	 Payment from account								   (9.68)	    7190.82
+
+Ending Balance														    7190.82
+
+Boxborough
+Beginning Balance													    2125.65
+       7/27/2013 INV	 Invoice No. 14258								  214.89	    2340.54
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    2340.54
+
+Boxford
+Beginning Balance													    1577.12
+       7/27/2013 INV	 Invoice No. 14259								  501.12	    2078.24
+
+Ending Balance														    2078.24
+
+Boylston
+Beginning Balance													    2893.79
+       7/27/2013 INV	 Invoice No. 14260								  438.54	    3332.33
+
+Ending Balance														    3332.33
+
+Braintree
+Beginning Balance													    2738.08
+       7/27/2013 INV	 Invoice No. 14261								  694.80	    3432.88
+
+Ending Balance														    3432.88
+
+Brewster
+Beginning Balance													    3482.38
+       7/27/2013 INV	 Invoice No. 14262								  468.67	    3951.05
+       7/27/2013 PAY	 Payment from account								  (25.06)	    3925.99
+
+Ending Balance														    3925.99
+
+
+Bridgewater
+Beginning Balance													    4381.22
+       7/27/2013 INV	 Invoice No. 14263								   18.01	    4399.23
+       7/27/2013 PAY	 Payment from account								   (6.44)	    4392.79
+
+Ending Balance														    4392.79
+
+Brimfield
+Beginning Balance													    4966.13
+       7/27/2013 INV	 Invoice No. 14264								  821.93	    5788.06
+
+Ending Balance														    5788.06
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Brockton
+Beginning Balance													    5716.32
+       7/27/2013 INV	 Invoice No. 14265								  944.94	    6661.26
+
+Ending Balance														    6661.26
+
+
+Brookfield
+Beginning Balance													    5122.69
+       7/27/2013 INV	 Invoice No. 14266								   21.05	    5143.74
+
+Ending Balance														    5143.74
+
+Brookline
+Beginning Balance													     662.84
+       7/27/2013 INV	 Invoice No. 14267								    2.72	     665.56
+
+Ending Balance														     665.56
+
+
+Buckland
+Beginning Balance													    1139.04
+       7/27/2013 INV	 Invoice No. 14268								 1298.55	    2437.59
+       7/27/2013 PAY	 Payment from account								  (25.06)	    2412.53
+
+Ending Balance														    2412.53
+
+Burlington
+Beginning Balance													     626.47
+       7/27/2013 INV	 Invoice No. 14269								  128.73	     755.20
+       7/27/2013 PAY	 Payment from account								  (21.76)	     733.44
+
+Ending Balance														     733.44
+
+
+Cambridge
+Beginning Balance													    1225.45
+       7/27/2013 INV	 Invoice No. 14270								  238.64	    1464.09
+       7/27/2013 PAY	 Payment from account								  (14.19)	    1449.90
+
+Ending Balance														    1449.90
+
+Canton
+Beginning Balance													    2722.92
+       7/27/2013 INV	 Invoice No. 14271								  354.34	    3077.26
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    3077.26
+
+Carlisle
+Beginning Balance													    2730.40
+       7/27/2013 INV	 Invoice No. 14272								  695.48	    3425.88
+
+Ending Balance														    3425.88
+
+Carver
+Beginning Balance													    3430.92
+       7/27/2013 INV	 Invoice No. 14273								  468.94	    3899.86
+
+Ending Balance														    3899.86
+
+Charlemont
+Beginning Balance													    4237.72
+       7/27/2013 INV	 Invoice No. 14274								   17.42	    4255.14
+       7/27/2013 PAY	 Payment from account								  (17.42)	    4237.72
+
+Ending Balance														    4237.72
+
+Charlton
+Beginning Balance													    5107.30
+       7/27/2013 INV	 Invoice No. 14275								  823.33	    5930.63
+       7/27/2013 PAY	 Payment from account								   (3.36)	    5927.27
+
+Ending Balance														    5927.27
+
+
+Chatham
+Beginning Balance													    5706.17
+       7/27/2013 INV	 Invoice No. 14276								  945.84	    6652.01
+
+Ending Balance														    6652.01
+
+Chelmsford
+Beginning Balance													    5105.26
+       7/27/2013 INV	 Invoice No. 14277								 1065.51	    6170.77
+
+Ending Balance														    6170.77
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Chelsea
+Beginning Balance													    3227.43
+       7/27/2013 INV	 Invoice No. 14278								   13.26	    3240.69
+
+Ending Balance														    3240.69
+
+
+Cheshire
+Beginning Balance													    1419.60
+       7/27/2013 INV	 Invoice No. 14279								 1300.97	    2720.57
+
+Ending Balance														    2720.57
+
+Chester
+Beginning Balance													    1468.81
+       7/27/2013 INV	 Invoice No. 14280								  132.34	    1601.15
+       7/27/2013 PAY	 Payment from account								  (25.06)	    1576.09
+
+Ending Balance														    1576.09
+
+
+Chesterfield
+Beginning Balance													    1225.48
+       7/27/2013 INV	 Invoice No. 14281								  236.15	    1461.63
+       7/27/2013 PAY	 Payment from account								  (19.85)	    1441.78
+
+Ending Balance														    1441.78
+
+Chicopee
+Beginning Balance													    2697.31
+       7/27/2013 INV	 Invoice No. 14282								  350.60	    3047.91
+
+Ending Balance														    3047.91
+
+
+Chilmark
+Beginning Balance													    2652.88
+       7/27/2013 INV	 Invoice No. 14283								  688.14	    3341.02
+
+Ending Balance														    3341.02
+
+Clarksburg
+Beginning Balance													    3163.40
+       7/27/2013 INV	 Invoice No. 14284								  528.07	    3691.47
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    3691.47
+
+Clinton
+Beginning Balance													    4354.18
+       7/27/2013 INV	 Invoice No. 14285								   17.89	    4372.07
+
+Ending Balance														    4372.07
+
+Cohasset
+Beginning Balance													    5070.38
+       7/27/2013 INV	 Invoice No. 14286								  777.58	    5847.96
+       7/27/2013 PAY	 Payment from account								  (25.06)	    5822.90
+
+Ending Balance														    5822.90
+
+Colrain
+Beginning Balance													    5667.82
+       7/27/2013 INV	 Invoice No. 14287								  893.74	    6561.56
+       7/27/2013 PAY	 Payment from account								   (0.98)	    6560.58
+
+Ending Balance														    6560.58
+
+Concord
+Beginning Balance													    5171.26
+       7/27/2013 INV	 Invoice No. 14288								 1026.66	    6197.92
+
+Ending Balance														    6197.92
+
+
+Conway
+Beginning Balance													    3120.16
+       7/27/2013 INV	 Invoice No. 14289								   12.82	    3132.98
+
+Ending Balance														    3132.98
+
+Cummington
+Beginning Balance													    1535.21
+       7/27/2013 INV	 Invoice No. 14290								 1218.87	    2754.08
+
+Ending Balance														    2754.08
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Dalton
+Beginning Balance													    1417.20
+       7/27/2013 INV	 Invoice No. 14291								    5.82	    1423.02
+
+Ending Balance														    1423.02
+
+
+Danvers
+Beginning Balance													    1211.81
+       7/27/2013 INV	 Invoice No. 14292								  238.63	    1450.44
+       7/27/2013 PAY	 Payment from account								  (25.06)	    1425.38
+
+Ending Balance														    1425.38
+
+Dartmouth
+Beginning Balance													    1531.03
+       7/27/2013 INV	 Invoice No. 14293								  356.17	    1887.20
+       7/27/2013 PAY	 Payment from account								  (18.55)	    1868.65
+
+Ending Balance														    1868.65
+
+
+Dedham
+Beginning Balance													    1684.74
+       7/27/2013 INV	 Invoice No. 14294								  671.97	    2356.71
+
+Ending Balance														    2356.71
+
+Deerfield
+Beginning Balance													    2481.50
+       7/27/2013 INV	 Invoice No. 14295								  485.12	    2966.62
+
+Ending Balance														    2966.62
+
+
+Dennis
+Beginning Balance													    4498.58
+       7/27/2013 INV	 Invoice No. 14296								   18.49	    4517.07
+
+Ending Balance														    4517.07
+
+Dighton
+Beginning Balance													    5203.53
+       7/27/2013 INV	 Invoice No. 14297								  786.42	    5989.95
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    5989.95
+
+Douglas
+Beginning Balance													    5825.17
+       7/27/2013 INV	 Invoice No. 14298								  920.92	    6746.09
+       7/27/2013 PAY	 Payment from account								  (25.06)	    6721.03
+
+Ending Balance														    6721.03
+
+Dover
+Beginning Balance													    5116.21
+       7/27/2013 INV	 Invoice No. 14299								 1008.35	    6124.56
+       7/27/2013 PAY	 Payment from account								   (2.56)	    6122.00
+
+Ending Balance														    6122.00
+
+
+Dracut
+Beginning Balance													    3204.67
+       7/27/2013 INV	 Invoice No. 14300								   13.17	    3217.84
+
+Ending Balance														    3217.84
+
+Dudley
+Beginning Balance													    2069.30
+       7/27/2013 INV	 Invoice No. 14301								 1825.70	    3895.00
+
+Ending Balance														    3895.00
+
+
+Dunstable
+Beginning Balance													    2388.18
+       7/27/2013 INV	 Invoice No. 14302								  250.69	    2638.87
+
+Ending Balance														    2638.87
+
+Duxbury
+Beginning Balance													    1951.89
+       7/27/2013 INV	 Invoice No. 14303								  644.16	    2596.05
+
+Ending Balance														    2596.05
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+East.Bridgewater
+Beginning Balance													    3168.54
+       7/27/2013 INV	 Invoice No. 14304								  943.03	    4111.57
+       7/27/2013 PAY	 Payment from account								  (25.06)	    4086.51
+
+Ending Balance														    4086.51
+
+
+East.Brookfield
+Beginning Balance													    3044.20
+       7/27/2013 INV	 Invoice No. 14305								  864.02	    3908.22
+       7/27/2013 PAY	 Payment from account								  (23.13)	    3885.09
+
+Ending Balance														    3885.09
+
+East.Longmeadow
+Beginning Balance													    1303.76
+       7/27/2013 INV	 Invoice No. 14306								   66.77	    1370.53
+       7/27/2013 PAY	 Payment from account								  (66.77)	    1303.76
+
+Ending Balance														    1303.76
+
+
+Eastham
+Beginning Balance													    6390.74
+       7/27/2013 INV	 Invoice No. 14307								   26.26	    6417.00
+
+Ending Balance														    6417.00
+
+Easthampton
+Beginning Balance													    3888.64
+       7/27/2013 INV	 Invoice No. 14308								  106.44	    3995.08
+
+Ending Balance														    3995.08
+
+
+Easton
+Beginning Balance													    7708.37
+       7/27/2013 INV	 Invoice No. 14309								 2420.29	   10128.66
+
+Ending Balance														   10128.66
+
+Edgartown
+Beginning Balance													    5851.85
+       7/27/2013 INV	 Invoice No. 14310								 2981.52	    8833.37
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+       7/27/2013 PAY	 Payment from account								  (25.06)	    8808.31
+
+Ending Balance														    8808.31
+
+Egremont
+Beginning Balance													    3054.40
+       7/27/2013 INV	 Invoice No. 14311								   12.55	    3066.95
+       7/27/2013 PAY	 Payment from account								  (12.08)	    3054.87
+
+Ending Balance														    3054.87
+
+Erving
+Beginning Balance													    1430.75
+       7/27/2013 INV	 Invoice No. 14312								 1090.54	    2521.29
+
+Ending Balance														    2521.29
+
+
+Essex
+Beginning Balance													    2646.82
+       7/27/2013 INV	 Invoice No. 14313								  283.11	    2929.93
+
+Ending Balance														    2929.93
+
+Everett
+Beginning Balance													    1675.68
+       7/27/2013 INV	 Invoice No. 14314								  608.96	    2284.64
+
+Ending Balance														    2284.64
+
+
+Fairhaven
+Beginning Balance													    4413.78
+       7/27/2013 INV	 Invoice No. 14315								 1130.19	    5543.97
+
+Ending Balance														    5543.97
+
+Fall River
+Beginning Balance													    6423.20
+       7/27/2013 INV	 Invoice No. 14316								   26.40	    6449.60
+       7/27/2013 PAY	 Payment from account								  (25.06)	    6424.54
+
+Ending Balance														    6424.54
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Falmouth
+Beginning Balance													    7119.81
+       7/27/2013 INV	 Invoice No. 14317								 1384.08	    8503.89
+
+Ending Balance														    8503.89
+
+
+Fitchburg
+Beginning Balance													    2446.05
+       7/27/2013 INV	 Invoice No. 14318								   10.05	    2456.10
+
+Ending Balance														    2456.10
+
+Florida
+Beginning Balance													    4346.39
+       7/27/2013 INV	 Invoice No. 14319								  628.46	    4974.85
+
+Ending Balance														    4974.85
+
+
+Foxborough
+Beginning Balance													    7374.43
+       7/27/2013 INV	 Invoice No. 14320								 2107.25	    9481.68
+
+Ending Balance														    9481.68
+
+Framingham
+Beginning Balance													    5391.17
+       7/27/2013 INV	 Invoice No. 14321								 1065.17	    6456.34
+
+Ending Balance														    6456.34
+
+
+Franklin
+Beginning Balance													    3534.44
+       7/27/2013 INV	 Invoice No. 14322								   14.53	    3548.97
+       7/27/2013 PAY	 Payment from account								  (14.53)	    3534.44
+
+Ending Balance														    3534.44
+
+Freetown
+Beginning Balance													    1880.50
+       7/27/2013 INV	 Invoice No. 14323								 1301.01	    3181.51
+       7/27/2013 PAY	 Payment from account								  (17.06)	    3164.45
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    3164.45
+
+Gardner
+Beginning Balance													    1523.65
+       7/27/2013 INV	 Invoice No. 14324								  132.36	    1656.01
+
+Ending Balance														    1656.01
+
+Georgetown
+Beginning Balance													    1156.62
+       7/27/2013 INV	 Invoice No. 14325								  238.24	    1394.86
+
+Ending Balance														    1394.86
+
+Gill
+Beginning Balance													    2668.07
+       7/27/2013 INV	 Invoice No. 14326								  353.94	    3022.01
+
+Ending Balance														    3022.01
+
+Gloucester
+Beginning Balance													    2674.67
+       7/27/2013 INV	 Invoice No. 14327								  694.93	    3369.60
+
+Ending Balance														    3369.60
+
+Goshen
+Beginning Balance													    3418.94
+       7/27/2013 INV	 Invoice No. 14328								  468.68	    3887.62
+       7/27/2013 PAY	 Payment from account								  (25.06)	    3862.56
+
+Ending Balance														    3862.56
+
+Gosnold
+Beginning Balance													    4108.00
+       7/27/2013 INV	 Invoice No. 14329								   16.88	    4124.88
+       7/27/2013 PAY	 Payment from account								   (6.72)	    4118.16
+
+Ending Balance														    4118.16
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Grafton
+Beginning Balance													    5048.00
+       7/27/2013 INV	 Invoice No. 14330								  822.71	    5870.71
+
+Ending Balance														    5870.71
+
+
+Granby
+Beginning Balance													    5643.89
+       7/27/2013 INV	 Invoice No. 14331								  945.15	    6589.04
+
+Ending Balance														    6589.04
+
+Granville
+Beginning Balance													    5050.39
+       7/27/2013 INV	 Invoice No. 14332								 1064.82	    6115.21
+
+Ending Balance														    6115.21
+
+
+Great Barrington
+Beginning Balance													    3172.03
+       7/27/2013 INV	 Invoice No. 14333								   13.04	    3185.07
+
+Ending Balance														    3185.07
+
+Greenfield
+Beginning Balance													    1333.04
+       7/27/2013 INV	 Invoice No. 14334								 1300.04	    2633.08
+       7/27/2013 PAY	 Payment from account								  (25.06)	    2608.02
+
+Ending Balance														    2608.02
+
+
+Groton
+Beginning Balance													    1405.42
+       7/27/2013 INV	 Invoice No. 14335								  132.02	    1537.44
+       7/27/2013 PAY	 Payment from account								  (19.08)	    1518.36
+
+Ending Balance														    1518.36
+
+Groveland
+Beginning Balance													    1161.00
+       7/27/2013 INV	 Invoice No. 14336								  238.51	    1399.51
+       7/27/2013 PAY	 Payment from account								  (15.34)	    1384.17
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    1384.17
+
+Hadley
+Beginning Balance													    2331.58
+       7/27/2013 INV	 Invoice No. 14337								  352.93	    2684.51
+
+Ending Balance														    2684.51
+
+Halifax
+Beginning Balance													    2311.42
+       7/27/2013 INV	 Invoice No. 14338								  694.15	    3005.57
+
+Ending Balance														    3005.57
+
+Hamilton
+Beginning Balance													    3160.88
+       7/27/2013 INV	 Invoice No. 14339								  468.09	    3628.97
+
+Ending Balance														    3628.97
+
+Hampden
+Beginning Balance													    4317.83
+       7/27/2013 INV	 Invoice No. 14340								   17.74	    4335.57
+       7/27/2013 PAY	 Payment from account								  (17.74)	    4317.83
+
+Ending Balance														    4317.83
+
+
+Hancock
+Beginning Balance													    4927.12
+       7/27/2013 INV	 Invoice No. 14341								   20.25	    4947.37
+       7/27/2013 PAY	 Payment from account								   (4.13)	    4943.24
+
+Ending Balance														    4943.24
+
+Hanover
+Beginning Balance													    3441.98
+       7/27/2013 INV	 Invoice No. 14342								  884.17	    4326.15
+
+Ending Balance														    4326.15
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Hanson
+Beginning Balance													    2454.66
+       7/27/2013 INV	 Invoice No. 14343								 1015.02	    3469.68
+
+Ending Balance														    3469.68
+
+
+Hardwick
+Beginning Balance													    2692.70
+       7/27/2013 INV	 Invoice No. 14344								   11.07	    2703.77
+
+Ending Balance														    2703.77
+
+Harvard
+Beginning Balance													     912.91
+       7/27/2013 INV	 Invoice No. 14345								 1215.72	    2128.63
+
+Ending Balance														    2128.63
+
+
+Harwich
+Beginning Balance													    1483.94
+       7/27/2013 INV	 Invoice No. 14346								  132.22	    1616.16
+       7/27/2013 PAY	 Payment from account								  (25.06)	    1591.10
+
+Ending Balance														    1591.10
+
+Hatfield
+Beginning Balance													    1250.39
+       7/27/2013 INV	 Invoice No. 14347								  238.67	    1489.06
+       7/27/2013 PAY	 Payment from account								  (19.74)	    1469.32
+
+Ending Balance														    1469.32
+
+
+Haverhill
+Beginning Balance													    2713.65
+       7/27/2013 INV	 Invoice No. 14348								  360.86	    3074.51
+
+Ending Balance														    3074.51
+
+Hawley
+Beginning Balance													    2529.96
+       7/27/2013 INV	 Invoice No. 14349								  675.66	    3205.62
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    3205.62
+
+Heath
+Beginning Balance													    3235.80
+       7/27/2013 INV	 Invoice No. 14350								  468.01	    3703.81
+
+Ending Balance														    3703.81
+
+Hingham
+Beginning Balance													    4236.01
+       7/27/2013 INV	 Invoice No. 14351								   17.41	    4253.42
+
+Ending Balance														    4253.42
+
+Hinsdale
+Beginning Balance													    4967.08
+       7/27/2013 INV	 Invoice No. 14352								  785.08	    5752.16
+       7/27/2013 PAY	 Payment from account								  (25.06)	    5727.10
+
+Ending Balance														    5727.10
+
+Holbrook
+Beginning Balance													    5530.82
+       7/27/2013 INV	 Invoice No. 14353								  919.28	    6450.10
+
+Ending Balance														    6450.10
+
+
+Holden
+Beginning Balance													    4790.69
+       7/27/2013 INV	 Invoice No. 14354								 1141.53	    5932.22
+
+Ending Balance														    5932.22
+
+Holland
+Beginning Balance													    3274.27
+       7/27/2013 INV	 Invoice No. 14355								   13.46	    3287.73
+
+Ending Balance														    3287.73
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Holliston
+Beginning Balance													    1622.42
+       7/27/2013 INV	 Invoice No. 14356								 1184.98	    2807.40
+
+Ending Balance														    2807.40
+
+
+Holyoke
+Beginning Balance													    1486.27
+       7/27/2013 INV	 Invoice No. 14357								  133.61	    1619.88
+
+Ending Balance														    1619.88
+
+Hopedale
+Beginning Balance													    1283.33
+       7/27/2013 INV	 Invoice No. 14358								  245.94	    1529.27
+       7/27/2013 PAY	 Payment from account								  (25.06)	    1504.21
+
+Ending Balance														    1504.21
+
+
+Hopkinton
+Beginning Balance													    2506.44
+       7/27/2013 INV	 Invoice No. 14359								  353.72	    2860.16
+
+Ending Balance														    2860.16
+
+Hubbardston
+Beginning Balance													    2535.84
+       7/27/2013 INV	 Invoice No. 14360								  682.30	    3218.14
+
+Ending Balance														    3218.14
+
+
+Hudson
+Beginning Balance													    4577.43
+       7/27/2013 INV	 Invoice No. 14361								  783.25	    5360.68
+
+Ending Balance														    5360.68
+
+Hull
+Beginning Balance													    5571.82
+       7/27/2013 INV	 Invoice No. 14362								   22.90	    5594.72
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    5594.72
+
+Huntington
+Beginning Balance													    3955.69
+       7/27/2013 INV	 Invoice No. 14363								  188.71	    4144.40
+
+Ending Balance														    4144.40
+
+Ipswich
+Beginning Balance													    6830.45
+       7/27/2013 INV	 Invoice No. 14364								 1913.10	    8743.55
+       7/27/2013 PAY	 Payment from account								  (25.06)	    8718.49
+
+Ending Balance														    8718.49
+
+Kingston
+Beginning Balance													    5691.62
+       7/27/2013 INV	 Invoice No. 14365								 2798.59	    8490.21
+
+Ending Balance														    8490.21
+
+Lakeville
+Beginning Balance													    4180.72
+       7/27/2013 INV	 Invoice No. 14366								   17.18	    4197.90
+
+Ending Balance														    4197.90
+
+
+Lancaster
+Beginning Balance													    1556.54
+       7/27/2013 INV	 Invoice No. 14367								 1602.99	    3159.53
+
+Ending Balance														    3159.53
+
+Lanesborough
+Beginning Balance													     836.59
+       7/27/2013 INV	 Invoice No. 14368								   77.18	     913.77
+
+Ending Balance														     913.77
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Lawrence
+Beginning Balance													     399.41
+       7/27/2013 INV	 Invoice No. 14369								  452.58	     851.99
+
+Ending Balance														     851.99
+
+
+Lee
+Beginning Balance													    1826.68
+       7/27/2013 INV	 Invoice No. 14370								  210.85	    2037.53
+       7/27/2013 PAY	 Payment from account								  (25.06)	    2012.47
+
+Ending Balance														    2012.47
+
+Leicester
+Beginning Balance													    3119.45
+       7/27/2013 INV	 Invoice No. 14371								  903.35	    4022.80
+
+Ending Balance														    4022.80
+
+
+Lenox
+Beginning Balance													    2494.10
+       7/27/2013 INV	 Invoice No. 14372								  281.59	    2775.69
+       7/27/2013 PAY	 Payment from account								   (4.20)	    2771.49
+
+Ending Balance														    2771.49
+
+Leominster
+Beginning Balance													    4333.39
+       7/27/2013 INV	 Invoice No. 14373								   17.81	    4351.20
+
+Ending Balance														    4351.20
+
+
+Leverett
+Beginning Balance													    3703.60
+       7/27/2013 INV	 Invoice No. 14374								  195.98	    3899.58
+
+Ending Balance														    3899.58
+
+Lexington
+Beginning Balance													    8023.79
+       7/27/2013 INV	 Invoice No. 14375								 2558.54	   10582.33
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														   10582.33
+
+Leyden
+Beginning Balance													    4964.61
+       7/27/2013 INV	 Invoice No. 14376								  844.78	    5809.39
+       7/27/2013 PAY	 Payment from account								  (25.06)	    5784.33
+
+Ending Balance														    5784.33
+
+Lincoln
+Beginning Balance													    3575.54
+       7/27/2013 INV	 Invoice No. 14377								   14.69	    3590.23
+
+Ending Balance														    3590.23
+
+Littleton
+Beginning Balance													    1606.12
+       7/27/2013 INV	 Invoice No. 14378								 1383.16	    2989.28
+
+Ending Balance														    2989.28
+
+Longmeadow
+Beginning Balance													     437.27
+       7/27/2013 INV	 Invoice No. 14379								   60.70	     497.97
+
+Ending Balance														     497.97
+
+
+Lowell
+Beginning Balance													    1525.86
+       7/27/2013 INV	 Invoice No. 14380								  464.33	    1990.19
+
+Ending Balance														    1990.19
+
+Ludlow
+Beginning Balance													    2609.34
+       7/27/2013 INV	 Invoice No. 14381								  353.54	    2962.88
+
+Ending Balance														    2962.88
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Lunenburg
+Beginning Balance													    2636.63
+       7/27/2013 INV	 Invoice No. 14382								  694.45	    3331.08
+       7/27/2013 PAY	 Payment from account								  (25.06)	    3306.02
+
+Ending Balance														    3306.02
+
+
+Lynn
+Beginning Balance													    3344.33
+       7/27/2013 INV	 Invoice No. 14383								  468.15	    3812.48
+       7/27/2013 PAY	 Payment from account								  (10.85)	    3801.63
+
+Ending Balance														    3801.63
+
+Lynnfield
+Beginning Balance													    3979.98
+       7/27/2013 INV	 Invoice No. 14384								   16.36	    3996.34
+
+Ending Balance														    3996.34
+
+
+Malden
+Beginning Balance													    4978.16
+       7/27/2013 INV	 Invoice No. 14385								  822.05	    5800.21
+
+Ending Balance														    5800.21
+
+Manchester-by-the-Sea
+Beginning Balance													    5574.80
+       7/27/2013 INV	 Invoice No. 14386								  944.44	    6519.24
+
+Ending Balance														    6519.24
+
+
+Mansfield
+Beginning Balance													    4985.04
+       7/27/2013 INV	 Invoice No. 14387								 1064.07	    6049.11
+
+Ending Balance														    6049.11
+
+Marblehead
+Beginning Balance													    3130.45
+       7/27/2013 INV	 Invoice No. 14388								   12.86	    3143.31
+       7/27/2013 PAY	 Payment from account								  (12.86)	    3130.45
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    3130.45
+
+Marion
+Beginning Balance													    1196.33
+       7/27/2013 INV	 Invoice No. 14389								 1468.89	    2665.22
+
+Ending Balance														    2665.22
+
+Marlborough
+Beginning Balance													    1500.55
+       7/27/2013 INV	 Invoice No. 14390								  132.34	    1632.89
+
+Ending Balance														    1632.89
+
+Marshfield
+Beginning Balance													    1263.54
+       7/27/2013 INV	 Invoice No. 14391								    5.19	    1268.73
+
+Ending Balance														    1268.73
+
+Mashpee
+Beginning Balance													    1852.27
+       7/27/2013 INV	 Invoice No. 14392								  350.79	    2203.06
+
+Ending Balance														    2203.06
+
+Mattapoisett
+Beginning Balance													    2777.10
+       7/27/2013 INV	 Invoice No. 14393								  695.74	    3472.84
+
+Ending Balance														    3472.84
+
+Maynard
+Beginning Balance													    2312.06
+       7/27/2013 INV	 Invoice No. 14394								  464.39	    2776.45
+       7/27/2013 PAY	 Payment from account								  (25.06)	    2751.39
+
+Ending Balance														    2751.39
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Medfield
+Beginning Balance													    4231.19
+       7/27/2013 INV	 Invoice No. 14395								   17.39	    4248.58
+
+Ending Balance														    4248.58
+
+
+Medford
+Beginning Balance													    4969.43
+       7/27/2013 INV	 Invoice No. 14396								  822.83	    5792.26
+
+Ending Balance														    5792.26
+
+Medway
+Beginning Balance													    5566.07
+       7/27/2013 INV	 Invoice No. 14397								  945.34	    6511.41
+
+Ending Balance														    6511.41
+
+
+Melrose
+Beginning Balance													    4975.43
+       7/27/2013 INV	 Invoice No. 14398								 1065.09	    6040.52
+
+Ending Balance														    6040.52
+
+Mendon
+Beginning Balance													    2816.34
+       7/27/2013 INV	 Invoice No. 14399								   11.57	    2827.91
+
+Ending Balance														    2827.91
+
+
+Merrimac
+Beginning Balance													    1486.96
+       7/27/2013 INV	 Invoice No. 14400								 1301.37	    2788.33
+       7/27/2013 PAY	 Payment from account								  (25.06)	    2763.27
+
+Ending Balance														    2763.27
+
+Methuen
+Beginning Balance													    1301.96
+       7/27/2013 INV	 Invoice No. 14401								  131.41	    1433.37
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    1433.37
+
+Middleborough
+Beginning Balance													    1089.82
+       7/27/2013 INV	 Invoice No. 14402								  237.90	    1327.72
+       7/27/2013 PAY	 Payment from account								  (15.93)	    1311.79
+
+Ending Balance														    1311.79
+
+Middlefield
+Beginning Balance													    2549.43
+       7/27/2013 INV	 Invoice No. 14403								  360.02	    2909.45
+
+Ending Balance														    2909.45
+
+Middleton
+Beginning Balance													    2217.60
+       7/27/2013 INV	 Invoice No. 14404								  673.51	    2891.11
+
+Ending Balance														    2891.11
+
+Milford
+Beginning Balance													    3180.65
+       7/27/2013 INV	 Invoice No. 14405								  467.56	    3648.21
+
+Ending Balance														    3648.21
+
+
+Millbury
+Beginning Balance													    4206.40
+       7/27/2013 INV	 Invoice No. 14406								   17.29	    4223.69
+       7/27/2013 PAY	 Payment from account								  (17.29)	    4206.40
+
+Ending Balance														    4206.40
+
+Millis
+Beginning Balance													    4886.76
+       7/27/2013 INV	 Invoice No. 14407								  784.38	    5671.14
+
+Ending Balance														    5671.14
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Millville
+Beginning Balance													    5475.44
+       7/27/2013 INV	 Invoice No. 14408								  918.63	    6394.07
+
+Ending Balance														    6394.07
+
+
+Milton
+Beginning Balance													    4680.68
+       7/27/2013 INV	 Invoice No. 14409								 1005.61	    5686.29
+
+Ending Balance														    5686.29
+
+Monroe
+Beginning Balance													    3082.66
+       7/27/2013 INV	 Invoice No. 14410								   12.67	    3095.33
+
+Ending Balance														    3095.33
+
+
+Monson
+Beginning Balance													    1428.89
+       7/27/2013 INV	 Invoice No. 14411								 1183.60	    2612.49
+
+Ending Balance														    2612.49
+
+Montague
+Beginning Balance													    1310.15
+       7/27/2013 INV	 Invoice No. 14412								  132.82	    1442.97
+       7/27/2013 PAY	 Payment from account								  (25.06)	    1417.91
+
+Ending Balance														    1417.91
+
+
+Monterey
+Beginning Balance													    1083.66
+       7/27/2013 INV	 Invoice No. 14413								  244.99	    1328.65
+       7/27/2013 PAY	 Payment from account								  (21.05)	    1307.60
+
+Ending Balance														    1307.60
+
+Montgomery
+Beginning Balance													    2253.57
+       7/27/2013 INV	 Invoice No. 14414								  352.51	    2606.08
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    2606.08
+
+Mount Washington
+Beginning Balance													    2480.76
+       7/27/2013 INV	 Invoice No. 14415								  681.75	    3162.51
+
+Ending Balance														    3162.51
+
+Nahant
+Beginning Balance													    3208.10
+       7/27/2013 INV	 Invoice No. 14416								   13.18	    3221.28
+
+Ending Balance														    3221.28
+
+Nantucket
+Beginning Balance													    2537.96
+       7/27/2013 INV	 Invoice No. 14417								   10.43	    2548.39
+
+Ending Balance														    2548.39
+
+Natick
+Beginning Balance													    2723.92
+       7/27/2013 INV	 Invoice No. 14418								  798.78	    3522.70
+       7/27/2013 PAY	 Payment from account								  (25.06)	    3497.64
+
+Ending Balance														    3497.64
+
+
+Needham
+Beginning Balance													    3940.22
+       7/27/2013 INV	 Invoice No. 14419								  896.20	    4836.42
+
+Ending Balance														    4836.42
+
+New Ashford
+Beginning Balance													    4721.47
+       7/27/2013 INV	 Invoice No. 14420								 1016.39	    5737.86
+
+Ending Balance														    5737.86
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+New Bedford
+Beginning Balance													    4421.60
+       7/27/2013 INV	 Invoice No. 14421								   18.17	    4439.77
+
+Ending Balance														    4439.77
+
+
+New Braintree
+Beginning Balance													    1788.58
+       7/27/2013 INV	 Invoice No. 14422								 1649.95	    3438.53
+
+Ending Balance														    3438.53
+
+New Marlborough
+Beginning Balance													     836.15
+       7/27/2013 INV	 Invoice No. 14423								   83.35	     919.50
+
+Ending Balance														     919.50
+
+
+New Salem
+Beginning Balance													     747.54
+       7/27/2013 INV	 Invoice No. 14424								  432.38	    1179.92
+       7/27/2013 PAY	 Payment from account								  (25.06)	    1154.86
+
+Ending Balance														    1154.86
+
+Newbury
+Beginning Balance													    3689.00
+       7/27/2013 INV	 Invoice No. 14425								  770.78	    4459.78
+
+Ending Balance														    4459.78
+
+
+Newburyport
+Beginning Balance													    4705.36
+       7/27/2013 INV	 Invoice No. 14426								 1476.97	    6182.33
+
+Ending Balance														    6182.33
+
+Newton
+Beginning Balance													    7005.50
+       7/27/2013 INV	 Invoice No. 14427								 1335.12	    8340.62
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    8340.62
+
+Norfolk
+Beginning Balance													    5777.40
+       7/27/2013 INV	 Invoice No. 14428								   23.74	    5801.14
+
+Ending Balance														    5801.14
+
+North.Adams
+Beginning Balance													    3138.02
+       7/27/2013 INV	 Invoice No. 14429								  509.00	    3647.02
+
+Ending Balance														    3647.02
+
+North.Andover
+Beginning Balance													    6402.69
+       7/27/2013 INV	 Invoice No. 14430								 1724.28	    8126.97
+       7/27/2013 PAY	 Payment from account								  (25.06)	    8101.91
+
+Ending Balance														    8101.91
+
+North.Attleborough
+Beginning Balance													    5802.77
+       7/27/2013 INV	 Invoice No. 14431								 3287.59	    9090.36
+
+Ending Balance														    9090.36
+
+
+North.Brookfield
+Beginning Balance													    3297.69
+       7/27/2013 INV	 Invoice No. 14432								   13.55	    3311.24
+
+Ending Balance														    3311.24
+
+North.Reading
+Beginning Balance													    1737.36
+       7/27/2013 INV	 Invoice No. 14433								 2361.55	    4098.91
+       7/27/2013 PAY	 Payment from account								 (668.10)	    3430.81
+
+Ending Balance														    3430.81
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Northampton
+Beginning Balance													     108.31
+       7/27/2013 INV	 Invoice No. 14434								   34.32	     142.63
+
+Ending Balance														     142.63
+
+
+Northborough
+Beginning Balance													    1214.90
+       7/27/2013 INV	 Invoice No. 14435								  330.23	    1545.13
+
+Ending Balance														    1545.13
+
+Northbridge
+Beginning Balance													    2856.50
+       7/27/2013 INV	 Invoice No. 14436								  488.17	    3344.67
+       7/27/2013 PAY	 Payment from account								  (25.06)	    3319.61
+
+Ending Balance														    3319.61
+
+
+Northfield
+Beginning Balance													    2415.65
+       7/27/2013 INV	 Invoice No. 14437								  649.37	    3065.02
+
+Ending Balance														    3065.02
+
+Norton
+Beginning Balance													    7581.08
+       7/27/2013 INV	 Invoice No. 14438								 1530.17	    9111.25
+
+Ending Balance														    9111.25
+
+
+Norwell
+Beginning Balance													    5240.37
+       7/27/2013 INV	 Invoice No. 14439								   21.54	    5261.91
+
+Ending Balance														    5261.91
+
+Norwood
+Beginning Balance													    6589.61
+       7/27/2013 INV	 Invoice No. 14440								 1915.55	    8505.16
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    8505.16
+
+Oak Bluffs
+Beginning Balance													    5469.60
+       7/27/2013 INV	 Invoice No. 14441								   22.48	    5492.08
+
+Ending Balance														    5492.08
+
+Oakham
+Beginning Balance													    2576.43
+       7/27/2013 INV	 Invoice No. 14442								 1053.69	    3630.12
+       7/27/2013 PAY	 Payment from account								  (25.06)	    3605.06
+
+Ending Balance														    3605.06
+
+Orange
+Beginning Balance													    2749.43
+       7/27/2013 INV	 Invoice No. 14443								   11.30	    2760.73
+
+Ending Balance														    2760.73
+
+Orleans
+Beginning Balance													     736.88
+       7/27/2013 INV	 Invoice No. 14444								 1296.43	    2033.31
+
+Ending Balance														    2033.31
+
+
+Otis
+Beginning Balance													     761.77
+       7/27/2013 INV	 Invoice No. 14445								  129.24	     891.01
+
+Ending Balance														     891.01
+
+Oxford
+Beginning Balance													    1035.04
+       7/27/2013 INV	 Invoice No. 14446								  237.76	    1272.80
+
+Ending Balance														    1272.80
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Palmer
+Beginning Balance													    2537.92
+       7/27/2013 INV	 Invoice No. 14447								  353.44	    2891.36
+
+Ending Balance														    2891.36
+
+
+Paxton
+Beginning Balance													    2559.48
+       7/27/2013 INV	 Invoice No. 14448								  694.53	    3254.01
+       7/27/2013 PAY	 Payment from account								  (25.06)	    3228.95
+
+Ending Balance														    3228.95
+
+Peabody
+Beginning Balance													    3855.27
+       7/27/2013 INV	 Invoice No. 14449								  611.44	    4466.71
+       7/27/2013 PAY	 Payment from account								   (7.28)	    4459.43
+
+Ending Balance														    4459.43
+
+
+Pelham
+Beginning Balance													    4176.43
+       7/27/2013 INV	 Invoice No. 14450								   17.16	    4193.59
+
+Ending Balance														    4193.59
+
+Pembroke
+Beginning Balance													    4908.62
+       7/27/2013 INV	 Invoice No. 14451								  822.21	    5730.83
+
+Ending Balance														    5730.83
+
+
+Pepperell
+Beginning Balance													    5510.08
+       7/27/2013 INV	 Invoice No. 14452								  944.68	    6454.76
+
+Ending Balance														    6454.76
+
+Peru
+Beginning Balance													    4919.57
+       7/27/2013 INV	 Invoice No. 14453								 1064.38	    5983.95
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    5983.95
+
+Petersham
+Beginning Balance													    2731.24
+       7/27/2013 INV	 Invoice No. 14454								   11.22	    2742.46
+       7/27/2013 PAY	 Payment from account								  (11.22)	    2731.24
+
+Ending Balance														    2731.24
+
+Phillipston
+Beginning Balance													    1401.26
+       7/27/2013 INV	 Invoice No. 14455								 1300.44	    2701.70
+
+Ending Balance														    2701.70
+
+Pittsfield
+Beginning Balance													    1261.63
+       7/27/2013 INV	 Invoice No. 14456								  131.43	    1393.06
+
+Ending Balance														    1393.06
+
+Plainfield
+Beginning Balance													    1013.33
+       7/27/2013 INV	 Invoice No. 14457								  237.93	    1251.26
+
+Ending Balance														    1251.26
+
+
+Plainville
+Beginning Balance													    2518.11
+       7/27/2013 INV	 Invoice No. 14458								  353.74	    2871.85
+
+Ending Balance														    2871.85
+
+Plymouth
+Beginning Balance													    2187.59
+       7/27/2013 INV	 Invoice No. 14459								  933.70	    3121.29
+
+Ending Balance														    3121.29
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Plympton
+Beginning Balance													    3514.27
+       7/27/2013 INV	 Invoice No. 14460								  469.59	    3983.86
+       7/27/2013 PAY	 Payment from account								  (25.06)	    3958.80
+
+Ending Balance														    3958.80
+
+
+Princeton
+Beginning Balance													    4361.81
+       7/27/2013 INV	 Invoice No. 14461								   17.93	    4379.74
+
+Ending Balance														    4379.74
+
+Provincetown
+Beginning Balance													    5061.06
+       7/27/2013 INV	 Invoice No. 14462								  784.72	    5845.78
+
+Ending Balance														    5845.78
+
+
+Quincy
+Beginning Balance													    5656.98
+       7/27/2013 INV	 Invoice No. 14463								  918.95	    6575.93
+
+Ending Balance														    6575.93
+
+Randolph
+Beginning Balance													    4807.73
+       7/27/2013 INV	 Invoice No. 14464								 1005.65	    5813.38
+
+Ending Balance														    5813.38
+
+
+Raynham
+Beginning Balance													    3024.57
+       7/27/2013 INV	 Invoice No. 14465								   12.43	    3037.00
+
+Ending Balance														    3037.00
+
+Reading
+Beginning Balance													    1387.42
+       7/27/2013 INV	 Invoice No. 14466								    5.70	    1393.12
+       7/27/2013 PAY	 Payment from account								   (5.70)	    1387.42
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    1387.42
+
+Rehoboth
+Beginning Balance													     781.56
+       7/27/2013 INV	 Invoice No. 14467								  130.59	     912.15
+       7/27/2013 PAY	 Payment from account								  (23.57)	     888.58
+
+Ending Balance														     888.58
+
+Revere
+Beginning Balance													     103.91
+       7/27/2013 INV	 Invoice No. 14468								  240.87	     344.78
+       7/27/2013 PAY	 Payment from account								  (25.04)	     319.74
+
+Ending Balance														     319.74
+
+
+Richmond
+Beginning Balance													    2136.34
+       7/27/2013 INV	 Invoice No. 14469								  351.87	    2488.21
+
+Ending Balance														    2488.21
+
+Rochester
+Beginning Balance													    1545.34
+       7/27/2013 INV	 Invoice No. 14470								  677.59	    2222.93
+
+Ending Balance														    2222.93
+
+
+Rockland
+Beginning Balance													    3141.78
+       7/27/2013 INV	 Invoice No. 14471								  454.56	    3596.34
+
+Ending Balance														    3596.34
+
+Rockport
+Beginning Balance													    4114.99
+       7/27/2013 INV	 Invoice No. 14472								   16.91	    4131.90
+       7/27/2013 PAY	 Payment from account								  (16.91)	    4114.99
+
+Ending Balance														    4114.99
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Rowe
+Beginning Balance													    4783.74
+       7/27/2013 INV	 Invoice No. 14473								  806.88	    5590.62
+
+Ending Balance														    5590.62
+
+
+Rowley
+Beginning Balance													    5012.03
+       7/27/2013 INV	 Invoice No. 14474								  900.18	    5912.21
+
+Ending Balance														    5912.21
+
+Royalston
+Beginning Balance													    4884.70
+       7/27/2013 INV	 Invoice No. 14475								 1016.58	    5901.28
+
+Ending Balance														    5901.28
+
+
+Russell
+Beginning Balance													    3018.05
+       7/27/2013 INV	 Invoice No. 14476								   12.40	    3030.45
+
+Ending Balance														    3030.45
+
+Rutland
+Beginning Balance													    1365.24
+       7/27/2013 INV	 Invoice No. 14477								 1195.68	    2560.92
+
+Ending Balance														    2560.92
+
+
+Salem
+Beginning Balance													    1241.26
+       7/27/2013 INV	 Invoice No. 14478								  136.37	    1377.63
+       7/27/2013 PAY	 Payment from account								  (25.06)	    1352.57
+
+Ending Balance														    1352.57
+
+Salisbury
+Beginning Balance													     643.73
+       7/27/2013 INV	 Invoice No. 14479								  238.75	     882.48
+       7/27/2013 PAY	 Payment from account								  (20.79)	     861.69
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														     861.69
+
+Sandisfield
+Beginning Balance													    2458.67
+       7/27/2013 INV	 Invoice No. 14480								  356.88	    2815.55
+
+Ending Balance														    2815.55
+
+Sandwich
+Beginning Balance													    5847.71
+       7/27/2013 INV	 Invoice No. 14481								   24.03	    5871.74
+
+Ending Balance														    5871.74
+
+Saugus
+Beginning Balance													    6304.31
+       7/27/2013 INV	 Invoice No. 14482								  213.83	    6518.14
+
+Ending Balance														    6518.14
+
+Savoy
+Beginning Balance													    3777.31
+       7/27/2013 INV	 Invoice No. 14483								   15.52	    3792.83
+
+Ending Balance														    3792.83
+
+Scituate
+Beginning Balance													    6202.50
+       7/27/2013 INV	 Invoice No. 14484								   25.49	    6227.99
+       7/27/2013 PAY	 Payment from account								  (25.06)	    6202.93
+
+Ending Balance														    6202.93
+
+Seekonk
+Beginning Balance													    8562.28
+       7/27/2013 INV	 Invoice No. 14485								   35.19	    8597.47
+
+Ending Balance														    8597.47
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Sharon
+Beginning Balance													    5421.75
+       7/27/2013 INV	 Invoice No. 14486								   22.28	    5444.03
+
+Ending Balance														    5444.03
+
+
+Sheffield
+Beginning Balance													    2834.04
+       7/27/2013 INV	 Invoice No. 14487								   11.65	    2845.69
+
+Ending Balance														    2845.69
+
+Shelburne
+Beginning Balance													    1350.87
+       7/27/2013 INV	 Invoice No. 14488								    5.55	    1356.42
+
+Ending Balance														    1356.42
+
+
+Sherborn
+Beginning Balance													    1685.77
+       7/27/2013 INV	 Invoice No. 14489								    6.93	    1692.70
+
+Ending Balance														    1692.70
+
+Shirley
+Beginning Balance													    1089.10
+       7/27/2013 INV	 Invoice No. 14490								    4.48	    1093.58
+       7/27/2013 PAY	 Payment from account								   (4.48)	    1089.10
+
+Ending Balance														    1089.10
+
+
+Shrewsbury
+Beginning Balance													    2804.28
+       7/27/2013 INV	 Invoice No. 14491								   11.52	    2815.80
+
+Ending Balance														    2815.80
+
+Shutesbury
+Beginning Balance													     143.53
+       7/27/2013 INV	 Invoice No. 14492								    0.59	     144.12
+       7/27/2013 PAY	 Payment from account								   (0.59)	     143.53
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														     143.53
+
+Somerset
+Beginning Balance													    5761.56
+       7/27/2013 INV	 Invoice No. 14493								   23.68	    5785.24
+
+Ending Balance														    5785.24
+
+Somerville
+Beginning Balance													    2692.48
+       7/27/2013 INV	 Invoice No. 14494								  286.06	    2978.54
+
+Ending Balance														    2978.54
+
+South.Hadley
+Beginning Balance													    3816.71
+       7/27/2013 INV	 Invoice No. 14495								   15.69	    3832.40
+
+Ending Balance														    3832.40
+
+Southampton
+Beginning Balance													    4704.98
+       7/27/2013 INV	 Invoice No. 14496								   19.34	    4724.32
+       7/27/2013 PAY	 Payment from account								  (19.34)	    4704.98
+
+Ending Balance														    4704.98
+
+
+Southborough
+Beginning Balance													    5432.82
+       7/27/2013 INV	 Invoice No. 14497								   22.33	    5455.15
+
+Ending Balance														    5455.15
+
+Southbridge
+Beginning Balance													    3540.64
+       7/27/2013 INV	 Invoice No. 14498								   14.55	    3555.19
+
+Ending Balance														    3555.19
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Southwick
+Beginning Balance													     563.79
+       7/27/2013 INV	 Invoice No. 14499								    2.32	     566.11
+
+Ending Balance														     566.11
+
+
+Spencer
+Beginning Balance													    1710.53
+       7/27/2013 INV	 Invoice No. 14500								    7.03	    1717.56
+
+Ending Balance														    1717.56
+
+Springfield
+Beginning Balance													     975.57
+       7/27/2013 INV	 Invoice No. 14501								    4.01	     979.58
+
+Ending Balance														     979.58
+
+
+Sterling
+Beginning Balance													    2496.25
+       7/27/2013 INV	 Invoice No. 14502								   10.26	    2506.51
+       7/27/2013 PAY	 Payment from account								  (10.26)	    2496.25
+
+Ending Balance														    2496.25
+
+Stockbridge
+Beginning Balance													    2478.68
+       7/27/2013 INV	 Invoice No. 14503								   10.19	    2488.87
+
+Ending Balance														    2488.87
+
+
+Stoneham
+Beginning Balance													    2811.28
+       7/27/2013 INV	 Invoice No. 14504								   11.55	    2822.83
+
+Ending Balance														    2822.83
+
+Stoughton
+Beginning Balance													    4114.03
+       7/27/2013 INV	 Invoice No. 14505								   16.91	    4130.94
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    4130.94
+
+Stow
+Beginning Balance													    4845.03
+       7/27/2013 INV	 Invoice No. 14506								   19.91	    4864.94
+
+Ending Balance														    4864.94
+
+Sturbridge
+Beginning Balance													    5445.08
+       7/27/2013 INV	 Invoice No. 14507								   22.38	    5467.46
+
+Ending Balance														    5467.46
+
+Sudbury
+Beginning Balance													    4879.68
+       7/27/2013 INV	 Invoice No. 14508								   20.05	    4899.73
+       7/27/2013 PAY	 Payment from account								  (20.05)	    4879.68
+
+Ending Balance														    4879.68
+
+Sunderland
+Beginning Balance													    2594.14
+       7/27/2013 INV	 Invoice No. 14509								   10.66	    2604.80
+
+Ending Balance														    2604.80
+
+
+Sutton
+Beginning Balance													    1345.44
+       7/27/2013 INV	 Invoice No. 14510								    5.53	    1350.97
+
+Ending Balance														    1350.97
+
+Swampscott
+Beginning Balance													    1199.52
+       7/27/2013 INV	 Invoice No. 14511								    4.93	    1204.45
+
+Ending Balance														    1204.45
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Swansea
+Beginning Balance													     958.21
+       7/27/2013 INV	 Invoice No. 14512								    3.94	     962.15
+
+Ending Balance														     962.15
+
+
+Taunton
+Beginning Balance													    2462.54
+       7/27/2013 INV	 Invoice No. 14513								   10.12	    2472.66
+
+Ending Balance														    2472.66
+
+Templeton
+Beginning Balance													    2102.30
+       7/27/2013 INV	 Invoice No. 14514								    8.64	    2110.94
+       7/27/2013 PAY	 Payment from account								   (8.64)	    2102.30
+
+Ending Balance														    2102.30
+
+
+Tewksbury
+Beginning Balance													    3204.53
+       7/27/2013 INV	 Invoice No. 14515								   13.17	    3217.70
+       7/27/2013 PAY	 Payment from account								  (11.44)	    3206.26
+
+Ending Balance														    3206.26
+
+Tisbury
+Beginning Balance													    4104.47
+       7/27/2013 INV	 Invoice No. 14516								   16.87	    4121.34
+
+Ending Balance														    4121.34
+
+
+Tolland
+Beginning Balance													    2983.96
+       7/27/2013 INV	 Invoice No. 14517								   12.26	    2996.22
+
+Ending Balance														    2996.22
+
+Topsfield
+Beginning Balance													    3098.58
+       7/27/2013 INV	 Invoice No. 14518								   12.73	    3111.31
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    3111.31
+
+Townsend
+Beginning Balance													    4318.03
+       7/27/2013 INV	 Invoice No. 14519								   17.75	    4335.78
+
+Ending Balance														    4335.78
+
+Truro
+Beginning Balance													    2647.20
+       7/27/2013 INV	 Invoice No. 14520								   10.88	    2658.08
+       7/27/2013 PAY	 Payment from account								  (10.88)	    2647.20
+
+Ending Balance														    2647.20
+
+Tyngsborough
+Beginning Balance													    1307.40
+       7/27/2013 INV	 Invoice No. 14521								    5.37	    1312.77
+
+Ending Balance														    1312.77
+
+Tyringham
+Beginning Balance													    1172.60
+       7/27/2013 INV	 Invoice No. 14522								    4.82	    1177.42
+
+Ending Balance														    1177.42
+
+
+Upton
+Beginning Balance													     948.90
+       7/27/2013 INV	 Invoice No. 14523								    3.90	     952.80
+
+Ending Balance														     952.80
+
+Uxbridge
+Beginning Balance													    2026.08
+       7/27/2013 INV	 Invoice No. 14524								    8.33	    2034.41
+
+Ending Balance														    2034.41
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Wakefield
+Beginning Balance													    2366.66
+       7/27/2013 INV	 Invoice No. 14525								    9.73	    2376.39
+
+Ending Balance														    2376.39
+
+
+Wales
+Beginning Balance													    3111.84
+       7/27/2013 INV	 Invoice No. 14526								   12.79	    3124.63
+       7/27/2013 PAY	 Payment from account								  (12.79)	    3111.84
+
+Ending Balance														    3111.84
+
+Waltham
+Beginning Balance													    4733.88
+       7/27/2013 INV	 Invoice No. 14527								   21.13	    4755.01
+
+Ending Balance														    4755.01
+
+
+Ware
+Beginning Balance													    4894.62
+       7/27/2013 INV	 Invoice No. 14528								  330.10	    5224.72
+
+Ending Balance														    5224.72
+
+Wareham
+Beginning Balance													    5141.07
+       7/27/2013 INV	 Invoice No. 14529								   21.13	    5162.20
+
+Ending Balance														    5162.20
+
+
+Warren
+Beginning Balance													    3276.53
+       7/27/2013 INV	 Invoice No. 14530								   13.47	    3290.00
+
+Ending Balance														    3290.00
+
+Warwick
+Beginning Balance													    1650.86
+       7/27/2013 INV	 Invoice No. 14531								    6.78	    1657.64
+       7/27/2013 PAY	 Payment from account								   (6.78)	    1650.86
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    1650.86
+
+Washington
+Beginning Balance													    1478.73
+       7/27/2013 INV	 Invoice No. 14532								    6.08	    1484.81
+
+Ending Balance														    1484.81
+
+Watertown
+Beginning Balance													     831.93
+       7/27/2013 INV	 Invoice No. 14533								    3.42	     835.35
+
+Ending Balance														     835.35
+
+Wayland
+Beginning Balance													    2404.05
+       7/27/2013 INV	 Invoice No. 14534								    9.88	    2413.93
+
+Ending Balance														    2413.93
+
+Webster
+Beginning Balance													    2388.24
+       7/27/2013 INV	 Invoice No. 14535								    9.81	    2398.05
+
+Ending Balance														    2398.05
+
+Wellesley
+Beginning Balance													    3087.48
+       7/27/2013 INV	 Invoice No. 14536								   12.69	    3100.17
+
+Ending Balance														    3100.17
+
+Wellfleet
+Beginning Balance													    4052.38
+       7/27/2013 INV	 Invoice No. 14537								   16.65	    4069.03
+       7/27/2013 PAY	 Payment from account								  (16.65)	    4052.38
+
+Ending Balance														    4052.38
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Wendell
+Beginning Balance													    4305.08
+       7/27/2013 INV	 Invoice No. 14538								   17.69	    4322.77
+
+Ending Balance														    4322.77
+
+
+Wenham
+Beginning Balance													    5307.96
+       7/27/2013 INV	 Invoice No. 14539								   21.81	    5329.77
+
+Ending Balance														    5329.77
+
+West.Boylston
+Beginning Balance													    2986.09
+       7/27/2013 INV	 Invoice No. 14540								   13.95	    3000.04
+
+Ending Balance														    3000.04
+
+
+West.Bridgewater
+Beginning Balance													     727.91
+       7/27/2013 INV	 Invoice No. 14541								    6.57	     734.48
+
+Ending Balance														     734.48
+
+West.Brookfield
+Beginning Balance													    1369.40
+       7/27/2013 INV	 Invoice No. 14542								    5.63	    1375.03
+
+Ending Balance														    1375.03
+
+
+West.Newbury
+Beginning Balance													     658.42
+       7/27/2013 INV	 Invoice No. 14543								    2.71	     661.13
+       7/27/2013 PAY	 Payment from account								   (2.71)	     658.42
+
+Ending Balance														     658.42
+
+West.Springfield
+Beginning Balance													     676.91
+       7/27/2013 INV	 Invoice No. 14544								    2.78	     679.69
+       7/27/2013 PAY	 Payment from account								   (2.78)	     676.91
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														     676.91
+
+West.Stockbridge
+Beginning Balance													    2215.51
+       7/27/2013 INV	 Invoice No. 14545								    9.10	    2224.61
+
+Ending Balance														    2224.61
+
+West.Tisbury
+Beginning Balance													    4374.07
+       7/27/2013 INV	 Invoice No. 14546								   17.98	    4392.05
+       7/27/2013 PAY	 Payment from account								   (6.25)	    4385.80
+
+Ending Balance														    4385.80
+
+Westborough
+Beginning Balance													    4040.16
+       7/27/2013 INV	 Invoice No. 14547								   16.60	    4056.76
+
+Ending Balance														    4056.76
+
+Westfield
+Beginning Balance													    2958.88
+       7/27/2013 INV	 Invoice No. 14548								   12.16	    2971.04
+
+Ending Balance														    2971.04
+
+
+Westford
+Beginning Balance													    5963.74
+       7/27/2013 INV	 Invoice No. 14549								   24.51	    5988.25
+       7/27/2013 PAY	 Payment from account								  (24.51)	    5963.74
+
+Ending Balance														    5963.74
+
+Westhampton
+Beginning Balance													    4135.72
+       7/27/2013 INV	 Invoice No. 14550								   17.00	    4152.72
+
+Ending Balance														    4152.72
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Westminster
+Beginning Balance													    4849.77
+       7/27/2013 INV	 Invoice No. 14551								   19.93	    4869.70
+
+Ending Balance														    4869.70
+
+
+Weston
+Beginning Balance													    4092.11
+       7/27/2013 INV	 Invoice No. 14552								   16.82	    4108.93
+
+Ending Balance														    4108.93
+
+Westport
+Beginning Balance													    3303.77
+       7/27/2013 INV	 Invoice No. 14553								   13.58	    3317.35
+
+Ending Balance														    3317.35
+
+
+Westwood
+Beginning Balance													    2828.42
+       7/27/2013 INV	 Invoice No. 14554								   11.62	    2840.04
+
+Ending Balance														    2840.04
+
+Weymouth
+Beginning Balance													    1687.57
+       7/27/2013 INV	 Invoice No. 14555								    6.94	    1694.51
+       7/27/2013 PAY	 Payment from account								   (6.94)	    1687.57
+
+Ending Balance														    1687.57
+
+
+Whately
+Beginning Balance													    1924.20
+       7/27/2013 INV	 Invoice No. 14556								    7.91	    1932.11
+
+Ending Balance														    1932.11
+
+Whitman
+Beginning Balance													    5463.34
+       7/27/2013 INV	 Invoice No. 14557								   22.45	    5485.79
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    5485.79
+
+Wilbraham
+Beginning Balance													    1499.42
+       7/27/2013 INV	 Invoice No. 14558								    6.16	    1505.58
+
+Ending Balance														    1505.58
+
+Williamsburg
+Beginning Balance													    3429.61
+       7/27/2013 INV	 Invoice No. 14559								   14.09	    3443.70
+
+Ending Balance														    3443.70
+
+Williamstown
+Beginning Balance													    4789.76
+       7/27/2013 INV	 Invoice No. 14560								   19.68	    4809.44
+
+Ending Balance														    4809.44
+
+Wilmington
+Beginning Balance													    5410.51
+       7/27/2013 INV	 Invoice No. 14561								   22.24	    5432.75
+       7/27/2013 PAY	 Payment from account								  (22.24)	    5410.51
+
+Ending Balance														    5410.51
+
+
+Winchendon
+Beginning Balance													    4799.23
+       7/27/2013 INV	 Invoice No. 14562								   19.72	    4818.95
+
+Ending Balance														    4818.95
+
+Winchester
+Beginning Balance													    2482.50
+       7/27/2013 INV	 Invoice No. 14563								  355.19	    2837.69
+
+Ending Balance														    2837.69
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+Windsor
+Beginning Balance													    1628.08
+       7/27/2013 INV	 Invoice No. 14564								    6.69	    1634.77
+
+Ending Balance														    1634.77
+
+
+Winthrop
+Beginning Balance													    1489.89
+       7/27/2013 INV	 Invoice No. 14565								    6.12	    1496.01
+
+Ending Balance														    1496.01
+
+Woburn
+Beginning Balance													    1254.27
+       7/27/2013 INV	 Invoice No. 14566								    5.15	    1259.42
+
+Ending Balance														    1259.42
+
+
+Worcester
+Beginning Balance													    1631.13
+       7/27/2013 INV	 Invoice No. 14567								    6.70	    1637.83
+       7/27/2013 PAY	 Payment from account								   (6.70)	    1631.13
+
+Ending Balance														    1631.13
+
+Worthington
+Beginning Balance													    1510.27
+       7/27/2013 INV	 Invoice No. 14568								    6.21	    1516.48
+
+Ending Balance														    1516.48
+
+
+Wrentham
+Beginning Balance													    2072.82
+       7/27/2013 INV	 Invoice No. 14569								    8.52	    2081.34
+
+Ending Balance														    2081.34
+
+Yarmouth
+Beginning Balance													    4044.98
+       7/27/2013 INV	 Invoice No. 14570								   16.62	    4061.60
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    4061.60
+
+
+Grand Total														 1149106.39
+   Total Added														  156170.95
+   Total Removed													   (2389.95)
+   Ending Balance Total 												 1302887.39

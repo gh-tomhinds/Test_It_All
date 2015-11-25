@@ -1,0 +1,191 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>settings_CustomFields.sikuli\settings_CustomFields.sikuli</h2> <a href="settings_CustomFields.sikuli\settings_CustomFields.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fCreateOne(pName, pDownArrow):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'-- create '</span> + pName)
+
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.pressDOWN(pDownArrow+<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(pName)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fFillCliList():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- fill list'</span>)
+
+    <span class="skw">doubleClick</span>(<img src="custom_list.png" />)
+    listItems = [<span class="str">'Barnstable'</span>,<span class="str">'Berkshire'</span>,<span class="str">'Bristol'</span>,<span class="str">'Dukes'</span>,<span class="str">'Essex'</span>,<span class="str">'Franklin'</span>,<span class="str">'Hampden'</span>,<span class="str">'Hampshire'</span>,<span class="str">'Middlesex'</span>,<span class="str">'Nantucket'</span>,<span class="str">'Norfolk'</span>,<span class="str">'Plymouth'</span>,<span class="str">'Suffolk'</span>,<span class="str">'Worcester'</span>]
+
+    <span class="kw">for</span> listItem <span class="kw">in</span> listItems:
+        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+        <span class="skw">type</span>(listItem)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fFillTkList():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- fill list'</span>)
+
+    <span class="skw">doubleClick</span>(<img src="custom_list.png" />)
+    listItems = [<span class="str">'Brisket'</span>,<span class="str">'Pork'</span>,<span class="str">'Ribs'</span>,<span class="str">'Chicken'</span>,<span class="str">'Turkey'</span>]
+
+    <span class="kw">for</span> listItem <span class="kw">in</span> listItems:
+        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+        <span class="skw">type</span>(listItem)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fFillActList():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- fill list'</span>)
+
+    <span class="skw">doubleClick</span>(<img src="custom_list.png" />)
+    listItems = [<span class="str">"Construction"</span>,<span class="str">"General"</span>,<span class="str">"Landscape"</span>,<span class="str">"Hardware"</span>,<span class="str">"Supplies"</span>,<span class="str">"Materials"</span>,<span class="str">"Other"</span>]
+
+    <span class="kw">for</span> listItem <span class="kw">in</span> listItems:
+        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+        <span class="skw">type</span>(listItem)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fCreate_CustomFields():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"custom fields"</span>)
+
+    logging.debug(<span class="str">'Create_CustomFields'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    logging.debug(<span class="str">'- open custom fields dialog box'</span>)
+    <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"c"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- add CLIENT custom fields'</span>)
+
+    customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>,<span class="str">'Timekeeper'</span>]
+    <span class="kw">for</span> customField <span class="kw">in</span> customFields:
+        fCreateOne(customField, customFields.index(customField))
+    fFillCliList()
+
+    logging.debug(<span class="str">'- add TIMEKEEPER custom fields'</span>)
+
+    <span class="skw">type</span>(Key.F6)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>]
+    <span class="kw">for</span> customField <span class="kw">in</span> customFields:
+        fCreateOne(customField, customFields.index(customField))
+    fFillTkList()
+
+    logging.debug(<span class="str">'- add ACTIVITY custom fields'</span>)
+
+    <span class="skw">type</span>(Key.F6)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>]
+    <span class="kw">for</span> customField <span class="kw">in</span> customFields:
+        fCreateOne(customField, customFields.index(customField))
+    fFillActList()
+
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">10</span>)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

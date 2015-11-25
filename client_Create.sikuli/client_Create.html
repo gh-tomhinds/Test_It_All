@@ -1,0 +1,208 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>client_Create.sikuli</h2> <a href="client_Create.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fWaitFor_ConflictCheck():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- conflict check'</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+    <span class="kw">if</span> exists(<img src="do_not_show.png" />):
+        logging.debug(<span class="str">'-- conflict msg'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+
+    <span class="cmt"># wait until conflict results displayed</span>
+    logging.debug(<span class="str">'-- wait for search'</span>)
+    <span class="kw">while</span> True:
+        <span class="kw">if</span> exists(<img src="no_conflicts_found.png" />) <span class="kw">or</span> exists(<img src="Conflict_msg.png" />) <span class="kw">or</span> exists(<img src="search_for.png" />) <span class="kw">or</span> exists(<img src="matches_field.png" />):
+            <span class="kw">break</span>
+        <span class="kw">else</span>:
+            time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="kw">if</span> exists(<img src="no_conflicts_found.png" />) <span class="kw">or</span> exists(<img src="Conflict_msg.png" />):
+        logging.debug(<span class="str">'-- no conflict'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">'-- conflict'</span>)
+        <span class="cmt"># close results list</span>
+        <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_Client(nn1,nn2,fullname,inrefto,clinotes):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"create client"</span>)
+
+    logging.debug(<span class="str">'fCreate_Client: '</span> + nn1)
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
+
+    logging.debug(<span class="str">'- open client list'</span>)
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- create new client'</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+
+    logging.debug(<span class="str">'- nicknames'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(nn1)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(nn2)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- name and address'</span>)
+    <span class="skw">type</span>(fullname)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"Address 1a"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"Address 1b"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"Address 1c"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"City1"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"ST1"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"ZipCode1"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"Country1"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># TS2015 has secondard address</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">type</span>(<span class="str">"Address 2a"</span>)
+        <span class="skw">type</span>(Key.TAB)
+        <span class="skw">type</span>(<span class="str">"Address 2b"</span>)
+        <span class="skw">type</span>(Key.TAB)
+        <span class="skw">type</span>(<span class="str">"Address 2c"</span>)
+        <span class="skw">type</span>(Key.TAB)
+        <span class="skw">type</span>(<span class="str">"City2"</span>)
+        <span class="skw">type</span>(Key.TAB)
+        <span class="skw">type</span>(<span class="str">"ST2"</span>)
+        <span class="skw">type</span>(Key.TAB)
+        <span class="skw">type</span>(<span class="str">"ZipCode2"</span>)
+        <span class="skw">type</span>(Key.TAB)
+        <span class="skw">type</span>(<span class="str">"Country2"</span>)
+        <span class="skw">type</span>(Key.TAB)
+
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'- other info'</span>)
+<span class="cmt"># phone</span>
+    <span class="skw">type</span>(<span class="str">"Phone1"</span>)
+<span class="cmt"># in ref to</span>
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">type</span>(Key.F6)
+    <span class="kw">else</span>:
+        <span class="skw">click</span>(<img src="in_ref_to.png" />)
+    <span class="skw">type</span>(inrefto)
+
+<span class="cmt"># notes</span>
+<span class="cmt"># go to first page, then shift+f6</span>
+
+    <span class="skw">type</span>(<span class="str">"1"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F6,KeyModifier.SHIFT)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">type</span>(Key.F6,KeyModifier.SHIFT)
+
+    <span class="skw">type</span>(clinotes)
+
+    logging.debug(<span class="str">'- save'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
+    fWaitFor_ConflictCheck()
+
+    <span class="cmt"># close client info</span>
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># close client list</span>
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

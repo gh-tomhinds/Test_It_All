@@ -1,0 +1,434 @@
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+							Selection Criteria
+
+Clie.Classification	     Open
+Fnds.Transaction Dat	     1/1/2013 - 1/27/2013
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Abington / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Acton / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Acushnet / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Adams / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Agawam / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Arlington / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Attleboro / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Becket / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Berlin / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Bolton / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Braintree / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Brookline / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Carver / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Cheshire / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Clinton / Default
+Beginning Balance													       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+Dalton / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Dighton / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Duxbury / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+East.Longmeadow / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Easton / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Fairhaven / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Framingham / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Gloucester / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Great Barrington / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Hadley / Hadley-1
+Beginning Balance													       0.00
+		     1/27/2013	DEP    bal - new bank							     10.01	      10.01
+
+Ending Balance														      10.01
+
+Halifax / Halifax-2
+Beginning Balance													       0.00
+		     1/27/2013	DEP    bal - new bank							     20.02	      20.02
+
+Ending Balance														      20.02
+
+Hamilton / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Harvard / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Hingham / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Holyoke / Default
+Beginning Balance													       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+Huntington / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Lawrence / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Lexington / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Ludlow / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Mansfield / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Mattapoisett / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Mendon / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Milford / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Monson / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Nantucket / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+New Marlborough / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+North.Adams / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+North.Reading / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Northborough / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Oak Bluffs / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Palmer / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Peru / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Plymouth / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Raynham / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Rockland / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Rutland / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Savoy / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Sherborn / Default
+Beginning Balance													       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+South.Hadley / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Springfield / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Sturbridge / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Taunton / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Townsend / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Wakefield / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Warren / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Wellesley / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+West.Brookfield / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+West.Tisbury / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Westfield / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Westwood / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Williamstown / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Woburn / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+
+Grand Total														       0.00
+   Total Added														    2315.24
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+   Total Removed													       0.00
+   Ending Balance Total 												      30.03

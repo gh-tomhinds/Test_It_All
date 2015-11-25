@@ -1,0 +1,160 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>trans_PaymentsToAccount.sikuli</h2> <a href="trans_PaymentsToAccount.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> csv
+<span class="kw">import</span> myTools
+<span class="kw">import</span> names_Init
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- Create_OnePTA: '</span> + str(pMonth) + <span class="str">"-"</span> + pClient + <span class="str">" = "</span> + str(pAmount))
+
+    <span class="cmt"># new payment</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+    myTools.waitForTransEntry()
+
+    <span class="cmt"># type (skip)</span>
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># deposit slip (skip)</span>
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># client</span>
+    myTools.enterClient(pClient)
+
+    <span class="cmt"># skip account</span>
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># date</span>
+    payDate = str(pMonth) + <span class="str">"/28/"</span> + Settings.dataYear
+    <span class="skw">type</span>(payDate)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># skip check number</span>
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Amount</span>
+    <span class="skw">type</span>(str(pAmount))
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Description</span>
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(pClient + <span class="str">" - "</span> + str(pCliNum) + <span class="str">" - "</span> + payDate)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="you_deposited_money.png" />):
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_PaymentsToAccount(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"paystoaccount"</span> + str(pMonth))
+    logging.debug(<span class="str">'Create_PaysToAccount: '</span> + str(pMonth))
+
+    allClients = names_Init.fInit_Clients()
+    count = <span class="dig">0</span>
+
+    myTools.getFocus()
+
+    <span class="cmt"># open funds list</span>
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.CTRL)
+    myTools.waitForFundsList()
+
+    <span class="cmt"># create PTA for first 5 clients and then every 6th client</span>
+
+    <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
+        count += <span class="dig">1</span>
+        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + pMonth) % <span class="dig">6</span> == <span class="dig">0</span>):
+            ptaAmount = <span class="dig">25</span> + pMonth/float(<span class="dig">100</span>)
+            fCreate_OnePayToAccount(oneClient,count,pMonth,ptaAmount)
+        <span class="kw">else</span>:
+            logging.debug(<span class="str">'-- skip: '</span> + str(pMonth) + <span class="str">"-"</span> + oneClient)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

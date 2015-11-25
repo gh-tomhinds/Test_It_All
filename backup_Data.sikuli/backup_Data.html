@@ -1,0 +1,147 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>backup_Data.sikuli</h2> <a href="backup_Data.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+<span class="kw">import</span> email_Send
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fBackup_Data(pBkuName):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'Backup_Data: '</span> + pBkuName)
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
+
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"b"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># no subfolders</span>
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># YES button</span>
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># enter backup name</span>
+    <span class="skw">type</span>(pBkuName)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># SAVE button</span>
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="replace_old_one.png" />):
+        <span class="skw">type</span>(Key.ENTER)
+        logging.debug(<span class="str">'- overwrite backup'</span>)
+
+    <span class="skw">wait</span>(<img src="backup_successful.png" />,<span class="dig">60</span>)
+
+    <span class="cmt"># OK button</span>
+    <span class="skw">type</span>(Key.ENTER)
+    email_Send.fSend_Text(pBkuName)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fBackup_Checkpoint(pCheckpointName):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"backup checkpoint"</span>)
+    logging.debug(<span class="str">'Backup_Checkpoint: '</span> + pCheckpointName)
+
+    <span class="cmt"># name backup file: ex: 2015-slips</span>
+    strBackupFile = Settings.tsVersion + <span class="str">"-"</span> + pCheckpointName
+
+    fBackup_Data(strBackupFile)
+
+    myTools.sectionEndTimeStamp()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fBackup_BillData(pBillMonth,pAorB):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"backup billdata"</span>)
+    logging.debug(<span class="str">'Backup_Data: '</span> + str(pBillMonth))
+
+    bkuExt = pAorB + <span class="str">".tbu"</span>
+
+    <span class="cmt"># name backup file: ex: 2015-bill-03</span>
+    strBackupFile = myTools.monthToName(pBillMonth,<span class="str">"-bill-"</span>,bkuExt)
+    fBackup_Data(strBackupFile)
+
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>bill_Print.sikuli\bill_Print.sikuli</h2> <a href="bill_Print.sikuli\bill_Print.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+<span class="kw">from</span> datetime <span class="kw">import</span> date
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSet_BillDate(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- change bill date: '</span> + str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># open revise date</span>
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"d"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="cmt"># go to today</span>
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+
+    <span class="cmt">#get to 01/01 of current year</span>
+    <span class="skw">type</span>(Key.HOME,KeyModifier.CTRL)
+
+    <span class="cmt"># get to 01/01 of the data year</span>
+    thisYear = date.today().year
+    <span class="kw">for</span> prevYear <span class="kw">in</span> range(int(Settings.dataYear),thisYear):
+        <span class="skw">type</span>(Key.PAGE_UP,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># get to 01/27 of the data year</span>
+    myTools.pressDOWN(<span class="dig">4</span>)
+    myTools.pressLEFT(<span class="dig">2</span>)
+
+    <span class="kw">for</span> nextMonth <span class="kw">in</span> range(pMonth-<span class="dig">1</span>):
+        <span class="skw">type</span>(Key.PAGE_DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fPrint_BillRun(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- print bill run for month: '</span> + str(pMonth))
+
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.enterSlipFilter(pMonth,<span class="str">"bill"</span>)
+
+    <span class="cmt"># print bills to PDF</span>
+    logging.debug(<span class="str">'-- print'</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="skw">wait</span>(<img src="bills_saved_to_pdf.png" />,FOREVER)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># approve bills</span>
+    logging.debug(<span class="str">'-- approve'</span>)
+
+    <span class="skw">wait</span>(Pattern(<img src="approve_bills-1.png" />).targetOffset(-<span class="dig">100</span>,-<span class="dig">8</span>),FOREVER)
+    <span class="skw">click</span>(Pattern(<img src="approve_bills-1.png" />).targetOffset(-<span class="dig">100</span>,-<span class="dig">8</span>))
+    <span class="skw">type</span>(Key.ENTER)
+    waitVanish(<img src="approving_statusbar.png" />,FOREVER)
+
+    <span class="cmt"># close report entry / don't save</span>
+    logging.debug(<span class="str">'-- close report window'</span>)
+    <span class="skw">click</span>(<img src="report_generate_bills.png" />)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fPrint_Bills(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"bills"</span> + str(pMonth))
+    logging.debug(<span class="str">'Print_Bills: '</span> + str(pMonth))
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
+
+    fSet_BillDate(pMonth)
+    fPrint_BillRun(pMonth)
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>

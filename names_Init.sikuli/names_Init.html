@@ -1,0 +1,135 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>names_Init.sikuli\names_Init.sikuli</h2> <a href="names_Init.sikuli\names_Init.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> csv
+<span class="kw">import</span> myTools
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fInit_Clients():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># start with manually entered client, then load other clients from file
+</span>    clientList = [<span class="str">"Agawam"</span>]
+    allClis = csv.DictReader(open(Settings.cliFile))
+
+    <span class="kw">for</span> oneCli <span class="kw">in</span> allClis:
+        clientList.append(oneCli[<span class="str">"NN1"</span>])
+    clientList.sort()
+
+    <span class="kw">return</span>(clientList)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fInit_Timekeepers():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># start with manually entered timekeeper, then load other tks from file
+</span>    timekeeperList = [<span class="str">"TomH"</span>]
+    allTks = csv.DictReader(open(Settings.tkFile))
+
+    <span class="kw">for</span> oneTk <span class="kw">in</span> allTks:
+        timekeeperList.append(oneTk[<span class="str">"NN1"</span>])
+    timekeeperList.sort()
+
+    <span class="kw">return</span>(timekeeperList)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fInit_Tasks():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># start with manually entered task, then load other tasks from file
+</span>    taskList = [<span class="str">"CON001"</span>]
+    allTasks = csv.DictReader(open(Settings.taskFile))
+
+    <span class="kw">for</span> oneTask <span class="kw">in</span> allTasks:
+        taskList.append(oneTask[<span class="str">"nn2"</span>])
+    taskList.sort()
+
+    <span class="kw">return</span>(taskList)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> fInit_Expensess():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># start with manually entered expense, then load other exps from file
+</span>    expenseList = [<span class="str">"E001"</span>]
+    allExps = csv.DictReader(open(Settings.expFile))
+
+    <span class="kw">for</span> oneExp <span class="kw">in</span> allExps:
+        expenseList.append(oneExp[<span class="str">"NN2"</span>])
+    expenseList.sort()
+
+    <span class="kw">return</span>(expenseList)
+</pre>
+</body>
+</html>
