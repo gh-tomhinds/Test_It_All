@@ -12,7 +12,7 @@ def fCreate_OneRefund(pClient,pMonth,pAmount):
     type("n",KeyModifier.CTRL)
     myTools.waitForTransEntry()
 
-    # switch to Transfer
+    # switch to Refund
 
     type(Key.UP)    # this is to get by a UI defect
     time.sleep(1)
@@ -42,8 +42,11 @@ def fCreate_OneRefund(pClient,pMonth,pAmount):
     type(Key.TAB)
 
     # payment list
-    type(Key.DOWN)
-    time.sleep(1) 
+    if (int(Settings.tsVersion) > 2016) and (Settings.tsDB == "PREM"):
+        type(Key.SPACE)             # in TS2017+ PREM, this marks the check box
+    else:    
+        type(Key.DOWN)              # in others, this movement highlights first in list
+    time.sleep(1)
     type("s",KeyModifier.CTRL)   
     myTools.waitForTransSave()    
 

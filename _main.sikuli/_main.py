@@ -6,7 +6,7 @@
 #
 # 1) Windows Explorer windows opens in primary monitor 
 # 2) Timeslips is installed below C:\Program Files (x86)  
-# 3) Timeslips install folder is in format: Timeslips 2014
+# 3) Timeslips install folder is in format: Timeslips 2016
 #
 #######################################################
 
@@ -76,6 +76,9 @@ for theMonth in range(12):
         reports_PostBill.fPrint_PostbillReports(realMonth,AorB) # use for quick test of reports
 """
 
+import trans_PostBill
+trans_PostBill.fEnter_Transactions(12)
+
 ##############################################################
 # the real stuff starts below
 ##############################################################
@@ -95,7 +98,7 @@ for theMonth in range(12):
 #bill_Split.fSetup_SplitBills()
 
 #reports_CreateReports.create_Layouts()
-bill_MonthlyCycle.fRun_BillCycle(1,2) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+#bill_MonthlyCycle.fRun_BillCycle(1,2) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #ba__Common.fSetup_BADefaultLayout()
 #ba__Main.fReview_Arrangements()

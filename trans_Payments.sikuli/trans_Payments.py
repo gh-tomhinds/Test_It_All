@@ -9,6 +9,7 @@ def fCreate_OnePayment(pClient,pCliNum,pMonth,pAmount):
 
     logging.debug('- Create_OnePay: ' + str(pMonth) + "-" + pClient + " = " + str(pAmount))
 
+    # build a list of clients for which you will clear apply details
     transferClients = ["East.Bridgewater","North.Adams","West.Boylston"]
     transferFundsClients = ["East.Brookfield","North.Andover","West.Bridgewater"]
     refundClients = ["Harvard","Harwich","Hatfield","Haverhill","Hawley"]   
@@ -26,7 +27,7 @@ def fCreate_OnePayment(pClient,pCliNum,pMonth,pAmount):
     type(Key.TAB)
     time.sleep(1)
         
-    # check number
+    # check number; only available in month 1
     if pMonth == 1:
         type(str(pCliNum))
         type(Key.TAB)
@@ -64,12 +65,15 @@ def fCreate_OnePayment(pClient,pCliNum,pMonth,pAmount):
     myTools.checkForUnappliedAmount()
     myTools.waitForTransSave()    
 
+    imgClearApplies = "clear_applies.png"
+    imgRemainingAmount = "apply_remaining_to_future.png"       
+
     # clear applies and mark future invoice (this is for transfers in other scripts)
     if pClient in clearClients:
         logging.debug("==> CLEAR APPLIED")        
-        click("clear_applies.png")
+        click(imgClearApplies)
         time.sleep(1)
-        click("apply_remaining_to_future.png")
+        click(imgRemainingAmount)
         time.sleep(1)
         # save
         type("s",KeyModifier.CTRL)       

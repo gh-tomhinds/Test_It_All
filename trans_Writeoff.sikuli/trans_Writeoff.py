@@ -35,13 +35,16 @@ def fCreate_OneWriteOff(pClient,pCliNum,pMonth,pAmount):
     type(pClient + " - " + str(pCliNum) + " - " + woDate)
     type(Key.ENTER)
     time.sleep(1)
-    type(Key.TAB)
 
-    # Invoice list; go to last entry
-    type(Key.END, KeyModifier.CTRL)
-    time.sleep(1)
-    click("apply_one_button.png")
-    time.sleep(1) 
+    # move to invoice list
+    if (int(Settings.tsVersion) > 2016) and (Settings.tsDB == "PREM"):
+        myTools.pressTAB(2)
+    else:
+        myTools.pressTAB(1)
+
+    # move to last entry
+    myTools.moveToLastTrans()
+    myTools.clickApplyOne()
 
     # save
     type("s",KeyModifier.CTRL)

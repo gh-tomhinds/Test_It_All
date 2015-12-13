@@ -324,13 +324,26 @@ def waitForTransList():
 def waitForTransEntry():
 #---------------------------------------------------#
 
-    # NOTE TO TOM
-    # is there a way to set which graphic you're using for comparison?
-    #  ex: if TS2017, then compare image = xx; while not exists(xx)
+    imgArBalance = "ar_balance.png"
 
     time.sleep(2)
-    while not exists("ar_balance.png"):
+    while not exists(imgArBalance):
         logging.debug('-- waiting for trans entry')
+        time.sleep(2)
+    time.sleep(2)
+
+#---------------------------------------------------#
+def waitForFinChargeMsg():
+#---------------------------------------------------#
+
+    if (int(Settings.tsVersion) > 2016) and (Settings.tsDB == "PREM"):        
+        imgFinanceCharge = "should_there_be_fee-prem.png"
+    else:
+        imgFinanceCharge = "should_there_be_fee.png"
+
+    time.sleep(2)
+    while not exists(imgFinanceCharge):
+        logging.debug('-- waiting for: ' + imgFinanceCharge)
         time.sleep(2)
     time.sleep(2)
 
@@ -353,6 +366,28 @@ def enterClient(pClientName):
     time.sleep(2)
     type(Key.TAB)
     time.sleep(2)
+
+#---------------------------------------------------#
+def moveToLastTrans():
+#---------------------------------------------------#
+
+    # this is a function only because it changed 
+    # and I didn't want to update it multiple places
+
+    type(Key.END, KeyModifier.CTRL)
+
+#---------------------------------------------------#
+def clickApplyOne():
+#---------------------------------------------------#
+
+    time.sleep(1)
+    
+    if (int(Settings.tsVersion) > 2016) and (Settings.tsDB == "PREM"):
+        type("a", KeyModifier.CTRL + KeyModifier.SHIFT)
+    else:
+        click("apply_one_button.png")
+        
+    time.sleep(1) 
 
 #---------------------------------------------------#
 def checkForUnappliedAmount():

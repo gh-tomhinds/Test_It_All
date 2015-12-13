@@ -41,9 +41,13 @@ def fCreate_OneTransfer(pClient,pCliNum,pMonth,pAmount):
     time.sleep(1)
     type(Key.TAB)
 
-    # payment list
-    type(Key.DOWN)
-    time.sleep(1) 
+    # payment list - mark first item in list
+    if (int(Settings.tsVersion) > 2016) and (Settings.tsDB == "PREM"):
+        type(Key.SPACE)             # in TS2017+ PREM, this marks the check box
+    else:    
+        type(Key.DOWN)              # in others, this movement highlights first in list
+        
+    time.sleep(1)
     type("s",KeyModifier.CTRL)
     myTools.waitForTransSave()    
 

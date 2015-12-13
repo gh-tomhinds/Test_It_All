@@ -39,13 +39,18 @@ def fCreate_OneDiscount(pClient,pMonth,pAmount):
     type("Discount: " + pClient + " - " + tranDate)
     type(Key.ENTER)
     time.sleep(1)
-    type(Key.TAB)
 
-    # invoice list
-    type(Key.DOWN,KeyModifier.CTRL)
-    time.sleep(1)
-    click("apply_one.png")
-    time.sleep(1)    
+    # move to invoice list
+    if (int(Settings.tsVersion) > 2016) and (Settings.tsDB == "PREM"):
+        myTools.pressTAB(2)
+    else:
+        myTools.pressTAB(1)
+
+    # move to last entry
+    myTools.moveToLastTrans()
+    myTools.clickApplyOne()
+
+    # save
     type("s",KeyModifier.CTRL)
     myTools.waitForTransSave()    
 

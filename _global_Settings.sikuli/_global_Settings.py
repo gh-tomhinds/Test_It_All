@@ -21,7 +21,7 @@ def fSetup_Folders():
     logging.debug("- Sikuli folder:    %s" %Settings.sikFolder)
 
 # point to scripts folder on desktop
-    Settings.scriptFolder = Settings.sikFolder + '\\ConfirmDataEntry'
+    Settings.scriptFolder = Settings.sikFolder + '\\Test_It_All'
     logging.debug("- Script folder:    %s" %Settings.scriptFolder)
 
 # point to source data folder on desktop and data files

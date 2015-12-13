@@ -40,12 +40,14 @@ def fCreate_OneRevPay(pClient,pCliNum,pMonth):
 
     # payment list
     type(Key.END)
-    time.sleep(1) 
+    time.sleep(1)
+    type(Key.SPACE)                     # this marks the checkbox in 2017+ PREM, but should be innocuous in prior
+    time.sleep(1)
     type("s",KeyModifier.CTRL)   
 
-    # payment fee
-    wait("should_there_be_fee.png",FOREVER)
-    time.sleep(1) 
+        
+    # fee on reversed payment
+    myTools.waitForFinChargeMsg()
     type(Key.DOWN)
     myTools.pressTAB(1)
     revFee = "19.99"
