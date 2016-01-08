@@ -24,6 +24,11 @@ def fBackup_Data(pBkuName):
     type(Key.ENTER)
     time.sleep(1)
 
+    if exists("back_up_to_a_file.png"):
+        click("back_up_to_a_file.png")
+        time.sleep(1)
+        myTools.pressTAB(1)      
+
     # enter backup name
     type(pBkuName)
     time.sleep(1)

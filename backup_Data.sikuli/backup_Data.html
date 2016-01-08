@@ -96,6 +96,11 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
+    <span class="kw">if</span> exists(<img src="back_up_to_a_file.png" />):
+        <span class="skw">click</span>(<img src="back_up_to_a_file.png" />)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        myTools.pressTAB(<span class="dig">1</span>)
+
     <span class="cmt"># enter backup name</span>
     <span class="skw">type</span>(pBkuName)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -108,7 +113,7 @@
         <span class="skw">type</span>(Key.ENTER)
         logging.debug(<span class="str">'- overwrite backup'</span>)
 
-    <span class="skw">wait</span>(<img src="backup_successful.png" />,<span class="dig">60</span>)
+    <span class="skw">wait</span>(<img src="backup_successful.png" />,FOREVER)
 
     <span class="cmt"># OK button</span>
     <span class="skw">type</span>(Key.ENTER)
@@ -135,13 +140,49 @@
     myTools.sectionStartTimeStamp(<span class="str">"backup billdata"</span>)
     logging.debug(<span class="str">'Backup_Data: '</span> + str(pBillMonth))
 
-    bkuExt = pAorB + <span class="str">".tbu"</span>
+    <span class="kw">if</span> Settings.tsVersion == <span class="str">"PREM"</span>:
+        bkuExt = pAorB + <span class="str">".tbu"</span>
+    <span class="kw">else</span>:
+        bkuExt = pAorB + <span class="str">".bku"</span>
 
     <span class="cmt"># name backup file: ex: 2015-bill-03</span>
-    strBackupFile = myTools.monthToName(pBillMonth,<span class="str">"-bill-"</span>,bkuExt)
+    strBackupFile = myTools.bkuName(pBillMonth,<span class="str">"-bill-"</span>,bkuExt)
     fBackup_Data(strBackupFile)
 
     myTools.sectionEndTimeStamp()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fRestore_Backup(pBackupName):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'Restore_Backup: '</span> + str(pBackupName))
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
+
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"r"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> Settings.tsVersion == <span class="str">"PREM"</span>:
+        myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(pBackupName)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># no backup</span>
+    <span class="skw">type</span>(<span class="str">"u"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># OK button</span>
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">wait</span>(<img src="restore_success.png" />,FOREVER)
+
+    <span class="cmt"># OK button</span>
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 </pre>
 </body>
 </html>
