@@ -144,6 +144,155 @@ def fFirmBudget():
     fBudgetDetails(1,12,31)
 
 #---------------------------------------------------#
+def fBudgetDetails_New(pType,pName,pStartMonth,pEndMonth,pDay):
+#---------------------------------------------------#
+
+    logging.debug('-- budget details: ' + str(pStartMonth))
+
+    # new
+    type("n", KeyModifier.CTRL)
+    time.sleep(1)    
+
+    if pType == "Firm":
+        type(Key.ENTER)
+
+    if pType == "Client":
+        myTools.pressDOWN(1)
+        time.sleep(1)
+        myTools.pressTAB(1)
+        time.sleep(1)
+        type(pName)
+        type(Key.ENTER)
+
+    if pType == "Timekeeper":
+        myTools.pressDOWN(2)
+        time.sleep(1)
+        myTools.pressTAB(1)
+        time.sleep(1)
+        type(pName)
+        type(Key.ENTER)    
+
+    # skip breakdown options
+    time.sleep(1)
+    type(Key.ENTER)
+
+    # move to date field
+    myTools.pressTAB(1)    
+
+    # skip date fields if pMonth < 13 (ex: for client)
+    if pStartMonth < 13:        
+
+        # start date
+        startDate = str(pStartMonth) + "/1/" + Settings.dataYear
+        type(startDate)
+        myTools.pressTAB(1)
+
+        # end date
+        endDate = str(pEndMonth) + "/" + str(pDay) + "/" + Settings.dataYear
+        type(endDate)
+        myTools.pressTAB(1)
+        time.sleep(1)    
+    else:
+        myTools.pressTAB(2)
+
+    # hours total
+    hoursTotal = 5 + pEndMonth/float(100)
+    type(str(hoursTotal))
+    type(Key.TAB)
+
+    # hours billable
+    hoursBillable = 4 + pEndMonth/float(100)
+    type(str(hoursBillable))
+    type(Key.TAB)
+
+    # hours unbillable
+    hoursUnbillable = 1 + pEndMonth/float(100)
+    type(str(hoursUnbillable))
+    type(Key.TAB)
+
+    # fees total
+    feesTotal = 100 + pEndMonth/float(100)
+    type(str(feesTotal))
+    type(Key.TAB)
+
+    # fees billable
+    feesBillable = 90 + pEndMonth/float(100)
+    type(str(feesBillable))
+    type(Key.TAB)
+
+    # fees unbillable
+    feesUnbillable = 10 + pEndMonth/float(100)
+    type(str(feesUnbillable))
+    type(Key.TAB)
+
+    # fees billed
+    feesBilled = 50 + pEndMonth/float(100)
+    type(str(feesBilled))
+    type(Key.TAB)
+
+    # costs total
+    costsTotal = 15 + pEndMonth/float(100)
+    type(str(costsTotal))
+    type(Key.TAB)
+
+    # costs billable
+    costsBillable = 13 + pEndMonth/float(100)
+    type(str(costsBillable))
+    type(Key.TAB)
+
+    # costs unbillable
+    costsUnbillable = 2 + pEndMonth/float(100)
+    type(str(costsUnbillable))
+    type(Key.TAB)
+
+    # costs billed
+    costsBilled = 20 + pEndMonth/float(100)
+    type(str(costsBilled))    
+    myTools.pressTAB(3)
+
+    # ENTER
+    time.sleep(1)
+    type(Key.ENTER)
+    time.sleep(1)
+
+    # Calculate Now?
+    type("n")
+    time.sleep(1)    
+
+#---------------------------------------------------#
+def fTimekeeperBudget_New():
+#---------------------------------------------------#
+
+    logging.debug('- Timekeeper budget')
+   
+    count = 0
+    for endDay in [31,28,31,30,31,30,31,31,30,31,30,31]:
+        count += 1        
+        fBudgetDetails_New("Timekeeper","tomh",count,count,endDay)
+
+#---------------------------------------------------#
+def fClientBudget_New():
+#---------------------------------------------------#
+
+    logging.debug('- Client budget')
+   
+    # use numbers over 12 to keep dates open
+    fBudgetDetails_New("Client","abington",13,13,13)
+    
+    # use numbers over 12 to keep dates open
+    fBudgetDetails_New("Client","yarmouth",14,14,14)
+
+#---------------------------------------------------#
+def fFirmBudget_New():
+#---------------------------------------------------#
+
+    logging.debug('- Firm budget')
+   
+    # budget for firm
+    # firstmonth, lastmonth, lastday
+    fBudgetDetails_New("Firm","none",1,12,31)
+
+#---------------------------------------------------#
 def fBudget_Setup():
 #---------------------------------------------------#
 
@@ -157,9 +306,14 @@ def fBudget_Setup():
     type("b")
     time.sleep(1)    
 
-    fTimekeeperBudget()
-    fClientBudget()
-    fFirmBudget()
+    if (int(Settings.tsVersion) > 2016) and (Settings.tsDB == "PREM"):
+        fTimekeeperBudget_New()
+        fClientBudget_New()
+        fFirmBudget_New()        
+    else:
+        fTimekeeperBudget()
+        fClientBudget()
+        fFirmBudget()
 
     type(Key.F4,KeyModifier.CTRL)
     

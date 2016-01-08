@@ -17,7 +17,7 @@ def fFundsAccount_Create(pFundsClient,pFundsCount):
     type(pFundsClient)
     type(Key.ENTER)
 
-    if int(Settings.tsVersion) > 2014:
+    if Settings.tsVersion in ("2015","2016"):
         wait("default_to_noCharge_2015.png",FOREVER)
     else:
         wait("default_to_noCharge_2014.png",FOREVER)

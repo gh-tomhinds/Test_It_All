@@ -52,7 +52,7 @@ def fCreateImportEdit_Names():
     client_Edit.fEdit_Client()    
     client_FundsEdit.fEdit_ClientFunds()
     backup_Data.fBackup_Checkpoint("clients")
-    report_FundsAccountList.fPrint_Funds("FundsSettings-01" + Settings.tsVersion + ".csv")
+    report_FundsAccountList.fPrint_Funds("FundsSettings-01" + ".csv")
 
     
     client_Hold.fSetup_ClientHold()
@@ -85,4 +85,4 @@ def fCreateImportEdit_Names():
 #    report_TimekeeperInfo.fPrint_TimekeeperInfo("Timekeepers-01" + Settings.tsVersion + ".csv")
 #    report_ClientInfo.fPrint_ClientInfo("Clients-01-" + Settings.tsVersion + ".csv")
 
-#    backup_Data.fBackup_Checkpoint("names")
+    backup_Data.fBackup_Checkpoint("names")
