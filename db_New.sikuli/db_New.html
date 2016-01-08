@@ -72,6 +72,7 @@
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> shutil
+<span class="kw">import</span> os
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 <span class="kw">import</span> backup_Data
@@ -81,7 +82,22 @@
 <span class="cmt">#---------------------------------------------------#</span>
     logging.debug(<span class="str">'- fDeleteDataFolder'</span>)
 
-    <span class="kw">if</span> os.path.exists(Settings.dbFolder):
+    <span class="kw">if</span> Settings.tsDB == <span class="str">"PREM"</span> <span class="kw">and</span> Settings.tsNetwork == <span class="str">"YES"</span>:
+        <span class="cmt"># copy over registration database</span>
+        logging.debug(<span class="str">'-- copy: '</span> + Settings.baseTSReg)
+        logging.debug(<span class="str">'-- to:   '</span> + Settings.tsSharedData)
+        shutil.copy(Settings.baseTSReg,Settings.tsSharedData)
+
+        <span class="cmt"># delete database</span>
+        <span class="kw">if</span> os.path.isfile(Settings.dbFolder):
+            logging.debug(<span class="str">'-- exists: '</span> + Settings.dbFolder)
+            os.remove(Settings.dbFolder)
+        <span class="kw">else</span>:
+            logging.debug(<span class="str">'-- not exists: '</span> + Settings.dbFolder)
+
+        <span class="skw">popup</span>(<span class="str">"x"</span>)
+
+    <span class="kw">elif</span> os.path.exists(Settings.dbFolder):
         logging.debug(<span class="str">"-- Delete folder:     %s"</span> % Settings.dbFolder)
         shutil.rmtree(Settings.dbFolder)
     <span class="kw">else</span>:
@@ -164,11 +180,11 @@
     time.<span class="skw">sleep</span>(<span class="dig">3</span>)
 
     <span class="kw">if</span> exists(<img src="database_not_found.png" />):
-        logging.debug(<span class="str">'-- TS2014 db not found'</span>)
+        logging.debug(<span class="str">'-- BDE db not found'</span>)
         <span class="skw">type</span>(Key.ENTER)
         time.<span class="skw">sleep</span>(<span class="dig">2</span>)
         <span class="skw">type</span>(<span class="str">"n"</span>)
-    <span class="kw">elif</span> exists(<img src="cannot_find_file.png" />):
+    <span class="kw">elif</span> exists(<img src="fb_encountered_error.png" />):
         logging.debug(<span class="str">'-- TS2016 db not found'</span>)
         <span class="skw">type</span>(Key.ENTER)
         time.<span class="skw">sleep</span>(<span class="dig">2</span>)
@@ -194,15 +210,24 @@
 
 <span class="cmt"># Empty database, press Next</span>
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># For TS2016, choose Local, press Next</span>
-    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2015</span>:
+<span class="cmt"># For Premium, choose Local or Network, press Next</span>
+    <span class="kw">if</span> Settings.tsDB == <span class="str">"PREM"</span> <span class="kw">and</span> Settings.tsNetwork == <span class="str">"NO"</span>:
         myTools.pressDOWN(<span class="dig">1</span>)
+        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    <span class="kw">elif</span> Settings.tsDB == <span class="str">"PREM"</span> <span class="kw">and</span> Settings.tsNetwork == <span class="str">"YES"</span>:
         <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
 
 <span class="cmt"># new db path and settings</span>
+
     logging.debug(<span class="str">'- enter path'</span>)
-    <span class="skw">type</span>(Settings.dbFolder)
+
+    <span class="kw">if</span> Settings.tsDB == <span class="str">"PREM"</span> <span class="kw">and</span> Settings.tsNetwork == <span class="str">"YES"</span>:
+        <span class="skw">type</span>(<span class="str">"SHARED-01"</span>)
+    <span class="kw">else</span>:
+        <span class="skw">type</span>(Settings.dbFolder)
+
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># Firm name</span>

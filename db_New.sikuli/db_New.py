@@ -1,5 +1,6 @@
 from sikuli import *
 import shutil
+import os
 import logging
 import myTools
 import backup_Data
@@ -9,7 +10,22 @@ def fDelete_DataFolder():
 #---------------------------------------------------#
     logging.debug('- fDeleteDataFolder')
 
-    if os.path.exists(Settings.dbFolder):
+    if Settings.tsDB == "PREM" and Settings.tsNetwork == "YES":
+        # copy over registration database
+        logging.debug('-- copy: ' + Settings.baseTSReg)
+        logging.debug('-- to:   ' + Settings.tsSharedData)
+        shutil.copy(Settings.baseTSReg,Settings.tsSharedData)
+        
+        # delete database
+        if os.path.isfile(Settings.dbFolder):
+            logging.debug('-- exists: ' + Settings.dbFolder)
+            os.remove(Settings.dbFolder)            
+        else:
+            logging.debug('-- not exists: ' + Settings.dbFolder)
+
+        popup("x")
+
+    elif os.path.exists(Settings.dbFolder):
         logging.debug("-- Delete folder:     %s" % Settings.dbFolder)
         shutil.rmtree(Settings.dbFolder)
     else:
@@ -124,14 +140,22 @@ def fStartTS_CreateNewDB():
     type("n",KeyModifier.ALT)
     time.sleep(1)
 
-# For Premium, choose Local, press Next
-    if Settings.tsDB == "PREM":
+# For Premium, choose Local or Network, press Next
+    if Settings.tsDB == "PREM" and Settings.tsNetwork == "NO":
         myTools.pressDOWN(1)
-        type("n",KeyModifier.ALT)        
+        type("n",KeyModifier.ALT)
+    elif Settings.tsDB == "PREM" and Settings.tsNetwork == "YES":
+        type("n",KeyModifier.ALT)
 
 # new db path and settings
+
     logging.debug('- enter path')
-    type(Settings.dbFolder)
+
+    if Settings.tsDB == "PREM" and Settings.tsNetwork == "YES":
+        type("SHARED-01")
+    else:
+        type(Settings.dbFolder)
+        
     type(Key.ENTER)
 
 # Firm name

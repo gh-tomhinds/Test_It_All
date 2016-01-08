@@ -2,6 +2,7 @@ from sikuli import *
 import logging
 import os
 import datetime
+import shutil
 
 #---------------------------------------------------#
 def fSetup_Time():
@@ -63,11 +64,29 @@ def fSetup_AppFolders():
         Settings.baseRepFolder = Settings.rootRepFolder + "\\Baseline-BDE"
     logging.debug("- Base Rep folder:  %s" %Settings.baseRepFolder)  
 
-# point to TS paths
-    Settings.tsFolder = "C:\\Program Files (x86)\\Timeslips " + Settings.tsVersionPath
+# point to exe path
+
+    if Settings.tsNetwork == "YES":
+        Settings.tsFolder = "C:\\TSSHARE\\Timeslips " + Settings.tsVersionPath
+    else:
+        Settings.tsFolder = "C:\\Program Files (x86)\\Timeslips " + Settings.tsVersionPath
+
     logging.debug("- Timeslips folder: %s" %Settings.tsFolder)
 
-    if Settings.tsDB == "PREM":
+# point to data path    
+
+    if Settings.tsDB == "PREM" and Settings.tsNetwork == "YES":
+
+        # point to baseline registration database
+        Settings.baseTSReg = Settings.dataFolder + "\\TSREG.FDB"
+
+        # point to the shared database location
+        Settings.tsSharedData = "C:\\ProgramData\\Sage\\Timeslips\\Databases"
+
+        # use dbFolder to store database name
+        Settings.dbFolder = "C:\\ProgramData\\Sage\\Timeslips\\Databases\\SHARED-01.FDB"
+        
+    elif Settings.tsDB == "PREM":
         Settings.dbFolder = "C:\\Sikuli"
     else:        
         Settings.dbFolder = Settings.tsFolder + "\\Sikuli"
@@ -121,6 +140,13 @@ def fSetup_Envirnoment():
         time.sleep(1)
     else:
         Settings.tsDB = "BDE"        
+
+    # for premium, is it network?
+    if Settings.tsDB == "PREM":
+        Settings.tsNetwork = input("YES or NO", "YES")
+        time.sleep(1)
+    else:
+        Settings.tsNetwork = "NO"
 
     # append the path with "BDE" for TS2016+ BDE versions
     if (int(Settings.tsVersion) > 2015) and (Settings.tsDB == "BDE"):
