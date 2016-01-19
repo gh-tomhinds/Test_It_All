@@ -85,4 +85,5 @@ def fCreate_FinanceCharges(pMonth):
             logging.debug('-- skip: ' + str(pMonth) + "-" + oneClient)
 
     type(Key.F4,KeyModifier.CTRL)
+    myTools.checkProcesses()
     myTools.sectionEndTimeStamp()
