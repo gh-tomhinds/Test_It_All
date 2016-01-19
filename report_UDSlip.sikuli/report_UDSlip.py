@@ -98,10 +98,14 @@ def fChoose_CSV_Print(pReportName):
     # fill in path and name; press ENTER    
     type(Settings.repFolder + "\\" + pReportName)
     time.sleep(1)
+
+    # export titles
     myTools.pressTAB(2)
     time.sleep(1)
-    type(Key.SPACE)
-    time.sleep(1)  
+    type(Key.SPACE)    
+    time.sleep(1)
+
+    # OK
     type(Key.ENTER)    
 
 #---------------------------------------------------#
