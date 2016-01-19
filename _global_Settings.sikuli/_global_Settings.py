@@ -139,11 +139,11 @@ def fSetup_Envirnoment():
         Settings.tsDB = input("PREM or BDE", "PREM")
         time.sleep(1)
     else:
-        Settings.tsDB = "BDE"        
+        Settings.tsDB = "BDE"
 
     # for premium, is it network?
     if Settings.tsDB == "PREM":
-        Settings.tsNetwork = input("YES or NO", "YES")
+        Settings.tsNetwork = input("NETWORK: YES or NO", "YES")
         time.sleep(1)
     else:
         Settings.tsNetwork = "NO"

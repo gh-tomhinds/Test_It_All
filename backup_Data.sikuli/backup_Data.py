@@ -59,6 +59,7 @@ def fBackup_Checkpoint(pCheckpointName):
 
     fBackup_Data(strBackupFile)
 
+    myTools.checkProcesses()
     myTools.sectionEndTimeStamp()
 
 #---------------------------------------------------#
@@ -77,6 +78,7 @@ def fBackup_BillData(pBillMonth,pAorB):
     strBackupFile = myTools.bkuName(pBillMonth,"-bill-",bkuExt)
     fBackup_Data(strBackupFile)
 
+    myTools.checkProcesses()
     myTools.sectionEndTimeStamp()
 
 #---------------------------------------------------#
@@ -93,7 +95,9 @@ def fRestore_Backup(pBackupName):
     time.sleep(1)
 
     if Settings.tsVersion == "PREM":
-        myTools.pressTAB(1)    
+        click("restore_back_from_local.png")
+        time.sleep(1)
+        myTools.pressTAB(1)
 
     type(pBackupName)
     time.sleep(1)
