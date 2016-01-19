@@ -12,7 +12,9 @@ def Open_SlipList():
     myTools.getFocus()
     type("m",KeyModifier.CTRL)
     time.sleep(1)
-    click("number_of_slips_button.png")
+    for pic in ("number_of_slips_button.png","number_of_slips_button_2017.png"):
+        if exists(pic):
+            click(pic)            
 
 #---------------------------------------------------#
 def Open_LastSlip():
