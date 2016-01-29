@@ -69,7 +69,7 @@ def fBackup_BillData(pBillMonth,pAorB):
     myTools.sectionStartTimeStamp("backup billdata")
     logging.debug('Backup_Data: ' + str(pBillMonth))
 
-    if Settings.tsVersion == "PREM":
+    if Settings.tsDB == "PREM":
         bkuExt = pAorB + ".tbu"
     else:
         bkuExt = pAorB + ".bku"
@@ -94,7 +94,7 @@ def fRestore_Backup(pBackupName):
     type("r")
     time.sleep(1)
 
-    if Settings.tsVersion == "PREM":
+    if Settings.tsDB == "PREM":
         click("restore_back_from_local.png")
         time.sleep(1)
         myTools.pressTAB(1)

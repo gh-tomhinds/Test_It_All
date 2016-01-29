@@ -7,6 +7,18 @@ import slips_Create
 from bill_ImportLayout import fImport_Layout
 
 #---------------------------------------------------#
+def fRestore_BABackup():
+#---------------------------------------------------#
+
+    if Settings.tsDB == "PREM":
+        buExt = ".tbu"
+    else:
+        buExt = ".bku"
+
+    ba_backup = Settings.tsVersion + "-" + "BA-00" + buExt            
+    backup_Data.fRestore_Backup(ba_backup)
+
+#---------------------------------------------------#
 def fImport_DefaultLayout():
 #---------------------------------------------------#
 
