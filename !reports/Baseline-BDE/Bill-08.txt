@@ -1827,7 +1827,7 @@ Invoice # 14601
 	       Taxes:
 
 Tax Name										Items		  Tax Rate	    Tax Amount
-Time Only									      $866.90		      4.00		$34.68
+Time Only									      $866.89		      4.00		$34.68
 
 
 							 TS Handyman Services
@@ -12356,7 +12356,7 @@ Town of Saugus														  Page	     2
 	       Taxes:
 
 Tax Name										Items		  Tax Rate	    Tax Amount
-Time Only									    $1,153.01		      4.00		$46.12
+Time Only									    $1,153.02		      4.00		$46.12
 
 
 							 TS Handyman Services

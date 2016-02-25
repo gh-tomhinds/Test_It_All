@@ -1839,7 +1839,7 @@ Invoice # 13208
 	       Taxes:
 
 Tax Name										Items		  Tax Rate	    Tax Amount
-Expense Only									      $851.78		      4.25		$36.20
+Expense Only									      $851.77		      4.25		$36.20
 
 
 							 TS Handyman Services
@@ -13674,7 +13674,7 @@ Invoice # 13439
 	       Taxes:
 
 Tax Name										Items		  Tax Rate	    Tax Amount
-Expense Only									      $387.16		      4.25		$16.45
+Expense Only									      $387.17		      4.25		$16.45
 
 							     508-768-6100
 

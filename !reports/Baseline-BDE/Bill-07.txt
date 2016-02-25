@@ -1562,7 +1562,7 @@ City of Beverly 													  Page	     2
 	       Taxes:
 
 Tax Name										Items		  Tax Rate	    Tax Amount
-Time Only									      $587.26		      4.00		$23.49
+Time Only									      $587.25		      4.00		$23.49
 
 
 							 TS Handyman Services
@@ -12471,7 +12471,7 @@ City of Peabody 													  Page	     2
 	       Taxes:
 
 Tax Name										Items		  Tax Rate	    Tax Amount
-Time Only									      $572.69		      4.00		$22.91
+Time Only									      $572.70		      4.00		$22.91
 
 
 							 TS Handyman Services

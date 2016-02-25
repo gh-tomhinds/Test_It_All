@@ -10043,7 +10043,7 @@ City of Peabody 													  Page	     2
 	       Taxes:
 
 Tax Name										Items		  Tax Rate	    Tax Amount
-Time Only									    $1,268.21		      4.00		$50.73
+Time Only									    $1,268.22		      4.00		$50.73
 
 
 							 TS Handyman Services
