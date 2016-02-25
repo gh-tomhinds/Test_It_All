@@ -33,13 +33,13 @@ import report_FundsAccountList
 import report_TimekeeperInfo
 import report_ClientInfo
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fCreateImportEdit_Names():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
  
 #    editDefaultClient.Edit_DefaultClient()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     client_Create.fCreate_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
     task_Create.fCreate_Task()
@@ -49,11 +49,11 @@ def fCreateImportEdit_Names():
     timekeeper_Edit.fEdit_Timekeeper()
     
     client_Import.fImport_Clients()
+    backup_Data.fBackup_Checkpoint("clients-import")    
     client_Edit.fEdit_Client()    
     client_FundsEdit.fEdit_ClientFunds()
     backup_Data.fBackup_Checkpoint("clients")
     report_FundsAccountList.fPrint_Funds("FundsSettings-01" + ".csv")
-
     
     client_Hold.fSetup_ClientHold()
     client_FeeAlloc.fSetup_FeeAlloc()

@@ -32,7 +32,7 @@ def fEdit_CliGenInfo():
     type("US")
     type(Key.TAB)
 
-    # TS2015 has secondard address
+    # TS2015 has secondary address
     if int(Settings.tsVersion) > 2014:
         type("PO #1855")
         type(Key.TAB)   
@@ -53,14 +53,25 @@ def fEdit_CliGenInfo():
     time.sleep(1)
 
     logging.debug('  - other info')    
+
 # phone
     type("617-855 1855")
+
+# email   
+    if int(Settings.tsVersion) > 2014:
+        myTools.pressTAB(4)
+    else:    
+        myTools.pressTAB(8)
+        
+    type("tom.sikuli+Agawam@gmail.com")
+
+    
 # in ref to
 
     if int(Settings.tsVersion) > 2014:
         type(Key.F6)
     else:
-        myTools.pressTAB(14)        
+        myTools.pressTAB(6)        
     type("a",KeyModifier.CTRL)
     type("County of Hampden")
     time.sleep(1)

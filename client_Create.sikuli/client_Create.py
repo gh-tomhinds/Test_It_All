@@ -94,11 +94,21 @@ def fCreate_Client(nn1,nn2,fullname,inrefto,clinotes):
         type(Key.TAB)
         
     type(Key.TAB)
-    time.sleep(1)
+    time.sleep(1)  
 
-    logging.debug('- other info')    
+    logging.debug('- other info')
+    
 # phone
     type("Phone1")
+
+# email
+    if int(Settings.tsVersion) > 2014:
+        myTools.pressTAB(4)
+    else:    
+        myTools.pressTAB(8)
+
+    type("email@example.com")
+    
 # in ref to
 
     if int(Settings.tsVersion) > 2014:

@@ -15,6 +15,7 @@ def fAdd_CustomField(name, downArrow):
 
     type(Key.ENTER)
     type(Key.TAB,KeyModifier.SHIFT)
+    time.sleep(1)        
 
 #---------------------------------------------------#
 def fSetup_Template():
@@ -150,12 +151,17 @@ def fSetup_Template():
     for customField in customFields:
         fAdd_CustomField(customField, customFields.index(customField))
 
+    # Email address
+    type("e")
+    time.sleep(1)    
+    type(Key.ENTER)
+
 # if ts2015 or later, address2 fields
 
     if int(Settings.tsVersion) > 2014:
         
         # Add1        
-        type("o")
+        type("oo")
         type(Key.ENTER)
 
         # City2       
@@ -172,7 +178,7 @@ def fSetup_Template():
 
         # Country2
         myTools.pressUP(3)
-        type(Key.ENTER)
+        type(Key.ENTER)    
 
 # omit 1st record
     click("limit_records.png")
