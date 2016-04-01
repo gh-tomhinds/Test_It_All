@@ -1,6 +1,7 @@
 from sikuli import *
 import logging
 import myTools
+import backup_Data
 import bill_ImportLayout
 from bill_Print import fSet_BillDate
 import reports_Compare
@@ -71,9 +72,22 @@ def fBill_BillFields():
     myTools.sectionStartTimeStamp("bill fields")
     logging.debug("fBill_BillFields")    
 
-    reportName = myTools.monthToName(13,"-BillFields-",".txt")
+    buName = Settings.tsVersion + "-bill-12b"
+    backup_Data.fRestore_Backup(buName)
+
+    reportName = "BillFields-13-" + Settings.tsVersion + ".txt"
 
     myTools.getFocus()                                # make sure timeslips has focus
+
+    if int(Settings.tsVersion) < 2016:                # to get around a defect in pre-2016
+        type("i",KeyModifier.CTRL)                    # open client info and close it to load custom fields
+        time.sleep(1)
+        type("o",KeyModifier.CTRL)
+        time.sleep(1)
+        type(Key.F4,KeyModifier.CTRL)
+        time.sleep(1)
+        type(Key.F4,KeyModifier.CTRL)
+    
     bill_ImportLayout.fImport_BillLayout("Fields")    # import the layout    
     fSet_BillDate(12)                                 # set billing data to 12/27 for text bills 
     fPrint_BillsToText(reportName)                    # print all bills to one text file
