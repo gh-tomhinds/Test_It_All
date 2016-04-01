@@ -1,3 +1,7 @@
+""" 
+creates a new database from scratch 
+"""
+
 from sikuli import *
 import shutil
 import os
@@ -8,6 +12,10 @@ import backup_Data
 #---------------------------------------------------#
 def fDelete_DataFolder():
 #---------------------------------------------------#
+    """ 
+    deletes the folder containing the database 
+    """
+    
     logging.debug('- fDeleteDataFolder')
 
     if Settings.tsDB == "PREM" and Settings.tsNetwork == "YES":
@@ -22,9 +30,7 @@ def fDelete_DataFolder():
             os.remove(Settings.dbFolder)            
         else:
             logging.debug('-- not exists: ' + Settings.dbFolder)
-
-        popup("x")
-
+            
     elif os.path.exists(Settings.dbFolder):
         logging.debug("-- Delete folder:     %s" % Settings.dbFolder)
         shutil.rmtree(Settings.dbFolder)
@@ -34,6 +40,10 @@ def fDelete_DataFolder():
 #---------------------------------------------------#
 def fStart_TS():
 #---------------------------------------------------#
+    """
+    minimize everything; start timeslips
+    """
+    
     logging.debug('- fStartTS')
 
     # show desktop
@@ -52,6 +62,10 @@ def fStart_TS():
 #---------------------------------------------------#
 def fCheckFor_Sample():
 #---------------------------------------------------#
+    """
+    if Sample DB message displays, close it
+    """
+
     logging.debug('- checkFor_Sample')
 
     time.sleep(1)     
@@ -62,6 +76,10 @@ def fCheckFor_Sample():
 #---------------------------------------------------#
 def fCheckFor_PEP():
 #---------------------------------------------------#
+    """ 
+    if PEP message display, close it
+    """
+    
     logging.debug('- checkFor_PEP')
 
     time.sleep(1)     
@@ -72,6 +90,10 @@ def fCheckFor_PEP():
 #---------------------------------------------------#
 def fCheckFor_SPS():
 #---------------------------------------------------#
+    """ 
+    if SPS message displays, close it
+    """
+    
     logging.debug('- checkFor_SPS')
 
     time.sleep(1)     
@@ -82,6 +104,10 @@ def fCheckFor_SPS():
 #---------------------------------------------------#
 def fCheckFor_BillingDate():
 #---------------------------------------------------#
+    """
+    if bill data message displays, close it
+    """
+
     logging.debug('- checkFor_BillingDate')
 
     time.sleep(1)     
@@ -90,20 +116,16 @@ def fCheckFor_BillingDate():
         type(Key.ENTER)
 
 #---------------------------------------------------#
-def fStartTS_CreateNewDB():
+def fEnter_NewDBWizard():
 #---------------------------------------------------#
-
-    myTools.sectionStartTimeStamp("new db")
-    
-    logging.debug('StartTS_CreateNewDB')
-
-    popup("make sure Timeslips is closed")
-
-    fDelete_DataFolder()
-    fStart_TS()
-    fCheckFor_PEP()
+    """
+    enter data in Create a New Database wizard
+    - db name, path, firm name, decimal places, fiscal month, inv number, bill layout
+    - tal, feature enabled
+    """
 
 # start the new db process
+    logging.debug('fNew_DB')
     logging.debug('- Check for database')
     time.sleep(3)
 
@@ -203,34 +225,56 @@ def fStartTS_CreateNewDB():
     type(Key.ENTER)
     time.sleep(1)
 
-# wait for address info
-    wait("address_info.png",60)
+#---------------------------------------------------#
+def fEnter_GeneralSettings():
+#---------------------------------------------------#
+    """
+    enter firm address, project separator, slips/trans IDs
+    """
 
-# Firm name/address
-    type(Key.TAB)
-    type("239 Western Avenue")
-    myTools.pressTAB(2)
-    type("Essex")
-    type(Key.TAB)
-    type("MA")
-    type(Key.TAB)
-    type("01929")
-    type(Key.TAB)
-    type("USA")
-    type(Key.TAB)
-    type("508-768-6100")
-    time.sleep(1)
+    # wait for address info
+        wait("address_info.png",60)
+    
+    # Firm name/address
+        type(Key.TAB)
+        type("239 Western Avenue")
+        myTools.pressTAB(2)
+        type("Essex")
+        type(Key.TAB)
+        type("MA")
+        type(Key.TAB)
+        type("01929")
+        type(Key.TAB)
+        type("USA")
+        type(Key.TAB)
+        type("508-768-6100")
+        time.sleep(1)
+    
+    # project separator
+        myTools.pressF6(6)
+        time.sleep(1)
+        type(".")
+    
+    # slips, a/r, funds IDs
+        myTools.pressF6(5)
+        time.sleep(1)
+        type("10000")
+        myTools.pressTAB(1)    
+        type("10000")
+        myTools.pressTAB(1)    
+        type("10000")
+    
+    # close General settings
+        type(Key.ENTER)
 
-# project separator
-    myTools.pressF6(6)
-    time.sleep(1)
-    type(".")
-
-# close General settings
-    type(Key.ENTER)    
-
-# getting started
-    logging.debug('- getting started wiz')
+#---------------------------------------------------#
+def fEnter_GettingStartedWizard():
+#---------------------------------------------------#
+    """
+    enter data in Getting Started wizard
+    """
+    
+    logging.debug('fEnter_GettingStartedWizard')
     wait("enter_your_name.png",FOREVER)
     type("Xander Yakuza Zork")
     type(Key.TAB)
@@ -240,6 +284,28 @@ def fStartTS_CreateNewDB():
     type(Key.TAB)
     type("XZork")
     type("f",KeyModifier.ALT)
+
+#---------------------------------------------------#
+def fStartTS_CreateNewDB():
+#---------------------------------------------------#
+    """
+    main driver
+    - calls fDelete_DataFolder, fStart_TS, fCheckFor_PEP, 
+    - calls fEnter_NewDBWizard, fEnter_GeneralSettings, fEnter_GettingStartedWizard
+    - makes backup "-new"
+    """    
+
+    myTools.sectionStartTimeStamp("new db")    
+    logging.debug('StartTS_CreateNewDB')
+
+    popup("make sure Timeslips is closed")
+
+    fDelete_DataFolder()
+    fStart_TS()
+    fCheckFor_PEP()
+    fEnter_NewDBWizard()
+    fEnter_GeneralSettings()
+    fEnter_GettingStartedWizard()
 
 # backup
     time.sleep(1)

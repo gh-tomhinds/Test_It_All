@@ -1,3 +1,7 @@
+""" 
+sets up a lot of global variables that are used throughout other scripts 
+"""
+
 from sikuli import *
 import logging
 import os
@@ -5,10 +9,12 @@ import datetime
 import shutil
 
 #---------------------------------------------------#
-def fSetup_Time():
+def fSetup_Time():    
 #---------------------------------------------------#
+    """ 
+    I'm pretty sure this is no longer used; need to research
+    """
 
-# get current month and year (forget where this is used)
     Settings.rightNow = datetime.datetime.now()
     Settings.thisMonth = Settings.rightNow.month
     Settings.thisYear = Settings.rightNow.year
@@ -16,27 +22,35 @@ def fSetup_Time():
 #---------------------------------------------------#
 def fSetup_Folders():
 #---------------------------------------------------#
+    """ 
+    points to Sikuli folder on desktop
+    points to scripts folder on desktop
+    points to source data folder and images folder on desktop
+    points to folder to copy report errors
+    """
 
-# point to Sikuli folder on desktop
+    # points to Sikuli folder on desktop
     Settings.sikFolder = os.environ['USERPROFILE']+'\\desktop\\Sikuli'
     logging.debug("- Sikuli folder:    %s" %Settings.sikFolder)
 
-# point to scripts folder on desktop
+    # points to scripts folder on desktop
     Settings.scriptFolder = Settings.sikFolder + '\\Test_It_All'
     logging.debug("- Script folder:    %s" %Settings.scriptFolder)
 
-# point to source data folder on desktop and data files
+    # points to source data folder on desktop and image files
     Settings.dataFolder = Settings.scriptFolder + '\\!data'
     logging.debug("- Data folder:      %s" %Settings.dataFolder)
-
     Settings.imgFolder = Settings.dataFolder + '\\images'
 
-# point to folder to copy report errors
+    # points to folder to copy report errors
     Settings.errorFolder = Settings.scriptFolder + '\\!errors'
 
 #---------------------------------------------------#
 def fSetup_ImportDataFiles():
 #---------------------------------------------------#
+    """ 
+    points to files used to import data 
+    """
 
     Settings.cliFile = Settings.dataFolder + '\\towns.csv'
     Settings.tkFile = Settings.dataFolder + '\\timekeepers.csv'
@@ -50,8 +64,14 @@ def fSetup_ImportDataFiles():
 #---------------------------------------------------#
 def fSetup_AppFolders():
 #---------------------------------------------------#
+    """ 
+    points to report paths 
+    points to the folder containing the Timeslips exe
+    points to the location of the database
+        PREM also points to baseline registration database
+    """
 
-# point to report paths
+    # points to report paths
     Settings.rootRepFolder = Settings.scriptFolder + "\\!reports"
     logging.debug("- Rep root folder:  %s" %Settings.rootRepFolder)
 
@@ -64,7 +84,7 @@ def fSetup_AppFolders():
         Settings.baseRepFolder = Settings.rootRepFolder + "\\Baseline-BDE"
     logging.debug("- Base Rep folder:  %s" %Settings.baseRepFolder)  
 
-# point to exe path
+    # points to the folder containing the Timeslips exe
 
     if Settings.tsNetwork == "YES":
         Settings.tsFolder = "C:\\TSSHARE\\Timeslips " + Settings.tsVersionPath
@@ -73,7 +93,7 @@ def fSetup_AppFolders():
 
     logging.debug("- Timeslips folder: %s" %Settings.tsFolder)
 
-# point to data path    
+    # points to the location of the database
 
     if Settings.tsDB == "PREM" and Settings.tsNetwork == "YES":
 
@@ -84,7 +104,7 @@ def fSetup_AppFolders():
         Settings.tsSharedData = "C:\\ProgramData\\Sage\\Timeslips\\Databases"
 
         # use dbFolder to store database name
-        Settings.dbFolder = "C:\\ProgramData\\Sage\\Timeslips\\Databases\\SHARED-01.FDB"
+        Settings.dbFolder = Settings.tsSharedData + "\\SHARED-01.FDB"
         
     elif Settings.tsDB == "PREM":
         Settings.dbFolder = "C:\\Sikuli"
@@ -95,6 +115,9 @@ def fSetup_AppFolders():
 #---------------------------------------------------#
 def fSetup_AppFiles():
 #---------------------------------------------------#
+    """ 
+    points to the Timeslips exe 
+    """
 
     Settings.tsEXE = Settings.tsFolder + "\\timeslip.exe" 
     logging.debug("- Timeslips EXE:    %s" %Settings.tsEXE)
@@ -105,26 +128,32 @@ def fSetup_AppFiles():
 #---------------------------------------------------#
 def fSetup_LogFiles():
 #---------------------------------------------------#
-
-    # point to Billing Arrangement log file
+    """ 
+    points to Billing Arrangement log file 
+    """
+    
     Settings.BALogFile = Settings.sikFolder + "\\!BA-Log.txt"
 
-    # point to report log file
+    # points to report log file
     Settings.reportLogFile = Settings.sikFolder + "\\!Rep-Log.txt"
     reportLog = open(Settings.reportLogFile, "a")
     reportLog.write("\n")
     reportLog.write("========================================" + "\n")
     reportLog.close()
 
-    # set up duration log and add version to it
+    # points to the duration log file
     Settings.durationFile = Settings.sikFolder + "\\Durations-" + Settings.tsVersion + ".csv" 
     durationLog = open(Settings.durationFile, "a")
     durationLog.write(" ," + str(Settings.tsVersion) + "\n")
     durationLog.close()
 
 #---------------------------------------------------#
-def fSetup_Envirnoment():
+def fSetup_Environment():
 #---------------------------------------------------#
+    """ 
+    prompts for version, db type, network 
+    drives: fSetup_Folders, fSetup_ImportDataFiles, fSetup_AppFolders, fSetup_AppFiles, fSetup_LogFiles
+    """
 
     logging.debug('Setup_Stuff')
 
@@ -155,13 +184,14 @@ def fSetup_Envirnoment():
         Settings.tsVersionPath = Settings.tsVersion
     logging.debug("- Version path:     %s" %Settings.tsVersionPath)       
 
-    # get data version 
-    # setting this automatically for now
-#    Settings.dataYear = input("DATA:", "2013")
+    # get data year - what year will be used for entries
+    #    Settings.dataYear = input("DATA:", "2013")
     Settings.dataYear = "2013" 
 
     time.sleep(2)
-    
+
+    # drive all other setup functions
+
     fSetup_Folders()
     fSetup_ImportDataFiles()
 
