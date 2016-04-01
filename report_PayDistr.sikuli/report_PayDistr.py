@@ -48,18 +48,14 @@ def Print_PayDistr(pReportMonth,pRepExt):
     time.sleep(1)
 
     # on Selection page, clear any existing filters
-    if exists("remove_all.png"):
-        click("remove_all.png")   
-        time.sleep(1)
+    myTools.clickRemoveAll()
 
     # Sort page
     type(Key.F6)
     time.sleep(1)
 
     # clear any existing sorts
-    if exists("remove_all.png"):
-        click("remove_all.png")   
-        time.sleep(1)
+    myTools.clickRemoveAll()
 
     # sort by tran id
     type(Key.DOWN)

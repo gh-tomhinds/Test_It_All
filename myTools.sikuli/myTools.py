@@ -8,6 +8,8 @@ import reports_Compare
 #---------------------------------------------------#
 def setupLog():
 #---------------------------------------------------#
+    """ this sets up the log file """
+
 
     Settings.myLogFile = os.environ['USERPROFILE'] + '\desktop\Sikuli\Sikuli.log'
     logging.basicConfig(filename=Settings.myLogFile, level=logging.DEBUG, format='%(message)s', filemode='w')
@@ -76,6 +78,14 @@ def pressRIGHT(number):
     if number != 0:
         for i in range(number):
             type(Key.RIGHT)
+            
+#---------------------------------------------------#
+def clickRemoveAll():
+#---------------------------------------------------#
+
+    if exists("remove_all.png"):
+        click("remove_all.png")   
+        time.sleep(1)
 
 #---------------------------------------------------#
 def getFocus():

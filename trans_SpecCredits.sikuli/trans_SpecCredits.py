@@ -12,9 +12,7 @@ def fFilter_Invoices():
     time.sleep(1)
 
     # clear any existing filters
-    if exists("remove_all.png"):
-        click("remove_all.png")   
-        time.sleep(1)
+    myTools.clickRemoveAll()
 
     # add tran type filter
     click("trans_type.png")
@@ -52,8 +50,7 @@ def fClear_Filter():
     click("selection_button.png")
     time.sleep(1)
     # clear
-    click("remove_all.png")
-    time.sleep(1)
+    myTools.clickRemoveAll()
     # OK    
     type(Key.ENTER)
     time.sleep(1)
