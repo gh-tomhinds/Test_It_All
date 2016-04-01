@@ -86,7 +86,13 @@ def fRestore_Backup(pBackupName):
 #---------------------------------------------------#
 
     logging.debug('Restore_Backup: ' + str(pBackupName))
-    
+
+    if Settings.tsDB == "PREM":
+        buExt = ".tbu"
+    else:
+        buExt = ".bku"
+    pBackupName = pBackupName + buExt
+
     # make sure timeslips has focus
     myTools.getFocus()
 

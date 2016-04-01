@@ -1,3 +1,7 @@
+"""
+holds common functions used in billing assistant scripts
+"""   
+
 from sikuli import *
 import sys
 import logging
@@ -9,18 +13,20 @@ from bill_ImportLayout import fImport_Layout
 #---------------------------------------------------#
 def fRestore_BABackup():
 #---------------------------------------------------#
+    """
+    restores a backup to test billing arrangements starting with no clients
+    """
 
-    if Settings.tsDB == "PREM":
-        buExt = ".tbu"
-    else:
-        buExt = ".bku"
-
-    ba_backup = Settings.tsVersion + "-" + "BA-00" + buExt            
+    ba_backup = Settings.tsVersion + "-" + "BA-00"
     backup_Data.fRestore_Backup(ba_backup)
 
 #---------------------------------------------------#
 def fImport_DefaultLayout():
 #---------------------------------------------------#
+    """
+    import the 'Low Detail' layout
+    assign it to template client
+    """
 
     fImport_Layout("Low Detail")
 
@@ -58,19 +64,22 @@ def fImport_DefaultLayout():
 #---------------------------------------------------#
 def fSetup_NewNamesDefault():
 #---------------------------------------------------#
+    """
+    new names will inherit Layout setting from the Template client
+    """
 
     logging.debug('- open gen settings')
     type("p",KeyModifier.ALT)
     type("g")
     time.sleep(1)
 
-# get to New Names page    
+    # get to New Names page    
     myTools.pressF6(7)
     time.sleep(2)
     type("i",KeyModifier.ALT)
     type(Key.DOWN)
 
-# get to Layout field
+    # get to Layout field
 
     if int(Settings.tsVersion) > 2014:
         myTools.pressTAB(10)
@@ -83,6 +92,9 @@ def fSetup_NewNamesDefault():
 #---------------------------------------------------#
 def fMoveto_BAPage():
 #---------------------------------------------------#
+    """
+    moves to the Arrangements page of Client Information
+    """
 
     if int(Settings.tsVersion) > 2014:
         myTools.pressSHIFTF6(9)
@@ -92,20 +104,24 @@ def fMoveto_BAPage():
 #---------------------------------------------------#
 def fSetup_BABills():
 #---------------------------------------------------#
+    """
+    set up bills to print to text; no column stops
+    """
+    
     logging.debug('- set up bill report')
 
     type("b",KeyModifier.CTRL)
     time.sleep(1)
 
-# Print to text
+    # Print to text
     myTools.pressTAB(6)
     type("t")
 
-# Save AS    
+    # Save AS    
     myTools.pressTAB(2)
     type(Key.ENTER)
 
-# no column stops
+    # no column stops
     type("u",KeyModifier.ALT)  
     time.sleep(1)
     type(Key.ENTER)
@@ -113,7 +129,7 @@ def fSetup_BABills():
     if exists("replace_msg.png"):
         type(Key.ENTER)        
 
-# SAVE and Close
+    # SAVE and Close
     type("s",KeyModifier.CTRL)
     type(Key.ENTER)
     type(Key.F4,KeyModifier.CTRL)
@@ -121,6 +137,10 @@ def fSetup_BABills():
 #---------------------------------------------------#
 def fSetup_BADefaultLayout():
 #---------------------------------------------------#
+    """
+    main driver for: 
+        fImport_DefaultLayout, fSetup_NewNamesDefault, fSetup_BABills
+    """
 
     myTools.sectionStartTimeStamp("ba setup")
 
@@ -135,6 +155,10 @@ def fSetup_BADefaultLayout():
 #---------------------------------------------------#
 def fCreate_BASlips(pBAClient):
 #---------------------------------------------------#
+    """
+    calls slips_Create.Create_OneSlip to create 4 time slips and 4 expense slips
+    for each billing arrangement bill
+    """
 
     myTools.sectionStartTimeStamp("ba slips")
     logging.debug('fCreate_BASlips')
@@ -163,6 +187,12 @@ def fCreate_BASlips(pBAClient):
 #---------------------------------------------------#
 def fPrint_BABill(pBAClient,pBillNum):
 #---------------------------------------------------#
+    """
+    backs up the database ("-before")
+    prints the bill to text file
+    approves the bill
+    backs up the database ("-after")
+    """
 
     baBillName = pBAClient + str(pBillNum)
     backup_Data.fBackup_Checkpoint(baBillName + "-before")
