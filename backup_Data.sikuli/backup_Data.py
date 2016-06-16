@@ -14,22 +14,27 @@ def fBackup_Data(pBkuName):
 
     type("f",KeyModifier.ALT)
     type("b")
-    time.sleep(1)
+
+    wait("make_backup.png",60)
 
     # no subfolders
-    type("s",KeyModifier.ALT)
+    if Settings.tsDB == "BDE":
+        logging.debug('- no subfolders')
+        type("s",KeyModifier.ALT)
     time.sleep(1)
 
     # YES button
     type(Key.ENTER)
     time.sleep(1)
 
-    if exists("back_up_to_a_file.png"):
+    if Settings.tsDB == "PREM" and exists("back_up_to_a_file.png"):
         click("back_up_to_a_file.png")
         time.sleep(1)
         myTools.pressTAB(1)      
 
     # enter backup name
+    wait("save_in.png",60)
+    
     type(pBkuName)
     time.sleep(1)
 
