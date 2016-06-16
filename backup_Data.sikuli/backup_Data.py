@@ -15,6 +15,7 @@ def fBackup_Data(pBkuName):
     type("f",KeyModifier.ALT)
     type("b")
 
+    logging.debug('- wait for DoYouWantToMakeABackup')
     wait("make_backup.png",60)
 
     # no subfolders
@@ -28,13 +29,17 @@ def fBackup_Data(pBkuName):
     time.sleep(1)
 
     if Settings.tsDB == "PREM" and exists("back_up_to_a_file.png"):
+        logging.debug('- click BackUpToAFile')
         click("back_up_to_a_file.png")
         time.sleep(1)
         myTools.pressTAB(1)      
 
     # enter backup name
-    wait("save_in.png",60)
+    if Settings.tsNetwork == "NO":
+        logging.debug('- wait for SaveIn')
+        wait("save_in.png",60)
     
+    logging.debug('- enter backup name')
     type(pBkuName)
     time.sleep(1)
 

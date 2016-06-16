@@ -83,8 +83,8 @@ def pressRIGHT(number):
 def clickRemoveAll():
 #---------------------------------------------------#
 
-    if exists("remove_all.png"):
-        click("remove_all.png")   
+    if exists(Pattern("remove_all.png").similar(0.67)):
+        click(Pattern("remove_all.png").similar(0.67))   
         time.sleep(1)
 
 #---------------------------------------------------#
