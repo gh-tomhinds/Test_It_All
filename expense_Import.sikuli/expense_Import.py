@@ -7,6 +7,8 @@ import myTools
 def fAdd_ExpCustomField(name, downArrow):
 #---------------------------------------------------#
 
+    logging.debug('-- add custom: ' + name)
+
     type(Key.ENTER)
     type(Key.TAB)
     type("a",KeyModifier.CTRL)
@@ -16,6 +18,8 @@ def fAdd_ExpCustomField(name, downArrow):
 
     type(Key.ENTER)
     type(Key.TAB,KeyModifier.SHIFT)
+
+    time.sleep(1)    
 
 #---------------------------------------------------#
 def fSetup_Template():
@@ -46,42 +50,52 @@ def fSetup_Template():
 # choose fields
     logging.debug('- choose fields')        
     myTools.pressTAB(7)
+    time.sleep(1)
 
 # nn1
     myTools.pressDOWN(3)
     type(Key.ENTER)
+    time.sleep(1)
 
 # nn2
     myTools.pressDOWN(1)
     type(Key.ENTER)
+    time.sleep(1)
 
 # full
     myTools.pressDOWN(1)
     type(Key.ENTER)
+    time.sleep(1)
 
 # description
     myTools.pressDOWN(4)
     type(Key.ENTER) 
+    time.sleep(1)
 
 # billstatus
     myTools.pressDOWN(1)
     type(Key.ENTER)
+    time.sleep(1)
 
 # category
     myTools.pressDOWN(2)
     type(Key.ENTER) 
+    time.sleep(1)
     
 # quantity
     myTools.pressDOWN(1)
     type(Key.ENTER) 
+    time.sleep(1)
 
 # default level
     myTools.pressDOWN(1)
     type(Key.ENTER) 
+    time.sleep(1)
 
 # prices
     myTools.pressDOWN(1)
     type(Key.ENTER) 
+    time.sleep(1)
 
     for i in range(1,20):
         myTools.pressDOWN(1)

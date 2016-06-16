@@ -62,14 +62,16 @@ def fSetup_Template():
     type("c")
     time.sleep(1)    
     type(Key.ENTER)
+    
   # state
     myTools.pressDOWN(1)
     type(Key.ENTER)
+    
   # zip
     myTools.pressDOWN(1)
     type(Key.ENTER)
 
-  # address 1
+  # address 4
     type("aaaa")
     time.sleep(1)
     type(Key.ENTER)
@@ -160,8 +162,11 @@ def fSetup_Template():
 
     if int(Settings.tsVersion) > 2014:
         
-        # Add1        
+        # Other Add 1        
+        myTools.pressDOWN(1)
+        time.sleep(1)    
         type("oo")
+        time.sleep(1)    
         type(Key.ENTER)
 
         # City2       
