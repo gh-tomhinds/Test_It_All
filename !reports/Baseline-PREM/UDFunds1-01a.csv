@@ -1,3 +1,3 @@
 "Transaction ID","Billed","Billed on Invoice Date","Billed on Invoice No.","Check Number","Classification","Description","Finalized","Posted to G/L","Record Count","Transaction Date","Transaction Type","Transaction Type (Short)","Value",
-"1","1","","","","Open","bal - new bank","0","1","1","01/27/2013","Deposit","DEP","10.01"
-"2","1","","","","Open","bal - new bank","0","1","1","01/27/2013","Deposit","DEP","20.02"
+"10001","1","","","","Open","bal - new bank","0","1","1","01/27/2013","Deposit","DEP","10.01"
+"10002","1","","","","Open","bal - new bank","0","1","1","01/27/2013","Deposit","DEP","20.02"

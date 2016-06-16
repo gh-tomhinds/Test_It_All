@@ -197,7 +197,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/27/2013  CoreyM							  202.002	   2.125	  214.09	   Override
-	  706  Power Tools						  -50.12%						
+	10706  Power Tools						  -50.12%						
 	       Drills, skill saws, nail guns, etc.						   Adj:(50.1235)	  Recurring
 	       Reference:     ADAMS-Project01
 	       Custom Text:   Slip: e706
@@ -287,7 +287,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/27/2013  JamesR							  203.003	   3.125	  959.40	  No Charge
-	  707  Cleanup Supplies 					   51.23%			  959.4021		
+	10707  Cleanup Supplies 					   51.23%			  959.4021		
 	       Trash Bags, trash bags, and more trash bags					     Adj:51.2346	  Recurring
 	       Reference:     AGAWA-Project02
 	       Custom Text:   Slip: e707
@@ -360,7 +360,7 @@ Last payment	    9/28/2013			Amount	      $106.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
    11/27/2013  CoreyM							  102.06	    5.20	  802.62	Do Not Bill
-	    6  Clean							   51.23%	    5.20	  802.6171		
+	10006  Clean							   51.23%	    5.20	  802.6171		
 	       Take away wreckage and trash and then sweep up					     Adj:51.2346	  Recurring
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t6
@@ -373,7 +373,7 @@ TOTAL	       Billable Fees								    0.00			      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/27/2013  SamS							  204.004	   4.125	  419.72	   Override
-	  708  Pavers							  -50.12%						
+	10708  Pavers							  -50.12%						
 	       Stuff used to make a patio or walkway						   Adj:(50.1235)	  Recurring
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: e708
@@ -460,7 +460,7 @@ Last payment	    8/28/2013			Amount	      $107.08
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
    11/27/2013  JamesR							  105.07	    7.20	  377.32	   Override
-	    7  DesignL							  -50.12%	    0.75	   39.3027		
+	10007  DesignL							  -50.12%	    0.75	   39.3027		
 	       Noodle about landscape								   Adj:(50.1235)	  Recurring
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t7
@@ -474,7 +474,7 @@ TOTAL	       Billable Fees								    0.00			      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/27/2013  ShawnR							  205.005	   5.125	1,588.95	   Override
-	  709  Wood							   51.23%						
+	10709  Wood							   51.23%						
 	       Stuff used to build structures and other things					     Adj:51.2346	  Recurring
 	       Reference:     III-Project
 	       Custom Text:   Slip: e709
@@ -574,7 +574,7 @@ Last payment	    11/27/2013			Amount	      $25.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
    11/27/2013  SamS							  103.08	    8.20	  421.59	   Override
-	    8  Planting 						  -50.12%	    0.75	   38.5595		
+	10008  Planting 						  -50.12%	    0.75	   38.5595		
 	       Plant all kinds of stuff 							   Adj:(50.1235)	  Recurring
 	       Custom Text:   Slip: t8
 
@@ -587,7 +587,7 @@ TOTAL	       Billable Fees								    0.00			      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/27/2013  TomH							  206.006	   6.125	1,908.26	Do Not Bill
-	  710  First aid						   51.23%			1,908.2631		
+	10710  First aid						   51.23%			1,908.2631		
 	       Stuff used to glue fingers back on or tape wounds shut				     Adj:51.2346	  Recurring
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: e710
@@ -674,7 +674,7 @@ Last payment	    10/27/2013			Amount	      $25.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
    11/27/2013  ShawnR							  104.09	    9.20	1,448.27	   Override
-	    9  Lot Maintenance						   51.23%	    0.75	  118.0689		
+	10009  Lot Maintenance						   51.23%	    0.75	  118.0689		
 	       Mow, trim, dig up, and spread							     Adj:51.2346	  Recurring
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t9
@@ -763,7 +763,7 @@ Last payment	    10/28/2013			Amount	      $110.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
    11/27/2013  TomH							  101.10	   10.20	1,559.56	  No Charge
-	   10  Water Feature						   51.23%	   10.20	1,559.5614		
+	10010  Water Feature						   51.23%	   10.20	1,559.5614		
 	       Make something splash and flow							     Adj:51.2346	  Recurring
 	       Reference:     AQUIN-Project01
 	       Custom Text:   Slip: t10
@@ -1284,7 +1284,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     11/6/2013  TomH							  211.011	  11.125	2,464.88	   Billable
-	 2475  Safety							    5.00%					       Hold
+	12475  Safety							    5.00%					       Hold
 	       Protection for eyes, ears, hands, etc.										
 	       Reference:     AUBUR-Project02
 	       Custom Text:   Slip: e2475
@@ -1357,7 +1357,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     9/23/2013  TomH							  202.002	   2.125	  450.71	   Billable
-	 2125  Power Tools						    5.00%					       Hold
+	12125  Power Tools						    5.00%					       Hold
 	       Drills, skill saws, nail guns, etc.										
 	       Reference:     III-Project
 	       Custom Text:   Slip: e2125
@@ -1427,7 +1427,7 @@ Last payment	    11/27/2013			Amount	      $25.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     8/10/2013  TomH							  101.20	    6.20	  627.44	   Billable
-	 1775  DesignS													       Hold
+	11775  DesignS													       Hold
 	       Noodle about a new structure											
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t1775
@@ -1500,7 +1500,7 @@ Last payment	    10/27/2013			Amount	      $25.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     6/28/2013  TomH							  317.01	    5.20	1,648.45	Do Not Bill
-	 1425  Clean									    5.20	1,648.45	       Hold
+	11425  Clean									    5.20	1,648.45	       Hold
 	       Take away wreckage and trash and then sweep up									
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t1425
@@ -1576,7 +1576,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     5/15/2013  TomH							  208.008	   8.125	1,774.57	   Override
-	 1075  Landscape Supplies					    5.00%					       Hold
+	11075  Landscape Supplies					    5.00%					       Hold
 	       Compost and other types of poop for plants									
 	       Reference:     BARRE-Project02
 	       Custom Text:   Slip: e1075
@@ -1649,7 +1649,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      4/1/2013  TomH							  210.01	  10.125	2,232.67	   Billable
-	  725  Consultants						    5.00%					       Hold
+	10725  Consultants						    5.00%					       Hold
 	       Hiring folks to do stuff we cannot do										
 	       Reference:     III-Project
 	       Custom Text:   Slip: e725
@@ -1719,7 +1719,7 @@ Last payment	    7/27/2013			Amount	      $25.06
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     2/16/2013  TomH							  168.04	    1.20	  201.65	   Billable
-	  375  Build Structure												       Hold
+	10375  Build Structure												       Hold
 	       Create something new												
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t375
@@ -1792,7 +1792,7 @@ Last payment	    10/28/2013			Amount	      $125.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      1/4/2013  TomH							    5.05	    3.20	   16.16	   Billable
-	   25  Fix													       Hold
+	10025  Fix													       Hold
 	       Take something old and make it better										
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t25
@@ -2969,7 +2969,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     11/9/2013  TomH							  203.003	   3.125	  666.10	  No Charge
-	 2500  Cleanup Supplies 					    5.00%			  666.099	       Hold
+	12500  Cleanup Supplies 					    5.00%			  666.099	       Hold
 	       Trash Bags, trash bags, and more trash bags									
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: e2500
@@ -3042,7 +3042,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     9/26/2013  TomH							  205.005	   5.125	1,103.18	   Override
-	 2150  Wood							    5.00%					       Hold
+	12150  Wood							    5.00%					       Hold
 	       Stuff used to build structures and other things									
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: e2150
@@ -3112,7 +3112,7 @@ Last payment	    10/28/2013			Amount	      $145.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     8/13/2013  TomH							  107.05	    7.20	  770.76	   Billable
-	 1800  DesignL													       Hold
+	11800  DesignL													       Hold
 	       Noodle about landscape												
 	       Custom Text:   Slip: t1800
 
@@ -3185,7 +3185,7 @@ Last payment	    9/28/2013			Amount	      $146.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      7/1/2013  TomH							  109.06	    9.20	1,003.35	   Override
-	 1450  Lot Maintenance												       Hold
+	11450  Lot Maintenance												       Hold
 	       Mow, trim, dig up, and spread											
 	       Reference:     BROOK-Project01
 	       Custom Text:   Slip: t1450
@@ -3261,7 +3261,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     5/18/2013  TomH							  211.011	  11.125	2,464.88	   Billable
-	 1100  Safety							    5.00%					       Hold
+	11100  Safety							    5.00%					       Hold
 	       Protection for eyes, ears, hands, etc.										
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: e1100
@@ -3334,7 +3334,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      4/4/2013  TomH							  202.002	   2.125	  450.71	   Billable
-	  750  Power Tools						    5.00%					       Hold
+	10750  Power Tools						    5.00%					       Hold
 	       Drills, skill saws, nail guns, etc.										
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: e750
@@ -3404,7 +3404,7 @@ Last payment	    7/27/2013			Amount	      $21.76
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     2/19/2013  TomH							  106.09	    6.20	  657.76	   Billable
-	  400  DesignS													       Hold
+	10400  DesignS													       Hold
 	       Noodle about a new structure											
 	       Custom Text:   Slip: t400
 
@@ -3477,7 +3477,7 @@ Last payment	    11/27/2013			Amount	      $25.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      1/7/2013  TomH							  105.10	    5.20	  546.52	Do Not Bill
-	   50  Clean									    5.20	  546.52	       Hold
+	10050  Clean									    5.20	  546.52	       Hold
 	       Take away wreckage and trash and then sweep up									
 	       Reference:     CAMBR-Project01
 	       Custom Text:   Slip: t50
@@ -4629,7 +4629,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/12/2013  TomH							  206.006	   6.125	1,324.88	Do Not Bill
-	 2525  First aid						    5.00%			1,324.8795	       Hold
+	12525  First aid						    5.00%			1,324.8795	       Hold
 	       Stuff used to glue fingers back on or tape wounds shut								
 	       Reference:     III-Project
 	       Custom Text:   Slip: e2525
@@ -4702,7 +4702,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     9/29/2013  TomH							  208.008	   8.125	1,774.57	   Override
-	 2175  Landscape Supplies					    5.00%					       Hold
+	12175  Landscape Supplies					    5.00%					       Hold
 	       Compost and other types of poop for plants									
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: e2175
@@ -4771,7 +4771,7 @@ Last payment	    10/28/2013			Amount	      $170.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     8/17/2013  TomH							  101.10	   10.20	1,031.22	  No Charge
-	 1825  Water Feature								   10.20	1,031.22	       Hold
+	11825  Water Feature								   10.20	1,031.22	       Hold
 	       Make something splash and flow											
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t1825
@@ -4842,7 +4842,7 @@ Last payment	    9/28/2013			Amount	      $171.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      7/4/2013  TomH							  101.11	    1.20	  121.33	   Billable
-	 1475  Build Structure												       Hold
+	11475  Build Structure												       Hold
 	       Create something new												
 	       Reference:     DALTO-Project02
 	       Custom Text:   Slip: t1475
@@ -4918,7 +4918,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     5/21/2013  TomH							  203.003	   3.125	  666.10	  No Charge
-	 1125  Cleanup Supplies 					    5.00%			  666.099	       Hold
+	11125  Cleanup Supplies 					    5.00%			  666.099	       Hold
 	       Trash Bags, trash bags, and more trash bags									
 	       Reference:     III-Project
 	       Custom Text:   Slip: e1125
@@ -4989,7 +4989,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      4/7/2013  TomH							  205.005	   5.125	1,103.18	   Override
-	  775  Wood							    5.00%					       Hold
+	10775  Wood							    5.00%					       Hold
 	       Stuff used to build structures and other things									
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: e775
@@ -5059,7 +5059,7 @@ Last payment	    11/27/2013			Amount	      $25.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     2/23/2013  TomH							  101.14	    7.20	  728.21	   Billable
-	  425  DesignL													       Hold
+	10425  DesignL													       Hold
 	       Noodle about landscape												
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t425
@@ -5132,7 +5132,7 @@ Last payment	    11/27/2013			Amount	      $10.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/10/2013  TomH							  101.15	    9.20	  930.58	   Override
-	   75  Lot Maintenance												       Hold
+	10075  Lot Maintenance												       Hold
 	       Mow, trim, dig up, and spread											
 	       Reference:     DEERF-Project02
 	       Custom Text:   Slip: t75
@@ -6217,7 +6217,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/15/2013  TomH							  209.009	   9.125	2,002.57	   Billable
-	 2550  Snacks							    5.00%					       Hold
+	12550  Snacks							    5.00%					       Hold
 	       Nacho chips mostly and some beef jerky										
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: e2550
@@ -6290,7 +6290,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     10/2/2013  TomH							  211.011	  11.125	2,464.88	   Billable
-	 2200  Safety							    5.00%					       Hold
+	12200  Safety							    5.00%					       Hold
 	       Protection for eyes, ears, hands, etc.										
 	       Custom Text:   Slip: e2200
 
@@ -6355,7 +6355,7 @@ Last payment	    10/28/2013			Amount	      $195.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     8/20/2013  TomH							  334.15	    2.20	  735.13	   Billable
-	 1850  DemoS													       Hold
+	11850  DemoS													       Hold
 	       Rip down something old												
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: t1850
@@ -6427,7 +6427,7 @@ Last payment	    9/28/2013			Amount	      $196.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      7/7/2013  TomH							  335.16	    6.20	2,077.99	   Billable
-	 1500  DesignS													       Hold
+	11500  DesignS													       Hold
 	       Noodle about a new structure											
 	       Reference:     FALLR-Project02
 	       Custom Text:   Slip: t1500
@@ -6503,7 +6503,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     5/24/2013  TomH							  206.006	   6.125	1,324.88	Do Not Bill
-	 1150  First aid						    5.00%			1,324.8795	       Hold
+	11150  First aid						    5.00%			1,324.8795	       Hold
 	       Stuff used to glue fingers back on or tape wounds shut								
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: e1150
@@ -6576,7 +6576,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     4/10/2013  TomH							  208.008	   8.125	1,774.57	   Override
-	  800  Landscape Supplies					    5.00%					       Hold
+	10800  Landscape Supplies					    5.00%					       Hold
 	       Compost and other types of poop for plants									
 	       Custom Text:   Slip: e800
 
@@ -6644,7 +6644,7 @@ Last payment	    10/27/2013			Amount	      $25.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     2/26/2013  TomH							   68.19	   10.20	  695.54	  No Charge
-	  450  Water Feature								   10.20	  695.54	       Hold
+	10450  Water Feature								   10.20	  695.54	       Hold
 	       Make something splash and flow											
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: t450
@@ -6717,7 +6717,7 @@ Last payment	    10/28/2013			Amount	      $200.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/13/2013  TomH							  241.20	    1.20	  289.44	   Billable
-	  100  Build Structure												       Hold
+	10100  Build Structure												       Hold
 	       Create something new												
 	       Reference:     FOXBO-Project02
 	       Custom Text:   Slip: t100
@@ -7904,7 +7904,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/18/2013  TomH							  201.001	   1.125	  237.44	   Billable
-	 2575  Hand Tools						    5.00%					       Hold
+	12575  Hand Tools						    5.00%					       Hold
 	       Hammers, saws, etc.												
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: e2575
@@ -7976,7 +7976,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     10/6/2013  TomH							  203.003	   3.125	  666.10	  No Charge
-	 2225  Cleanup Supplies 					    5.00%			  666.099	       Hold
+	12225  Cleanup Supplies 					    5.00%			  666.099	       Hold
 	       Trash Bags, trash bags, and more trash bags									
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: e2225
@@ -8046,7 +8046,7 @@ Last payment	    10/28/2013			Amount	      $220.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     8/23/2013  TomH							  104.20	    4.20	  437.64	   Override
-	 1875  Bid													       Hold
+	11875  Bid													       Hold
 	       Promise you can do something great										
 	       Reference:     HAMPD-Project01
 	       Custom Text:   Slip: t1875
@@ -8119,7 +8119,7 @@ Last payment	    9/28/2013			Amount	      $221.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     7/10/2013  TomH							  101.01	    7.20	  727.27	   Billable
-	 1525  DesignL													       Hold
+	11525  DesignL													       Hold
 	       Noodle about landscape												
 	       Reference:     III-Project
 	       Custom Text:   Slip: t1525
@@ -8195,7 +8195,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     5/27/2013  TomH							  209.009	   9.125	2,002.57	   Billable
-	 1175  Snacks							    5.00%					       Hold
+	11175  Snacks							    5.00%					       Hold
 	       Nacho chips mostly and some beef jerky										
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: e1175
@@ -8268,7 +8268,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     4/14/2013  TomH							  211.011	  11.125	2,464.88	   Billable
-	  825  Safety							    5.00%					       Hold
+	10825  Safety							    5.00%					       Hold
 	       Protection for eyes, ears, hands, etc.										
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: e825
@@ -8338,7 +8338,7 @@ Last payment	    10/27/2013			Amount	      $9.32
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      3/1/2013  TomH							  101.04	    2.20	  222.29	   Billable
-	  475  DemoS													       Hold
+	10475  DemoS													       Hold
 	       Rip down something old												
 	       Reference:     HARDW-Project01
 	       Custom Text:   Slip: t475
@@ -8410,7 +8410,7 @@ Last payment	    10/28/2013			Amount	      $225.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/16/2013  TomH							  101.05	    6.20	  626.51	   Billable
-	  125  DesignS													       Hold
+	10125  DesignS													       Hold
 	       Noodle about a new structure											
 	       Reference:     III-Project
 	       Custom Text:   Slip: t125
@@ -9572,7 +9572,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/21/2013  TomH							  204.004	   4.125	  883.60	   Billable
-	 2600  Pavers							    5.00%					       Hold
+	12600  Pavers							    5.00%					       Hold
 	       Stuff used to make a patio or walkway										
 	       Custom Text:   Slip: e2600
 
@@ -9643,7 +9643,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     10/9/2013  TomH							  206.006	   6.125	1,324.88	Do Not Bill
-	 2250  First aid						    5.00%			1,324.8795	       Hold
+	12250  First aid						    5.00%			1,324.8795	       Hold
 	       Stuff used to glue fingers back on or tape wounds shut								
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: e2250
@@ -9713,7 +9713,7 @@ Last payment	    10/28/2013			Amount	      $245.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     8/26/2013  TomH							  290.05	    8.20	2,378.41	   Billable
-	 1900  Planting 												       Hold
+	11900  Planting 												       Hold
 	       Plant all kinds of stuff 											
 	       Reference:     KINGS-Project01
 	       Custom Text:   Slip: t1900
@@ -9786,7 +9786,7 @@ Last payment	    11/27/2013			Amount	      $25.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     7/13/2013  TomH							  286.06	   10.20	2,917.81	  No Charge
-	 1550  Water Feature								   10.20	2,917.81	       Hold
+	11550  Water Feature								   10.20	2,917.81	       Hold
 	       Make something splash and flow											
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t1550
@@ -9862,7 +9862,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     5/30/2013  TomH							  201.001	   1.125	  237.44	   Billable
-	 1200  Hand Tools						    5.00%					       Hold
+	11200  Hand Tools						    5.00%					       Hold
 	       Hammers, saws, etc.												
 	       Custom Text:   Slip: e1200
 
@@ -9935,7 +9935,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     4/17/2013  TomH							  203.003	   3.125	  666.10	  No Charge
-	  850  Cleanup Supplies 					    5.00%			  666.099	       Hold
+	10850  Cleanup Supplies 					    5.00%			  666.099	       Hold
 	       Trash Bags, trash bags, and more trash bags									
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: e850
@@ -10003,7 +10003,7 @@ Last payment	    8/27/2013			Amount	      $25.07
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      3/4/2013  TomH							  197.09	    4.20	  827.78	   Override
-	  500  Bid													       Hold
+	10500  Bid													       Hold
 	       Promise you can do something great										
 	       Reference:     LAWRE-Project01
 	       Custom Text:   Slip: t500
@@ -10076,7 +10076,7 @@ Last payment	    10/28/2013			Amount	      $250.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/19/2013  TomH							   61.10	    7.20	  439.92	   Billable
-	  150  DesignL													       Hold
+	10150  DesignL													       Hold
 	       Noodle about landscape												
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t150
@@ -11241,7 +11241,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    11/25/2013  TomH							  207.007	   7.125	1,548.67	   Billable
-	 2625  Plants							    5.00%					       Hold
+	12625  Plants							    5.00%					       Hold
 	       Things you plant in the ground											
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: e2625
@@ -11314,7 +11314,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    10/12/2013  TomH							  209.009	   9.125	2,002.57	   Billable
-	 2275  Snacks							    5.00%					       Hold
+	12275  Snacks							    5.00%					       Hold
 	       Nacho chips mostly and some beef jerky										
 	       Reference:     III-Project
 	       Custom Text:   Slip: e2275
@@ -11384,7 +11384,7 @@ Last payment	    11/27/2013			Amount	      $25.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     8/29/2013  TomH							  111.10	   11.20	1,244.32	   Billable
-	 1925  Pave													       Hold
+	11925  Pave													       Hold
 	       Create pretty pattern with stones										
 	       Reference:     MARLB-Project02
 	       Custom Text:   Slip: t1925
@@ -11457,7 +11457,7 @@ Last payment	    10/27/2013			Amount	      $25.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     7/16/2013  TomH							  102.11	    2.20	  224.64	   Billable
-	 1575  DemoS													       Hold
+	11575  DemoS													       Hold
 	       Rip down something old												
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t1575
@@ -11533,7 +11533,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      6/3/2013  TomH							  204.004	   4.125	  883.60	   Billable
-	 1225  Pavers							    5.00%					       Hold
+	11225  Pavers							    5.00%					       Hold
 	       Stuff used to make a patio or walkway										
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: e1225
@@ -11606,7 +11606,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     4/20/2013  TomH							  206.006	   6.125	1,324.88	Do Not Bill
-	  875  First aid						    5.00%			1,324.8795	       Hold
+	10875  First aid						    5.00%			1,324.8795	       Hold
 	       Stuff used to glue fingers back on or tape wounds shut								
 	       Reference:     III-Project
 	       Custom Text:   Slip: e875
@@ -11674,7 +11674,7 @@ Last payment	    7/27/2013			Amount	      $25.06
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      3/7/2013  TomH							  108.14	    8.20	  886.75	   Billable
-	  525  Planting 												       Hold
+	10525  Planting 												       Hold
 	       Plant all kinds of stuff 											
 	       Reference:     MAYNA-Project02
 	       Custom Text:   Slip: t525
@@ -11747,7 +11747,7 @@ Last payment	    10/28/2013			Amount	      $275.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/22/2013  TomH							  110.15	   10.20	1,123.53	  No Charge
-	  175  Water Feature								   10.20	1,123.53	       Hold
+	10175  Water Feature								   10.20	1,123.53	       Hold
 	       Make something splash and flow											
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t175
@@ -12965,7 +12965,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    10/15/2013  TomH							  201.001	   1.125	  237.44	   Billable
-	 2300  Hand Tools						    5.00%					       Hold
+	12300  Hand Tools						    5.00%					       Hold
 	       Hammers, saws, etc.												
 	       Reference:     MONTG-Project01
 	       Custom Text:   Slip: e2300
@@ -13034,7 +13034,7 @@ Last payment	    10/28/2013			Amount	      $295.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      9/1/2013  TomH							  101.15	    3.20	  323.68	   Billable
-	 1950  Fix													       Hold
+	11950  Fix													       Hold
 	       Take something old and make it better										
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t1950
@@ -13107,7 +13107,7 @@ Last payment	    9/28/2013			Amount	      $296.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     7/19/2013  TomH							  101.16	    4.20	  424.87	   Override
-	 1600  Bid													       Hold
+	11600  Bid													       Hold
 	       Promise you can do something great										
 	       Custom Text:   Slip: t1600
 
@@ -13183,7 +13183,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      6/6/2013  TomH							  207.007	   7.125	1,548.67	   Billable
-	 1250  Plants							    5.00%					       Hold
+	11250  Plants							    5.00%					       Hold
 	       Things you plant in the ground											
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: e1250
@@ -13255,7 +13255,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     4/23/2013  TomH							  209.009	   9.125	2,002.57	   Billable
-	  900  Snacks							    5.00%					       Hold
+	10900  Snacks							    5.00%					       Hold
 	       Nacho chips mostly and some beef jerky										
 	       Reference:     NATIC-Project01
 	       Custom Text:   Slip: e900
@@ -13325,7 +13325,7 @@ Last payment	    6/28/2013			Amount	      $299.06
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     3/10/2013  TomH							  101.19	   11.20	1,133.33	   Billable
-	  550  Pave													       Hold
+	10550  Pave													       Hold
 	       Create pretty pattern with stones										
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t550
@@ -13398,7 +13398,7 @@ Last payment	    11/27/2013			Amount	      $25.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/25/2013  TomH							  101.20	    2.20	  222.64	   Billable
-	  200  DemoS													       Hold
+	10200  DemoS													       Hold
 	       Rip down something old												
 	       Custom Text:   Slip: t200
 
@@ -14573,7 +14573,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    10/18/2013  TomH							  204.004	   4.125	  883.60	   Billable
-	 2325  Pavers							    5.00%					       Hold
+	12325  Pavers							    5.00%					       Hold
 	       Stuff used to make a patio or walkway										
 	       Reference:     NORWE-Project02
 	       Custom Text:   Slip: e2325
@@ -14643,7 +14643,7 @@ Last payment	    10/28/2013			Amount	      $320.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      9/4/2013  TomH							  252.20	    5.20	1,311.44	Do Not Bill
-	 1975  Clean									    5.20	1,311.44	       Hold
+	11975  Clean									    5.20	1,311.44	       Hold
 	       Take away wreckage and trash and then sweep up									
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t1975
@@ -14716,7 +14716,7 @@ Last payment	    9/28/2013			Amount	      $321.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     7/23/2013  TomH							  108.01	    8.20	  885.68	   Billable
-	 1625  Planting 												       Hold
+	11625  Planting 												       Hold
 	       Plant all kinds of stuff 											
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t1625
@@ -14791,7 +14791,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      6/9/2013  TomH							  210.01	  10.125	2,232.67	   Billable
-	 1275  Consultants						    5.00%					       Hold
+	11275  Consultants						    5.00%					       Hold
 	       Hiring folks to do stuff we cannot do										
 	       Reference:     III-Project
 	       Custom Text:   Slip: e1275
@@ -14864,7 +14864,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     4/26/2013  TomH							  201.001	   1.125	  237.44	   Billable
-	  925  Hand Tools						    5.00%					       Hold
+	10925  Hand Tools						    5.00%					       Hold
 	       Hammers, saws, etc.												
 	       Reference:     ORANG-Project01
 	       Custom Text:   Slip: e925
@@ -14934,7 +14934,7 @@ Last payment	    11/27/2013			Amount	      $17.57
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     3/13/2013  TomH							  103.04	    3.20	  329.73	   Billable
-	  575  Fix													       Hold
+	10575  Fix													       Hold
 	       Take something old and make it better										
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t575
@@ -15006,7 +15006,7 @@ Last payment	    10/28/2013			Amount	      $325.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/29/2013  TomH							  104.05	    4.20	  437.01	   Override
-	  225  Bid													       Hold
+	10225  Bid													       Hold
 	       Promise you can do something great										
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t225
@@ -16210,7 +16210,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    10/21/2013  TomH							  207.007	   7.125	1,548.67	   Billable
-	 2350  Plants							    5.00%					       Hold
+	12350  Plants							    5.00%					       Hold
 	       Things you plant in the ground											
 	       Reference:     RANDO-Project02
 	       Custom Text:   Slip: e2350
@@ -16280,7 +16280,7 @@ Last payment	    10/28/2013			Amount	      $345.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      9/7/2013  TomH							  101.05	    9.20	  929.66	   Override
-	 2000  Lot Maintenance												       Hold
+	12000  Lot Maintenance												       Hold
 	       Mow, trim, dig up, and spread											
 	       Custom Text:   Slip: t2000
 
@@ -16351,7 +16351,7 @@ Last payment	    10/27/2013			Amount	      $7.58
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     7/26/2013  TomH							  101.06	   11.20	1,131.87	   Billable
-	 1650  Pave													       Hold
+	11650  Pave													       Hold
 	       Create pretty pattern with stones										
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: t1650
@@ -16424,7 +16424,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     6/12/2013  TomH							  202.002	   2.125	  450.71	   Billable
-	 1300  Power Tools						    5.00%					       Hold
+	11300  Power Tools						    5.00%					       Hold
 	       Drills, skill saws, nail guns, etc.										
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: e1300
@@ -16497,7 +16497,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     4/29/2013  TomH							  204.004	   4.125	  883.60	   Billable
-	  950  Pavers							    5.00%					       Hold
+	10950  Pavers							    5.00%					       Hold
 	       Stuff used to make a patio or walkway										
 	       Reference:     REVER-Project02
 	       Custom Text:   Slip: e950
@@ -16561,7 +16561,7 @@ Last payment	    10/27/2013			Amount	      $25.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     3/16/2013  TomH							  101.09	    5.20	  525.67	Do Not Bill
-	  600  Clean									    5.20	  525.67	       Hold
+	10600  Clean									    5.20	  525.67	       Hold
 	       Take away wreckage and trash and then sweep up									
 	       Custom Text:   Slip: t600
 
@@ -16633,7 +16633,7 @@ Last payment	    10/28/2013			Amount	      $350.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      2/1/2013  TomH							  101.10	    8.20	  829.02	   Billable
-	  250  Planting 												       Hold
+	10250  Planting 												       Hold
 	       Plant all kinds of stuff 											
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: t250
@@ -17857,7 +17857,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    10/24/2013  TomH							  210.01	  10.125	2,232.67	   Billable
-	 2375  Consultants						    5.00%					       Hold
+	12375  Consultants						    5.00%					       Hold
 	       Hiring folks to do stuff we cannot do										
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: e2375
@@ -17927,7 +17927,7 @@ Last payment	    10/28/2013			Amount	      $370.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     9/11/2013  TomH							  121.10	    1.20	  145.32	   Billable
-	 2025  Build Structure												       Hold
+	12025  Build Structure												       Hold
 	       Create something new												
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t2025
@@ -17999,7 +17999,7 @@ Last payment	    9/28/2013			Amount	      $371.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     7/29/2013  TomH							  148.11	    3.20	  473.95	   Billable
-	 1675  Fix													       Hold
+	11675  Fix													       Hold
 	       Take something old and make it better										
 	       Reference:     III-Project
 	       Custom Text:   Slip: t1675
@@ -18075,7 +18075,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     6/15/2013  TomH							  205.005	   5.125	1,103.18	   Override
-	 1325  Wood							    5.00%					       Hold
+	11325  Wood							    5.00%					       Hold
 	       Stuff used to build structures and other things									
 	       Reference:     SHUTE-Project01
 	       Custom Text:   Slip: e1325
@@ -18142,7 +18142,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      5/2/2013  TomH							  207.007	   7.125	1,548.67	   Billable
-	  975  Plants							    5.00%					       Hold
+	10975  Plants							    5.00%					       Hold
 	       Things you plant in the ground											
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: e975
@@ -18212,7 +18212,7 @@ Last payment	    9/27/2013			Amount	      $25.08
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     3/20/2013  TomH							  261.14	    9.20	2,402.49	   Override
-	  625  Lot Maintenance												       Hold
+	10625  Lot Maintenance												       Hold
 	       Mow, trim, dig up, and spread											
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t625
@@ -18285,7 +18285,7 @@ Last payment	    10/28/2013			Amount	      $375.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      2/4/2013  TomH							   34.15	   11.20	  382.48	   Billable
-	  275  Pave													       Hold
+	10275  Pave													       Hold
 	       Create pretty pattern with stones										
 	       Reference:     III-Project
 	       Custom Text:   Slip: t275
@@ -19505,7 +19505,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    10/27/2013  TomH							  202.002	   2.125	  450.71	   Billable
-	 2400  Power Tools						    5.00%					       Hold
+	12400  Power Tools						    5.00%					       Hold
 	       Drills, skill saws, nail guns, etc.										
 	       Custom Text:   Slip: e2400
 
@@ -19575,7 +19575,7 @@ Last payment	    10/28/2013			Amount	      $395.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     9/14/2013  TomH							  106.15	    6.20	  658.13	   Billable
-	 2050  DesignS													       Hold
+	12050  DesignS													       Hold
 	       Noodle about a new structure											
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: t2050
@@ -19648,7 +19648,7 @@ Last payment	    11/27/2013			Amount	      $25.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      8/1/2013  TomH							  105.16	    5.20	  546.83	Do Not Bill
-	 1700  Clean									    5.20	  546.83	       Hold
+	11700  Clean									    5.20	  546.83	       Hold
 	       Take away wreckage and trash and then sweep up									
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t1700
@@ -19724,7 +19724,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     6/18/2013  TomH							  208.008	   8.125	1,774.57	   Override
-	 1350  Landscape Supplies					    5.00%					       Hold
+	11350  Landscape Supplies					    5.00%					       Hold
 	       Compost and other types of poop for plants									
 	       Reference:     TOLLA-Project02
 	       Custom Text:   Slip: e1350
@@ -19796,7 +19796,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      5/5/2013  TomH							  210.01	  10.125	2,232.67	   Billable
-	 1000  Consultants						    5.00%					       Hold
+	11000  Consultants						    5.00%					       Hold
 	       Hiring folks to do stuff we cannot do										
 	       Custom Text:   Slip: e1000
 
@@ -19866,7 +19866,7 @@ Last payment	    8/27/2013			Amount	      $25.07
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     3/23/2013  TomH							  101.19	    1.20	  121.43	   Billable
-	  650  Build Structure												       Hold
+	10650  Build Structure												       Hold
 	       Create something new												
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: t650
@@ -19939,7 +19939,7 @@ Last payment	    10/28/2013			Amount	      $400.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      2/7/2013  TomH							  103.20	    3.20	  330.24	   Billable
-	  300  Fix													       Hold
+	10300  Fix													       Hold
 	       Take something old and make it better										
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t300
@@ -20333,13 +20333,13 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     6/19/2013  ShawnR							  206.006	   6.125	1,324.88	Do Not Bill
-	 1359  First aid						    5.00%			1,324.8795	Client Hold
+	11359  First aid						    5.00%			1,324.8795	Client Hold
 	       Stuff used to glue fingers back on or tape wounds shut								
 	       Reference:     WALES-Project02
 	       Custom Text:   Slip: e1359
 
    10/29/2013  JamesR							  203.003	   3.125	  666.10	  No Charge
-	 2412  Cleanup Supplies 					    5.00%			  666.099	Client Hold
+	12412  Cleanup Supplies 					    5.00%			  666.099	Client Hold
 	       Trash Bags, trash bags, and more trash bags									
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: e2412
@@ -21105,7 +21105,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
    10/31/2013  TomH							  205.005	   5.125	1,103.18	   Override
-	 2425  Wood							    5.00%					       Hold
+	12425  Wood							    5.00%					       Hold
 	       Stuff used to build structures and other things									
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: e2425
@@ -21175,7 +21175,7 @@ Last payment	    11/27/2013			Amount	      $24.94
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     9/17/2013  TomH							  101.20	    7.20	  728.64	   Billable
-	 2075  DesignL													       Hold
+	12075  DesignL													       Hold
 	       Noodle about landscape												
 	       Reference:     III-Project
 	       Custom Text:   Slip: t2075
@@ -21247,7 +21247,7 @@ Last payment	    11/27/2013			Amount	      $25.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      8/4/2013  TomH							  158.01	    9.20	1,453.69	   Override
-	 1725  Lot Maintenance												       Hold
+	11725  Lot Maintenance												       Hold
 	       Mow, trim, dig up, and spread											
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t1725
@@ -21320,7 +21320,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     6/21/2013  TomH							  211.011	  11.125	2,464.88	   Billable
-	 1375  Safety							    5.00%					       Hold
+	11375  Safety							    5.00%					       Hold
 	       Protection for eyes, ears, hands, etc.										
 	       Reference:     WESTB-Project02
 	       Custom Text:   Slip: e1375
@@ -21390,7 +21390,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
      5/9/2013  TomH							  202.002	   2.125	  450.71	   Billable
-	 1025  Power Tools						    5.00%					       Hold
+	11025  Power Tools						    5.00%					       Hold
 	       Drills, skill saws, nail guns, etc.										
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: e1025
@@ -21460,7 +21460,7 @@ Last payment	    8/27/2013			Amount	      $22.35
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     3/26/2013  TomH							  235.04	    6.20	1,457.25	   Billable
-	  675  DesignS													       Hold
+	10675  DesignS													       Hold
 	       Noodle about a new structure											
 	       Reference:     III-Project
 	       Custom Text:   Slip: t675
@@ -21533,7 +21533,7 @@ Last payment	    10/28/2013			Amount	      $425.10
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     2/10/2013  TomH							   41.05	    5.20	  213.46	Do Not Bill
-	  325  Clean									    5.20	  213.46	       Hold
+	10325  Clean									    5.20	  213.46	       Hold
 	       Take away wreckage and trash and then sweep up									
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t325
@@ -22762,7 +22762,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     11/3/2013  TomH							  208.008	   8.125	1,774.57	   Override
-	 2450  Landscape Supplies					    5.00%					       Hold
+	12450  Landscape Supplies					    5.00%					       Hold
 	       Compost and other types of poop for plants									
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: e2450
@@ -22831,7 +22831,7 @@ Last payment	    11/27/2013			Amount	      $12.98
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     9/20/2013  TomH							  110.05	   10.20	1,122.51	  No Charge
-	 2100  Water Feature								   10.20	1,122.51	       Hold
+	12100  Water Feature								   10.20	1,122.51	       Hold
 	       Make something splash and flow											
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t2100
@@ -22902,7 +22902,7 @@ Last payment	    9/28/2013			Amount	      $446.09
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      8/7/2013  TomH							  101.06	    1.20	  121.27	   Billable
-	 1750  Build Structure												       Hold
+	11750  Build Structure												       Hold
 	       Create something new												
 	       Reference:     WINTH-Project01
 	       Custom Text:   Slip: t1750
@@ -22978,7 +22978,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     6/24/2013  TomH							  203.003	   3.125	  666.10	  No Charge
-	 1400  Cleanup Supplies 					    5.00%			  666.099	       Hold
+	11400  Cleanup Supplies 					    5.00%			  666.099	       Hold
 	       Trash Bags, trash bags, and more trash bags									
 	       Custom Text:   Slip: e1400
 
@@ -23050,7 +23050,7 @@ Total of billable time slips												      $0.00
 Date	       Timekeeper						   Price	Quantity	  Amount	      Total
 ID	       Expense							Markup %
     5/12/2013  TomH							  205.005	   5.125	1,103.18	   Override
-	 1050  Wood							    5.00%					       Hold
+	11050  Wood							    5.00%					       Hold
 	       Stuff used to build structures and other things									
 	       Reference:     EEE-Project
 	       Custom Text:   Slip: e1050
@@ -23120,7 +23120,7 @@ Last payment	    6/28/2013			Amount	      $449.06
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     3/29/2013  TomH							  107.09	    7.20	  771.05	   Billable
-	  700  DesignL													       Hold
+	10700  DesignL													       Hold
 	       Noodle about landscape												
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t700
@@ -23193,7 +23193,7 @@ Last payment	    11/27/2013			Amount	      $11.86
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     2/13/2013  TomH							  109.10	    9.20	1,003.72	   Override
-	  350  Lot Maintenance												       Hold
+	10350  Lot Maintenance												       Hold
 	       Mow, trim, dig up, and spread											
 	       Reference:     WRENT-Project01
 	       Custom Text:   Slip: t350

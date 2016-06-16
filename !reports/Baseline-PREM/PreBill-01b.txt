@@ -58,9 +58,9 @@ Total Previous Balance													    $127.31
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Abington - 1 - 1/28/2013								($101.01)
-	  177	      . Check No. 1
+	10177	      . Check No. 1
     1/28/2013  CRED   Abington - 1 - 1/28/2013								  ($1.01)
-	  265
+	10265
 
 
 
@@ -130,9 +130,9 @@ Total Previous Balance													    $240.28
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Acton - 2 - 1/28/2013								($102.01)
-	  178	      . Check No. 2
+	10178	      . Check No. 2
     1/28/2013  CRED   Acton - 2 - 1/28/2013								  ($1.01)
-	  266
+	10266
 
 
 
@@ -202,9 +202,9 @@ Total Previous Balance													    $342.89
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Acushnet - 3 - 1/28/2013								($103.01)
-	  179	      . Check No. 3
+	10179	      . Check No. 3
     1/28/2013  CRED   Acushnet - 3 - 1/28/2013								  ($1.01)
-	  267
+	10267
 
 
 
@@ -274,9 +274,9 @@ Total Previous Balance													    $670.85
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Adams - 4 - 1/28/2013								($104.01)
-	  180	      . Check No. 4
+	10180	      . Check No. 4
     1/28/2013  CRED   Adams - 4 - 1/28/2013								  ($1.01)
-	  268
+	10268
 
 
 
@@ -348,7 +348,7 @@ Total Previous Balance													    $441.39
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Agawam - 5 - 1/28/2013								($105.01)
-	  181	      . Check No. 5
+	10181	      . Check No. 5
 
 
 
@@ -360,7 +360,7 @@ Agawam:City of Agawam (continued)
 													  Amount	      Total
 
     1/28/2013  CRED   Agawam - 5 - 1/28/2013								  ($1.01)
-	  269
+	10269
     1/27/2013	      Payment from account								  ($5.99)
 Total Accounts Receivable												   ($112.01)
 
@@ -393,7 +393,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  CoreyM							  102.06	    5.20	  802.62	Do Not Bill
-	    6  Clean							   51.23%	    5.20	  802.62		
+	10006  Clean							   51.23%	    5.20	  802.62		
 	       Take away wreckage and trash and then sweep up					       Adj:51.23	  Recurring
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t6
@@ -444,7 +444,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  JamesR							  105.07	    7.20	  377.32	   Override
-	    7  DesignL							  -50.12%	    0.75	   39.30		
+	10007  DesignL							  -50.12%	    0.75	   39.30		
 	       Noodle about landscape								     Adj:(50.12)	  Recurring
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t7
@@ -523,7 +523,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  SamS							  103.08	    8.20	  421.59	   Override
-	    8  Planting 						  -50.12%	    0.75	   38.56		
+	10008  Planting 						  -50.12%	    0.75	   38.56		
 	       Plant all kinds of stuff 							     Adj:(50.12)	  Recurring
 	       Custom Text:   Slip: t8
 
@@ -575,7 +575,7 @@ Total Previous Balance													    $346.23
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Amherst - 8 - 1/28/2013								  ($1.01)
-	  270
+	10270
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -607,7 +607,7 @@ Last payment	    1/28/2013			Amount	      $109.01
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  ShawnR							  104.09	    9.20	1,448.27	   Override
-	    9  Lot Maintenance						   51.23%	    0.75	  118.07		
+	10009  Lot Maintenance						   51.23%	    0.75	  118.07		
 	       Mow, trim, dig up, and spread							       Adj:51.23	  Recurring
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t9
@@ -660,7 +660,7 @@ Total Previous Balance													  $1,436.69
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Andover - 9 - 1/28/2013								($109.01)
-	  182	      . Check No. 9
+	10182	      . Check No. 9
 Total Accounts Receivable												   ($109.01)
 
 New Balance
@@ -692,7 +692,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  TomH							  101.10	   10.20	1,559.56	  No Charge
-	   10  Water Feature						   51.23%	   10.20	1,559.56		
+	10010  Water Feature						   51.23%	   10.20	1,559.56		
 	       Make something splash and flow							       Adj:51.23	  Recurring
 	       Reference:     AQUIN-Project01
 	       Custom Text:   Slip: t10
@@ -905,7 +905,7 @@ Total Previous Balance													    $346.58
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Ashfield - 14 - 1/28/2013 							($114.01)
-	  183	      . Check No. 14
+	10183	      . Check No. 14
 Total Accounts Receivable												   ($114.01)
 
 New Balance
@@ -1048,7 +1048,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Attleboro - 17 - 1/28/2013							  ($1.01)
-	  271
+	10271
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -1147,7 +1147,7 @@ Total Previous Balance													    $888.53
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Avon - 19 - 1/28/2013								($119.01)
-	  184	      . Check No. 19
+	10184	      . Check No. 19
 Total Accounts Receivable												   ($119.01)
 
 New Balance
@@ -1381,7 +1381,7 @@ Total Previous Balance													    $384.48
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Bedford - 24 - 1/28/2013								($124.01)
-	  185	      . Check No. 24
+	10185	      . Check No. 24
 Total Accounts Receivable												   ($124.01)
 
 New Balance
@@ -1413,7 +1413,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      1/4/2013  TomH							    5.05	    3.20	   16.16	   Billable
-	   25  Fix													       Hold
+	10025  Fix													       Hold
 	       Take something old and make it better										
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t25
@@ -1481,7 +1481,7 @@ Total Previous Balance													  $1,522.11
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Bellingham - 26 - 1/28/2013							  ($1.01)
-	  272
+	10272
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -1621,7 +1621,7 @@ Total Previous Balance													    $944.16
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Berlin - 29 - 1/28/2013								($129.01)
-	  186	      . Check No. 29
+	10186	      . Check No. 29
 Total Accounts Receivable												   ($129.01)
 
 New Balance
@@ -1809,7 +1809,7 @@ Total Previous Balance													  $1,480.81
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  WOFF   Blackstone - 1 - 1/28/2013							  ($2.01)
-	  174
+	10174
 Total Accounts Receivable												     ($2.01)
 
 New Balance
@@ -1868,7 +1868,7 @@ Total Previous Balance													      $7.66
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Blandford - 34 - 1/28/2013							($134.01)
-	  187	      . Check No. 34
+	10187	      . Check No. 34
 Total Accounts Receivable												   ($134.01)
 
 
@@ -1929,7 +1929,7 @@ Total Previous Balance													    $387.02
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Bolton - 35 - 1/28/2013								  ($1.01)
-	  273
+	10273
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -2119,7 +2119,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Boxford - 39 - 1/28/2013								($139.01)
-	  188	      . Check No. 39
+	10188	      . Check No. 39
 Total Accounts Receivable												   ($139.01)
 
 Unapplied												($139.01)
@@ -2352,9 +2352,9 @@ Total Previous Balance													  $1,293.40
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Brimfield - 44 - 1/28/2013							($144.01)
-	  189	      . Check No. 44
+	10189	      . Check No. 44
     1/28/2013  CRED   Brimfield - 44 - 1/28/2013							  ($1.01)
-	  274
+	10274
 Total Accounts Receivable												   ($145.02)
 
 New Balance
@@ -2595,7 +2595,7 @@ Total Previous Balance													    $454.67
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Burlington - 49 - 1/28/2013							($149.01)
-	  190	      . Check No. 49
+	10190	      . Check No. 49
 Total Accounts Receivable												   ($149.01)
 
 New Balance
@@ -2627,7 +2627,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      1/7/2013  TomH							  105.10	    5.20	  546.52	Do Not Bill
-	   50  Clean									    5.20	  546.52	       Hold
+	10050  Clean									    5.20	  546.52	       Hold
 	       Take away wreckage and trash and then sweep up									
 	       Reference:     CAMBR-Project01
 	       Custom Text:   Slip: t50
@@ -2788,9 +2788,9 @@ Total Previous Balance													  $1,044.16
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  WOFF   Carver - 2 - 1/28/2013								  ($3.01)
-	  175
+	10175
     1/28/2013  CRED   Carver - 53 - 1/28/2013								  ($1.01)
-	  275
+	10275
 Total Accounts Receivable												     ($4.02)
 
 New Balance
@@ -2839,7 +2839,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Charlemont - 54 - 1/28/2013							($154.01)
-	  191	      . Check No. 54
+	10191	      . Check No. 54
 Total Accounts Receivable												   ($154.01)
 
 Unapplied												($154.01)
@@ -3079,7 +3079,7 @@ Total Previous Balance													    $684.72
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Cheshire - 59 - 1/28/2013 							($159.01)
-	  192	      . Check No. 59
+	10192	      . Check No. 59
 Total Accounts Receivable												   ($159.01)
 
 New Balance
@@ -3219,7 +3219,7 @@ Total Previous Balance													    $786.39
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Chicopee - 62 - 1/28/2013 							  ($1.01)
-	  276
+	10276
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -3319,7 +3319,7 @@ Total Previous Balance													    $995.46
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Clarksburg - 64 - 1/28/2013							($164.01)
-	  193	      . Check No. 64
+	10193	      . Check No. 64
 Total Accounts Receivable												   ($164.01)
 
 New Balance
@@ -3559,7 +3559,7 @@ Total Previous Balance													    $346.41
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Conway - 69 - 1/28/2013								($169.01)
-	  194	      . Check No. 69
+	10194	      . Check No. 69
 Total Accounts Receivable												   ($169.01)
 
 
@@ -3668,7 +3668,7 @@ Total Previous Balance													    $446.01
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Dalton - 71 - 1/28/2013								  ($1.01)
-	  277
+	10277
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -3808,7 +3808,7 @@ Total Previous Balance													    $888.11
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Dedham - 74 - 1/28/2013								($174.01)
-	  195	      . Check No. 74
+	10195	      . Check No. 74
 Total Accounts Receivable												   ($174.01)
 
 New Balance
@@ -3840,7 +3840,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/10/2013  TomH							  101.15	    9.20	  930.58	   Override
-	   75  Lot Maintenance												       Hold
+	10075  Lot Maintenance												       Hold
 	       Mow, trim, dig up, and spread											
 	       Reference:     DEERF-Project02
 	       Custom Text:   Slip: t75
@@ -4042,7 +4042,7 @@ Total Previous Balance													    $238.39
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Dover - 79 - 1/28/2013								($179.01)
-	  196	      . Check No. 79
+	10196	      . Check No. 79
 Total Accounts Receivable												   ($179.01)
 
 New Balance
@@ -4095,7 +4095,7 @@ Total Previous Balance													    $336.79
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Dracut - 80 - 1/28/2013								  ($1.01)
-	  278
+	10278
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -4282,9 +4282,9 @@ Total Previous Balance													  $2,089.45
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    East.Bridgewater - 84 - 1/28/2013 						($184.01)
-	  197	      . Check No. 84
+	10197	      . Check No. 84
     1/28/2013  TRN    East.Bridgewater - 1 - 1/28/2013							  $11.01
-	  255
+	10255
 Total Accounts Receivable												   ($173.00)
 
 New Balance
@@ -4347,11 +4347,11 @@ Total Previous Balance													  $1,126.12
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    East.Brookfield - 85 - 1/28/2013							($185.01)
-	  198	      . Check No. 85
+	10198	      . Check No. 85
     1/28/2013  PAY    Transferred payment								 ($11.01)
-	  256
+	10256
     1/28/2013  TRNF   East.Brookfield - 1 - 1/28/2013							 $185.01
-	  261
+	10261
 Total Accounts Receivable												    ($11.01)
 
 New Balance
@@ -4548,9 +4548,9 @@ Total Previous Balance													    $349.55
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Easton - 89 - 1/28/2013								($189.01)
-	  199	      . Check No. 89
+	10199	      . Check No. 89
     1/28/2013  CRED   Easton - 89 - 1/28/2013								  ($1.01)
-	  279
+	10279
 Total Accounts Receivable												   ($190.02)
 
 New Balance
@@ -4787,7 +4787,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Everett - 94 - 1/28/2013								($194.01)
-	  200	      . Check No. 94
+	10200	      . Check No. 94
 Total Accounts Receivable												   ($194.01)
 
 Unapplied												($194.01)
@@ -4976,7 +4976,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Fitchburg - 98 - 1/28/2013							  ($1.01)
-	  280
+	10280
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -5028,7 +5028,7 @@ Total Previous Balance													    $794.28
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Florida - 99 - 1/28/2013								($199.01)
-	  201	      . Check No. 99
+	10201	      . Check No. 99
 Total Accounts Receivable												   ($199.01)
 
 New Balance
@@ -5060,7 +5060,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/13/2013  TomH							  241.20	    1.20	  289.44	   Billable
-	  100  Build Structure												       Hold
+	10100  Build Structure												       Hold
 	       Create something new												
 	       Reference:     FOXBO-Project02
 	       Custom Text:   Slip: t100
@@ -5275,7 +5275,7 @@ Total Previous Balance													    $454.45
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Gardner - 104 - 1/28/2013 							($204.01)
-	  202	      . Check No. 104
+	10202	      . Check No. 104
 Total Accounts Receivable												   ($204.01)
 
 
@@ -5424,7 +5424,7 @@ Total Previous Balance													    $921.62
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Gloucester - 107 - 1/28/2013							  ($1.01)
-	  281
+	10281
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -5520,7 +5520,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Gosnold - 109 - 1/28/2013 							($209.01)
-	  203	      . Check No. 109
+	10203	      . Check No. 109
 Total Accounts Receivable												   ($209.01)
 
 Unapplied												($209.01)
@@ -5760,7 +5760,7 @@ Total Previous Balance													    $684.39
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Greenfield - 114 - 1/28/2013							($214.01)
-	  204	      . Check No. 114
+	10204	      . Check No. 114
 Total Accounts Receivable												   ($214.01)
 
 New Balance
@@ -5856,7 +5856,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Groveland - 116 - 1/28/2013							  ($1.01)
-	  282
+	10282
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -5908,7 +5908,7 @@ Total Previous Balance													    $802.48
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    bds-pay: Hadley - 1/28/2013							 ($31.01)
-	  309	      . Check No. pay-1-1
+	10309	      . Check No. pay-1-1
 Total Accounts Receivable												    ($31.01)
 
 New Balance
@@ -5961,7 +5961,7 @@ Total Previous Balance													    $922.56
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    bds-pay: Halifax - 1/28/2013							 ($32.01)
-	  310	      . Check No. pay-2-1
+	10310	      . Check No. pay-2-1
 Total Accounts Receivable												    ($32.01)
 
 New Balance
@@ -6014,7 +6014,7 @@ Total Previous Balance													  $1,044.73
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Hamilton - 119 - 1/28/2013							($219.01)
-	  205	      . Check No. 119
+	10205	      . Check No. 119
 Total Accounts Receivable												   ($219.01)
 
 New Balance
@@ -6248,7 +6248,7 @@ Total Previous Balance													    $346.25
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Hardwick - 124 - 1/28/2013							($224.01)
-	  206	      . Check No. 124
+	10206	      . Check No. 124
 Total Accounts Receivable												   ($224.01)
 
 New Balance
@@ -6280,7 +6280,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/16/2013  TomH							  101.05	    6.20	  626.51	   Billable
-	  125  DesignS													       Hold
+	10125  DesignS													       Hold
 	       Noodle about a new structure											
 	       Reference:     III-Project
 	       Custom Text:   Slip: t125
@@ -6304,7 +6304,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Harvard - 125 - 1/28/2013 							  ($1.01)
-	  283
+	10283
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -6499,9 +6499,9 @@ Total Previous Balance													    $887.68
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Hawley - 129 - 1/28/2013								($229.01)
-	  207	      . Check No. 129
+	10207	      . Check No. 129
     1/28/2013  REF    Refund: Hawley - 1/28/2013							  $99.01
-	  264
+	10264
 Total Accounts Receivable												   ($130.00)
 
 New Balance
@@ -6745,9 +6745,9 @@ Total Previous Balance													    $238.27
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Holden - 134 - 1/28/2013								($234.01)
-	  208	      . Check No. 134
+	10208	      . Check No. 134
     1/28/2013  CRED   Holden - 134 - 1/28/2013								  ($1.01)
-	  284
+	10284
 Total Accounts Receivable												   ($235.02)
 
 New Balance
@@ -6987,7 +6987,7 @@ Total Previous Balance													    $780.18
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Hopkinton - 139 - 1/28/2013							($239.01)
-	  209	      . Check No. 139
+	10209	      . Check No. 139
 Total Accounts Receivable												   ($239.01)
 
 
@@ -7183,7 +7183,7 @@ Total Previous Balance													    $268.26
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Huntington - 143 - 1/28/2013							  ($1.01)
-	  285
+	10285
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -7236,7 +7236,7 @@ Total Previous Balance													    $275.86
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Ipswich - 144 - 1/28/2013 							($244.01)
-	  210	      . Check No. 144
+	10210	      . Check No. 144
 Total Accounts Receivable												   ($244.01)
 
 New Balance
@@ -7473,7 +7473,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Lawrence - 149 - 1/28/2013							($249.01)
-	  211	      . Check No. 149
+	10211	      . Check No. 149
 Total Accounts Receivable												   ($249.01)
 
 Unapplied												($249.01)
@@ -7504,7 +7504,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/19/2013  TomH							   61.10	    7.20	  439.92	   Billable
-	  150  DesignL													       Hold
+	10150  DesignL													       Hold
 	       Noodle about landscape												
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t150
@@ -7619,7 +7619,7 @@ Total Previous Balance													    $594.36
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Lenox - 152 - 1/28/2013								  ($1.01)
-	  286
+	10286
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -7712,7 +7712,7 @@ Total Previous Balance													    $281.18
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Leverett - 154 - 1/28/2013							($254.01)
-	  212	      . Check No. 154
+	10212	      . Check No. 154
 Total Accounts Receivable												   ($254.01)
 
 New Balance
@@ -7953,7 +7953,7 @@ Total Previous Balance													    $206.13
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Longmeadow - 159 - 1/28/2013							($259.01)
-	  213	      . Check No. 159
+	10213	      . Check No. 159
 Total Accounts Receivable												   ($259.01)
 
 Unapplied												 ($52.88)
@@ -8045,7 +8045,7 @@ Total Previous Balance													    $801.29
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Ludlow - 161 - 1/28/2013								  ($1.01)
-	  287
+	10287
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -8188,7 +8188,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Lynnfield - 164 - 1/28/2013							($264.01)
-	  214	      . Check No. 164
+	10214	      . Check No. 164
 Total Accounts Receivable												   ($264.01)
 
 Unapplied												($264.01)
@@ -8428,7 +8428,7 @@ Total Previous Balance													    $684.07
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Marion - 169 - 1/28/2013								($269.01)
-	  215	      . Check No. 169
+	10215	      . Check No. 169
 Total Accounts Receivable												   ($269.01)
 
 New Balance
@@ -8481,7 +8481,7 @@ Total Previous Balance													    $454.71
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Marlborough - 170 - 1/28/2013							  ($1.01)
-	  288
+	10288
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -8674,7 +8674,7 @@ Total Previous Balance													  $1,044.25
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Maynard - 174 - 1/28/2013 							($274.01)
-	  216	      . Check No. 174
+	10216	      . Check No. 174
 Total Accounts Receivable												   ($274.01)
 
 
@@ -8715,7 +8715,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/22/2013  TomH							  110.15	   10.20	1,123.53	  No Charge
-	  175  Water Feature								   10.20	1,123.53	       Hold
+	10175  Water Feature								   10.20	1,123.53	       Hold
 	       Make something splash and flow											
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t175
@@ -8923,9 +8923,9 @@ Total Previous Balance													    $343.42
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Mendon - 179 - 1/28/2013								($279.01)
-	  217	      . Check No. 179
+	10217	      . Check No. 179
     1/28/2013  CRED   Mendon - 179 - 1/28/2013								  ($1.01)
-	  289
+	10289
 Total Accounts Receivable												   ($280.02)
 
 New Balance
@@ -9159,7 +9159,7 @@ Total Previous Balance													    $887.26
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Middleton - 184 - 1/28/2013							($284.01)
-	  218	      . Check No. 184
+	10218	      . Check No. 184
 Total Accounts Receivable												   ($284.01)
 
 New Balance
@@ -9346,7 +9346,7 @@ Total Previous Balance													    $128.65
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Millville - 188 - 1/28/2013							  ($1.01)
-	  290
+	10290
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -9399,7 +9399,7 @@ Total Previous Balance													    $238.16
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Milton - 189 - 1/28/2013								($289.01)
-	  219	      . Check No. 189
+	10219	      . Check No. 189
 Total Accounts Receivable												   ($289.01)
 
 Unapplied												 ($50.85)
@@ -9632,7 +9632,7 @@ Total Previous Balance													    $779.80
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Montgomery - 194 - 1/28/2013							($294.01)
-	  220	      . Check No. 194
+	10220	      . Check No. 194
 Total Accounts Receivable												   ($294.01)
 
 New Balance
@@ -9775,7 +9775,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Nantucket - 197 - 1/28/2013							  ($1.01)
-	  291
+	10291
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -9827,7 +9827,7 @@ Total Previous Balance													  $1,201.84
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  DISC   Discount: Natick - 1/28/2013							 ($49.01)
-	  176
+	10176
 Total Accounts Receivable												    ($49.01)
 
 New Balance
@@ -9880,7 +9880,7 @@ Total Previous Balance													    $130.03
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Needham - 199 - 1/28/2013 							($299.01)
-	  221	      . Check No. 199
+	10221	      . Check No. 199
 Total Accounts Receivable												   ($299.01)
 
 Unapplied												($168.98)
@@ -9911,7 +9911,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/25/2013  TomH							  101.20	    2.20	  222.64	   Billable
-	  200  DemoS													       Hold
+	10200  DemoS													       Hold
 	       Rip down something old												
 	       Custom Text:   Slip: t200
 
@@ -10115,7 +10115,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    New Salem - 204 - 1/28/2013							($304.01)
-	  222	      . Check No. 204
+	10222	      . Check No. 204
 Total Accounts Receivable												   ($304.01)
 
 Unapplied												($304.01)
@@ -10214,7 +10214,7 @@ Total Previous Balance													  $1,927.84
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Newburyport - 206 - 1/28/2013							  ($1.01)
-	  292
+	10292
 Total Accounts Receivable												     ($1.01)
 
 New Balance
@@ -10360,9 +10360,9 @@ Total Previous Balance													    $769.82
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    North.Adams - 209 - 1/28/2013							($309.01)
-	  223	      . Check No. 209
+	10223	      . Check No. 209
     1/28/2013  TRN    North.Adams - 2 - 1/28/2013							  $12.01
-	  257
+	10257
 
 
 
@@ -10426,11 +10426,11 @@ Total Previous Balance													    $248.48
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    North.Andover - 210 - 1/28/2013							($310.01)
-	  224	      . Check No. 210
+	10224	      . Check No. 210
     1/28/2013  PAY    Transferred payment								 ($12.01)
-	  258
+	10258
     1/28/2013  TRNF   North.Andover - 2 - 1/28/2013							  $61.53
-	  262
+	10262
 Total Accounts Receivable												   ($260.49)
 
 Unapplied												 ($12.01)
@@ -10632,7 +10632,7 @@ Total Previous Balance													    $118.55
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Northampton - 214 - 1/28/2013							($314.01)
-	  225	      . Check No. 214
+	10225	      . Check No. 214
 Total Accounts Receivable												   ($314.01)
 
 Unapplied												($195.46)
@@ -10680,7 +10680,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Northborough - 215 - 1/28/2013							  ($1.01)
-	  293
+	10293
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -10855,7 +10855,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Norwell - 219 - 1/28/2013 							($319.01)
-	  226	      . Check No. 219
+	10226	      . Check No. 219
 Total Accounts Receivable												   ($319.01)
 
 Unapplied												($319.01)
@@ -11063,9 +11063,9 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Orleans - 224 - 1/28/2013 							($324.01)
-	  227	      . Check No. 224
+	10227	      . Check No. 224
     1/28/2013  CRED   Orleans - 224 - 1/28/2013 							  ($1.01)
-	  294
+	10294
 Total Accounts Receivable												   ($325.02)
 
 Unapplied												($325.02)
@@ -11303,7 +11303,7 @@ Total Previous Balance													    $308.72
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Peabody - 229 - 1/28/2013 							($329.01)
-	  228	      . Check No. 229
+	10228	      . Check No. 229
 Total Accounts Receivable												   ($329.01)
 
 Unapplied												 ($20.29)
@@ -11471,7 +11471,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Peru - 233 - 1/28/2013								  ($1.01)
-	  295
+	10295
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -11519,7 +11519,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Petersham - 234 - 1/28/2013							($334.01)
-	  229	      . Check No. 234
+	10229	      . Check No. 234
 Total Accounts Receivable												   ($334.01)
 
 Unapplied												($334.01)
@@ -11727,7 +11727,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Plymouth - 239 - 1/28/2013							($339.01)
-	  230	      . Check No. 239
+	10230	      . Check No. 239
 Total Accounts Receivable												   ($339.01)
 
 Unapplied												($339.01)
@@ -11855,7 +11855,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Provincetown - 242 - 1/28/2013							  ($1.01)
-	  296
+	10296
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -11949,7 +11949,7 @@ Total new charges													    $244.99
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Randolph - 244 - 1/28/2013							($344.01)
-	  231	      . Check No. 244
+	10231	      . Check No. 244
 Total Accounts Receivable												   ($344.01)
 
 Unapplied												 ($99.02)
@@ -12157,7 +12157,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Richmond - 249 - 1/28/2013							($349.01)
-	  232	      . Check No. 249
+	10232	      . Check No. 249
 Total Accounts Receivable												   ($349.01)
 
 Unapplied												($349.01)
@@ -12245,7 +12245,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Rockland - 251 - 1/28/2013							  ($1.01)
-	  297
+	10297
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -12373,7 +12373,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Rowley - 254 - 1/28/2013								($354.01)
-	  233	      . Check No. 254
+	10233	      . Check No. 254
 Total Accounts Receivable												   ($354.01)
 
 Unapplied												($354.01)
@@ -12581,7 +12581,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Salisbury - 259 - 1/28/2013							($359.01)
-	  234	      . Check No. 259
+	10234	      . Check No. 259
 Total Accounts Receivable												   ($359.01)
 
 Unapplied												($359.01)
@@ -12629,7 +12629,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Sandisfield - 260 - 1/28/2013							  ($1.01)
-	  298
+	10298
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -12830,7 +12830,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Scituate - 264 - 1/28/2013							($364.01)
-	  235	      . Check No. 264
+	10235	      . Check No. 264
 Total Accounts Receivable												   ($364.01)
 
 Unapplied												($364.01)
@@ -13038,9 +13038,9 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Sherborn - 269 - 1/28/2013							($369.01)
-	  236	      . Check No. 269
+	10236	      . Check No. 269
     1/28/2013  CRED   Sherborn - 269 - 1/28/2013							  ($1.01)
-	  299
+	10299
 Total Accounts Receivable												   ($370.02)
 
 Unapplied												($370.02)
@@ -13248,7 +13248,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Somerville - 274 - 1/28/2013							($374.01)
-	  237	      . Check No. 274
+	10237	      . Check No. 274
 Total Accounts Receivable												   ($374.01)
 
 Unapplied												($374.01)
@@ -13416,7 +13416,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Southbridge - 278 - 1/28/2013							  ($1.01)
-	  300
+	10300
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -13470,7 +13470,7 @@ Total new charges													    $279.99
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Southwick - 279 - 1/28/2013							($379.01)
-	  238	      . Check No. 279
+	10238	      . Check No. 279
 Total Accounts Receivable												   ($379.01)
 
 Unapplied												 ($99.02)
@@ -13678,7 +13678,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Stoneham - 284 - 1/28/2013							($384.01)
-	  239	      . Check No. 284
+	10239	      . Check No. 284
 Total Accounts Receivable												   ($384.01)
 
 Unapplied												($384.01)
@@ -13806,7 +13806,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Sturbridge - 287 - 1/28/2013							  ($1.01)
-	  301
+	10301
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -13894,7 +13894,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Sunderland - 289 - 1/28/2013							($389.01)
-	  240	      . Check No. 289
+	10240	      . Check No. 289
 Total Accounts Receivable												   ($389.01)
 
 Unapplied												($389.01)
@@ -14102,7 +14102,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Templeton - 294 - 1/28/2013							($394.01)
-	  241	      . Check No. 294
+	10241	      . Check No. 294
 Total Accounts Receivable												   ($394.01)
 
 Unapplied												($394.01)
@@ -14190,7 +14190,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Tisbury - 296 - 1/28/2013 							  ($1.01)
-	  302
+	10302
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -14318,7 +14318,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Townsend - 299 - 1/28/2013							($399.01)
-	  242	      . Check No. 299
+	10242	      . Check No. 299
 Total Accounts Receivable												   ($399.01)
 
 Unapplied												($399.01)
@@ -14526,7 +14526,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Uxbridge - 304 - 1/28/2013							($404.01)
-	  243	      . Check No. 304
+	10243	      . Check No. 304
 Total Accounts Receivable												   ($404.01)
 
 Unapplied												($404.01)
@@ -14574,7 +14574,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Wakefield - 305 - 1/28/2013							  ($1.01)
-	  303
+	10303
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -14702,7 +14702,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Ware - 309 - 1/28/2013								($409.01)
-	  244	      . Check No. 309
+	10244	      . Check No. 309
 Total Accounts Receivable												   ($409.01)
 
 Unapplied												($409.01)
@@ -14916,9 +14916,9 @@ Total new charges													    $314.99
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Watertown - 314 - 1/28/2013							($414.01)
-	  245	      . Check No. 314
+	10245	      . Check No. 314
     1/28/2013  CRED   Watertown - 314 - 1/28/2013							  ($1.01)
-	  304
+	10304
 Total Accounts Receivable												   ($415.02)
 
 Unapplied												($100.03)
@@ -15135,7 +15135,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Wendell - 319 - 1/28/2013 							($419.01)
-	  246	      . Check No. 319
+	10246	      . Check No. 319
 Total Accounts Receivable												   ($419.01)
 
 Unapplied												($419.01)
@@ -15223,9 +15223,9 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    West.Boylston - 321 - 1/28/2013							($421.01)
-	  247	      . Check No. 321
+	10247	      . Check No. 321
     1/28/2013  TRN    West.Boylston - 3 - 1/28/2013							  $13.01
-	  259
+	10259
 Total Accounts Receivable												   ($408.00)
 
 Unapplied												($408.00)
@@ -15273,11 +15273,11 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    West.Bridgewater - 322 - 1/28/2013						($422.01)
-	  248	      . Check No. 322
+	10248	      . Check No. 322
     1/28/2013  PAY    Transferred payment								 ($13.01)
-	  260
+	10260
     1/28/2013  TRNF   West.Bridgewater - 3 - 1/28/2013							 $422.01
-	  263
+	10263
 Total Accounts Receivable												    ($13.01)
 
 Unapplied												 ($13.01)
@@ -15325,7 +15325,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   West.Brookfield - 323 - 1/28/2013 						  ($1.01)
-	  305
+	10305
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -15373,7 +15373,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    West.Newbury - 324 - 1/28/2013							($424.01)
-	  249	      . Check No. 324
+	10249	      . Check No. 324
 Total Accounts Receivable												   ($424.01)
 
 Unapplied												($424.01)
@@ -15581,7 +15581,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Westfield - 329 - 1/28/2013							($429.01)
-	  250	      . Check No. 329
+	10250	      . Check No. 329
 Total Accounts Receivable												   ($429.01)
 
 Unapplied												($429.01)
@@ -15709,7 +15709,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Westminster - 332 - 1/28/2013							  ($1.01)
-	  306
+	10306
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -15797,7 +15797,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Westport - 334 - 1/28/2013							($434.01)
-	  251	      . Check No. 334
+	10251	      . Check No. 334
 Total Accounts Receivable												   ($434.01)
 
 Unapplied												($434.01)
@@ -16005,7 +16005,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Wilbraham - 339 - 1/28/2013							($439.01)
-	  252	      . Check No. 339
+	10252	      . Check No. 339
 Total Accounts Receivable												   ($439.01)
 
 Unapplied												($439.01)
@@ -16093,7 +16093,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Williamstown - 341 - 1/28/2013							  ($1.01)
-	  307
+	10307
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)
@@ -16221,7 +16221,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Winchester - 344 - 1/28/2013							($444.01)
-	  253	      . Check No. 344
+	10253	      . Check No. 344
 Total Accounts Receivable												   ($444.01)
 
 Unapplied												($444.01)
@@ -16435,7 +16435,7 @@ Total new charges													    $349.99
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  PAY    Worthington - 349 - 1/28/2013							($449.01)
-	  254	      . Check No. 349
+	10254	      . Check No. 349
 Total Accounts Receivable												   ($449.01)
 
 Unapplied												 ($99.02)
@@ -16483,7 +16483,7 @@ Total new charges													      $0.00
 Accounts Receivables
 Date|ID        Type   Description
     1/28/2013  CRED   Wrentham - 350 - 1/28/2013							  ($1.01)
-	  308
+	10308
 Total Accounts Receivable												     ($1.01)
 
 Unapplied												  ($1.01)

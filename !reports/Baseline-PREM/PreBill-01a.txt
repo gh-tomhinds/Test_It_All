@@ -268,7 +268,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  CoreyM							  102.06	    5.20	  802.62	Do Not Bill
-	    6  Clean							   51.23%	    5.20	  802.62		
+	10006  Clean							   51.23%	    5.20	  802.62		
 	       Take away wreckage and trash and then sweep up					       Adj:51.23	  Recurring
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t6
@@ -319,7 +319,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  JamesR							  105.07	    7.20	  377.32	   Override
-	    7  DesignL							  -50.12%	    0.75	   39.30		
+	10007  DesignL							  -50.12%	    0.75	   39.30		
 	       Noodle about landscape								     Adj:(50.12)	  Recurring
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t7
@@ -398,7 +398,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  SamS							  103.08	    8.20	  421.59	   Override
-	    8  Planting 						  -50.12%	    0.75	   38.56		
+	10008  Planting 						  -50.12%	    0.75	   38.56		
 	       Plant all kinds of stuff 							     Adj:(50.12)	  Recurring
 	       Custom Text:   Slip: t8
 
@@ -476,7 +476,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  ShawnR							  104.09	    9.20	1,448.27	   Override
-	    9  Lot Maintenance						   51.23%	    0.75	  118.07		
+	10009  Lot Maintenance						   51.23%	    0.75	  118.07		
 	       Mow, trim, dig up, and spread							       Adj:51.23	  Recurring
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t9
@@ -555,7 +555,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/27/2013  TomH							  101.10	   10.20	1,559.56	  No Charge
-	   10  Water Feature						   51.23%	   10.20	1,559.56		
+	10010  Water Feature						   51.23%	   10.20	1,559.56		
 	       Make something splash and flow							       Adj:51.23	  Recurring
 	       Reference:     AQUIN-Project01
 	       Custom Text:   Slip: t10
@@ -1250,7 +1250,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      1/4/2013  TomH							    5.05	    3.20	   16.16	   Billable
-	   25  Fix													       Hold
+	10025  Fix													       Hold
 	       Take something old and make it better										
 	       Reference:     AAA-Project
 	       Custom Text:   Slip: t25
@@ -2398,7 +2398,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
      1/7/2013  TomH							  105.10	    5.20	  546.52	Do Not Bill
-	   50  Clean									    5.20	  546.52	       Hold
+	10050  Clean									    5.20	  546.52	       Hold
 	       Take away wreckage and trash and then sweep up									
 	       Reference:     CAMBR-Project01
 	       Custom Text:   Slip: t50
@@ -3544,7 +3544,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/10/2013  TomH							  101.15	    9.20	  930.58	   Override
-	   75  Lot Maintenance												       Hold
+	10075  Lot Maintenance												       Hold
 	       Mow, trim, dig up, and spread											
 	       Reference:     DEERF-Project02
 	       Custom Text:   Slip: t75
@@ -4684,7 +4684,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/13/2013  TomH							  241.20	    1.20	  289.44	   Billable
-	  100  Build Structure												       Hold
+	10100  Build Structure												       Hold
 	       Create something new												
 	       Reference:     FOXBO-Project02
 	       Custom Text:   Slip: t100
@@ -5831,7 +5831,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/16/2013  TomH							  101.05	    6.20	  626.51	   Billable
-	  125  DesignS													       Hold
+	10125  DesignS													       Hold
 	       Noodle about a new structure											
 	       Reference:     III-Project
 	       Custom Text:   Slip: t125
@@ -6971,7 +6971,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/19/2013  TomH							   61.10	    7.20	  439.92	   Billable
-	  150  DesignL													       Hold
+	10150  DesignL													       Hold
 	       Noodle about landscape												
 	       Reference:     OOO-Project
 	       Custom Text:   Slip: t150
@@ -8118,7 +8118,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/22/2013  TomH							  110.15	   10.20	1,123.53	  No Charge
-	  175  Water Feature								   10.20	1,123.53	       Hold
+	10175  Water Feature								   10.20	1,123.53	       Hold
 	       Make something splash and flow											
 	       Reference:     UUU-Project
 	       Custom Text:   Slip: t175
@@ -9264,7 +9264,7 @@ Last payment					Amount	      $0.00
 Date	       Timekeeper						    Rate	   Hours	  Amount	      Total
 ID	       Task							Markup %	DNB Time	 DNB Amt
     1/25/2013  TomH							  101.20	    2.20	  222.64	   Billable
-	  200  DemoS													       Hold
+	10200  DemoS													       Hold
 	       Rip down something old												
 	       Custom Text:   Slip: t200
 

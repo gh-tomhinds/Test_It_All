@@ -16,25 +16,25 @@ Fees
        Adjustments													    ($49.02)
 
 Costs
-       Billable 													  $2,173.75
-       Do Not Bill													  $1,908.26
-       No Charge													    $959.40
-       Override 													  $2,222.76
-       Adjustments													    ($49.01)
+       Billable 													      $0.00
+       Do Not Bill													      $0.00
+       No Charge													      $0.00
+       Override 													      $0.00
+       Adjustments													      $0.00
 
 Total Fees & Costs
-       Billable 													  $4,175.98
-       Do Not Bill													  $2,906.81
-       No Charge													  $2,518.96
-       Override 													  $4,274.01
-       Adjustments													    ($98.03)
+       Billable 													  $2,002.23
+       Do Not Bill													    $998.55
+       No Charge													  $1,559.56
+       Override 													  $2,051.25
+       Adjustments													    ($49.02)
 
 Taxes
        Taxable Fees													  $2,002.23
        Tax on Fees													     $80.10
-       Taxable Costs													  $2,173.75
-       Tax on Costs													     $92.39
-       Total Tax													    $172.49
+       Taxable Costs													      $0.00
+       Tax on Costs													      $0.00
+       Total Tax													     $80.10
 
 Miscellaneous
        Interest 													      $0.00
@@ -42,15 +42,15 @@ Miscellaneous
        Discounts													      $0.00
 
 Accounts Receivable
-       Payments 													($20,898.73)
+       Payments 													($20,878.70)
        Credits														   ($137.90)
        Write Offs													     ($5.04)
        Refunds														     $99.02
-       Invoices 													  $6,323.30
+       Invoices 													  $4,057.16
        Transfers													    $655.11
        Increase Invoice Details 											      $0.00
        Decrease Invoice Details 											      $0.00
-       Total														($20,287.54)
+       Total														($20,267.51)
 
 
 
@@ -59,15 +59,15 @@ Accounts Receivable
 
 Funds Accounts
        Previous Balance 												    $842.70
-       Payment From Account												    ($61.07)
+       Payment From Account												    ($41.04)
        Payment To Account												  $2,213.33
        Withdrawals													      $0.00
        Deposits 													     $23.04
-       Auto Payments													     $61.07
-       Total Amount Removed												    ($61.07)
+       Auto Payments													     $41.04
+       Total Amount Removed												    ($41.04)
        Total Amount Added												  $2,236.37
-       Total (Included) 												  $2,175.30
-       New Balance													  $3,018.00
+       Total (Included) 												  $2,195.33
+       New Balance													  $3,038.03
 
 Previous Balance
        120 Days 													      $0.00
@@ -83,9 +83,9 @@ New Balance
        90 Days														      $0.00
        60 Days														      $0.00
        30 Days														$111,027.76
-       Current														$154,568.98
+       Current														$152,322.87
        Unapplied													 ($9,538.79)
 
-       Balance Due													$256,057.95
+       Balance Due													$253,811.84
 
-       Balance Due with Funds												$262,642.95
+       Balance Due with Funds												$260,376.81
