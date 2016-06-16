@@ -1,12 +1,12 @@
 
 
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
+6/16/2016					       TS Handyman Services
+10:42 AM					     A/R with Running Balances					      Page	  1
 
 							Selection Criteria
 
 Clie.Classification	     Open
-A/R.Transaction Date	     12/1/2013 - Latest
+A/R.Transaction Date	     12/1/2013 - 12/31/2013
 
 Client
  Date		 Type	 Description									   Value	    Balance
@@ -23,12 +23,19 @@ Beginning Balance													       0.00
 
 Ending Balance														    2764.21
 
+BA-Absolute-NoSlips
+Beginning Balance													       0.00
+      12/27/2013 INV	 Invoice No. 12356								 1040.00	    1040.00
+      12/27/2013 INV	 Invoice No. 12357								 1040.00	    2080.00
+      12/27/2013 INV	 Invoice No. 12358								 1040.00	    3120.00
+
+Ending Balance														    3120.00
+
 BA-Absolute-Time
 Beginning Balance													       0.00
       12/27/2013 INV	 Invoice No. 12353								 3556.80	    3556.80
 
 Ending Balance														    3556.80
-
 
 BA-AdjExpense
 Beginning Balance													       0.00
@@ -39,6 +46,14 @@ Ending Balance														    2873.15
 BA-AdjTask
 Beginning Balance													       0.00
       12/27/2013 INV	 Invoice No. 12351								 2674.37	    2674.37
+
+
+
+6/16/2016					       TS Handyman Services
+10:42 AM					     A/R with Running Balances					      Page	  2
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														    2674.37
 
@@ -47,21 +62,12 @@ Beginning Balance													       0.00
       12/27/2013 INV	 Invoice No. 12350								 2674.37	    2674.37
 
 Ending Balance														    2674.37
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
 
 BA-AdjTK-Exp
 Beginning Balance													       0.00
       12/27/2013 INV	 Invoice No. 12349								 2873.15	    2873.15
 
 Ending Balance														    2873.15
-
 
 BA-AdjTK-Time
 Beginning Balance													       0.00
@@ -74,7 +80,6 @@ Beginning Balance													       0.00
       12/27/2013 INV	 Invoice No. 12347								 2904.66	    2904.66
 
 Ending Balance														    2904.66
-
 
 BA-AdjTot-Exp
 Beginning Balance													       0.00
@@ -91,53 +96,70 @@ Ending Balance														    2674.37
 
 BA-Cont-Both
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12369								 1595.65	    1595.65
-      12/27/2013 INV	 Invoice No. 12370								 2116.74	    3712.39
+
+
+
+6/16/2016					       TS Handyman Services
+10:42 AM					     A/R with Running Balances					      Page	  3
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+      12/27/2013 INV	 Invoice No. 12372								 1595.65	    1595.65
+      12/27/2013 INV	 Invoice No. 12373								 2116.74	    3712.39
 
 Ending Balance														    3712.39
 
 BA-Cont-Exp
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12367								 1721.71	    1721.71
-      12/27/2013 INV	 Invoice No. 12368								 2242.96	    3964.67
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
+      12/27/2013 INV	 Invoice No. 12370								 1721.71	    1721.71
+      12/27/2013 INV	 Invoice No. 12371								 2242.96	    3964.67
 
 Ending Balance														    3964.67
 
 BA-Cont-Time
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12365								 2516.80	    2516.80
-      12/27/2013 INV	 Invoice No. 12366								 3556.80	    6073.60
+      12/27/2013 INV	 Invoice No. 12368								 2516.80	    2516.80
+      12/27/2013 INV	 Invoice No. 12369								 3556.80	    6073.60
 
 Ending Balance														    6073.60
 
+
 BA-FFPlus-Both
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12364								 3163.96	    3163.96
+      12/27/2013 INV	 Invoice No. 12367								 3163.96	    3163.96
 
 Ending Balance														    3163.96
 
 BA-FFPlus-Exp
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12363								 3164.11	    3164.11
+      12/27/2013 INV	 Invoice No. 12366								 3164.11	    3164.11
 
 Ending Balance														    3164.11
 
+
 BA-FFPlus-Time
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12362								 3162.86	    3162.86
+      12/27/2013 INV	 Invoice No. 12365								 3162.86	    3162.86
 
 Ending Balance														    3162.86
 
-
 BA-InterimAct
+Beginning Balance													       0.00
+      12/27/2013 INV	 Invoice No. 12387								 3036.80	    3036.80
+      12/27/2013 INV	 Invoice No. 12388								 3140.80	    6177.60
+      12/27/2013 INV	 Invoice No. 12389								 3244.80	    9422.40
+
+
+
+6/16/2016					       TS Handyman Services
+10:42 AM					     A/R with Running Balances					      Page	  4
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    9422.40
+
+BA-InterimTot
 Beginning Balance													       0.00
       12/27/2013 INV	 Invoice No. 12384								 3036.80	    3036.80
       12/27/2013 INV	 Invoice No. 12385								 3140.80	    6177.60
@@ -145,151 +167,138 @@ Beginning Balance													       0.00
 
 Ending Balance														    9422.40
 
-BA-InterimTot
-Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12381								 3036.80	    3036.80
-      12/27/2013 INV	 Invoice No. 12382								 3140.80	    6177.60
-      12/27/2013 INV	 Invoice No. 12383								 3244.80	    9422.40
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
-
-Ending Balance														    9422.40
-
 BA-Maximum-Both
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12361								 2116.74	    2116.74
+      12/27/2013 INV	 Invoice No. 12364								 2116.74	    2116.74
 
 Ending Balance														    2116.74
 
+
 BA-Maximum-Exp
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12360								 2242.96	    2242.96
+      12/27/2013 INV	 Invoice No. 12363								 2242.96	    2242.96
 
 Ending Balance														    2242.96
 
 BA-Maximum-Time
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12359								 2642.86	    2642.86
+      12/27/2013 INV	 Invoice No. 12362								 2642.86	    2642.86
 
 Ending Balance														    2642.86
 
+
 BA-Minimum-Both
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12358								 6806.63	    6806.63
+      12/27/2013 INV	 Invoice No. 12361								 6806.63	    6806.63
 
 Ending Balance														    6806.63
 
 BA-Minimum-Exp
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12357								 6934.21	    6934.21
+      12/27/2013 INV	 Invoice No. 12360								 6934.21	    6934.21
 
 Ending Balance														    6934.21
+
 
+
+6/16/2016					       TS Handyman Services
+10:42 AM					     A/R with Running Balances					      Page	  5
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 BA-Minimum-Time
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12356								 7716.80	    7716.80
+      12/27/2013 INV	 Invoice No. 12359								 7716.80	    7716.80
 
 Ending Balance														    7716.80
 
 
 BA-MinimumHours
 Beginning Balance													       0.00
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
-      12/27/2013 INV	 Invoice No. 12371								 3660.80	    3660.80
+      12/27/2013 INV	 Invoice No. 12374								 3660.80	    3660.80
 
 Ending Balance														    3660.80
 
 BA-Percent
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12372								 2776.80	    2776.80
-      12/27/2013 INV	 Invoice No. 12373								 3088.80	    5865.60
-      12/27/2013 INV	 Invoice No. 12374								 2724.80	    8590.40
+      12/27/2013 INV	 Invoice No. 12375								 2776.80	    2776.80
+      12/27/2013 INV	 Invoice No. 12376								 3088.80	    5865.60
+      12/27/2013 INV	 Invoice No. 12377								 2724.80	    8590.40
 
 Ending Balance														    8590.40
 
+
 BA-Precision
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12389								 2642.86	    2642.86
+      12/27/2013 INV	 Invoice No. 12392								 2642.86	    2642.86
 
 Ending Balance														    2642.86
 
-
 BA-ProgressAct
+Beginning Balance													       0.00
+      12/27/2013 INV	 Invoice No. 12381								 3036.80	    3036.80
+      12/27/2013 INV	 Invoice No. 12382								 3140.80	    6177.60
+      12/27/2013 INV	 Invoice No. 12383								 3244.80	    9422.40
+
+Ending Balance														    9422.40
+
+
+BA-ProgressTot
 Beginning Balance													       0.00
       12/27/2013 INV	 Invoice No. 12378								 3036.80	    3036.80
       12/27/2013 INV	 Invoice No. 12379								 3140.80	    6177.60
       12/27/2013 INV	 Invoice No. 12380								 3244.80	    9422.40
 
 Ending Balance														    9422.40
-
-BA-ProgressTot
-Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12375								 3036.80	    3036.80
-      12/27/2013 INV	 Invoice No. 12376								 3140.80	    6177.60
-      12/27/2013 INV	 Invoice No. 12377								 3244.80	    9422.40
-
-Ending Balance														    9422.40
+
 
 
+6/16/2016					       TS Handyman Services
+10:42 AM					     A/R with Running Balances					      Page	  6
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 BA-ReplaceExpA
+Beginning Balance													       0.00
+      12/27/2013 INV	 Invoice No. 12396								 9129.45	    9129.45
+
+Ending Balance														    9129.45
+
+
+BA-ReplaceTimeA
 Beginning Balance													       0.00
       12/27/2013 INV	 Invoice No. 12393								 9129.45	    9129.45
 
 Ending Balance														    9129.45
 
-BA-ReplaceTimeA
-Beginning Balance													       0.00
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
-      12/27/2013 INV	 Invoice No. 12390								 9129.45	    9129.45
-
-Ending Balance														    9129.45
-
 BA-ReplaceTimeB
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12391								 9129.45	    9129.45
+      12/27/2013 INV	 Invoice No. 12394								 9129.45	    9129.45
 
 Ending Balance														    9129.45
+
 
 BA-ReplaceTimeC
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12392								 9129.45	    9129.45
+      12/27/2013 INV	 Invoice No. 12395								 9129.45	    9129.45
 
 Ending Balance														    9129.45
 
 BA-RoundDol
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12388								 2648.42	    2648.42
+      12/27/2013 INV	 Invoice No. 12391								 2648.42	    2648.42
 
 Ending Balance														    2648.42
 
+
 BA-RoundMin
 Beginning Balance													       0.00
-      12/27/2013 INV	 Invoice No. 12387								 2653.41	    2653.41
+      12/27/2013 INV	 Invoice No. 12390								 2653.41	    2653.41
 
 Ending Balance														    2653.41
 
 
 Grand Total														       0.00
-   Total Added														  177285.52
+   Total Added														  180405.52
    Total Removed													       0.00
-   Ending Balance Total 												  177285.52
+   Ending Balance Total 												  180405.52

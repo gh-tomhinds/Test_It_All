@@ -55,6 +55,34 @@ TS Handyman Services
 Essex, MA 01929
 USA
 
+Absolute FF - NoSlips
+Address 1a
+Address 1b
+Address 1c
+City1, ST1 ZipCode1
+Country1
+In Reference To:     Absolute FF - NoSlips
+
+
+Date	      Description											Amount		 Balance
+
+  12/27/2013  Invoice #12356										      1,040.00		1,040.00
+  12/27/2013  Invoice #12357										      1,040.00		2,080.00
+  12/27/2013  Invoice #12358										      1,040.00		3,120.00
+
+	      Ending Balance													3,120.00
+
+	      Amount Due													3,120.00
+
+					 Current      30 Days	   60 Days	90 Days    120+ Days
+
+					3,120.00	 0.00	      0.00	   0.00 	0.00
+
+TS Handyman Services
+239 Western Avenue
+Essex, MA 01929
+USA
+
 Absolute FF - Time
 Address 1a
 Address 1b
@@ -300,8 +328,8 @@ In Reference To:     Contingency - Both
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12369										      1,595.65		1,595.65
-  12/27/2013  Invoice #12370										      2,116.74		3,712.39
+  12/27/2013  Invoice #12372										      1,595.65		1,595.65
+  12/27/2013  Invoice #12373										      2,116.74		3,712.39
 
 	      Ending Balance													3,712.39
 
@@ -327,8 +355,8 @@ In Reference To:     Contingency - Exp
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12367										      1,721.71		1,721.71
-  12/27/2013  Invoice #12368										      2,242.96		3,964.67
+  12/27/2013  Invoice #12370										      1,721.71		1,721.71
+  12/27/2013  Invoice #12371										      2,242.96		3,964.67
 
 	      Ending Balance													3,964.67
 
@@ -354,8 +382,8 @@ In Reference To:     Contingency - Time
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12365										      2,516.80		2,516.80
-  12/27/2013  Invoice #12366										      3,556.80		6,073.60
+  12/27/2013  Invoice #12368										      2,516.80		2,516.80
+  12/27/2013  Invoice #12369										      3,556.80		6,073.60
 
 	      Ending Balance													6,073.60
 
@@ -381,7 +409,7 @@ In Reference To:     FF Plus - Both
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12364										      3,163.96		3,163.96
+  12/27/2013  Invoice #12367										      3,163.96		3,163.96
 
 	      Ending Balance													3,163.96
 
@@ -407,7 +435,7 @@ In Reference To:     FF Plus - Exp
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12363										      3,164.11		3,164.11
+  12/27/2013  Invoice #12366										      3,164.11		3,164.11
 
 	      Ending Balance													3,164.11
 
@@ -433,7 +461,7 @@ In Reference To:     FF Plus - Time
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12362										      3,162.86		3,162.86
+  12/27/2013  Invoice #12365										      3,162.86		3,162.86
 
 	      Ending Balance													3,162.86
 
@@ -459,9 +487,9 @@ In Reference To:     Interim Activity FF
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12384										      3,036.80		3,036.80
-  12/27/2013  Invoice #12385										      3,140.80		6,177.60
-  12/27/2013  Invoice #12386										      3,244.80		9,422.40
+  12/27/2013  Invoice #12387										      3,036.80		3,036.80
+  12/27/2013  Invoice #12388										      3,140.80		6,177.60
+  12/27/2013  Invoice #12389										      3,244.80		9,422.40
 
 	      Ending Balance													9,422.40
 
@@ -487,9 +515,9 @@ In Reference To:     Interim Total FF
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12381										      3,036.80		3,036.80
-  12/27/2013  Invoice #12382										      3,140.80		6,177.60
-  12/27/2013  Invoice #12383										      3,244.80		9,422.40
+  12/27/2013  Invoice #12384										      3,036.80		3,036.80
+  12/27/2013  Invoice #12385										      3,140.80		6,177.60
+  12/27/2013  Invoice #12386										      3,244.80		9,422.40
 
 	      Ending Balance													9,422.40
 
@@ -515,7 +543,7 @@ In Reference To:     Maximum FF - Both
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12361										      2,116.74		2,116.74
+  12/27/2013  Invoice #12364										      2,116.74		2,116.74
 
 	      Ending Balance													2,116.74
 
@@ -541,7 +569,7 @@ In Reference To:     Maximum FF - Exp
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12360										      2,242.96		2,242.96
+  12/27/2013  Invoice #12363										      2,242.96		2,242.96
 
 	      Ending Balance													2,242.96
 
@@ -567,7 +595,7 @@ In Reference To:     Maximum FF - Time
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12359										      2,642.86		2,642.86
+  12/27/2013  Invoice #12362										      2,642.86		2,642.86
 
 	      Ending Balance													2,642.86
 
@@ -593,7 +621,7 @@ In Reference To:     Minimum FF - Both
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12358										      6,806.63		6,806.63
+  12/27/2013  Invoice #12361										      6,806.63		6,806.63
 
 	      Ending Balance													6,806.63
 
@@ -619,7 +647,7 @@ In Reference To:     Minimum FF - Exp
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12357										      6,934.21		6,934.21
+  12/27/2013  Invoice #12360										      6,934.21		6,934.21
 
 	      Ending Balance													6,934.21
 
@@ -645,7 +673,7 @@ In Reference To:     Minimum FF - Time
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12356										      7,716.80		7,716.80
+  12/27/2013  Invoice #12359										      7,716.80		7,716.80
 
 	      Ending Balance													7,716.80
 
@@ -671,7 +699,7 @@ In Reference To:     Minimum Hours FF
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12371										      3,660.80		3,660.80
+  12/27/2013  Invoice #12374										      3,660.80		3,660.80
 
 	      Ending Balance													3,660.80
 
@@ -697,9 +725,9 @@ In Reference To:     Percent Comp
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12372										      2,776.80		2,776.80
-  12/27/2013  Invoice #12373										      3,088.80		5,865.60
-  12/27/2013  Invoice #12374										      2,724.80		8,590.40
+  12/27/2013  Invoice #12375										      2,776.80		2,776.80
+  12/27/2013  Invoice #12376										      3,088.80		5,865.60
+  12/27/2013  Invoice #12377										      2,724.80		8,590.40
 
 	      Ending Balance													8,590.40
 
@@ -725,7 +753,7 @@ In Reference To:     Precision Settings
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12389										      2,642.86		2,642.86
+  12/27/2013  Invoice #12392										      2,642.86		2,642.86
 
 	      Ending Balance													2,642.86
 
@@ -751,9 +779,9 @@ In Reference To:     Progress Activity FF
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12378										      3,036.80		3,036.80
-  12/27/2013  Invoice #12379										      3,140.80		6,177.60
-  12/27/2013  Invoice #12380										      3,244.80		9,422.40
+  12/27/2013  Invoice #12381										      3,036.80		3,036.80
+  12/27/2013  Invoice #12382										      3,140.80		6,177.60
+  12/27/2013  Invoice #12383										      3,244.80		9,422.40
 
 	      Ending Balance													9,422.40
 
@@ -779,9 +807,9 @@ In Reference To:     Progress Total FF
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12375										      3,036.80		3,036.80
-  12/27/2013  Invoice #12376										      3,140.80		6,177.60
-  12/27/2013  Invoice #12377										      3,244.80		9,422.40
+  12/27/2013  Invoice #12378										      3,036.80		3,036.80
+  12/27/2013  Invoice #12379										      3,140.80		6,177.60
+  12/27/2013  Invoice #12380										      3,244.80		9,422.40
 
 	      Ending Balance													9,422.40
 
@@ -807,7 +835,7 @@ In Reference To:     Replace Exp A
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12393										      9,129.45		9,129.45
+  12/27/2013  Invoice #12396										      9,129.45		9,129.45
 
 	      Ending Balance													9,129.45
 
@@ -833,7 +861,7 @@ In Reference To:     Replace Time A
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12390										      9,129.45		9,129.45
+  12/27/2013  Invoice #12393										      9,129.45		9,129.45
 
 	      Ending Balance													9,129.45
 
@@ -859,7 +887,7 @@ In Reference To:     Replace Time B
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12391										      9,129.45		9,129.45
+  12/27/2013  Invoice #12394										      9,129.45		9,129.45
 
 	      Ending Balance													9,129.45
 
@@ -885,7 +913,7 @@ In Reference To:     Replace Time C
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12392										      9,129.45		9,129.45
+  12/27/2013  Invoice #12395										      9,129.45		9,129.45
 
 	      Ending Balance													9,129.45
 
@@ -911,7 +939,7 @@ In Reference To:     Rounding Dollars
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12388										      2,648.42		2,648.42
+  12/27/2013  Invoice #12391										      2,648.42		2,648.42
 
 	      Ending Balance													2,648.42
 
@@ -937,7 +965,7 @@ In Reference To:     Rounding Minutes
 
 Date	      Description											Amount		 Balance
 
-  12/27/2013  Invoice #12387										      2,653.41		2,653.41
+  12/27/2013  Invoice #12390										      2,653.41		2,653.41
 
 	      Ending Balance													2,653.41
 

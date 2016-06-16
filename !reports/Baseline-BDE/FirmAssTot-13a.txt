@@ -1,11 +1,11 @@
 
 
-						       TS Handyman Services
-						   Firm Assistant Totals Listing				      Page
+6/16/2016					       TS Handyman Services
+11:50 AM					   Firm Assistant Totals Listing				      Page	  1
 
 							Selection Criteria
 
-Slip.Transaction Date	     1/1/2013 - 12/31/2013
+Slip.Transaction Dat	     1/1/2013 - 12/31/2013
 
 
 Fees
@@ -54,8 +54,8 @@ Accounts Receivable
 
 
 
-						       TS Handyman Services
-						   Firm Assistant Totals Listing				      Page
+6/16/2016					       TS Handyman Services
+11:50 AM					   Firm Assistant Totals Listing				      Page	  2
 
 Funds Accounts
        Previous Balance 												      $0.00
@@ -74,18 +74,18 @@ Previous Balance
        90 Days														      $0.00
        60 Days														      $0.00
        30 Days														      $0.00
-       Current														$177,285.52
+       Current														$180,405.52
        Unapplied													      $0.00
-       Total														$177,285.52
+       Total														$180,405.52
 
 New Balance
        120 Days 													      $0.00
        90 Days														      $0.00
        60 Days														      $0.00
        30 Days														      $0.00
-       Current														$198,621.77
+       Current														$201,741.77
        Unapplied													      $0.00
 
-       Balance Due													$198,621.77
+       Balance Due													$201,741.77
 
-       Balance Due with Funds												$198,621.77
+       Balance Due with Funds												$201,741.77
