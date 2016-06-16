@@ -41,34 +41,35 @@ def fCreateImportEdit_Names():
 
 #---------------------------------------------------#
 
-    client_Create.fCreate_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
-    task_Create.fCreate_Task()
-    expense_Create.fCreate_Expense()
-    
     timekeeper_Import.fImport_Timekeepers()
     timekeeper_Edit.fEdit_Timekeeper()
-    
+    backup_Data.fBackup_Checkpoint("timekeepers")
+
+    task_Create.fCreate_Task()
+    task_Import.fImport_Tasks()
+    task_Edit.fEdit_Task()
+    backup_Data.fBackup_Checkpoint("tasks")    
+
+    expense_Create.fCreate_Expense()
+    expense_Import.fImport_Expenses()
+    expense_Edit.fEdit_Expense()
+    expense_Markup.fSetup_ExpMarkups()    
+    backup_Data.fBackup_Checkpoint("expenses")
+
+    client_Create.fCreate_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")   
     client_Import.fImport_Clients()
-    backup_Data.fBackup_Checkpoint("clients-import")    
+    backup_Data.fBackup_Checkpoint("clients-import")
+    
     client_Edit.fEdit_Client()    
     client_FundsEdit.fEdit_ClientFunds()
-    backup_Data.fBackup_Checkpoint("clients")
+    backup_Data.fBackup_Checkpoint("client-funds")
+    
     report_FundsAccountList.fPrint_Funds("FundsSettings-01" + ".csv")
     
     client_Hold.fSetup_ClientHold()
     client_FeeAlloc.fSetup_FeeAlloc()
-
-    task_Import.fImport_Tasks()
-    task_Edit.fEdit_Task()
-    expense_Import.fImport_Expenses()
-    expense_Edit.fEdit_Expense()
-    backup_Data.fBackup_Checkpoint("activities")    
-
-    expense_Markup.fSetup_ExpMarkups()
-    backup_Data.fBackup_Checkpoint("markups")    
-
     taxes_Setup.fSetup_Taxes()
-    backup_Data.fBackup_Checkpoint("taxes")
+    backup_Data.fBackup_Checkpoint("client-taxes")
 
     client_PayDistrib.fSetup_PayDist()
     backup_Data.fBackup_Checkpoint("pay-dist")
