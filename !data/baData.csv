@@ -2,6 +2,9 @@ name,fees,costs,total
 BA-Absolute-Both1,549.07,1982.55,2637.84
 BA-Absolute-Exp1,549.65,2103.18,2764.21
 BA-Absolute-Time1,1428.44,1986.78,3556.8
+BA-Absolute-NoSlips1,1000,0,1040
+BA-Absolute-NoSlips2,1000,0,2080
+BA-Absolute-NoSlips3,1000,0,3120
 BA-AdjExpense1,549.65,2207.68,2873.15
 BA-AdjTask1,579.95,1986.78,2674.37
 BA-AdjTK-Both1,579.95,1986.78,2674.37
