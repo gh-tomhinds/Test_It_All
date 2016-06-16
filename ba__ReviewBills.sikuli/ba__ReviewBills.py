@@ -30,8 +30,14 @@ def fCompare_Results(pBillName,pValueType,pSavedValue,pBillValue):
     outFile = Settings.BALogFile
     billLog = open(outFile, "a")
 
-    print(pSavedValue)
-    print(pBillValue)
+    if pBillValue is None:
+        billLog.write(" " + pValueType + " is MISSING.\n")
+        billLog.write(" Expected: " + pSavedValue)        
+        return
+
+    print("type:  " + pValueType)
+    print("saved: " + pSavedValue)
+    print("bill:  " + pBillValue)
 
     if float(pSavedValue) == float(pBillValue):
         billLog.write(" " + pValueType + " matches.\n")

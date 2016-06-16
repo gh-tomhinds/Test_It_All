@@ -24,6 +24,8 @@ import ba_Absolute_Time
 import ba_Absolute_Exp
 import ba_Absolute_Both
 
+import ba_Absolute_NoSlips
+
 import ba_Minimum_Time
 import ba_Minimum_Exp
 import ba_Minimum_Both
@@ -103,6 +105,8 @@ def fReview_Arrangements():
     ba_Absolute_Time.fAbsolute_Time()
     ba_Absolute_Exp.fAbsolute_Exp()
     ba_Absolute_Both.fAbsolute_Both()
+
+    ba_Absolute_NoSlips.fAbsolute_NoSlips()
 
     ba_Minimum_Time.fMinimum_Time()
     ba_Minimum_Exp.fMinimum_Exp()

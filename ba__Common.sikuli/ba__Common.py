@@ -34,19 +34,24 @@ def fImport_DefaultLayout():
     type("a",KeyModifier.ALT)
     time.sleep(1)
 
-    # shift tab to open/templates control
-    myTools.pressSHIFTTAB(1)
-    time.sleep(1)
+    if Settings.tsDB == "PREM":
+    
+        # shift tab to open/templates control
+        myTools.pressSHIFTTAB(1)
+        time.sleep(1)
 
-    # press RIGHT to Template Clients
-    myTools.pressRIGHT(1)
-    time.sleep(1)
+        # press RIGHT to Template Clients
+        myTools.pressRIGHT(1)
+        time.sleep(1)
 
-    # press TAB to client list
-    myTools.pressTAB(1)
-    time.sleep(1)
+        # press TAB to client list
+        myTools.pressTAB(1)
+        time.sleep(1)
 
-    #press F4 to mark template    
+    else:
+        click("template_tab.png")
+    
+    #press F4 to mark template
     type(Key.F4)
     time.sleep(1)
 
