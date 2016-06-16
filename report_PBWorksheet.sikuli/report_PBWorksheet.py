@@ -272,6 +272,6 @@ def fPrint_PreBill_2(pReportMonth,pRepExt,pAorB):
     myTools.finishReport(reportName)
 
     # RESTORE if version is prior to TS2016 (defect regarding recurring slips)
-    if int(Settings.tsVersion) < 2016:    
-        buName = Settings.tsVersion + "-bill-" + str(myTools.padZero(pReportMonth)) + pAorB
-        backup_Data.fRestore_Backup(buName)    
+    if int(Settings.tsVersion) < 2016:
+        buName = Settings.tsVersion + "-bill-" + str(myTools.padZero(pReportMonth)) + pAorB            
+        backup_Data.fRestore_Backup(buName)

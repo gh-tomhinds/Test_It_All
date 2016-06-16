@@ -17,6 +17,7 @@ import report_ClientsNotBilled
 import report_DaysToPay
 import report_FeeAlloc
 import report_FeeAllocPer
+import report_FlatFee
 import report_FirmAssList
 import report_FirmAssTot
 import report_FundsBal
@@ -67,7 +68,6 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_MissingTime.fPrint_MissingTime(pMonth,csvExt,pAorB)
     report_ClientsNotBilled.Print_ClientsNotBilled(pMonth,csvExt)
     report_FirmAssList.fPrint_FirmAssList(pMonth,csvExt)
-    report_PayPerf.fPrint_PayPerf(pMonth,csvExt)
 
     report_AgedARBal.Print_ARAgedBal(pMonth,csvExt)
     report_AgedARBalDate.Print_ARAgedBalDate(pMonth,csvExt)
@@ -84,11 +84,9 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_TkHistory.Print_TkHistory(pMonth,csvExt)
     report_TkContribution.Print_TkContribution(pMonth,csvExt)  
     report_TkCC.Print_TkCC(pMonth,csvExt)
-    report_FundsBal.fPrint_FundsBal(pMonth,csvExt)
     report_Taxes.Print_Taxes(pMonth,csvExt)
     report_TOWorksheet.Print_Worksheet(pMonth,csvExt)
     report_PBWorksheet.fPrint_PreBill_1(pMonth,txtExt)
-    report_PBWorksheet.fPrint_PreBill_2(pMonth,txtExt,pAorB)
     
     email_Send.fSend_Text("rep-half " + str(pMonth) + pAorB)  
     
@@ -109,17 +107,26 @@ def fPrint_PostbillReports(pMonth,pAorB):
 
     if (pMonth == 13): # skip some reports for ba clients
         logging.debug('')
+        report_FlatFee.fPrint_FlatFee(pMonth,csvExt)
+        
+        logging.debug('')        
         logging.debug('!!! SKIP UD FUNDS REPORT')
         logging.debug('!!! SKIP HOLD REPORT')
         logging.debug('!!! SKIP SPLIT BILL DIST')
+        logging.debug('!!! SKIP FUNDS BAL')
         logging.debug('!!! SKIP FUNDS w/RUNNING BAL')
         logging.debug('!!! SKIP FUNDS LIST')
+        logging.debug('!!! SKIP PREBILL2')
+        logging.debug('!!! SKIP PAYPERF')
     else:
         report_UDFunds.fPrint_FundsListFields(pMonth,csvExt)   
         report_Hold.Print_Hold(pMonth,csvExt)
         report_SplitBill.fPrint_SplitBill(pMonth,csvExt)
+        report_FundsBal.fPrint_FundsBal(pMonth,csvExt)
         report_FundsWRunBal.fPrint_FundsWRunBal(pMonth,txtExt)
         report_FundsList.fPrint_FundsList(pMonth,csvExt)
+        report_PBWorksheet.fPrint_PreBill_2(pMonth,txtExt,pAorB)
+        report_PayPerf.fPrint_PayPerf(pMonth,csvExt)
 
     if (pMonth == 13) or (pMonth == 1):
         logging.debug('!!! SKIP FEE ALLOCATION PERIOD REPORT')
