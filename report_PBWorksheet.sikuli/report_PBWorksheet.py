@@ -1,3 +1,5 @@
+""" prints two versions of pb worksheet; compares to baseline; restores backup """
+
 from sikuli import *
 import logging
 import myTools
@@ -7,7 +9,8 @@ import backup_Data
 #---------------------------------------------------#
 def fSetup_PreBill():
 #---------------------------------------------------#
-
+    """ opens worksheet; calls myTools.removeDateAndTime, saves report """
+    
     logging.debug('- set up prebill')
     
     myTools.getFocus()
@@ -24,72 +27,15 @@ def fSetup_PreBill():
     type(Key.F4,KeyModifier.CTRL)
 
 #---------------------------------------------------#
-def setupCustomFilter():
-#---------------------------------------------------#
-
-    # this is used in fPrint_PreBill_2    
-
-    logging.debug('- enterCustomFilter')    
-
-    wait("slip_trans_date.png",60)                
-    time.sleep(1)                
-    
-    click("slip_trans_date.png")
-    time.sleep(1)
-
-    # switch to the client group
-    myTools.pressSHIFTTAB(1)
-    type("c")
-    time.sleep(1)
-
-    # choose Client List
-    myTools.pressTAB(1)
-    myTools.pressDOWN(7)
-    click("add_filter.png")
-    time.sleep(1)
-
-    # mark All
-    type(Key.INSERT)
-    time.sleep(1)
-
-    # remove Franklin
-    myTools.pressDOWN(5)
-    type(Key.F4,KeyModifier.SHIFT)
-
-    # press OK
-    myTools.pressTAB(1)
-    type(Key.ENTER)
-    time.sleep(1)
-                                
-#---------------------------------------------------#
-def setupCustomSort():
-#---------------------------------------------------#
-
-    # this is used in fPrint_PreBill_2
-
-    # switch to the Sort page
-    myTools.pressF6(1)
-    time.sleep(1)
-
-    # remove sorts
-    myTools.clickRemoveAll()
-
-    # switch to the activity group
-    myTools.pressSHIFTTAB(1)
-    type("a")
-    time.sleep(1)
-
-    # choose Activity List
-    myTools.pressTAB(1)
-    myTools.pressDOWN(7)
-    click("add_filter.png")
-    time.sleep(1)
-                
-
-#---------------------------------------------------#
 def fPrint_PreBill_1(pReportMonth,pRepExt):
 #---------------------------------------------------#
-
+    """ 
+    print pre-bill 1
+    - use myTools.enterSlipFilter for slip filter thru current month 
+    - default sorts
+    - default options
+    """
+    
     myTools.sectionStartTimeStamp("print PreBill 1")
 
     # name report file: ex: PreBill-03
@@ -134,25 +80,74 @@ def fPrint_PreBill_1(pReportMonth,pRepExt):
     myTools.finishReport(reportName)
 
 #---------------------------------------------------#
-def fPrint_PreBill_2(pReportMonth,pRepExt):
+def setupCustomFilter():
 #---------------------------------------------------#
+    """ sets up custom filter Client List; only used by fPrint_PreBill_2 """
 
-    myTools.sectionStartTimeStamp("print PreBill 2")
+    logging.debug('- setupCustomFilter')
 
-    # name report file: ex: PreBill-03
-    reportName = myTools.buildRepName("PreBill2",pRepExt)
-    logging.debug('Print_PreBill: ' + reportName)
-
-    # make sure timeslips has focus
-    myTools.getFocus()
-
-    logging.debug('- open worksheet')
-    type("b",KeyModifier.ALT)
-    type("p")    
-    time.sleep(1)
+    wait("slip_trans_date.png",60)                
+    time.sleep(1)                
     
-    logging.debug('- set up worksheet')
-    # Options
+    click("slip_trans_date.png")
+    time.sleep(1)
+
+    # switch to the client group
+    myTools.pressSHIFTTAB(1)
+    type("c")
+    time.sleep(1)
+
+    # choose Client List
+    myTools.pressTAB(1)
+    myTools.pressDOWN(7)
+    click("add_filter.png")
+    time.sleep(1)
+
+    # mark All
+    type(Key.INSERT)
+    time.sleep(1)
+
+    # remove Franklin
+    myTools.pressDOWN(5)
+    type(Key.F4,KeyModifier.SHIFT)
+
+    # press OK
+    myTools.pressTAB(1)
+    type(Key.ENTER)
+    time.sleep(1)
+                                
+#---------------------------------------------------#
+def setupCustomSort():
+#---------------------------------------------------#
+    """ sets up custom sort Activity List; only used by fPrint_PreBill_2 """
+
+    logging.debug('- setupCustomSort')
+
+    # switch to the Sort page
+    myTools.pressF6(1)
+    time.sleep(1)
+
+    # remove sorts
+    myTools.clickRemoveAll()
+
+    # switch to the activity group
+    myTools.pressSHIFTTAB(1)
+    type("a")
+    time.sleep(1)
+
+    # choose Activity List
+    myTools.pressTAB(1)
+    myTools.pressDOWN(7)
+    click("add_filter.png")
+    time.sleep(1)                
+
+#---------------------------------------------------#
+def setupCustomOptions():
+#---------------------------------------------------#
+    """ sets up custom options """
+
+    logging.debug('- setupCustomOptions')
+
     myTools.pressSHIFTTAB(4)
     type(Key.SPACE)
     time.sleep(1)
@@ -234,18 +229,41 @@ def fPrint_PreBill_2(pReportMonth,pRepExt):
 
     # OK
     type(Key.ENTER)
-    time.sleep(1)    
-
-    # choose text
-    myTools.pressTAB(2)
-    type("t")
     time.sleep(1)
 
-    # filters
-    setupCustomFilter()
+#---------------------------------------------------#
+def fPrint_PreBill_2(pReportMonth,pRepExt,pAorB):
+#---------------------------------------------------#
+    """ 
+    print pre-bill 2
+    - uses setupCustomFilter for filters
+    - uses setupCustomSort for sorts
+    - setupCustomOptions for options
+    - restore if prior to TS2016
+    """
 
-    # sort
+    myTools.sectionStartTimeStamp("print PreBill 2")
+
+    # name report file: ex: PreBill-03
+    reportName = myTools.buildRepName("PreBill2",pRepExt)
+    logging.debug('Print_PreBill: ' + reportName)
+
+    # make sure timeslips has focus
+    myTools.getFocus()
+
+    logging.debug('- open worksheet')
+    type("b",KeyModifier.ALT)
+    type("p")    
+    time.sleep(1)
+
+    setupCustomOptions()
+    setupCustomFilter()
     setupCustomSort()
+
+    # choose text
+    myTools.pressSHIFTTAB(3)
+    type("t")
+    time.sleep(1)
 
     # print the report
     type(Key.ENTER)    
@@ -253,7 +271,7 @@ def fPrint_PreBill_2(pReportMonth,pRepExt):
 
     myTools.finishReport(reportName)
 
-    # RESTORE
-    buName = Settings.tsVersion + "-bill-" + str(myTools.padZero(pReportMonth)) + AorB
-    backup_Data.fRestore_Backup(buName)                
-    
+    # RESTORE if version is prior to TS2016 (defect regarding recurring slips)
+    if int(Settings.tsVersion) < 2016:    
+        buName = Settings.tsVersion + "-bill-" + str(myTools.padZero(pReportMonth)) + pAorB
+        backup_Data.fRestore_Backup(buName)    

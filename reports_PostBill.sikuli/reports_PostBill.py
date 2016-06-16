@@ -63,10 +63,6 @@ def fPrint_PostbillReports(pMonth,pAorB):
     csvExt = ".csv"
     txtExt = ".txt"
 
-    report_PBWorksheet.fPrint_PreBill_1(pMonth,txtExt)
-    report_PBWorksheet.fPrint_PreBill_2(pMonth,txtExt)
-    return
-
     report_AvailableWIP.fPrint_AvailableWIP(pMonth,csvExt)
     report_MissingTime.fPrint_MissingTime(pMonth,csvExt,pAorB)
     report_ClientsNotBilled.Print_ClientsNotBilled(pMonth,csvExt)
@@ -92,7 +88,7 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_Taxes.Print_Taxes(pMonth,csvExt)
     report_TOWorksheet.Print_Worksheet(pMonth,csvExt)
     report_PBWorksheet.fPrint_PreBill_1(pMonth,txtExt)
-    report_PBWorksheet.fPrint_PreBill_2(pMonth,txtExt)
+    report_PBWorksheet.fPrint_PreBill_2(pMonth,txtExt,pAorB)
     
     email_Send.fSend_Text("rep-half " + str(pMonth) + pAorB)  
     

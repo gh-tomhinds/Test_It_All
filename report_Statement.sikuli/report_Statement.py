@@ -14,12 +14,12 @@ def fImport_Statement():
 
     type("b",KeyModifier.ALT)         # layouts
     type("t")
-    time.sleep(1)
+    time.sleep(3)
     type(Key.F6)
     time.sleep(1)
 
     type("o",KeyModifier.CTRL)        # open
-    time.sleep(1)
+    time.sleep(3)
 
     type("l",KeyModifier.ALT)         # import
     type("p")
