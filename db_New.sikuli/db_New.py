@@ -232,40 +232,40 @@ def fEnter_GeneralSettings():
     enter firm address, project separator, slips/trans IDs
     """
 
-    # wait for address info
-        wait("address_info.png",60)
+# wait for address info
+    wait("address_info.png",60)
+   
+# Firm name/address
+    type(Key.TAB)
+    type("239 Western Avenue")
+    myTools.pressTAB(2)
+    type("Essex")
+    type(Key.TAB)
+    type("MA")
+    type(Key.TAB)
+    type("01929")
+    type(Key.TAB)
+    type("USA")
+    type(Key.TAB)
+    type("508-768-6100")
+    time.sleep(1)
     
-    # Firm name/address
-        type(Key.TAB)
-        type("239 Western Avenue")
-        myTools.pressTAB(2)
-        type("Essex")
-        type(Key.TAB)
-        type("MA")
-        type(Key.TAB)
-        type("01929")
-        type(Key.TAB)
-        type("USA")
-        type(Key.TAB)
-        type("508-768-6100")
-        time.sleep(1)
+# project separator
+    myTools.pressF6(6)
+    time.sleep(1)
+    type(".")
     
-    # project separator
-        myTools.pressF6(6)
-        time.sleep(1)
-        type(".")
+# slips, a/r, funds IDs
+    myTools.pressF6(5)
+    time.sleep(1)
+    type("10001")
+    myTools.pressTAB(1)    
+    type("10001")
+    myTools.pressTAB(1)    
+    type("10001")
     
-    # slips, a/r, funds IDs
-        myTools.pressF6(5)
-        time.sleep(1)
-        type("10000")
-        myTools.pressTAB(1)    
-        type("10000")
-        myTools.pressTAB(1)    
-        type("10000")
-    
-    # close General settings
-        type(Key.ENTER)
+# close General settings
+    type(Key.ENTER)
 
 #---------------------------------------------------#
 def fEnter_GettingStartedWizard():
